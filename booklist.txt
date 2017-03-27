@@ -1,0 +1,39 @@
+C++程序设计基础 第三版答案  周霭如 林伟健.pdf
+C专家编程 清晰 （有书签索引）.pdf
+C和指针 答案.pdf
+C和指针.pdf
+C程序设计语言(第2版)习题解答.pdf
+C程序设计高级教程.pdf
+C语言函数速查手册.pdf
+linux C编程实战.pdf
+51CTO下载-软件工程的事实与谬误高清版.pdf
+ANDROID框架揭秘P38.pdf
+ANDROID的设计与实现(卷1).pdf
+book.txt
+linux_C函数库中文手册.pdf
+linux零基础初级教程.pdf
+shellbook.pdf
+The Linux Command Line-中文版.pdf
+the official gnome 2 developer's guide.pdf
+UNIX环境高级编程和源代码.zip
+《LINUX环境编程图文指南》.pdf
+《Linux环境编程图文指南》书中源代码.rar
+《Qt及Qt+Quick开发实战精解》代码.rar
+《电子工程师参考手册》.pdf
+《鸟哥的Linux私房菜》.pdf
+专业嵌入式软件开发：全面走向高质高效编程.pdf
+圈圈教你玩USB(高清版).pdf
+嵌入式C语言精华集锦.pdf
+嵌入式Linux开发教程 (上册).pdf
+嵌入式Linux开发教程(下册).pdf
+嵌入式Linux软硬件开发详解  基于S5PV210处理器.pdf
+嵌入式系统的C语言—译自《C for Embedded Systems》.pdf
+嵌入式软件设计之思想与方法.pdf
+深度实践嵌入式Linux系统移植.pdf
+程序员自我修养.pdf
+程序员面试宝典（有书签完全版）.pdf
+编译原理技术与工具(中文版).pdf
+软件设计师历年试题分析与解答.pdf
+软件设计师教程 第4版.pdf
+[数据结构(C语言版)].严蔚敏_吴伟民.扫描版 第三版.pdf
+数据结构与算法分析：C语言描述（原书第2版）.pdf
