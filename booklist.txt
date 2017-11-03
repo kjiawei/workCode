@@ -46,5 +46,5 @@ UNIX环境高级编程和源代码.zip
 
 Java
 轻量级Java_EE企业应用实战_Struts2_Spring3_Hibernate整合开发
-深入理解Java虚拟机：JVM高级特性与最佳实践
+深入理解Java虚拟机：JVM高级特性与最佳实践(第二版)
 Struts，Hibernate，Spring集成开发宝典
