@@ -1,0 +1,6 @@
+1.ubuntu移到不同电脑及相关问题解决
+1.1 The command could not be located because '/sbin' is not included in the PATH environment variable.
+
+1.2 网络 共享目录 增强工具 系统分辨率 设置
+
+1.3 常用软件:github python
