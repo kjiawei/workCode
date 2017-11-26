@@ -1,0 +1,84 @@
+Treatment time 治疗时间   AdaptiveProportion调整比例  CarbamideClearAmount尿素清除量
+问题1:重复
+2：不够规范
+3.理清文件每行不同
+
+变量名:不超过10个字母-做注释
+
+<message>
+        <location filename="../../src/scenes/scene_ext/scene_ktv2.cpp" line="384"/>
+        <source>Cure time</source>
+        <translation type="unfinished">治疗时间</translation>
+</message>
+
+我们执行更新翻译（lupdate）时，Qt语言家查找tr()函数的位置，并且写入.ts文件中，这样以便翻译的时候替换。当修改源代码执行更新翻译后，Qt语言家会智能地决定哪些应该翻译、哪些不应该翻译。类型unfinished表明这是需要翻译但未完成的，类型obsolete表明这条翻译在现有程序是“”找不到对应控件的，俗称过时的。而lrelease是根据.ts文件，产生体积更小，更为紧凑的二进制的.qm文件
+
+策略:先更新好代码(行数影响翻译) 再去更新ts文件
+
+C盘空出20G空间------------------------
+
+<context>
+    <name>SceneSetupCureTime</name>
+    <message>
+        <source>Treat Time</source>
+        <oldsource>Cure Time Setup</oldsource>
+        <translation type="obsolete">治疗时间</translation>
+    </message>
+    <message>
+        <source>Hour:</source>
+        <translation type="obsolete">小时：</translation>
+    </message>
+    <message>
+        <source>Minute:</source>
+        <translation type="obsolete">分钟:</translation>
+    </message>
+    <message>
+        <location filename="../../src/setup/setup_cure/scene_setup_cure_time.cpp" line="248"/>
+        <source>Time:</source>
+        <translation>时间</translation>
+    </message>
+    <message>
+        <location filename="../../src/setup/setup_cure/scene_setup_cure_time.cpp" line="435"/>
+        <source>Confirm</source>
+        <translation>确认</translation>
+    </message>
+    <message>
+        <location filename="../../src/setup/setup_cure/scene_setup_cure_time.cpp" line="437"/>
+        <source>Treatment time:</source>
+        <translation>治疗时间:</translation>
+    </message>
+    <message>
+        <source>Treatment time</source>
+        <translation type="obsolete">治疗时间</translation>
+    </message>
+    <message>
+        <location filename="../../src/setup/setup_cure/scene_setup_cure_time.cpp" line="438"/>
+        <source>Min time</source>
+        <translation>最小值</translation>
+    </message>
+    <message>
+        <location filename="../../src/setup/setup_cure/scene_setup_cure_time.cpp" line="439"/>
+        <location filename="../../src/setup/setup_cure/scene_setup_cure_time.cpp" line="441"/>
+        <source>/H:m</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>/hour</source>
+        <translation type="obsolete">/小时</translation>
+    </message>
+    <message>
+        <location filename="../../src/setup/setup_cure/scene_setup_cure_time.cpp" line="440"/>
+        <source>Max time</source>
+        <translation>最大值</translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation type="obsolete">保存</translation>
+    </message>
+    <message>
+        <location filename="../../src/setup/setup_cure/scene_setup_cure_time.cpp" line="436"/>
+        <source>Cancel</source>
+        <translation>返回</translation>
+    </message>
+</context>
+

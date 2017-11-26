@@ -38,94 +38,94 @@
         <translation type="obsolete">参数</translation>
     </message>
     <message>
-        <location filename="../../src/engineering_mode/engineering_mode.cpp" line="66"/>
+        <location filename="../../src/engineering_mode/engineering_mode.cpp" line="65"/>
         <source>Curent Na</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/engineering_mode/engineering_mode.cpp" line="67"/>
+        <location filename="../../src/engineering_mode/engineering_mode.cpp" line="66"/>
         <source>Curent Hco3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/engineering_mode/engineering_mode.cpp" line="68"/>
+        <location filename="../../src/engineering_mode/engineering_mode.cpp" line="67"/>
         <source>Filter1 all Times</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/engineering_mode/engineering_mode.cpp" line="69"/>
+        <location filename="../../src/engineering_mode/engineering_mode.cpp" line="68"/>
         <source>Filter1 used Times</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/engineering_mode/engineering_mode.cpp" line="70"/>
+        <location filename="../../src/engineering_mode/engineering_mode.cpp" line="69"/>
         <source>Filter1 remain Times</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/engineering_mode/engineering_mode.cpp" line="71"/>
+        <location filename="../../src/engineering_mode/engineering_mode.cpp" line="70"/>
         <source>Filter2 all Times</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/engineering_mode/engineering_mode.cpp" line="72"/>
+        <location filename="../../src/engineering_mode/engineering_mode.cpp" line="71"/>
         <source>Filter2 used Times</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/engineering_mode/engineering_mode.cpp" line="73"/>
+        <location filename="../../src/engineering_mode/engineering_mode.cpp" line="72"/>
         <source>Filter2 remain Times</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/engineering_mode/engineering_mode.cpp" line="395"/>
-        <location filename="../../src/engineering_mode/engineering_mode.cpp" line="658"/>
+        <location filename="../../src/engineering_mode/engineering_mode.cpp" line="391"/>
+        <location filename="../../src/engineering_mode/engineering_mode.cpp" line="648"/>
         <source>/Config/Engineer_Factoryset/CureMode</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/engineering_mode/engineering_mode.cpp" line="442"/>
-        <location filename="../../src/engineering_mode/engineering_mode.cpp" line="665"/>
+        <location filename="../../src/engineering_mode/engineering_mode.cpp" line="438"/>
+        <location filename="../../src/engineering_mode/engineering_mode.cpp" line="654"/>
         <source>/Config/Engineer_Factoryset/ProfileMode</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/engineering_mode/engineering_mode.cpp" line="482"/>
-        <location filename="../../src/engineering_mode/engineering_mode.cpp" line="756"/>
+        <location filename="../../src/engineering_mode/engineering_mode.cpp" line="479"/>
+        <location filename="../../src/engineering_mode/engineering_mode.cpp" line="744"/>
         <source>/Config/Engineer_Factoryset/fluidMode</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/engineering_mode/engineering_mode.cpp" line="508"/>
-        <location filename="../../src/engineering_mode/engineering_mode.cpp" line="766"/>
+        <location filename="../../src/engineering_mode/engineering_mode.cpp" line="505"/>
+        <location filename="../../src/engineering_mode/engineering_mode.cpp" line="755"/>
         <source>/Config/Engineer_Factoryset/GetBloodMode</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/engineering_mode/engineering_mode.cpp" line="518"/>
-        <location filename="../../src/engineering_mode/engineering_mode.cpp" line="776"/>
+        <location filename="../../src/engineering_mode/engineering_mode.cpp" line="515"/>
+        <location filename="../../src/engineering_mode/engineering_mode.cpp" line="766"/>
         <source>/Config/Engineer_Factoryset/ReturnBloodMode</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/engineering_mode/engineering_mode.cpp" line="528"/>
+        <location filename="../../src/engineering_mode/engineering_mode.cpp" line="525"/>
         <source>/Config/Engineer_Factoryset/HeparinMode</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/engineering_mode/engineering_mode.cpp" line="568"/>
-        <location filename="../../src/engineering_mode/engineering_mode.cpp" line="782"/>
+        <location filename="../../src/engineering_mode/engineering_mode.cpp" line="560"/>
+        <location filename="../../src/engineering_mode/engineering_mode.cpp" line="772"/>
         <source>/Config/Engineer_Factoryset/ChemicalDisinfect</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/engineering_mode/engineering_mode.cpp" line="833"/>
+        <location filename="../../src/engineering_mode/engineering_mode.cpp" line="818"/>
         <source>select the update Packag</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/engineering_mode/engineering_mode.cpp" line="389"/>
-        <location filename="../../src/engineering_mode/engineering_mode.cpp" line="628"/>
+        <location filename="../../src/engineering_mode/engineering_mode.cpp" line="385"/>
+        <location filename="../../src/engineering_mode/engineering_mode.cpp" line="619"/>
         <source>/Config/Engineer_Factoryset/PrimeMode</source>
         <translation></translation>
     </message>
@@ -731,12 +731,12 @@
         <translation type="obsolete">温度</translation>
     </message>
     <message>
-        <location filename="../../src/RFCard/RFCard.cpp" line="465"/>
+        <location filename="../../src/RFCard/RFCard.cpp" line="405"/>
         <source>Na+ :</source>
         <translation>钠:</translation>
     </message>
     <message>
-        <location filename="../../src/RFCard/RFCard.cpp" line="466"/>
+        <location filename="../../src/RFCard/RFCard.cpp" line="406"/>
         <source>Hco3 :</source>
         <translation></translation>
     </message>
@@ -749,9 +749,8 @@
         <translation type="obsolete">血泵流速</translation>
     </message>
     <message>
-        <location filename="../../src/RFCard/RFCard.cpp" line="247"/>
         <source>man</source>
-        <translation type="unfinished">男</translation>
+        <translation type="obsolete">男</translation>
     </message>
     <message>
         <source>nephrology dept</source>
@@ -762,12 +761,11 @@
         <translation type="obsolete">肾衰竭</translation>
     </message>
     <message>
-        <location filename="../../src/RFCard/RFCard.cpp" line="332"/>
         <source>gram</source>
-        <translation type="unfinished">参数</translation>
+        <translation type="obsolete">参数</translation>
     </message>
     <message>
-        <location filename="../../src/RFCard/RFCard.cpp" line="453"/>
+        <location filename="../../src/RFCard/RFCard.cpp" line="391"/>
         <source>ID :</source>
         <translation>编号:</translation>
     </message>
@@ -780,12 +778,14 @@
         <translation type="obsolete">性别</translation>
     </message>
     <message>
-        <location filename="../../src/RFCard/RFCard.cpp" line="456"/>
+        <location filename="../../src/RFCard/RFCard.cpp" line="396"/>
+        <location filename="../../src/RFCard/RFCard.cpp" line="527"/>
         <source>Age :</source>
         <translation>年龄:</translation>
     </message>
     <message>
-        <location filename="../../src/RFCard/RFCard.cpp" line="458"/>
+        <location filename="../../src/RFCard/RFCard.cpp" line="398"/>
+        <location filename="../../src/RFCard/RFCard.cpp" line="529"/>
         <source>Depart :</source>
         <translation>科室:</translation>
     </message>
@@ -794,7 +794,8 @@
         <translation type="obsolete">体重</translation>
     </message>
     <message>
-        <location filename="../../src/RFCard/RFCard.cpp" line="460"/>
+        <location filename="../../src/RFCard/RFCard.cpp" line="400"/>
+        <location filename="../../src/RFCard/RFCard.cpp" line="531"/>
         <source>Diagnose :</source>
         <translation>诊断:</translation>
     </message>
@@ -803,115 +804,91 @@
         <translation type="obsolete">请把卡放在卡槽上！然后点击‘读卡’进行读卡，点击‘写卡’设置参数值；</translation>
     </message>
     <message>
-        <location filename="../../src/RFCard/RFCard.cpp" line="454"/>
+        <location filename="../../src/RFCard/RFCard.cpp" line="394"/>
+        <location filename="../../src/RFCard/RFCard.cpp" line="525"/>
         <source>Name &amp; Surname :</source>
         <translation>姓名:</translation>
     </message>
     <message>
-        <location filename="../../src/RFCard/RFCard.cpp" line="455"/>
+        <location filename="../../src/RFCard/RFCard.cpp" line="395"/>
+        <location filename="../../src/RFCard/RFCard.cpp" line="526"/>
         <source>Gender :</source>
         <translation>性别:</translation>
     </message>
     <message>
-        <location filename="../../src/RFCard/RFCard.cpp" line="459"/>
         <source>Dry weight :</source>
-        <translation type="unfinished">体重:</translation>
+        <translation type="obsolete">体重:</translation>
     </message>
     <message>
-        <location filename="../../src/RFCard/RFCard.cpp" line="463"/>
         <source>Time (h):</source>
-        <translation type="unfinished">时间(H):</translation>
+        <translation type="obsolete">时间(H):</translation>
     </message>
     <message>
+        <location filename="../../src/RFCard/RFCard.cpp" line="499"/>
         <source>ID</source>
-        <translation type="obsolete">序号</translation>
+        <translation>序号</translation>
     </message>
     <message>
+        <location filename="../../src/RFCard/RFCard.cpp" line="399"/>
+        <location filename="../../src/RFCard/RFCard.cpp" line="530"/>
         <source>Dry weight(KG):</source>
-        <translation type="obsolete">干体重(KG):</translation>
+        <translation>干体重(KG):</translation>
     </message>
     <message>
+        <location filename="../../src/RFCard/RFCard.cpp" line="403"/>
         <source>Time(H):</source>
-        <translation type="obsolete">时间(H)：</translation>
+        <translation>时间(H)：</translation>
     </message>
     <message>
-        <location filename="../../src/RFCard/RFCard.cpp" line="249"/>
-        <source>woman</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/RFCard/RFCard.cpp" line="457"/>
-        <source>Flag :</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/RFCard/RFCard.cpp" line="464"/>
+        <location filename="../../src/RFCard/RFCard.cpp" line="404"/>
         <source>Temp :</source>
         <translation>温度:</translation>
     </message>
     <message>
-        <location filename="../../src/RFCard/RFCard.cpp" line="467"/>
+        <location filename="../../src/RFCard/RFCard.cpp" line="407"/>
         <source>UF goal :</source>
         <translation>超滤目标:</translation>
     </message>
     <message>
-        <location filename="../../src/RFCard/RFCard.cpp" line="468"/>
+        <location filename="../../src/RFCard/RFCard.cpp" line="408"/>
         <source>Blood Flow :</source>
         <translation>血泵流速:</translation>
     </message>
     <message>
-        <location filename="../../src/RFCard/RFCard.cpp" line="472"/>
         <source>Please insert IC card into slot before click &apos;read&apos;,then do setting for RF card,and click &apos;write&apos; to save it.</source>
-        <translation type="unfinished">请把卡放在卡槽上！然后点击‘读卡’进行读卡，点击‘写卡’设置参数值；</translation>
+        <translation type="obsolete">请把卡放在卡槽上！然后点击‘读卡’进行读卡，点击‘写卡’设置参数值；</translation>
     </message>
     <message>
-        <location filename="../../src/RFCard/RFCard.cpp" line="474"/>
         <source>write a card over, please take the IC card!</source>
-        <translation type="unfinished">写卡完成，请取下卡！</translation>
+        <translation type="obsolete">写卡完成，请取下卡！</translation>
     </message>
     <message>
-        <location filename="../../src/RFCard/RFCard.cpp" line="477"/>
         <source>Write Card</source>
-        <translation type="unfinished">写卡</translation>
+        <translation type="obsolete">写卡</translation>
     </message>
     <message>
-        <location filename="../../src/RFCard/RFCard.cpp" line="479"/>
         <source>Read Card</source>
-        <translation type="unfinished">读卡</translation>
+        <translation type="obsolete">读卡</translation>
     </message>
     <message>
-        <location filename="../../src/RFCard/RFCard.cpp" line="481"/>
         <source>BP</source>
-        <translation type="unfinished">血压</translation>
+        <translation type="obsolete">血压</translation>
     </message>
     <message>
-        <location filename="../../src/RFCard/RFCard.cpp" line="482"/>
         <source>Pulse</source>
-        <translation type="unfinished">脉搏</translation>
+        <translation type="obsolete">脉搏</translation>
     </message>
     <message>
-        <location filename="../../src/RFCard/RFCard.cpp" line="483"/>
         <source>AP</source>
-        <translation type="unfinished">动脉压</translation>
+        <translation type="obsolete">动脉压</translation>
     </message>
     <message>
-        <location filename="../../src/RFCard/RFCard.cpp" line="484"/>
         <source>VP</source>
-        <translation type="unfinished">静脉压</translation>
+        <translation type="obsolete">静脉压</translation>
     </message>
     <message>
-        <location filename="../../src/RFCard/RFCard.cpp" line="485"/>
         <source>TMP</source>
-        <translation type="unfinished">跨膜压</translation>
-    </message>
-    <message>
-        <location filename="../../src/RFCard/RFCard.cpp" line="494"/>
-        <location filename="../../src/RFCard/RFCard.cpp" line="495"/>
-        <location filename="../../src/RFCard/RFCard.cpp" line="496"/>
-        <location filename="../../src/RFCard/RFCard.cpp" line="497"/>
-        <location filename="../../src/RFCard/RFCard.cpp" line="498"/>
-        <source> </source>
-        <translation type="unfinished"></translation>
+        <translation type="obsolete">跨膜压</translation>
     </message>
 </context>
 <context>
@@ -1021,7 +998,7 @@ period value
     </message>
     <message>
         <location filename="../../src/common/common_tr_string.h" line="30"/>
-        <location filename="../../src/common/common_tr_string.h" line="183"/>
+        <location filename="../../src/common/common_tr_string.h" line="185"/>
         <source>UF Profile</source>
         <translation>超滤曲线</translation>
     </message>
@@ -1090,57 +1067,57 @@ period value
         <translation>本曲线数据应用成功!</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="46"/>
+        <location filename="../../src/common/common_tr_string.h" line="47"/>
         <source>This curve data save success!</source>
         <translation>本曲线数据保存成功!</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="47"/>
+        <location filename="../../src/common/common_tr_string.h" line="48"/>
         <source>This curve already reset !</source>
         <translation>本曲线已经清除 ！</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="48"/>
+        <location filename="../../src/common/common_tr_string.h" line="49"/>
         <source>An error occurred,save fail!</source>
         <translation>发生错误，保存失败！</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="49"/>
+        <location filename="../../src/common/common_tr_string.h" line="50"/>
         <source>An error occurred,run fail!</source>
         <translation>发生错误，应用失败!</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="50"/>
+        <location filename="../../src/common/common_tr_string.h" line="51"/>
         <source>An error occurred on PNG file!</source>
         <translation>PNG文件发生错误!</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="51"/>
+        <location filename="../../src/common/common_tr_string.h" line="52"/>
         <source>Prompt</source>
         <translation>提示</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="52"/>
+        <location filename="../../src/common/common_tr_string.h" line="53"/>
         <source>This curve data save and run!</source>
         <translation>本曲线数据已保存并应用!</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="53"/>
+        <location filename="../../src/common/common_tr_string.h" line="54"/>
         <source>Please select a columnar!</source>
         <translation>请选中一个时段!</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="54"/>
+        <location filename="../../src/common/common_tr_string.h" line="55"/>
         <source>Please select a curve!</source>
         <translation>请选择一个曲线!</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="55"/>
+        <location filename="../../src/common/common_tr_string.h" line="56"/>
         <source>Are you sure to apply?</source>
         <translation>您确定要应用吗？</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="56"/>
+        <location filename="../../src/common/common_tr_string.h" line="58"/>
         <source>Are you sure to save?</source>
         <translation>您确定要保存吗？</translation>
     </message>
@@ -1149,23 +1126,23 @@ period value
         <translation type="obsolete">治疗时间不能少于</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="60"/>
+        <location filename="../../src/common/common_tr_string.h" line="62"/>
         <source>mintues</source>
         <translation>分钟</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="61"/>
+        <location filename="../../src/common/common_tr_string.h" line="63"/>
         <source>Yes</source>
         <translation>是</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="62"/>
+        <location filename="../../src/common/common_tr_string.h" line="64"/>
         <source>No</source>
         <translation>否</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="72"/>
-        <location filename="../../src/common/common_tr_string.h" line="244"/>
+        <location filename="../../src/common/common_tr_string.h" line="74"/>
+        <location filename="../../src/common/common_tr_string.h" line="319"/>
         <source>Please Confirm</source>
         <translation>请确认</translation>
     </message>
@@ -1174,52 +1151,52 @@ period value
         <translation type="obsolete">如果跳过自检，设备可能不稳定!</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="78"/>
+        <location filename="../../src/common/common_tr_string.h" line="80"/>
         <source>Do you want to Stop Cleanning ?</source>
         <translation>您确定停止消毒吗？</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="79"/>
+        <location filename="../../src/common/common_tr_string.h" line="81"/>
         <source>Do you want to ShotDown ?</source>
         <translation>您是否想关机?</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="80"/>
+        <location filename="../../src/common/common_tr_string.h" line="82"/>
         <source>Please selct disinfect type!</source>
         <translation>请选择消毒类型!</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="81"/>
+        <location filename="../../src/common/common_tr_string.h" line="83"/>
         <source>NO water!</source>
         <translation>无水</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="84"/>
+        <location filename="../../src/common/common_tr_string.h" line="86"/>
         <source>Selfcheck timed out failure, please restart!</source>
         <translation>自检超时失败，请重启！</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="85"/>
+        <location filename="../../src/common/common_tr_string.h" line="87"/>
         <source>Selfcheck error, please restart!</source>
         <translation>自检出错失败，请重启！</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="86"/>
+        <location filename="../../src/common/common_tr_string.h" line="88"/>
         <source>The blood Selfcheck fails!</source>
         <translation>血路自检失败！</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="87"/>
+        <location filename="../../src/common/common_tr_string.h" line="89"/>
         <source>The water Selfcheck fails!</source>
         <translation>水路自检失败！</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="90"/>
+        <location filename="../../src/common/common_tr_string.h" line="92"/>
         <source>Can be treated!</source>
         <translation>可以进入治疗！</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="91"/>
+        <location filename="../../src/common/common_tr_string.h" line="93"/>
         <source>Didn&apos;t open the heparin pump, please open!</source>
         <translation>没有打开肝素泵，请打开！</translation>
     </message>
@@ -1233,52 +1210,52 @@ period value
         <translation>确认</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="57"/>
+        <location filename="../../src/common/common_tr_string.h" line="59"/>
         <source>Treatment time can not less</source>
         <translation>治疗时间不能太少</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="58"/>
+        <location filename="../../src/common/common_tr_string.h" line="60"/>
         <source>This profile is runing!</source>
         <translation>该曲线已经在运行!</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="59"/>
+        <location filename="../../src/common/common_tr_string.h" line="61"/>
         <source>This profile is undefined!</source>
         <translation>该曲线未定义!</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="64"/>
+        <location filename="../../src/common/common_tr_string.h" line="66"/>
         <source>Control</source>
         <translation>控制</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="65"/>
+        <location filename="../../src/common/common_tr_string.h" line="67"/>
         <source>Voltage</source>
         <translation>电压</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="66"/>
+        <location filename="../../src/common/common_tr_string.h" line="68"/>
         <source>Set value</source>
         <translation>设置值</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="67"/>
+        <location filename="../../src/common/common_tr_string.h" line="69"/>
         <source>Foreward</source>
         <translation>正转</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="68"/>
+        <location filename="../../src/common/common_tr_string.h" line="70"/>
         <source>Rollback</source>
         <translation>反转</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="69"/>
+        <location filename="../../src/common/common_tr_string.h" line="71"/>
         <source>Cancel</source>
         <translation>取消</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="73"/>
+        <location filename="../../src/common/common_tr_string.h" line="75"/>
         <source>Warning:Do not skip self test to do treatment.</source>
         <translation>警告！请不要跳过自检.</translation>
     </message>
@@ -1287,7 +1264,7 @@ period value
         <translation type="obsolete">静脉气泡报警,是否继续回血？是-继续，否-结束！</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="94"/>
+        <location filename="../../src/common/common_tr_string.h" line="96"/>
         <source>Whether to continue drain? &apos;Yes&apos;-continue,&apos;No&apos;-end!</source>
         <translation>是否继续排空？是-继续，否-结束！</translation>
     </message>
@@ -1324,162 +1301,162 @@ period value
         <translation type="obsolete">排空状态</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="92"/>
+        <location filename="../../src/common/common_tr_string.h" line="94"/>
         <source>No blood,whether to continue return blood? &apos;Yes&apos;-continue,&apos;No&apos;-end!</source>
         <translation>无血报警，是否继续回血？是-继续，否-结束！</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="93"/>
+        <location filename="../../src/common/common_tr_string.h" line="95"/>
         <source>Whether has ended return blood? &apos;Yes&apos;-start drain,&apos;No&apos;-return!</source>
         <translation>是否已经结束回血？是-开始排空，否-返回</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="96"/>
+        <location filename="../../src/common/common_tr_string.h" line="98"/>
         <source>Are you sure preflush finish?</source>
         <translation>你确定预冲已完成？</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="97"/>
+        <location filename="../../src/common/common_tr_string.h" line="99"/>
         <source>Treatment finish,go to blood return!</source>
         <translation>治疗结束，进入回血！</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="99"/>
+        <location filename="../../src/common/common_tr_string.h" line="101"/>
         <source>online prime</source>
         <translation>在线预冲</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="100"/>
+        <location filename="../../src/common/common_tr_string.h" line="102"/>
         <source>online P.t</source>
         <translation>在线引血</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="101"/>
+        <location filename="../../src/common/common_tr_string.h" line="103"/>
         <source>online RB</source>
         <translation>在线回血</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="107"/>
+        <location filename="../../src/common/common_tr_string.h" line="109"/>
         <source>Initialize</source>
         <translation>初始化</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="108"/>
+        <location filename="../../src/common/common_tr_string.h" line="110"/>
         <source>Preparation</source>
         <translation>准备</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="109"/>
+        <location filename="../../src/common/common_tr_string.h" line="111"/>
         <source>Treatment</source>
         <translation>治疗</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="110"/>
+        <location filename="../../src/common/common_tr_string.h" line="112"/>
         <source>Disconnection</source>
         <translation>结束治疗状态</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="111"/>
+        <location filename="../../src/common/common_tr_string.h" line="113"/>
         <source>Cleaning</source>
         <translation>清洁</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="112"/>
+        <location filename="../../src/common/common_tr_string.h" line="114"/>
         <source>Debug</source>
         <translation>调试</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="113"/>
+        <location filename="../../src/common/common_tr_string.h" line="115"/>
         <source>Drain</source>
         <translation>排水</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="115"/>
+        <location filename="../../src/common/common_tr_string.h" line="117"/>
         <source>Free state</source>
         <translation>等待状态</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="116"/>
+        <location filename="../../src/common/common_tr_string.h" line="118"/>
         <source>Self checking</source>
         <translation>自检中</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="117"/>
+        <location filename="../../src/common/common_tr_string.h" line="119"/>
         <source>Self check ok have fluid</source>
         <translation>自检完成,有液</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="118"/>
+        <location filename="../../src/common/common_tr_string.h" line="120"/>
         <source>Self check ok no fluid</source>
         <translation>自检完成,无液</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="119"/>
+        <location filename="../../src/common/common_tr_string.h" line="121"/>
         <source>Preflush runing have fluid</source>
         <translation>预冲中,有液</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="120"/>
+        <location filename="../../src/common/common_tr_string.h" line="122"/>
         <source>Manual preflush have fluid</source>
         <translation>手动预冲有液</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="121"/>
+        <location filename="../../src/common/common_tr_string.h" line="123"/>
         <source>Auto preflush have fluid</source>
         <translation>自动预冲有液</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="122"/>
+        <location filename="../../src/common/common_tr_string.h" line="124"/>
         <source>Online preflush have fluid</source>
         <translation>在线预冲有液</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="124"/>
+        <location filename="../../src/common/common_tr_string.h" line="126"/>
         <source>Preflush runing no fluid</source>
         <translation>预冲中,无液</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="125"/>
+        <location filename="../../src/common/common_tr_string.h" line="127"/>
         <source>Manual preflush no fluid</source>
         <translation>手动预冲无液</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="126"/>
+        <location filename="../../src/common/common_tr_string.h" line="128"/>
         <source>Auto preflush no fluid</source>
         <translation>自动预冲无液</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="127"/>
+        <location filename="../../src/common/common_tr_string.h" line="129"/>
         <source>Online preflush no fluid</source>
         <translation>在线预冲无液</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="129"/>
+        <location filename="../../src/common/common_tr_string.h" line="131"/>
         <source>Preflush stop have fluid</source>
         <translation>预冲停止,有液</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="130"/>
+        <location filename="../../src/common/common_tr_string.h" line="132"/>
         <source>Preflush stop no fluid</source>
         <translation>预冲停止,无液</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="131"/>
+        <location filename="../../src/common/common_tr_string.h" line="133"/>
         <source>Preflush ok have fluid</source>
         <translation>预冲完成,有液</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="132"/>
+        <location filename="../../src/common/common_tr_string.h" line="134"/>
         <source>Preflush ok no fluid</source>
         <translation>预冲完成,无液</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="133"/>
+        <location filename="../../src/common/common_tr_string.h" line="135"/>
         <source>have blood and fluid can treatment</source>
         <translation>有血有液,可进入治疗</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="134"/>
+        <location filename="../../src/common/common_tr_string.h" line="136"/>
         <source>have blood no fluid can treatment</source>
         <translation>有血无液,可进入治疗</translation>
     </message>
@@ -1500,17 +1477,17 @@ period value
         <translation type="obsolete">引血停有液</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="142"/>
+        <location filename="../../src/common/common_tr_string.h" line="144"/>
         <source>Clean runing</source>
         <translation>清洁消毒中</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="143"/>
+        <location filename="../../src/common/common_tr_string.h" line="145"/>
         <source>Clean stop</source>
         <translation>清洁消毒停止</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="144"/>
+        <location filename="../../src/common/common_tr_string.h" line="146"/>
         <source>Clean finished</source>
         <translation>清洁消毒结束</translation>
     </message>
@@ -1519,322 +1496,322 @@ period value
         <translation type="obsolete">回血中 有血</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="74"/>
+        <location filename="../../src/common/common_tr_string.h" line="76"/>
         <source>Prompt:Whether access debug module?</source>
         <translation>是否进入调试模式?</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="75"/>
+        <location filename="../../src/common/common_tr_string.h" line="77"/>
         <source>Super clean filter useable times less 3.</source>
         <translation>超净滤器可用次数小于5次.</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="76"/>
+        <location filename="../../src/common/common_tr_string.h" line="78"/>
         <source>Super clean filter useable times is 0.</source>
         <translation>超净滤器可用次数为0.</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="95"/>
+        <location filename="../../src/common/common_tr_string.h" line="97"/>
         <source>Stop blood pump alarm is processed,please open blood pump!</source>
         <translation>使血泵停止的报警已处理，请打开血泵!</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="104"/>
+        <location filename="../../src/common/common_tr_string.h" line="106"/>
         <source>Heparin is running, please first suspended!</source>
         <translation>肝素泵正运行，请先停止!</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="135"/>
+        <location filename="../../src/common/common_tr_string.h" line="137"/>
         <source>connectP.t no fluid</source>
         <translation>引血无液</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="136"/>
+        <location filename="../../src/common/common_tr_string.h" line="138"/>
         <source>Online connectP.t no fluid</source>
         <translation>在线引血无液</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="137"/>
+        <location filename="../../src/common/common_tr_string.h" line="139"/>
         <source>connectP.t have fluid</source>
         <translation>引血有液</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="138"/>
+        <location filename="../../src/common/common_tr_string.h" line="140"/>
         <source>Online connectP.t have fluid</source>
         <translation>在线引血有液</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="139"/>
+        <location filename="../../src/common/common_tr_string.h" line="141"/>
         <source>connectP.t stop no fluid</source>
         <translation>引血停止无液</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="140"/>
+        <location filename="../../src/common/common_tr_string.h" line="142"/>
         <source>connectP.t stop have fluid</source>
         <translation>引血停止有液</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="146"/>
+        <location filename="../../src/common/common_tr_string.h" line="148"/>
         <source>Bloodreturn have blood</source>
         <translation>回血有液</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="147"/>
+        <location filename="../../src/common/common_tr_string.h" line="149"/>
         <source>Online Bloodreturn have blood</source>
         <translation>在线回血有液</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="148"/>
+        <location filename="../../src/common/common_tr_string.h" line="150"/>
         <source>Bloodreturn runing no blood</source>
         <translation>回血中 无血</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="149"/>
+        <location filename="../../src/common/common_tr_string.h" line="151"/>
         <source>Online Bloodreturn no blood</source>
         <translation>在线回血无液</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="150"/>
+        <location filename="../../src/common/common_tr_string.h" line="152"/>
         <source>Bloodreturn stop have blood</source>
         <translation>回血停止 有血</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="151"/>
+        <location filename="../../src/common/common_tr_string.h" line="153"/>
         <source>Bloodreturn stop no blood</source>
         <translation>回血停止 无血</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="152"/>
+        <location filename="../../src/common/common_tr_string.h" line="154"/>
         <source>Drain runing</source>
         <translation>排空中</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="153"/>
+        <location filename="../../src/common/common_tr_string.h" line="155"/>
         <source>Drain stop</source>
         <translation>排空停止</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="155"/>
+        <location filename="../../src/common/common_tr_string.h" line="157"/>
         <source>Water to prepare</source>
         <translation>水路准备</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="156"/>
+        <location filename="../../src/common/common_tr_string.h" line="158"/>
         <source>Dry barrels preflush</source>
         <translation>干粉桶预冲</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="157"/>
+        <location filename="../../src/common/common_tr_string.h" line="159"/>
         <source>DM test</source>
         <translation>水路自检</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="158"/>
+        <location filename="../../src/common/common_tr_string.h" line="160"/>
         <source>DM test ok</source>
         <translation>水路自检OK</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="159"/>
+        <location filename="../../src/common/common_tr_string.h" line="161"/>
         <source>Provincial fluid</source>
         <translation>省液</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="160"/>
+        <location filename="../../src/common/common_tr_string.h" line="162"/>
         <source>Water suspension</source>
         <translation>水路停止</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="161"/>
+        <location filename="../../src/common/common_tr_string.h" line="163"/>
         <source>Provincial fluid and bypass</source>
         <translation>省液 旁路</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="162"/>
+        <location filename="../../src/common/common_tr_string.h" line="164"/>
         <source>Stop fluid</source>
         <translation>停液</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="163"/>
+        <location filename="../../src/common/common_tr_string.h" line="165"/>
         <source>Bypass</source>
         <translation>旁路</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="165"/>
+        <location filename="../../src/common/common_tr_string.h" line="167"/>
         <source>Disinfection preparation</source>
         <translation>清洁准备</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="166"/>
+        <location filename="../../src/common/common_tr_string.h" line="168"/>
         <source>Disinfection preflush</source>
         <translation>消毒前冲洗</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="167"/>
+        <location filename="../../src/common/common_tr_string.h" line="169"/>
         <source>SUCK flush</source>
         <translation>吸消毒液</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="168"/>
+        <location filename="../../src/common/common_tr_string.h" line="170"/>
         <source>Hold</source>
         <translation>滞留</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="169"/>
+        <location filename="../../src/common/common_tr_string.h" line="171"/>
         <source>Loop</source>
         <translation>消毒循环</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="170"/>
+        <location filename="../../src/common/common_tr_string.h" line="172"/>
         <source>After rinse</source>
         <translation>消毒后冲洗</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="171"/>
+        <location filename="../../src/common/common_tr_string.h" line="173"/>
         <source>Cold rinse</source>
         <translation>冷冲洗</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="172"/>
+        <location filename="../../src/common/common_tr_string.h" line="174"/>
         <source>Hot rinse 1</source>
         <translation>热冲洗阶段1</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="173"/>
+        <location filename="../../src/common/common_tr_string.h" line="175"/>
         <source>Hot rinse 2</source>
         <translation>热冲洗阶段2</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="174"/>
+        <location filename="../../src/common/common_tr_string.h" line="176"/>
         <source>Hot rinse 3</source>
         <translation>热冲洗阶段3</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="175"/>
+        <location filename="../../src/common/common_tr_string.h" line="177"/>
         <source>Emptying</source>
         <translation>清洁后排空</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="176"/>
+        <location filename="../../src/common/common_tr_string.h" line="178"/>
         <source>Pipe rinse</source>
         <translation>冲洗进水管</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="177"/>
+        <location filename="../../src/common/common_tr_string.h" line="179"/>
         <source>The CCD suck</source>
         <translation>中央化消入液</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="178"/>
+        <location filename="../../src/common/common_tr_string.h" line="180"/>
         <source>The CCD rinse</source>
         <translation>中央化消冲洗</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="179"/>
+        <location filename="../../src/common/common_tr_string.h" line="181"/>
         <source>The CHD</source>
         <translation>中央热消毒</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="181"/>
+        <location filename="../../src/common/common_tr_string.h" line="183"/>
         <source>NA UF Profile</source>
         <translation>NA+UF曲线</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="182"/>
+        <location filename="../../src/common/common_tr_string.h" line="184"/>
         <source>NA Profile</source>
         <translation>钠曲线</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="185"/>
+        <location filename="../../src/common/common_tr_string.h" line="187"/>
         <source>Cool Rinse</source>
         <translation>冷冲洗</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="186"/>
+        <location filename="../../src/common/common_tr_string.h" line="188"/>
         <source>Hot Rinse</source>
         <translation>热冲洗</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="187"/>
+        <location filename="../../src/common/common_tr_string.h" line="189"/>
         <source>Chemical Citricacid</source>
         <translation>柠檬酸消毒</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="188"/>
+        <location filename="../../src/common/common_tr_string.h" line="190"/>
         <source>Chemical Preacetic</source>
         <translation>过氧乙酸消毒</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="189"/>
+        <location filename="../../src/common/common_tr_string.h" line="191"/>
         <source>Chemical-3</source>
         <translation>化学消毒3</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="190"/>
+        <location filename="../../src/common/common_tr_string.h" line="192"/>
         <source>Hot Chemical</source>
         <translation>热化学消毒</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="191"/>
+        <location filename="../../src/common/common_tr_string.h" line="193"/>
         <source>Hot Clean</source>
         <translation>纯热消毒</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="193"/>
+        <location filename="../../src/common/common_tr_string.h" line="195"/>
         <source>HD DoubleNeedle</source>
         <translation>HD双针</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="194"/>
+        <location filename="../../src/common/common_tr_string.h" line="196"/>
         <source>ISO DoubleNeedle</source>
         <translation>ISO双针</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="195"/>
+        <location filename="../../src/common/common_tr_string.h" line="197"/>
         <source>HDFonline</source>
         <translation>HDF在线</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="196"/>
+        <location filename="../../src/common/common_tr_string.h" line="198"/>
         <source>HFonline</source>
         <translation>HF在线</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="197"/>
+        <location filename="../../src/common/common_tr_string.h" line="199"/>
         <source>PE/PH</source>
         <translation>PE/PH</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="198"/>
+        <location filename="../../src/common/common_tr_string.h" line="200"/>
         <source>HD SNSP</source>
         <translation>HD单针单泵</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="199"/>
+        <location filename="../../src/common/common_tr_string.h" line="201"/>
         <source>HD SNDP</source>
         <translation>HD单针双泵</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="200"/>
+        <location filename="../../src/common/common_tr_string.h" line="202"/>
         <source>ISO SNSP</source>
         <translation>ISO单针单泵</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="201"/>
+        <location filename="../../src/common/common_tr_string.h" line="203"/>
         <source>ISO SNDP</source>
         <translation>ISO单针双泵</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="203"/>
+        <location filename="../../src/common/common_tr_string.h" line="205"/>
         <source>Pre Dilute</source>
         <translation>前稀释</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="204"/>
+        <location filename="../../src/common/common_tr_string.h" line="206"/>
         <source>Post Dilute</source>
         <translation>后稀释</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="205"/>
+        <location filename="../../src/common/common_tr_string.h" line="207"/>
         <source>None</source>
         <translation>无</translation>
     </message>
@@ -1847,1669 +1824,1768 @@ period value
         <translation type="obsolete">肝素曲线</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="207"/>
+        <location filename="../../src/common/common_tr_string.h" line="209"/>
         <source>DiaFlow Profile</source>
         <translation>透析液曲线</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="208"/>
+        <location filename="../../src/common/common_tr_string.h" line="210"/>
         <source>Heparin Profile</source>
         <translation>肝素曲线</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="209"/>
+        <location filename="../../src/common/common_tr_string.h" line="211"/>
         <source>Cond Profile</source>
         <translation>电导曲线</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="210"/>
+        <location filename="../../src/common/common_tr_string.h" line="212"/>
         <source>Temp Profile</source>
         <translation>温度曲线</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="211"/>
+        <location filename="../../src/common/common_tr_string.h" line="213"/>
         <source>HCO3 Profile</source>
         <translation>HCO3曲线</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="213"/>
+        <location filename="../../src/common/common_tr_string.h" line="215"/>
         <source>You can set a maximum of 6 time period curves !</source>
         <translation>最多可以设置6个时间段曲线 !</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="214"/>
+        <location filename="../../src/common/common_tr_string.h" line="216"/>
         <source>Addition</source>
         <translation>添加</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="215"/>
+        <location filename="../../src/common/common_tr_string.h" line="217"/>
         <source>Reset</source>
         <translation>重设</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="216"/>
+        <location filename="../../src/common/common_tr_string.h" line="218"/>
         <source>Start Time:</source>
         <translation>开始时间:</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="217"/>
+        <location filename="../../src/common/common_tr_string.h" line="219"/>
         <source>End Time:</source>
         <translation>结束时间:</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="219"/>
+        <location filename="../../src/common/common_tr_string.h" line="221"/>
         <source>IC card reading...</source>
         <translation>IC 卡正在读取中...</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="220"/>
+        <location filename="../../src/common/common_tr_string.h" line="222"/>
         <source>IC card writing...</source>
         <translation>IC 卡正在写入中...</translation>
     </message>
     <message>
+        <location filename="../../src/common/common_tr_string.h" line="223"/>
         <source>male</source>
-        <translation type="obsolete">男</translation>
+        <translation>男</translation>
     </message>
     <message>
+        <location filename="../../src/common/common_tr_string.h" line="224"/>
         <source>female</source>
-        <translation type="obsolete">女</translation>
+        <translation>女</translation>
     </message>
     <message>
+        <location filename="../../src/common/common_tr_string.h" line="225"/>
         <source>renal medicine</source>
-        <translation type="obsolete">肾内科</translation>
+        <translation>肾内科</translation>
     </message>
     <message>
+        <location filename="../../src/common/common_tr_string.h" line="226"/>
         <source>endocrine</source>
-        <translation type="obsolete">内分泌</translation>
+        <translation>内分泌</translation>
     </message>
     <message>
+        <location filename="../../src/common/common_tr_string.h" line="227"/>
         <source>renal failure</source>
-        <translation type="obsolete">肾衰竭</translation>
+        <translation>肾衰竭</translation>
     </message>
     <message>
+        <location filename="../../src/common/common_tr_string.h" line="228"/>
         <source>uremia</source>
-        <translation type="obsolete">尿毒症</translation>
+        <translation>尿毒症</translation>
     </message>
     <message>
+        <location filename="../../src/common/common_tr_string.h" line="230"/>
         <source>Pulse AVG</source>
-        <translation type="obsolete">平均脉搏</translation>
+        <translation>平均脉搏</translation>
     </message>
     <message>
+        <location filename="../../src/common/common_tr_string.h" line="231"/>
         <source>SYS AVG</source>
-        <translation type="obsolete">平均收缩压</translation>
+        <translation>平均收缩压</translation>
     </message>
     <message>
+        <location filename="../../src/common/common_tr_string.h" line="232"/>
         <source>DIA AVG</source>
-        <translation type="obsolete">平均舒张压</translation>
+        <translation>平均舒张压</translation>
     </message>
     <message>
+        <location filename="../../src/common/common_tr_string.h" line="233"/>
         <source>AP AVG</source>
-        <translation type="obsolete">平均动脉压</translation>
+        <translation>平均动脉压</translation>
     </message>
     <message>
+        <location filename="../../src/common/common_tr_string.h" line="234"/>
         <source>VP AVG</source>
-        <translation type="obsolete">平均静脉压</translation>
+        <translation>平均静脉压</translation>
     </message>
     <message>
+        <location filename="../../src/common/common_tr_string.h" line="235"/>
         <source>TMP AVG</source>
-        <translation type="obsolete">平均跨膜压</translation>
+        <translation>平均跨膜压</translation>
     </message>
     <message>
+        <location filename="../../src/common/common_tr_string.h" line="237"/>
         <source>AP</source>
-        <translation type="obsolete">动脉压</translation>
+        <translation>动脉压</translation>
     </message>
     <message>
+        <location filename="../../src/common/common_tr_string.h" line="238"/>
         <source>VP</source>
-        <translation type="obsolete">静脉压</translation>
+        <translation>静脉压</translation>
     </message>
     <message>
+        <location filename="../../src/common/common_tr_string.h" line="239"/>
         <source>TMP</source>
-        <translation type="obsolete">跨膜压</translation>
+        <translation>跨膜压</translation>
     </message>
     <message>
+        <location filename="../../src/common/common_tr_string.h" line="248"/>
         <source>SUB Volume</source>
-        <translation type="obsolete">置换量</translation>
+        <translation>置换量</translation>
     </message>
     <message>
+        <location filename="../../src/common/common_tr_string.h" line="249"/>
         <source>Heparin Volume</source>
-        <translation type="obsolete">肝素量</translation>
+        <translation>肝素量</translation>
     </message>
     <message>
+        <location filename="../../src/common/common_tr_string.h" line="251"/>
         <source>Treatment mode</source>
-        <translation type="obsolete">治疗方式</translation>
+        <translation>治疗方式</translation>
     </message>
     <message>
+        <location filename="../../src/common/common_tr_string.h" line="252"/>
         <source>Profile Mode</source>
-        <translation type="obsolete">曲线模式</translation>
+        <translation>曲线模式</translation>
     </message>
     <message>
+        <location filename="../../src/common/common_tr_string.h" line="253"/>
         <source>Write</source>
-        <translation type="obsolete">写入</translation>
+        <translation>写入</translation>
     </message>
     <message>
+        <location filename="../../src/common/common_tr_string.h" line="254"/>
         <source>Read</source>
-        <translation type="obsolete">读取</translation>
+        <translation>读取</translation>
     </message>
     <message>
+        <location filename="../../src/common/common_tr_string.h" line="255"/>
         <source>Choose</source>
-        <translation type="obsolete">选择</translation>
+        <translation>选择</translation>
     </message>
     <message>
+        <location filename="../../src/common/common_tr_string.h" line="256"/>
         <source>Data Table</source>
-        <translation type="obsolete">数据表格</translation>
+        <translation>数据表格</translation>
     </message>
     <message>
+        <location filename="../../src/common/common_tr_string.h" line="258"/>
         <source>patientMessage</source>
-        <translation type="obsolete">病人信息</translation>
+        <translation>病人信息</translation>
     </message>
     <message>
+        <location filename="../../src/common/common_tr_string.h" line="260"/>
         <source>Cure Times</source>
-        <translation type="obsolete">治疗次数</translation>
+        <translation>治疗次数</translation>
     </message>
     <message>
+        <location filename="../../src/common/common_tr_string.h" line="261"/>
         <source>Pre Times</source>
-        <translation type="obsolete">上一次</translation>
+        <translation>上一次</translation>
     </message>
     <message>
+        <location filename="../../src/common/common_tr_string.h" line="262"/>
         <source>Nxt Times</source>
-        <translation type="obsolete">下一次</translation>
+        <translation>下一次</translation>
     </message>
     <message>
+        <location filename="../../src/common/common_tr_string.h" line="264"/>
         <source>Press profile</source>
-        <translation type="obsolete">压力记录曲线</translation>
+        <translation>压力记录曲线</translation>
     </message>
     <message>
+        <location filename="../../src/common/common_tr_string.h" line="265"/>
         <source>Press data</source>
-        <translation type="obsolete">压力记录数据</translation>
+        <translation>压力记录数据</translation>
     </message>
     <message>
+        <location filename="../../src/common/common_tr_string.h" line="267"/>
         <source>BloodPress profile</source>
-        <translation type="obsolete">血压记录曲线</translation>
+        <translation>血压记录曲线</translation>
     </message>
     <message>
+        <location filename="../../src/common/common_tr_string.h" line="268"/>
         <source>BloodPress data</source>
-        <translation type="obsolete">血压记录数据</translation>
+        <translation>血压记录数据</translation>
     </message>
     <message>
+        <location filename="../../src/common/common_tr_string.h" line="273"/>
         <source>This id number for currently treatment</source>
-        <translation type="obsolete">当前进行治疗的ID号</translation>
+        <translation>当前进行治疗的ID号</translation>
     </message>
     <message>
+        <location filename="../../src/common/common_tr_string.h" line="275"/>
         <source>times</source>
-        <translation type="obsolete">次数</translation>
+        <translation>次数</translation>
     </message>
     <message>
+        <location filename="../../src/common/common_tr_string.h" line="276"/>
         <source>date</source>
-        <translation type="obsolete">日期</translation>
+        <translation>日期</translation>
     </message>
     <message>
+        <location filename="../../src/common/common_tr_string.h" line="243"/>
+        <location filename="../../src/common/common_tr_string.h" line="277"/>
         <source>Temp</source>
-        <translation type="obsolete">温度</translation>
+        <translation>温度</translation>
     </message>
     <message>
+        <location filename="../../src/common/common_tr_string.h" line="46"/>
+        <source>This profile already cancel!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/common/common_tr_string.h" line="57"/>
+        <source>Are you sure to cancel?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/common/common_tr_string.h" line="242"/>
+        <source>Time(H)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/common/common_tr_string.h" line="244"/>
+        <source>Na+</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/common/common_tr_string.h" line="245"/>
+        <source>HCO3</source>
+        <translation type="unfinished">碳酸氢根 {3?}</translation>
+    </message>
+    <message>
+        <location filename="../../src/common/common_tr_string.h" line="246"/>
+        <source>UF goal</source>
+        <translation type="unfinished">超滤目标</translation>
+    </message>
+    <message>
+        <location filename="../../src/common/common_tr_string.h" line="247"/>
+        <source>Blood Flow</source>
+        <translation type="unfinished">血泵流速</translation>
+    </message>
+    <message>
+        <location filename="../../src/common/common_tr_string.h" line="250"/>
+        <source>Heparin rate</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/common/common_tr_string.h" line="270"/>
+        <source>ID</source>
+        <translation type="unfinished">序号</translation>
+    </message>
+    <message>
+        <location filename="../../src/common/common_tr_string.h" line="271"/>
+        <source>Find</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/common/common_tr_string.h" line="278"/>
         <source>Cond</source>
-        <translation type="obsolete">电导</translation>
+        <translation>电导</translation>
     </message>
     <message>
+        <location filename="../../src/common/common_tr_string.h" line="279"/>
         <source>UFFlow</source>
-        <translation type="obsolete">超滤速度</translation>
+        <translation>超滤速度</translation>
     </message>
     <message>
+        <location filename="../../src/common/common_tr_string.h" line="280"/>
         <source>BPFlow</source>
-        <translation type="obsolete">血泵速度</translation>
+        <translation>血泵速度</translation>
     </message>
     <message>
+        <location filename="../../src/common/common_tr_string.h" line="281"/>
         <source>Pulse</source>
-        <translation type="obsolete">脉搏</translation>
+        <translation>脉搏</translation>
     </message>
     <message>
+        <location filename="../../src/common/common_tr_string.h" line="282"/>
         <source>SYS/DIA</source>
-        <translation type="obsolete">收缩/舒张</translation>
+        <translation>收缩/舒张</translation>
     </message>
     <message>
+        <location filename="../../src/common/common_tr_string.h" line="283"/>
         <source>First Page</source>
-        <translation type="obsolete">第一页</translation>
+        <translation>第一页</translation>
     </message>
     <message>
+        <location filename="../../src/common/common_tr_string.h" line="284"/>
         <source>Pre Page</source>
-        <translation type="obsolete">上一页</translation>
+        <translation>上一页</translation>
     </message>
     <message>
+        <location filename="../../src/common/common_tr_string.h" line="285"/>
         <source>Nxt Page</source>
-        <translation type="obsolete">下一页</translation>
+        <translation>下一页</translation>
     </message>
     <message>
+        <location filename="../../src/common/common_tr_string.h" line="286"/>
         <source>Last Page</source>
-        <translation type="obsolete">最后页</translation>
+        <translation>最后页</translation>
     </message>
     <message>
+        <location filename="../../src/common/common_tr_string.h" line="288"/>
         <source>SYS</source>
-        <translation type="obsolete">收缩压</translation>
+        <translation>收缩压</translation>
     </message>
     <message>
+        <location filename="../../src/common/common_tr_string.h" line="289"/>
         <source>DIA</source>
-        <translation type="obsolete">舒张压</translation>
+        <translation>舒张压</translation>
     </message>
     <message>
+        <location filename="../../src/common/common_tr_string.h" line="291"/>
         <source>Max Value</source>
-        <translation type="obsolete">最大值</translation>
+        <translation>最大值</translation>
     </message>
     <message>
+        <location filename="../../src/common/common_tr_string.h" line="292"/>
         <source>Min Value</source>
-        <translation type="obsolete">最小值</translation>
+        <translation>最小值</translation>
     </message>
     <message>
+        <location filename="../../src/common/common_tr_string.h" line="293"/>
         <source>Avg Value</source>
-        <translation type="obsolete">平均值</translation>
+        <translation>平均值</translation>
     </message>
     <message>
+        <location filename="../../src/common/common_tr_string.h" line="295"/>
         <source>Data Analysis</source>
-        <translation type="obsolete">数据分析</translation>
+        <translation>数据分析</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="222"/>
+        <location filename="../../src/common/common_tr_string.h" line="297"/>
         <source>standby mode 01</source>
         <translation>第一待机模式</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="223"/>
+        <location filename="../../src/common/common_tr_string.h" line="298"/>
         <source>standby mode 02</source>
         <translation>第二待机模式</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="224"/>
+        <location filename="../../src/common/common_tr_string.h" line="299"/>
         <source>No standby mode runing</source>
         <translation>无待机模式运行</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="226"/>
+        <location filename="../../src/common/common_tr_string.h" line="301"/>
         <source>Treatment model has not changed!</source>
         <translation>治疗模式没有改变！</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="229"/>
+        <location filename="../../src/common/common_tr_string.h" line="304"/>
         <source>UF volume can not exceed the remaining!</source>
         <translation>不能超过剩余超滤量！</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="230"/>
+        <location filename="../../src/common/common_tr_string.h" line="305"/>
         <source>UF volume can not less than finish volume!</source>
         <translation>不能少于已完成量!</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="231"/>
+        <location filename="../../src/common/common_tr_string.h" line="306"/>
         <source>The time can not exceed the remaining time!</source>
         <translation>不能超过剩余治疗时间!</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="232"/>
+        <location filename="../../src/common/common_tr_string.h" line="307"/>
         <source>The time can not less than residue time!</source>
         <translation>不能小于已进行时间!</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="233"/>
+        <location filename="../../src/common/common_tr_string.h" line="308"/>
         <source>The parameters afresh,and take effect!</source>
         <translation>参数更新，并生效!</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="234"/>
+        <location filename="../../src/common/common_tr_string.h" line="309"/>
         <source>Whether to start ISO?</source>
         <translation>是否开始ISO？</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="236"/>
+        <location filename="../../src/common/common_tr_string.h" line="311"/>
         <source>Whether to start this model?</source>
         <translation>是否开始该模式治疗?</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="237"/>
+        <location filename="../../src/common/common_tr_string.h" line="312"/>
         <source>The subspump goal reach,stop!</source>
         <translation>置换目标达到，已停泵!</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="240"/>
+        <location filename="../../src/common/common_tr_string.h" line="315"/>
         <source>ISO treatment ends, have switch to </source>
         <translation>ISO治疗结束，已切换到</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="241"/>
+        <location filename="../../src/common/common_tr_string.h" line="316"/>
         <source>Can not switch to PE in treatment runing!</source>
         <translation>治疗中不能切换到PE模式!</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="245"/>
+        <location filename="../../src/common/common_tr_string.h" line="320"/>
         <source>Warning:Do You want reset all Filter data ?</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="246"/>
+        <location filename="../../src/common/common_tr_string.h" line="321"/>
         <source> Reset  Filter data  or dry filter </source>
         <translation>重设或者排空超净滤器</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="247"/>
+        <location filename="../../src/common/common_tr_string.h" line="322"/>
         <source>Change Filter1</source>
         <translation>超净滤器1</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="248"/>
+        <location filename="../../src/common/common_tr_string.h" line="323"/>
         <source>Change Filter2</source>
         <translation>超净滤器2</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="251"/>
+        <location filename="../../src/common/common_tr_string.h" line="326"/>
         <source>The status of the mastercontrol is abnormal,please try again!</source>
         <translation>主控板状态异常，请重新进行!</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="256"/>
+        <location filename="../../src/common/common_tr_string.h" line="331"/>
         <source>Upper Arterial pressure alarm</source>
         <translation>动脉压上限</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="257"/>
+        <location filename="../../src/common/common_tr_string.h" line="332"/>
         <source>Upper Arterial pressure alarm !</source>
         <translation>动脉压上限！</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="259"/>
+        <location filename="../../src/common/common_tr_string.h" line="334"/>
         <source>Upper venous pressure alarm</source>
         <translation>静脉压上限</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="260"/>
+        <location filename="../../src/common/common_tr_string.h" line="335"/>
         <source>Upper venous pressure alarm !</source>
         <translation>静脉压上限！</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="262"/>
+        <location filename="../../src/common/common_tr_string.h" line="337"/>
         <source>Upper TMP alarm</source>
         <translation>跨膜压上限</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="263"/>
+        <location filename="../../src/common/common_tr_string.h" line="338"/>
         <source>Upper TMP alarm !</source>
         <translation>跨膜压上限！</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="265"/>
+        <location filename="../../src/common/common_tr_string.h" line="340"/>
         <source>Upper temperature alarm</source>
         <translation>温度上限</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="266"/>
+        <location filename="../../src/common/common_tr_string.h" line="341"/>
         <source>Upper temperature alarm !</source>
         <translation>温度上限报警！</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="268"/>
+        <location filename="../../src/common/common_tr_string.h" line="343"/>
         <source>Lower Arterial pressure alarm</source>
         <translation>动脉压下限</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="269"/>
+        <location filename="../../src/common/common_tr_string.h" line="344"/>
         <source>Lower Arterial pressure alarm !</source>
         <translation>动脉压下限！</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="271"/>
+        <location filename="../../src/common/common_tr_string.h" line="346"/>
         <source>Lower venous pressure alarm</source>
         <translation>静脉压下限</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="272"/>
+        <location filename="../../src/common/common_tr_string.h" line="347"/>
         <source>Lower venous pressure alarm !</source>
         <translation>静脉压下限！</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="274"/>
+        <location filename="../../src/common/common_tr_string.h" line="349"/>
         <source>Lower TMP alarm</source>
         <translation>跨膜压下限</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="275"/>
+        <location filename="../../src/common/common_tr_string.h" line="350"/>
         <source>Lower TMP alarm !</source>
         <translation>跨膜压下限！</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="277"/>
+        <location filename="../../src/common/common_tr_string.h" line="352"/>
         <source>Lower temperature alarm</source>
         <translation>温度下限</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="278"/>
+        <location filename="../../src/common/common_tr_string.h" line="353"/>
         <source>Lower temperature alarm !</source>
         <translation>温度下限报警！</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="280"/>
+        <location filename="../../src/common/common_tr_string.h" line="355"/>
         <source>Blood level alarm</source>
         <translation>液位报警</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="281"/>
+        <location filename="../../src/common/common_tr_string.h" line="356"/>
         <source>Blood level alarm !</source>
         <translation>液位报警！</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="283"/>
+        <location filename="../../src/common/common_tr_string.h" line="358"/>
         <source>Arteries Bubble alarm</source>
         <translation>动脉气泡</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="284"/>
+        <location filename="../../src/common/common_tr_string.h" line="359"/>
         <source>Arteries Bubble alarm !</source>
         <translation>动脉气泡！</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="286"/>
+        <location filename="../../src/common/common_tr_string.h" line="361"/>
         <source>No blood alarm</source>
         <translation>无血报警</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="287"/>
+        <location filename="../../src/common/common_tr_string.h" line="362"/>
         <source>No blood alarm !</source>
         <translation>无血报警！</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="289"/>
+        <location filename="../../src/common/common_tr_string.h" line="364"/>
         <source>Vein Bubble alarm</source>
         <translation>静脉气泡</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="290"/>
+        <location filename="../../src/common/common_tr_string.h" line="365"/>
         <source>Vein Bubble alarm !</source>
         <translation>静脉气泡！</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="292"/>
+        <location filename="../../src/common/common_tr_string.h" line="367"/>
         <source>No1 blood pump out of control</source>
         <translation>血泵1失控</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="414"/>
+        <location filename="../../src/common/common_tr_string.h" line="489"/>
         <source>Set up fluid interface</source>
         <translation>接置换液接口</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="415"/>
+        <location filename="../../src/common/common_tr_string.h" line="490"/>
         <source>Set up corresponding line displacement fluid interface!</source>
         <translation>将相应管路接到置换液接口!</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="418"/>
+        <location filename="../../src/common/common_tr_string.h" line="493"/>
         <source>Remove fluid interface</source>
         <translation>置换液接口管路移除</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="419"/>
+        <location filename="../../src/common/common_tr_string.h" line="494"/>
         <source>Remove the displacement fluid interface line!</source>
         <translation>将置换液接口管路移除!</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="422"/>
+        <location filename="../../src/common/common_tr_string.h" line="497"/>
         <source>Set up fluid flush interface</source>
         <translation>接置换液冲洗接口</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="423"/>
+        <location filename="../../src/common/common_tr_string.h" line="498"/>
         <source>Set up corresponding line displacement fluid flush interface!</source>
         <translation>将相应管路接到置换液冲洗接口!</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="426"/>
+        <location filename="../../src/common/common_tr_string.h" line="501"/>
         <source>Remove fluid flush interface</source>
         <translation>置换液冲洗接口移除</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="427"/>
+        <location filename="../../src/common/common_tr_string.h" line="502"/>
         <source>Remove the replacement wash liquid interface line!</source>
         <translation>将置换液冲洗接口管路移除!</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="432"/>
+        <location filename="../../src/common/common_tr_string.h" line="507"/>
         <source>CLPV error</source>
         <translation>静脉管夹出错</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="435"/>
+        <location filename="../../src/common/common_tr_string.h" line="510"/>
         <source>CLPA error</source>
         <translation>动脉管夹出错</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="438"/>
+        <location filename="../../src/common/common_tr_string.h" line="513"/>
         <source>ADPV error</source>
         <translation>静脉气泡故障</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="441"/>
+        <location filename="../../src/common/common_tr_string.h" line="516"/>
         <source>ADPA error</source>
         <translation>动脉气泡故障</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="444"/>
+        <location filename="../../src/common/common_tr_string.h" line="519"/>
         <source>LDS error</source>
         <translation>液位探测器出错</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="447"/>
+        <location filename="../../src/common/common_tr_string.h" line="522"/>
         <source>PA error</source>
         <translation>动脉压探测器出错</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="450"/>
+        <location filename="../../src/common/common_tr_string.h" line="525"/>
         <source>PV error</source>
         <translation>静脉压探测器出错</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="453"/>
+        <location filename="../../src/common/common_tr_string.h" line="528"/>
         <source>TMP error</source>
         <translation>跨膜压探测器出错</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="456"/>
+        <location filename="../../src/common/common_tr_string.h" line="531"/>
         <source>BLM error</source>
         <translation>漏血探测器出错</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="459"/>
+        <location filename="../../src/common/common_tr_string.h" line="534"/>
         <source>BOM error</source>
         <translation>血氧模块出错</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="462"/>
+        <location filename="../../src/common/common_tr_string.h" line="537"/>
         <source>BPM error</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="465"/>
-        <location filename="../../src/common/common_tr_string.h" line="468"/>
-        <location filename="../../src/common/common_tr_string.h" line="471"/>
+        <location filename="../../src/common/common_tr_string.h" line="540"/>
+        <location filename="../../src/common/common_tr_string.h" line="543"/>
+        <location filename="../../src/common/common_tr_string.h" line="546"/>
         <source>BLOOD1 error</source>
         <translation>血泵1出错</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="474"/>
-        <location filename="../../src/common/common_tr_string.h" line="477"/>
-        <location filename="../../src/common/common_tr_string.h" line="480"/>
+        <location filename="../../src/common/common_tr_string.h" line="549"/>
+        <location filename="../../src/common/common_tr_string.h" line="552"/>
+        <location filename="../../src/common/common_tr_string.h" line="555"/>
         <source>BLOOD2 error</source>
         <translation>血泵2出错</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="475"/>
+        <location filename="../../src/common/common_tr_string.h" line="550"/>
         <source>NO2 blood pump is out of control!</source>
         <translation>血泵2失控!</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="478"/>
+        <location filename="../../src/common/common_tr_string.h" line="553"/>
         <source>NO2 blood pump no feedback!</source>
         <translation>血泵2无反馈信号!</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="481"/>
+        <location filename="../../src/common/common_tr_string.h" line="556"/>
         <source>NO2 blood pump selfcheck fail!</source>
         <translation>血泵2自检失败!</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="483"/>
+        <location filename="../../src/common/common_tr_string.h" line="558"/>
         <source>Heparin error</source>
         <translation>肝素泵出错</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="488"/>
+        <location filename="../../src/common/common_tr_string.h" line="563"/>
         <source>N7 error</source>
         <translation>N7出错</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="491"/>
+        <location filename="../../src/common/common_tr_string.h" line="566"/>
         <source>N9 error</source>
         <translation>N9出错</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="494"/>
+        <location filename="../../src/common/common_tr_string.h" line="569"/>
         <source>N10 error</source>
         <translation>N10出错</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="497"/>
+        <location filename="../../src/common/common_tr_string.h" line="572"/>
         <source>N15 error</source>
         <translation>N15出错</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="500"/>
+        <location filename="../../src/common/common_tr_string.h" line="575"/>
         <source>N5 error</source>
         <translation>N5出错</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="511"/>
+        <location filename="../../src/common/common_tr_string.h" line="586"/>
         <source>some error</source>
         <translation>其他错误</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="512"/>
+        <location filename="../../src/common/common_tr_string.h" line="587"/>
         <source>Please check alarm code!</source>
         <translation>请检查报警代码！</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="536"/>
+        <location filename="../../src/common/common_tr_string.h" line="611"/>
         <source>N3 communication failure</source>
         <translation>N3通信失败</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="539"/>
+        <location filename="../../src/common/common_tr_string.h" line="614"/>
         <source>N5 communication failure</source>
         <translation>N5通信失败</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="542"/>
+        <location filename="../../src/common/common_tr_string.h" line="617"/>
         <source>N9 communication failure</source>
         <translation>N9通信失败</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="545"/>
+        <location filename="../../src/common/common_tr_string.h" line="620"/>
         <source>N10 communication failure</source>
         <translation>N10通信失败</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="548"/>
+        <location filename="../../src/common/common_tr_string.h" line="623"/>
         <source>N15 communication failure</source>
         <translation>N15通信失败</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="551"/>
+        <location filename="../../src/common/common_tr_string.h" line="626"/>
         <source>N7 communication failure</source>
         <translation>N7通信失败</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="554"/>
+        <location filename="../../src/common/common_tr_string.h" line="629"/>
         <source>The patient calls</source>
         <translation>病人呼叫</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="555"/>
+        <location filename="../../src/common/common_tr_string.h" line="630"/>
         <source>Patients with emergency call !</source>
         <translation>病人紧急呼叫!</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="557"/>
+        <location filename="../../src/common/common_tr_string.h" line="632"/>
         <source>water working abnormal</source>
         <translation>水路工作异常</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="558"/>
+        <location filename="../../src/common/common_tr_string.h" line="633"/>
         <source>Master plate water problem!</source>
         <translation>主控板水路状态出错!</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="560"/>
+        <location filename="../../src/common/common_tr_string.h" line="635"/>
         <source>Single time alarm</source>
         <translation>单次定时报警</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="561"/>
+        <location filename="../../src/common/common_tr_string.h" line="636"/>
         <source>Single timeout !</source>
         <translation>单次定时时间到</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="563"/>
+        <location filename="../../src/common/common_tr_string.h" line="638"/>
         <source>Cycle time alarm</source>
         <translation>循环定时报警</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="564"/>
+        <location filename="../../src/common/common_tr_string.h" line="639"/>
         <source>Cycle timeout !</source>
         <translation>循环定时时间到</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="567"/>
+        <location filename="../../src/common/common_tr_string.h" line="642"/>
         <source>Manual preflush state error</source>
         <translation>手动预冲状态出错</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="568"/>
+        <location filename="../../src/common/common_tr_string.h" line="643"/>
         <source>Master plate manual preflush state error!</source>
         <translation>主控板手动预冲状态出错!</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="570"/>
+        <location filename="../../src/common/common_tr_string.h" line="645"/>
         <source>Auto preflush state error</source>
         <translation>自动预冲状态出错</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="571"/>
+        <location filename="../../src/common/common_tr_string.h" line="646"/>
         <source>Master plate auto preflush state error!</source>
         <translation>主控板自动预冲状态出错!</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="573"/>
+        <location filename="../../src/common/common_tr_string.h" line="648"/>
         <source>Online preflush state error</source>
         <translation>在线预冲状态错误</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="574"/>
+        <location filename="../../src/common/common_tr_string.h" line="649"/>
         <source>Master plate online preflush state error!</source>
         <translation>主控板在线自动预冲状态出错!</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="576"/>
+        <location filename="../../src/common/common_tr_string.h" line="651"/>
         <source>Connect P.t state error</source>
         <translation>引血状态出错</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="577"/>
+        <location filename="../../src/common/common_tr_string.h" line="652"/>
         <source>Master plate Connect P.t state error!</source>
         <translation>主控板引血状态出错!</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="579"/>
+        <location filename="../../src/common/common_tr_string.h" line="654"/>
         <source>Online connect P.t state error</source>
         <translation>在线引血状态错误</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="580"/>
+        <location filename="../../src/common/common_tr_string.h" line="655"/>
         <source>Master plate Online connect P.t state error!</source>
         <translation>主控板在线引血状态出错!</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="582"/>
+        <location filename="../../src/common/common_tr_string.h" line="657"/>
         <source>Return blood state error</source>
         <translation>回血状态错误</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="583"/>
+        <location filename="../../src/common/common_tr_string.h" line="658"/>
         <source>Master plate Return blood state error!</source>
         <translation>主控板回血状态出错!</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="585"/>
+        <location filename="../../src/common/common_tr_string.h" line="660"/>
         <source>Online return blood state error</source>
         <translation>在线回血状态错误</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="586"/>
+        <location filename="../../src/common/common_tr_string.h" line="661"/>
         <source>Master plate Online return blood state error!</source>
         <translation>主控板在线回血状态出错!</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="622"/>
+        <location filename="../../src/common/common_tr_string.h" line="697"/>
         <source>XML file error</source>
         <translation>XML文件错误</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="623"/>
+        <location filename="../../src/common/common_tr_string.h" line="698"/>
         <source>xml file read error,the param is:</source>
         <translation>以下xml文件参数读取错误：</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="644"/>
+        <location filename="../../src/common/common_tr_string.h" line="719"/>
         <source>Cond Record Data</source>
         <translation>电导记录数据</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="645"/>
+        <location filename="../../src/common/common_tr_string.h" line="720"/>
         <source>Temp Record Data</source>
         <translation>温度记录数据</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="658"/>
+        <location filename="../../src/common/common_tr_string.h" line="733"/>
         <source>Save success!</source>
         <translation>保存成功</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="659"/>
+        <location filename="../../src/common/common_tr_string.h" line="734"/>
         <source>Whether to Restore xml file?</source>
         <translation>是否恢复原XML文件?</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="664"/>
         <source>UF_Goal</source>
-        <translation>超滤目标值</translation>
+        <translation type="obsolete">超滤目标值</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="665"/>
+        <location filename="../../src/common/common_tr_string.h" line="738"/>
         <source>UF_Rate</source>
         <translation>超滤速度</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="666"/>
+        <location filename="../../src/common/common_tr_string.h" line="739"/>
         <source>UF_Time</source>
         <translation>超滤时间</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="667"/>
+        <location filename="../../src/common/common_tr_string.h" line="740"/>
         <source>Earlier_Time</source>
         <translation>提前结束时间</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="668"/>
+        <location filename="../../src/common/common_tr_string.h" line="741"/>
         <source>AutoChange_Limit</source>
         <translation>自动变化限制</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="670"/>
+        <location filename="../../src/common/common_tr_string.h" line="743"/>
         <source>Dia_Temp</source>
         <translation>透析液温度</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="671"/>
+        <location filename="../../src/common/common_tr_string.h" line="744"/>
         <source>Dia_Cond</source>
         <translation>透析液电导</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="672"/>
+        <location filename="../../src/common/common_tr_string.h" line="745"/>
         <source>Dia_Rate</source>
         <translation>透析液流速</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="673"/>
+        <location filename="../../src/common/common_tr_string.h" line="746"/>
         <source>Dia_OnlineRate</source>
         <translation>透析液在线流速</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="675"/>
+        <location filename="../../src/common/common_tr_string.h" line="748"/>
         <source>BP_Width</source>
         <translation>血泵管径</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="676"/>
+        <location filename="../../src/common/common_tr_string.h" line="749"/>
         <source>BP_RateCheckSelf</source>
         <translation>血泵自检速度</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="677"/>
+        <location filename="../../src/common/common_tr_string.h" line="750"/>
         <source>BP_RateThreatMent</source>
         <translation>血泵治疗速度</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="678"/>
+        <location filename="../../src/common/common_tr_string.h" line="751"/>
         <source>BP_RateReturnBlood</source>
         <translation>血泵回血速度</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="679"/>
+        <location filename="../../src/common/common_tr_string.h" line="752"/>
         <source>BP_RatePreflush</source>
         <translation>血泵预冲速度</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="680"/>
+        <location filename="../../src/common/common_tr_string.h" line="753"/>
         <source>BP_RateGetBlood</source>
         <translation>血泵引血速度</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="682"/>
+        <location filename="../../src/common/common_tr_string.h" line="755"/>
         <source>First_Volume</source>
         <translation>首剂量</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="683"/>
         <source>Heparin_Rate</source>
-        <translation>肝素速度</translation>
+        <translation type="obsolete">肝素速度</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="684"/>
+        <location filename="../../src/common/common_tr_string.h" line="757"/>
         <source>Pre_StopTime</source>
         <translation>预先停止时间</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="685"/>
+        <location filename="../../src/common/common_tr_string.h" line="758"/>
         <source>Add_Volume</source>
         <translation>追加量</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="687"/>
+        <location filename="../../src/common/common_tr_string.h" line="760"/>
         <source>SubPump_Flux</source>
         <translation>置换泵流速</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="688"/>
+        <location filename="../../src/common/common_tr_string.h" line="761"/>
         <source>SubPump_Goal</source>
         <translation>置换泵目标</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="689"/>
+        <location filename="../../src/common/common_tr_string.h" line="762"/>
         <source>SubPump_RapidRate</source>
         <translation>快速补液速度</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="691"/>
+        <location filename="../../src/common/common_tr_string.h" line="764"/>
         <source>Hour</source>
         <translation>小时</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="692"/>
+        <location filename="../../src/common/common_tr_string.h" line="765"/>
         <source>Min</source>
         <translation>分钟</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="694"/>
+        <location filename="../../src/common/common_tr_string.h" line="767"/>
         <source>BpRate_First_FiveMin</source>
         <translation>预冲血泵速（前5分钟）</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="695"/>
+        <location filename="../../src/common/common_tr_string.h" line="768"/>
         <source>BpRate</source>
         <translation>预冲血泵速</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="696"/>
+        <location filename="../../src/common/common_tr_string.h" line="769"/>
         <source>Dialyser_Rate</source>
         <translation>透析液流量</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="697"/>
-        <location filename="../../src/common/common_tr_string.h" line="713"/>
+        <location filename="../../src/common/common_tr_string.h" line="770"/>
+        <location filename="../../src/common/common_tr_string.h" line="786"/>
         <source>Preflush_Time</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="698"/>
+        <location filename="../../src/common/common_tr_string.h" line="771"/>
         <source>PF_UF_Rate</source>
         <translation>预冲超滤率</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="699"/>
+        <location filename="../../src/common/common_tr_string.h" line="772"/>
         <source>PF_UF_Volume</source>
         <translation>预冲超滤量</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="700"/>
+        <location filename="../../src/common/common_tr_string.h" line="773"/>
         <source>PF_Volume</source>
         <translation>预冲总量</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="701"/>
+        <location filename="../../src/common/common_tr_string.h" line="774"/>
         <source>BpRate_Conect</source>
         <translation>连接患者时血泵速度</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="702"/>
+        <location filename="../../src/common/common_tr_string.h" line="775"/>
         <source>BpRate_phase1</source>
         <translation>第一阶段血泵速度</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="703"/>
+        <location filename="../../src/common/common_tr_string.h" line="776"/>
         <source>BpRate_phase2</source>
         <translation>第二阶段血泵速度</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="704"/>
+        <location filename="../../src/common/common_tr_string.h" line="777"/>
         <source>BpRate_phase3</source>
         <translation>第三阶段血泵速度</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="705"/>
+        <location filename="../../src/common/common_tr_string.h" line="778"/>
         <source>TMPUp_PF</source>
         <translation>跨膜压上限</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="707"/>
-        <location filename="../../src/common/common_tr_string.h" line="714"/>
+        <location filename="../../src/common/common_tr_string.h" line="780"/>
+        <location filename="../../src/common/common_tr_string.h" line="787"/>
         <source>Loop_Time</source>
         <translation>循环时间</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="710"/>
+        <location filename="../../src/common/common_tr_string.h" line="783"/>
         <source>TargetTemp</source>
         <translation>目标温度</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="711"/>
+        <location filename="../../src/common/common_tr_string.h" line="784"/>
         <source>RealTemp</source>
         <translation>走时温度</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="715"/>
+        <location filename="../../src/common/common_tr_string.h" line="788"/>
         <source>Hold_Time</source>
         <translation>滞留时间</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="716"/>
+        <location filename="../../src/common/common_tr_string.h" line="789"/>
         <source>BackFlush_Time</source>
         <translation>后冲时间</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="717"/>
+        <location filename="../../src/common/common_tr_string.h" line="790"/>
         <source>Flush_Flux</source>
         <translation>冲洗速度</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="718"/>
+        <location filename="../../src/common/common_tr_string.h" line="791"/>
         <source>Loop_Flux</source>
         <translation>循环速度</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="719"/>
+        <location filename="../../src/common/common_tr_string.h" line="792"/>
         <source>Target_Temp</source>
         <translation>目标温度</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="720"/>
+        <location filename="../../src/common/common_tr_string.h" line="793"/>
         <source>Real_Temp</source>
         <translation>走时温度</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="724"/>
+        <location filename="../../src/common/common_tr_string.h" line="797"/>
         <source>Blood Pump</source>
         <translation>血泵</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="725"/>
+        <location filename="../../src/common/common_tr_string.h" line="798"/>
         <source>Sub Pump</source>
         <translation>置换泵（第二血泵）</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="726"/>
+        <location filename="../../src/common/common_tr_string.h" line="799"/>
         <source>Function Pump</source>
         <translation>功能泵</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="727"/>
+        <location filename="../../src/common/common_tr_string.h" line="800"/>
         <source>Heparin Pump</source>
         <translation>肝素泵</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="728"/>
+        <location filename="../../src/common/common_tr_string.h" line="801"/>
         <source>PRESSURE</source>
         <translation>压力</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="729"/>
+        <location filename="../../src/common/common_tr_string.h" line="802"/>
         <source>Air bubblies</source>
         <translation>气泡</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="730"/>
+        <location filename="../../src/common/common_tr_string.h" line="803"/>
         <source>Liquid</source>
         <translation>液位</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="731"/>
+        <location filename="../../src/common/common_tr_string.h" line="804"/>
         <source>BLood monitor</source>
         <translation>漏血检测</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="732"/>
+        <location filename="../../src/common/common_tr_string.h" line="805"/>
         <source>Choke clip</source>
         <translation>阻流夹</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="733"/>
+        <location filename="../../src/common/common_tr_string.h" line="806"/>
         <source>Sound light</source>
         <translation>声光</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="736"/>
+        <location filename="../../src/common/common_tr_string.h" line="809"/>
         <source>Common</source>
         <translation>公共</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="737"/>
+        <location filename="../../src/common/common_tr_string.h" line="810"/>
         <source>No water time</source>
         <translation>无液时间</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="738"/>
+        <location filename="../../src/common/common_tr_string.h" line="811"/>
         <source>Set flow</source>
         <translation>设置流量</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="740"/>
+        <location filename="../../src/common/common_tr_string.h" line="813"/>
         <source>Not revised value</source>
         <translation>未修正值</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="741"/>
+        <location filename="../../src/common/common_tr_string.h" line="814"/>
         <source>Send value</source>
         <translation>发送值</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="742"/>
+        <location filename="../../src/common/common_tr_string.h" line="815"/>
         <source>Show value</source>
         <translation>显示值</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="744"/>
+        <location filename="../../src/common/common_tr_string.h" line="817"/>
         <source>B Temp</source>
         <translation>B液温度</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="745"/>
+        <location filename="../../src/common/common_tr_string.h" line="818"/>
         <source>Mix Temp</source>
         <translation>混合温度</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="746"/>
+        <location filename="../../src/common/common_tr_string.h" line="819"/>
         <source>Outlet Temp</source>
         <translation>出水口温度</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="747"/>
+        <location filename="../../src/common/common_tr_string.h" line="820"/>
         <source>After Temp</source>
         <translation>透后温度</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="748"/>
+        <location filename="../../src/common/common_tr_string.h" line="821"/>
         <source>Heater Temp</source>
         <translation>加热腔温度</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="749"/>
+        <location filename="../../src/common/common_tr_string.h" line="822"/>
         <source>B Cond</source>
         <translation>B液电导</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="750"/>
+        <location filename="../../src/common/common_tr_string.h" line="823"/>
         <source>Mix Cond</source>
         <translation>混合电导</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="751"/>
+        <location filename="../../src/common/common_tr_string.h" line="824"/>
         <source>Outlet Cond</source>
         <translation>出水口电导</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="752"/>
+        <location filename="../../src/common/common_tr_string.h" line="825"/>
         <source>After Cond</source>
         <translation>透后电导</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="753"/>
+        <location filename="../../src/common/common_tr_string.h" line="826"/>
         <source>Disinfect Cond</source>
         <translation>消毒液电导</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="754"/>
+        <location filename="../../src/common/common_tr_string.h" line="827"/>
         <source>BloodLeak</source>
         <translation>漏血检测</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="755"/>
+        <location filename="../../src/common/common_tr_string.h" line="828"/>
         <source>UF Pump</source>
         <translation>超滤泵</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="756"/>
+        <location filename="../../src/common/common_tr_string.h" line="829"/>
         <source>Dialystate Flow</source>
         <translation>透析液流速</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="757"/>
+        <location filename="../../src/common/common_tr_string.h" line="830"/>
         <source>Circulate Pump</source>
         <translation>循环泵</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="758"/>
+        <location filename="../../src/common/common_tr_string.h" line="831"/>
         <source>Before Pump</source>
         <translation>透前泵</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="759"/>
+        <location filename="../../src/common/common_tr_string.h" line="832"/>
         <source>After Pump</source>
         <translation>透后泵</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="760"/>
+        <location filename="../../src/common/common_tr_string.h" line="833"/>
         <source>A Pump</source>
         <translation>A液泵</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="761"/>
+        <location filename="../../src/common/common_tr_string.h" line="834"/>
         <source>B Pump</source>
         <translation>B液泵</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="762"/>
+        <location filename="../../src/common/common_tr_string.h" line="835"/>
         <source>Valve Check</source>
         <translation>阀门检测</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="765"/>
+        <location filename="../../src/common/common_tr_string.h" line="838"/>
         <source>Set Formula</source>
         <translation>配方设定</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="766"/>
+        <location filename="../../src/common/common_tr_string.h" line="839"/>
         <source>Front-back Pump</source>
         <translation>透前透后泵</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="767"/>
+        <location filename="../../src/common/common_tr_string.h" line="840"/>
         <source>Degassing Pump</source>
         <translation>除气泵</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="769"/>
+        <location filename="../../src/common/common_tr_string.h" line="842"/>
         <source>AB Pump</source>
         <translation>AB泵</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="770"/>
+        <location filename="../../src/common/common_tr_string.h" line="843"/>
         <source>Temp Adjust</source>
         <translation>温度调试</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="771"/>
+        <location filename="../../src/common/common_tr_string.h" line="844"/>
         <source>Cond Adjust</source>
         <translation>电导调试</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="785"/>
+        <location filename="../../src/common/common_tr_string.h" line="858"/>
         <source>Control Water Graph</source>
         <translation>可控水路图</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="815"/>
+        <location filename="../../src/common/common_tr_string.h" line="888"/>
         <source>If there a bloodleak alarm:</source>
         <translation>是否有漏血报警:</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="816"/>
+        <location filename="../../src/common/common_tr_string.h" line="889"/>
         <source>Blood Leak Limit</source>
         <translation>漏血报警限值</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="817"/>
+        <location filename="../../src/common/common_tr_string.h" line="890"/>
         <source>Set BLood Leak Limit</source>
         <translation>设置漏血报警限值</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="839"/>
-        <location filename="../../src/common/common_tr_string.h" line="851"/>
+        <location filename="../../src/common/common_tr_string.h" line="912"/>
+        <location filename="../../src/common/common_tr_string.h" line="924"/>
         <source>Stop discharge test</source>
         <translation>停止放电测试</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="845"/>
+        <location filename="../../src/common/common_tr_string.h" line="918"/>
         <source>Charging</source>
         <translation>充电中</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="846"/>
+        <location filename="../../src/common/common_tr_string.h" line="919"/>
         <source>Charge complete</source>
         <translation>充电完成</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="847"/>
+        <location filename="../../src/common/common_tr_string.h" line="920"/>
         <source>Pre boot</source>
         <translation>预开机</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="848"/>
+        <location filename="../../src/common/common_tr_string.h" line="921"/>
         <source>Normal</source>
         <translation>正常</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="849"/>
+        <location filename="../../src/common/common_tr_string.h" line="922"/>
         <source>Reserve</source>
         <translation>后备</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="850"/>
+        <location filename="../../src/common/common_tr_string.h" line="923"/>
         <source>Discharge testing</source>
         <translation>放电测试中</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="860"/>
+        <location filename="../../src/common/common_tr_string.h" line="933"/>
         <source>Blocking/Up Sensor:</source>
         <translation>阻塞/上限传感器:</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="861"/>
+        <location filename="../../src/common/common_tr_string.h" line="934"/>
         <source>Down Sensor:</source>
         <translation>下限传感器:</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="863"/>
+        <location filename="../../src/common/common_tr_string.h" line="936"/>
         <source>Length of syringe</source>
         <translation>注射器长度</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="864"/>
+        <location filename="../../src/common/common_tr_string.h" line="937"/>
         <source>Syringe capacity</source>
         <translation>注射器容量</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="869"/>
+        <location filename="../../src/common/common_tr_string.h" line="942"/>
         <source>Click</source>
         <translation>点击</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="870"/>
+        <location filename="../../src/common/common_tr_string.h" line="943"/>
         <source>Pump</source>
         <translation>泵</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="871"/>
+        <location filename="../../src/common/common_tr_string.h" line="944"/>
         <source>Should be set</source>
         <translation>应该设置</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="882"/>
+        <location filename="../../src/common/common_tr_string.h" line="955"/>
         <source>Speed</source>
         <translation>速度</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="883"/>
+        <location filename="../../src/common/common_tr_string.h" line="956"/>
         <source>Pipe</source>
         <translation>管径</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="884"/>
+        <location filename="../../src/common/common_tr_string.h" line="957"/>
         <source>Default</source>
         <translation>默认</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="885"/>
+        <location filename="../../src/common/common_tr_string.h" line="958"/>
         <source>Time</source>
         <translation>时间</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="887"/>
+        <location filename="../../src/common/common_tr_string.h" line="960"/>
         <source>Run</source>
         <translation>运行</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="889"/>
+        <location filename="../../src/common/common_tr_string.h" line="962"/>
         <source>Cavity Value</source>
         <translation>腔数</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="890"/>
+        <location filename="../../src/common/common_tr_string.h" line="963"/>
         <source>Cavity Capacity</source>
         <translation>腔量</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="892"/>
+        <location filename="../../src/common/common_tr_string.h" line="965"/>
         <source>Speed Select</source>
         <translation>速度选择</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="893"/>
+        <location filename="../../src/common/common_tr_string.h" line="966"/>
         <source>Low</source>
         <translation>低</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="894"/>
+        <location filename="../../src/common/common_tr_string.h" line="967"/>
         <source>Mid</source>
         <translation>中</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="895"/>
+        <location filename="../../src/common/common_tr_string.h" line="968"/>
         <source>High</source>
         <translation>高</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="896"/>
+        <location filename="../../src/common/common_tr_string.h" line="969"/>
         <source>Other Use</source>
         <translation>其他操作</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="898"/>
+        <location filename="../../src/common/common_tr_string.h" line="971"/>
         <source>Basic Value</source>
         <translation>理论量</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="899"/>
+        <location filename="../../src/common/common_tr_string.h" line="972"/>
         <source>Real Value</source>
         <translation>实际量</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="902"/>
+        <location filename="../../src/common/common_tr_string.h" line="975"/>
         <source>Send Ok</source>
         <translation>发送完毕</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="904"/>
+        <location filename="../../src/common/common_tr_string.h" line="977"/>
         <source>Rapid Up</source>
         <translation>快速上推</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="905"/>
+        <location filename="../../src/common/common_tr_string.h" line="978"/>
         <source>Rapid Down</source>
         <translation>快速下推</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="908"/>
+        <location filename="../../src/common/common_tr_string.h" line="981"/>
         <source>First Dose</source>
         <translation>首剂量</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="911"/>
+        <location filename="../../src/common/common_tr_string.h" line="984"/>
         <source>TMP Current Value:</source>
         <translation>跨膜压当前值:</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="915"/>
+        <location filename="../../src/common/common_tr_string.h" line="988"/>
         <source>Degassing Value:</source>
         <translation>除气泵值</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="926"/>
+        <location filename="../../src/common/common_tr_string.h" line="999"/>
         <source>Send param finish!</source>
         <translation>参数发送完毕</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="927"/>
+        <location filename="../../src/common/common_tr_string.h" line="1000"/>
         <source>Send param fail !</source>
         <translation>参数发送失败</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="932"/>
+        <location filename="../../src/common/common_tr_string.h" line="1005"/>
         <source>Test runing</source>
         <translation>测试进行中</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="933"/>
+        <location filename="../../src/common/common_tr_string.h" line="1006"/>
         <source>Test stop</source>
         <translation>测试终止</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="934"/>
+        <location filename="../../src/common/common_tr_string.h" line="1007"/>
         <source>Test finish</source>
         <translation>测试完成</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="936"/>
+        <location filename="../../src/common/common_tr_string.h" line="1009"/>
         <source>A Pump testing,please stop !</source>
         <translation>A液泵测试中，请先停止</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="937"/>
+        <location filename="../../src/common/common_tr_string.h" line="1010"/>
         <source>B Pump testing,please stop !</source>
         <translation>B液泵测试中，请先停止</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="939"/>
+        <location filename="../../src/common/common_tr_string.h" line="1012"/>
         <source>Running state of the water</source>
         <translation>水路运行状态</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="940"/>
+        <location filename="../../src/common/common_tr_string.h" line="1013"/>
         <source>The state of Bloodleadcheck</source>
         <translation>漏血检测状态</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="942"/>
+        <location filename="../../src/common/common_tr_string.h" line="1015"/>
         <source>B Temp Feedback</source>
         <translation>B液温度反馈值</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="943"/>
+        <location filename="../../src/common/common_tr_string.h" line="1016"/>
         <source>Set B Temp Feedback</source>
         <translation>B液反馈设置值</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="945"/>
+        <location filename="../../src/common/common_tr_string.h" line="1018"/>
         <source>Mix Temp Feedback</source>
         <translation>混合温度反馈值</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="946"/>
+        <location filename="../../src/common/common_tr_string.h" line="1019"/>
         <source>Set Mix Temp Feedback</source>
         <translation>混合温度反馈设置值</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="948"/>
+        <location filename="../../src/common/common_tr_string.h" line="1021"/>
         <source>Mix Cond Feedback</source>
         <translation>混合电导反馈值</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="949"/>
+        <location filename="../../src/common/common_tr_string.h" line="1022"/>
         <source>Set Mix Cond Feedback</source>
         <translation>混合电导反馈设置值</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="952"/>
+        <location filename="../../src/common/common_tr_string.h" line="1025"/>
         <source>Outlet Temp Feedback</source>
         <translation>出水口温度反馈值</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="953"/>
+        <location filename="../../src/common/common_tr_string.h" line="1026"/>
         <source>Set Outlet Temp Feedback</source>
         <translation>出水口温度反馈设置值</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="955"/>
+        <location filename="../../src/common/common_tr_string.h" line="1028"/>
         <source>Outlet Cond Feedback</source>
         <translation>出水口电导反馈值</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="956"/>
+        <location filename="../../src/common/common_tr_string.h" line="1029"/>
         <source>Set Outlet Cond Feedback</source>
         <translation>出水口电导反馈设置值</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="958"/>
+        <location filename="../../src/common/common_tr_string.h" line="1031"/>
         <source>After Temp Feedback</source>
         <translation>透后温度反馈值</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="959"/>
+        <location filename="../../src/common/common_tr_string.h" line="1032"/>
         <source>Set After Temp Feedback</source>
         <translation>透后温度反馈设置值</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="961"/>
+        <location filename="../../src/common/common_tr_string.h" line="1034"/>
         <source>After Cond Feedback</source>
         <translation>透后电导反馈值</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="962"/>
+        <location filename="../../src/common/common_tr_string.h" line="1035"/>
         <source>Set After Cond Feedback</source>
         <translation>透后电导反馈设置值</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="964"/>
+        <location filename="../../src/common/common_tr_string.h" line="1037"/>
         <source>Disinfect Cond Feedback</source>
         <translation>消毒液电导反馈值</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="965"/>
+        <location filename="../../src/common/common_tr_string.h" line="1038"/>
         <source>Set Disinfect Cond Feedback</source>
         <translation>消毒液电导反馈设置值</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="967"/>
+        <location filename="../../src/common/common_tr_string.h" line="1040"/>
         <source>Feedback</source>
         <translation>反馈值</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="968"/>
+        <location filename="../../src/common/common_tr_string.h" line="1041"/>
         <source>Current feedback</source>
         <translation>当前反馈值</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="969"/>
+        <location filename="../../src/common/common_tr_string.h" line="1042"/>
         <source>Feedback alarm threshold</source>
         <translation>反馈报警阀值</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="970"/>
+        <location filename="../../src/common/common_tr_string.h" line="1043"/>
         <source>Set alarm threshold</source>
         <translation>报警阀值设置</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="971"/>
+        <location filename="../../src/common/common_tr_string.h" line="1044"/>
         <source>Feedback 100 Cavity</source>
         <translation>反馈100腔体值</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="972"/>
+        <location filename="../../src/common/common_tr_string.h" line="1045"/>
         <source>Alarm upper limit</source>
         <translation>报警上限值</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="973"/>
+        <location filename="../../src/common/common_tr_string.h" line="1046"/>
         <source>Set  Feedback</source>
         <translation>设置反馈值</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="975"/>
+        <location filename="../../src/common/common_tr_string.h" line="1048"/>
         <source>Heater Temp Feedback</source>
         <translation>加热腔温度反馈值</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="976"/>
+        <location filename="../../src/common/common_tr_string.h" line="1049"/>
         <source>Set Heater Temp Feedback</source>
         <translation>加热腔温度反馈设置值</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="978"/>
+        <location filename="../../src/common/common_tr_string.h" line="1051"/>
         <source>B Cond Feedback</source>
         <translation>B液电导反馈值</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="979"/>
+        <location filename="../../src/common/common_tr_string.h" line="1052"/>
         <source>Set B Cond Feedback</source>
         <translation>B液电导反馈设置值</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="982"/>
+        <location filename="../../src/common/common_tr_string.h" line="1055"/>
         <source>Note: please click to read the parameters before debugging.</source>
         <translation>注意:调试前请先点击读取参数.</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="983"/>
+        <location filename="../../src/common/common_tr_string.h" line="1056"/>
         <source>1.Select high speed or low speed, click start test,read the pulse.</source>
         <translation>1.选择高速或者低速，点击开始测试，读取脉冲.</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="985"/>
+        <location filename="../../src/common/common_tr_string.h" line="1058"/>
         <source>2.If the theory of pulse and pulse actual gap is too big, then click start since the correction.</source>
         <translation>2.如果理论脉冲和实际脉冲差距过大，则点击开始自校正.</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="987"/>
+        <location filename="../../src/common/common_tr_string.h" line="1060"/>
         <source>3.Prepare a measuring cup, make sure good pipe diameter and time,click start.</source>
         <translation>3.准备好量杯，确定好管径和时间，点击开始.</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="989"/>
+        <location filename="../../src/common/common_tr_string.h" line="1062"/>
         <source>4.The measuring cup measure when feedback input, and click the correction.</source>
         <translation>4.将量杯的量当反馈量输入，并点击校正.</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="994"/>
+        <location filename="../../src/common/common_tr_string.h" line="1067"/>
         <source>1.Observe the heparin pump button status and alarm information is correct.</source>
         <translation>1.观察肝素泵的按键状态和报警信息是否正确.</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="996"/>
+        <location filename="../../src/common/common_tr_string.h" line="1069"/>
         <source>2.According to the actual situation, set up syringes length and capacity.</source>
         <translation>2.根据实际情况设置注射器长度和容量.</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="998"/>
+        <location filename="../../src/common/common_tr_string.h" line="1071"/>
         <source>3.Prepare a measuring cup, make sure good speed and time, click start, and input the actual measured values, click send.</source>
         <translation>3.准备好量杯，确定好速度和时间，点击启动，输入实际测量值，点击发送进行校正.</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="1000"/>
+        <location filename="../../src/common/common_tr_string.h" line="1073"/>
         <source>4.Determine the good starting dose, click start, and input the actual measured values, click send.</source>
         <translation>4.确定好首剂量，点击启动，输入实际测量值，点击发送进行校正.</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="1004"/>
+        <location filename="../../src/common/common_tr_string.h" line="1077"/>
         <source>1.The pressure value, based on the current equipment real-time pressure, dynamic update the display.</source>
         <translation>1.各压力值，根据当前设备实时压力情况，动态更新显示.</translation>
     </message>
@@ -3518,308 +3594,308 @@ period value
         <translation type="obsolete">报警音</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="734"/>
+        <location filename="../../src/common/common_tr_string.h" line="807"/>
         <source>Light</source>
         <translation>灯光</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="735"/>
+        <location filename="../../src/common/common_tr_string.h" line="808"/>
         <source>Bat and power</source>
         <translation>电池和电源</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="774"/>
-        <location filename="../../src/common/common_tr_string.h" line="795"/>
+        <location filename="../../src/common/common_tr_string.h" line="847"/>
+        <location filename="../../src/common/common_tr_string.h" line="868"/>
         <source>Blood Debug</source>
         <translation>血路调试</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="775"/>
+        <location filename="../../src/common/common_tr_string.h" line="848"/>
         <source>Water Debug</source>
         <translation>水路调试</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="776"/>
+        <location filename="../../src/common/common_tr_string.h" line="849"/>
         <source>User Param</source>
         <translation>用户参数</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="777"/>
+        <location filename="../../src/common/common_tr_string.h" line="850"/>
         <source>Project Param</source>
         <translation>工程参数</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="778"/>
+        <location filename="../../src/common/common_tr_string.h" line="851"/>
         <source>Setup Param</source>
         <translation>设置参数</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="779"/>
+        <location filename="../../src/common/common_tr_string.h" line="852"/>
         <source>Drain Option</source>
         <translation>排水操作</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="780"/>
+        <location filename="../../src/common/common_tr_string.h" line="853"/>
         <source>Ts Debug</source>
         <translation>触摸屏调试</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="781"/>
+        <location filename="../../src/common/common_tr_string.h" line="854"/>
         <source>Water Test</source>
         <translation>水路测试</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="782"/>
+        <location filename="../../src/common/common_tr_string.h" line="855"/>
         <source>Use Time</source>
         <translation>使用时间</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="784"/>
+        <location filename="../../src/common/common_tr_string.h" line="857"/>
         <source>Reset Defaults</source>
         <translation>恢复出厂设置</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="786"/>
+        <location filename="../../src/common/common_tr_string.h" line="859"/>
         <source>Turn Off</source>
         <translation>关机</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="788"/>
+        <location filename="../../src/common/common_tr_string.h" line="861"/>
         <source>pre</source>
         <translation>上一页</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="789"/>
+        <location filename="../../src/common/common_tr_string.h" line="862"/>
         <source>next</source>
         <translation>下一页</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="794"/>
+        <location filename="../../src/common/common_tr_string.h" line="867"/>
         <source>Read Param</source>
         <translation>读取参数</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="796"/>
+        <location filename="../../src/common/common_tr_string.h" line="869"/>
         <source>BloodPump Debug</source>
         <translation>血泵调试</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="797"/>
+        <location filename="../../src/common/common_tr_string.h" line="870"/>
         <source>SubPump Debug</source>
         <translation>置换泵调试</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="798"/>
+        <location filename="../../src/common/common_tr_string.h" line="871"/>
         <source>HeparinPump Debug</source>
         <translation>肝素泵调试</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="799"/>
+        <location filename="../../src/common/common_tr_string.h" line="872"/>
         <source>Pressure Debug</source>
         <translation>压力调试</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="800"/>
+        <location filename="../../src/common/common_tr_string.h" line="873"/>
         <source>Check Bubble</source>
         <translation>气泡检测</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="801"/>
+        <location filename="../../src/common/common_tr_string.h" line="874"/>
         <source>Check Choke Clip</source>
         <translation>检测阻流夹</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="802"/>
+        <location filename="../../src/common/common_tr_string.h" line="875"/>
         <source>Sound and light detecting</source>
         <translation>声光检测</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="803"/>
+        <location filename="../../src/common/common_tr_string.h" line="876"/>
         <source>Battery supply</source>
         <translation>电池电源</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="805"/>
+        <location filename="../../src/common/common_tr_string.h" line="878"/>
         <source>Liquid Status</source>
         <translation>液位状态</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="806"/>
+        <location filename="../../src/common/common_tr_string.h" line="879"/>
         <source>Liquid Alarm Status:</source>
         <translation>液位报警状态:</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="807"/>
+        <location filename="../../src/common/common_tr_string.h" line="880"/>
         <source>Liquid Raised Key:</source>
         <translation>液位上调键:</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="808"/>
+        <location filename="../../src/common/common_tr_string.h" line="881"/>
         <source>Liquid Reduce Key:</source>
         <translation>液位下调键:</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="810"/>
+        <location filename="../../src/common/common_tr_string.h" line="883"/>
         <source>Blood Detection</source>
         <translation>血液检测</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="811"/>
+        <location filename="../../src/common/common_tr_string.h" line="884"/>
         <source>Artery Status:</source>
         <translation>动脉检测状态:</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="812"/>
+        <location filename="../../src/common/common_tr_string.h" line="885"/>
         <source>Vein Status:</source>
         <translation>静脉检测状态:</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="813"/>
+        <location filename="../../src/common/common_tr_string.h" line="886"/>
         <source>Have Blood</source>
         <translation>有血</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="814"/>
+        <location filename="../../src/common/common_tr_string.h" line="887"/>
         <source>No Blood</source>
         <translation>无血</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="819"/>
+        <location filename="../../src/common/common_tr_string.h" line="892"/>
         <source>Artery Clip Status:</source>
         <translation>动脉阻流夹状态:</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="820"/>
+        <location filename="../../src/common/common_tr_string.h" line="893"/>
         <source>Vein Clip Status:</source>
         <translation>静脉阻流夹状态:</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="821"/>
+        <location filename="../../src/common/common_tr_string.h" line="894"/>
         <source>ON/OFF Key:</source>
         <translation>开关按键:</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="822"/>
+        <location filename="../../src/common/common_tr_string.h" line="895"/>
         <source>Monitoring sensor value:</source>
         <translation>监测传感器值:</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="825"/>
+        <location filename="../../src/common/common_tr_string.h" line="898"/>
         <source>State of sound:</source>
         <translation>声音状态:</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="826"/>
+        <location filename="../../src/common/common_tr_string.h" line="899"/>
         <source>Volume:</source>
         <translation>音量大小:</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="827"/>
+        <location filename="../../src/common/common_tr_string.h" line="900"/>
         <source>Macron</source>
         <translation>长音</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="828"/>
+        <location filename="../../src/common/common_tr_string.h" line="901"/>
         <source>Mediant</source>
         <translation>中音</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="829"/>
+        <location filename="../../src/common/common_tr_string.h" line="902"/>
         <source>Tone pips</source>
         <translation>短音</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="830"/>
+        <location filename="../../src/common/common_tr_string.h" line="903"/>
         <source>State of alarmlight:</source>
         <translation>报警灯状态:</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="832"/>
+        <location filename="../../src/common/common_tr_string.h" line="905"/>
         <source>Red</source>
         <translation>红</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="833"/>
+        <location filename="../../src/common/common_tr_string.h" line="906"/>
         <source>Yellow</source>
         <translation>黄</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="834"/>
+        <location filename="../../src/common/common_tr_string.h" line="907"/>
         <source>Green</source>
         <translation>绿</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="836"/>
+        <location filename="../../src/common/common_tr_string.h" line="909"/>
         <source>Battery status:</source>
         <translation>电池状态:</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="837"/>
+        <location filename="../../src/common/common_tr_string.h" line="910"/>
         <source>Power status:</source>
         <translation>电源状态:</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="838"/>
+        <location filename="../../src/common/common_tr_string.h" line="911"/>
         <source>Bat discharge test</source>
         <translation>电池放电测试</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="840"/>
+        <location filename="../../src/common/common_tr_string.h" line="913"/>
         <source>The last stop of blood pump:</source>
         <translation>上次停血泵时间:</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="841"/>
+        <location filename="../../src/common/common_tr_string.h" line="914"/>
         <source>The last time of battery discharge:</source>
         <translation>上次电池放电时间:</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="842"/>
+        <location filename="../../src/common/common_tr_string.h" line="915"/>
         <source>Blood pump speed:</source>
         <translation>血泵速度:</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="843"/>
+        <location filename="../../src/common/common_tr_string.h" line="916"/>
         <source>Heparin pump speed:</source>
         <translation>肝素速度:</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="853"/>
+        <location filename="../../src/common/common_tr_string.h" line="926"/>
         <source>Door Status:</source>
         <translation>门盖状态:</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="854"/>
+        <location filename="../../src/common/common_tr_string.h" line="927"/>
         <source>Start Key:</source>
         <translation>启动键:</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="855"/>
+        <location filename="../../src/common/common_tr_string.h" line="928"/>
         <source>+Key:</source>
         <translation>+键:</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="856"/>
+        <location filename="../../src/common/common_tr_string.h" line="929"/>
         <source>-Key:</source>
         <translation>-键:</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="857"/>
+        <location filename="../../src/common/common_tr_string.h" line="930"/>
         <source>Up Key:</source>
         <translation>向上键:</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="858"/>
+        <location filename="../../src/common/common_tr_string.h" line="931"/>
         <source>Down Key:</source>
         <translation>向下键:</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="859"/>
+        <location filename="../../src/common/common_tr_string.h" line="932"/>
         <source>Up Alarm:</source>
         <translation>上限报警:</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="862"/>
+        <location filename="../../src/common/common_tr_string.h" line="935"/>
         <source>Down Alarm:</source>
         <translation>下限报警:</translation>
     </message>
@@ -3832,62 +3908,62 @@ period value
         <translation type="obsolete">注射器容量:</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="865"/>
+        <location filename="../../src/common/common_tr_string.h" line="938"/>
         <source>Open</source>
         <translation>打开</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="866"/>
+        <location filename="../../src/common/common_tr_string.h" line="939"/>
         <source>Close</source>
         <translation>关闭</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="867"/>
+        <location filename="../../src/common/common_tr_string.h" line="940"/>
         <source>Press</source>
         <translation>点击</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="868"/>
+        <location filename="../../src/common/common_tr_string.h" line="941"/>
         <source>Release</source>
         <translation>释放</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="874"/>
+        <location filename="../../src/common/common_tr_string.h" line="947"/>
         <source>HSpeed</source>
         <translation>高速</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="875"/>
+        <location filename="../../src/common/common_tr_string.h" line="948"/>
         <source>LSpeed</source>
         <translation>低速</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="876"/>
+        <location filename="../../src/common/common_tr_string.h" line="949"/>
         <source>Basic Pulse:</source>
         <translation>理论脉冲:</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="877"/>
+        <location filename="../../src/common/common_tr_string.h" line="950"/>
         <source>Real Pulse:</source>
         <translation>实际脉冲:</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="878"/>
+        <location filename="../../src/common/common_tr_string.h" line="951"/>
         <source>Start Test</source>
         <translation>开始测试</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="879"/>
+        <location filename="../../src/common/common_tr_string.h" line="952"/>
         <source>Stop Test</source>
         <translation>停止测试</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="880"/>
+        <location filename="../../src/common/common_tr_string.h" line="953"/>
         <source>Start Adjust</source>
         <translation>开始自校正</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="881"/>
+        <location filename="../../src/common/common_tr_string.h" line="954"/>
         <source>Stop Adjust</source>
         <translation>停止校正</translation>
     </message>
@@ -3904,12 +3980,12 @@ period value
         <translation type="obsolete">时间:</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="886"/>
+        <location filename="../../src/common/common_tr_string.h" line="959"/>
         <source>Start</source>
         <translation>开始</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="888"/>
+        <location filename="../../src/common/common_tr_string.h" line="961"/>
         <source>Stop</source>
         <translation>停止</translation>
     </message>
@@ -3922,17 +3998,17 @@ period value
         <translation type="obsolete">实际量:</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="900"/>
+        <location filename="../../src/common/common_tr_string.h" line="973"/>
         <source>Adjust</source>
         <translation>校正</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="901"/>
+        <location filename="../../src/common/common_tr_string.h" line="974"/>
         <source>Send</source>
         <translation>发送</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="907"/>
+        <location filename="../../src/common/common_tr_string.h" line="980"/>
         <source>Runing status:</source>
         <translation>运行状态:</translation>
     </message>
@@ -3941,87 +4017,87 @@ period value
         <translation type="obsolete">首剂量:</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="909"/>
+        <location filename="../../src/common/common_tr_string.h" line="982"/>
         <source>AP Current Value:</source>
         <translation>动脉压当前值:</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="910"/>
+        <location filename="../../src/common/common_tr_string.h" line="983"/>
         <source>VP Current Value:</source>
         <translation>静脉压当前值:</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="912"/>
+        <location filename="../../src/common/common_tr_string.h" line="985"/>
         <source>WP Current Value:</source>
         <translation>水路压当前值:</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="913"/>
+        <location filename="../../src/common/common_tr_string.h" line="986"/>
         <source>Degassing Pressure:</source>
         <translation>排气压当前值:</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="914"/>
+        <location filename="../../src/common/common_tr_string.h" line="987"/>
         <source>PSN Pressure:</source>
         <translation>PSN压当前值:</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="916"/>
+        <location filename="../../src/common/common_tr_string.h" line="989"/>
         <source>If there is a bubble alarm:</source>
         <translation>是否有气泡报警:</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="917"/>
+        <location filename="../../src/common/common_tr_string.h" line="990"/>
         <source>Tiny bubbles accumulation limit:</source>
         <translation>微小气泡累积极限:</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="918"/>
+        <location filename="../../src/common/common_tr_string.h" line="991"/>
         <source>Set accumulation limit:</source>
         <translation>设置累积极限:</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="919"/>
+        <location filename="../../src/common/common_tr_string.h" line="992"/>
         <source>Bubble pulse width alarm threshold:</source>
         <translation>气泡脉宽报警限值:</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="920"/>
+        <location filename="../../src/common/common_tr_string.h" line="993"/>
         <source>Set pulse width alarm threshold:</source>
         <translation>设置脉宽报警限值:</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="922"/>
+        <location filename="../../src/common/common_tr_string.h" line="995"/>
         <source>Param reading,please wait!</source>
         <translation>参数正在读取，请稍等!</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="923"/>
+        <location filename="../../src/common/common_tr_string.h" line="996"/>
         <source>Read param fail!</source>
         <translation>参数读取失败!</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="924"/>
+        <location filename="../../src/common/common_tr_string.h" line="997"/>
         <source>Read param sucess!</source>
         <translation>参数读取成功!</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="925"/>
+        <location filename="../../src/common/common_tr_string.h" line="998"/>
         <source>Has not been read parameters, please click to Read Param!</source>
         <translation>尚未读取参数，请点击读取!</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="929"/>
+        <location filename="../../src/common/common_tr_string.h" line="1002"/>
         <source>Pump Runing</source>
         <translation>泵运行中</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="930"/>
+        <location filename="../../src/common/common_tr_string.h" line="1003"/>
         <source>Pump Stop</source>
         <translation>泵停止</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="931"/>
+        <location filename="../../src/common/common_tr_string.h" line="1004"/>
         <source>Pump Adjust</source>
         <translation>泵校正中</translation>
     </message>
@@ -4050,77 +4126,77 @@ period value
         <translation type="obsolete">脉搏超过上限或下限!</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="632"/>
+        <location filename="../../src/common/common_tr_string.h" line="707"/>
         <source>BPM runing...</source>
         <translation>BPM测量中</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="635"/>
+        <location filename="../../src/common/common_tr_string.h" line="710"/>
         <source>Residue time less than heparinPrestop time,heparin will not run!</source>
         <translation>剩余时间比肝素预停止时间少，肝素将停止!</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="636"/>
+        <location filename="../../src/common/common_tr_string.h" line="711"/>
         <source>Cure time has changed,profile cancel!</source>
         <translation>治疗时间改变，曲线治疗取消!</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="637"/>
+        <location filename="../../src/common/common_tr_string.h" line="712"/>
         <source>Workmode has changed,profile cancel!</source>
         <translation>工作模式改变，曲线治疗取消!</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="638"/>
+        <location filename="../../src/common/common_tr_string.h" line="713"/>
         <source>UF Aimvol has changed,uf profile cancel!</source>
         <translation>超滤目标改变，曲线治疗取消！</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="639"/>
+        <location filename="../../src/common/common_tr_string.h" line="714"/>
         <source>The remaining time too little, uf volume can not reach,uf profile cancel!</source>
         <translation>剩余时间内，超滤目标无法达到，UF曲线治疗取消！</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="642"/>
+        <location filename="../../src/common/common_tr_string.h" line="717"/>
         <source>Cond Record Profile</source>
         <translation>电导记录曲线</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="643"/>
+        <location filename="../../src/common/common_tr_string.h" line="718"/>
         <source>Temp Record Profile</source>
         <translation>温度记录曲线</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="648"/>
+        <location filename="../../src/common/common_tr_string.h" line="723"/>
         <source>Has select profile cure,profile num:</source>
         <translation>已选择曲线治疗，曲线号为：</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="649"/>
+        <location filename="../../src/common/common_tr_string.h" line="724"/>
         <source>Profile cure runing,profile num:</source>
         <translation>曲线治疗运行中，曲线号为:</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="650"/>
+        <location filename="../../src/common/common_tr_string.h" line="725"/>
         <source>Not select profile cure</source>
         <translation>未选择曲线治疗</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="654"/>
+        <location filename="../../src/common/common_tr_string.h" line="729"/>
         <source>Na cure predefined modify</source>
         <translation>预定义钠曲线修改</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="655"/>
+        <location filename="../../src/common/common_tr_string.h" line="730"/>
         <source>UF cure predefined modify</source>
         <translation>预定义UF曲线修改</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="656"/>
+        <location filename="../../src/common/common_tr_string.h" line="731"/>
         <source>Na precure</source>
         <translation>钠曲线</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="657"/>
+        <location filename="../../src/common/common_tr_string.h" line="732"/>
         <source>Uf precure</source>
         <translation>UF曲线</translation>
     </message>
@@ -4153,9 +4229,9 @@ period value
         <translation type="obsolete">05005:液位探测器出错</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="448"/>
-        <location filename="../../src/common/common_tr_string.h" line="451"/>
-        <location filename="../../src/common/common_tr_string.h" line="454"/>
+        <location filename="../../src/common/common_tr_string.h" line="523"/>
+        <location filename="../../src/common/common_tr_string.h" line="526"/>
+        <location filename="../../src/common/common_tr_string.h" line="529"/>
         <source>The zero offset is too large!</source>
         <translation>零点漂移过大!</translation>
     </message>
@@ -4200,7 +4276,7 @@ period value
         <translation type="obsolete">5001:静脉管夹出错</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="433"/>
+        <location filename="../../src/common/common_tr_string.h" line="508"/>
         <source>CLPV drive or flow resistance feedback!</source>
         <translation>静脉管夹驱动或反馈有问题！</translation>
     </message>
@@ -4209,7 +4285,7 @@ period value
         <translation type="obsolete">5002:动脉管夹出错</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="436"/>
+        <location filename="../../src/common/common_tr_string.h" line="511"/>
         <source>CLPA drive or flow resistance feedback!</source>
         <translation>动脉管夹驱动或反馈有问题！</translation>
     </message>
@@ -4218,9 +4294,9 @@ period value
         <translation type="obsolete">5003:静脉气泡探测器出错</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="439"/>
-        <location filename="../../src/common/common_tr_string.h" line="442"/>
-        <location filename="../../src/common/common_tr_string.h" line="445"/>
+        <location filename="../../src/common/common_tr_string.h" line="514"/>
+        <location filename="../../src/common/common_tr_string.h" line="517"/>
+        <location filename="../../src/common/common_tr_string.h" line="520"/>
         <source>Remove the line!</source>
         <translation>移走管路!</translation>
     </message>
@@ -4241,7 +4317,7 @@ period value
         <translation type="obsolete">5007:血氧模块出错</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="460"/>
+        <location filename="../../src/common/common_tr_string.h" line="535"/>
         <source>No blood oxygen module or communication failures!</source>
         <translation>没有血氧模块或通讯故障!</translation>
     </message>
@@ -4250,7 +4326,7 @@ period value
         <translation type="obsolete">5007:血压模块出错</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="463"/>
+        <location filename="../../src/common/common_tr_string.h" line="538"/>
         <source>No Blood pressure module or communication failures!</source>
         <translation>没有血压模块或通讯故障!</translation>
     </message>
@@ -4275,7 +4351,7 @@ period value
         <translation type="obsolete">03001:N7出错</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="489"/>
+        <location filename="../../src/common/common_tr_string.h" line="564"/>
         <source>N7 selfcheck fail!</source>
         <translation>N7自检失败!</translation>
     </message>
@@ -4284,7 +4360,7 @@ period value
         <translation type="obsolete">03002:N9出错</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="492"/>
+        <location filename="../../src/common/common_tr_string.h" line="567"/>
         <source>N9 selfcheck fail!</source>
         <translation>N9自检失败!</translation>
     </message>
@@ -4293,7 +4369,7 @@ period value
         <translation type="obsolete">03003:N10出错</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="495"/>
+        <location filename="../../src/common/common_tr_string.h" line="570"/>
         <source>N10 selfcheck fail!</source>
         <translation>N10自检失败!</translation>
     </message>
@@ -4302,7 +4378,7 @@ period value
         <translation type="obsolete">03004:N15出错</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="498"/>
+        <location filename="../../src/common/common_tr_string.h" line="573"/>
         <source>N15 selfcheck fail!</source>
         <translation>N15自检失败!</translation>
     </message>
@@ -4311,7 +4387,7 @@ period value
         <translation type="obsolete">03005:N5出错</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="501"/>
+        <location filename="../../src/common/common_tr_string.h" line="576"/>
         <source>N5 selfcheck fail!</source>
         <translation>N5自检失败!</translation>
     </message>
@@ -4320,135 +4396,135 @@ period value
         <translation type="obsolete">血泵失控</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="293"/>
+        <location filename="../../src/common/common_tr_string.h" line="368"/>
         <source>No1 blood pump out of control !</source>
         <translation>血泵1失控！</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="295"/>
+        <location filename="../../src/common/common_tr_string.h" line="370"/>
         <source>No2 blood pump out of control</source>
         <translation>血泵2失控</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="296"/>
+        <location filename="../../src/common/common_tr_string.h" line="371"/>
         <source>No2 blood pump out of control !</source>
         <translation>血泵2失控！</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="298"/>
+        <location filename="../../src/common/common_tr_string.h" line="373"/>
         <source>Please close blood pump door</source>
         <translation>血泵1盖门打开</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="299"/>
+        <location filename="../../src/common/common_tr_string.h" line="374"/>
         <source>Please close blood pump door!</source>
         <translation>请关闭血泵1门盖！</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="301"/>
+        <location filename="../../src/common/common_tr_string.h" line="376"/>
         <source>Please close spare pump door</source>
         <translation>血泵2盖门打开</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="302"/>
+        <location filename="../../src/common/common_tr_string.h" line="377"/>
         <source>Please close spare pump door!</source>
         <translation>请关闭血泵2门盖！</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="304"/>
+        <location filename="../../src/common/common_tr_string.h" line="379"/>
         <source>Blood Leak</source>
         <translation>漏血报警</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="305"/>
+        <location filename="../../src/common/common_tr_string.h" line="380"/>
         <source>Blood Leak !</source>
         <translation>漏血报警！</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="307"/>
+        <location filename="../../src/common/common_tr_string.h" line="382"/>
         <source>Heparin empty Or  block</source>
         <translation>肝素空液或阻塞</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="308"/>
+        <location filename="../../src/common/common_tr_string.h" line="383"/>
         <source>Heparin empty Or  block !</source>
         <translation>肝素空液或阻塞！</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="310"/>
+        <location filename="../../src/common/common_tr_string.h" line="385"/>
         <source>Blood pressure monitor alarm</source>
         <translation>血压计报警</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="311"/>
+        <location filename="../../src/common/common_tr_string.h" line="386"/>
         <source>Blood pressure monitor alarm !</source>
         <translation>血压计报警！</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="313"/>
-        <location filename="../../src/common/common_tr_string.h" line="316"/>
+        <location filename="../../src/common/common_tr_string.h" line="388"/>
+        <location filename="../../src/common/common_tr_string.h" line="391"/>
         <source>The pressure before the dialyzer</source>
         <translation>透析器前压力报警</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="314"/>
+        <location filename="../../src/common/common_tr_string.h" line="389"/>
         <source>The pressure before the dialyzer upper limit !</source>
         <translation>透析器前压力上限！</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="317"/>
+        <location filename="../../src/common/common_tr_string.h" line="392"/>
         <source>The pressure before the dialyzer lower limit !</source>
         <translation>透析器前压力下限！</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="321"/>
-        <location filename="../../src/common/common_tr_string.h" line="324"/>
+        <location filename="../../src/common/common_tr_string.h" line="396"/>
+        <location filename="../../src/common/common_tr_string.h" line="399"/>
         <source>The water outlet Conductivity</source>
         <translation>出水口电导</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="322"/>
+        <location filename="../../src/common/common_tr_string.h" line="397"/>
         <source>The water outlet of the upper limit of Conductivity !</source>
         <translation>出水口总电导度上限！</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="325"/>
+        <location filename="../../src/common/common_tr_string.h" line="400"/>
         <source>The water outlet of the lower limit of the Conductivity !</source>
         <translation>出水口总电导度下限！</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="327"/>
+        <location filename="../../src/common/common_tr_string.h" line="402"/>
         <source>Alarming of water outlet total Conductivity</source>
         <translation>出水口总电导度范围报警</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="328"/>
+        <location filename="../../src/common/common_tr_string.h" line="403"/>
         <source>Alarming of water outlet total Conductivity !</source>
         <translation>出水口总电导度范围报警！</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="330"/>
-        <location filename="../../src/common/common_tr_string.h" line="333"/>
+        <location filename="../../src/common/common_tr_string.h" line="405"/>
+        <location filename="../../src/common/common_tr_string.h" line="408"/>
         <source>Alarming of the total Conductivity of mixed</source>
         <translation>混合总电导度报警</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="331"/>
+        <location filename="../../src/common/common_tr_string.h" line="406"/>
         <source>The upper limit of the total Conductivity of mixed !</source>
         <translation>混合总电导度上限！</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="334"/>
+        <location filename="../../src/common/common_tr_string.h" line="409"/>
         <source>The lower limit of the total Conductivity of mixed !</source>
         <translation>混合总电导度下限！</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="336"/>
+        <location filename="../../src/common/common_tr_string.h" line="411"/>
         <source>Hybrid total Conductivity alarm</source>
         <translation>混合总电导度报警</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="337"/>
+        <location filename="../../src/common/common_tr_string.h" line="412"/>
         <source>Hybrid total Conductivity range alarm !</source>
         <translation>混合总电导度范围报警!</translation>
     </message>
@@ -4501,12 +4577,12 @@ period value
         <translation type="obsolete">自检:肝素泵故障</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="504"/>
+        <location filename="../../src/common/common_tr_string.h" line="579"/>
         <source>Selfcheck:Part of the blood selfcheck fail</source>
         <translation>自检:血路自检失败</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="507"/>
+        <location filename="../../src/common/common_tr_string.h" line="582"/>
         <source>Selfcheck:Part of the water selfcheck fail</source>
         <translation>自检:水路自检失败</translation>
     </message>
@@ -4551,242 +4627,242 @@ period value
         <translation type="obsolete">混合总电导度上限！</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="339"/>
+        <location filename="../../src/common/common_tr_string.h" line="414"/>
         <source>Dialysis fluid temperature is higher than the limit</source>
         <translation>透析夜温度太高</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="340"/>
+        <location filename="../../src/common/common_tr_string.h" line="415"/>
         <source>Dialysis fluid temperature is higher than the limit !</source>
         <translation>透析夜温度太高极限！</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="342"/>
+        <location filename="../../src/common/common_tr_string.h" line="417"/>
         <source>Dialysis fluid temperature is below the limit</source>
         <translation>透析夜温度太低</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="343"/>
+        <location filename="../../src/common/common_tr_string.h" line="418"/>
         <source>Dialysis fluid temperature is below the limit !</source>
         <translation>透析夜温度太低 极限！</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="345"/>
+        <location filename="../../src/common/common_tr_string.h" line="420"/>
         <source>The upper temperature limit</source>
         <translation>温度上限</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="346"/>
+        <location filename="../../src/common/common_tr_string.h" line="421"/>
         <source>The upper temperature limit !</source>
         <translation>温度上限！</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="348"/>
+        <location filename="../../src/common/common_tr_string.h" line="423"/>
         <source>The lower limit of temperature</source>
         <translation>温度下限</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="349"/>
+        <location filename="../../src/common/common_tr_string.h" line="424"/>
         <source>The lower limit of temperature !</source>
         <translation>温度下限！</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="351"/>
+        <location filename="../../src/common/common_tr_string.h" line="426"/>
         <source>The range of temperature alarm</source>
         <translation>温度范围报警</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="352"/>
+        <location filename="../../src/common/common_tr_string.h" line="427"/>
         <source>The range of temperature alarm !</source>
         <translation>温度范围报警！</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="354"/>
+        <location filename="../../src/common/common_tr_string.h" line="429"/>
         <source>A liquid conductivity error</source>
         <translation>A液电导率错误</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="355"/>
+        <location filename="../../src/common/common_tr_string.h" line="430"/>
         <source>A liquid conductivity error !</source>
         <translation>A液电导率错误！</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="357"/>
+        <location filename="../../src/common/common_tr_string.h" line="432"/>
         <source>B liquid conductivity error</source>
         <translation>B液电导率错误</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="358"/>
+        <location filename="../../src/common/common_tr_string.h" line="433"/>
         <source>B liquid conductivity error !</source>
         <translation>B液电导率错误！</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="360"/>
+        <location filename="../../src/common/common_tr_string.h" line="435"/>
         <source>No A dialysate</source>
         <translation>无A液</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="361"/>
+        <location filename="../../src/common/common_tr_string.h" line="436"/>
         <source>No A dialysate !</source>
         <translation>无A液！</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="363"/>
+        <location filename="../../src/common/common_tr_string.h" line="438"/>
         <source>No B dialysate</source>
         <translation>无B液</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="364"/>
+        <location filename="../../src/common/common_tr_string.h" line="439"/>
         <source>No B dialysate !</source>
         <translation>无B液！</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="366"/>
+        <location filename="../../src/common/common_tr_string.h" line="441"/>
         <source>The alarm of no water</source>
         <translation>无水报警</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="367"/>
+        <location filename="../../src/common/common_tr_string.h" line="442"/>
         <source>The alarm of no water !</source>
         <translation>无水报警！</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="369"/>
+        <location filename="../../src/common/common_tr_string.h" line="444"/>
         <source>Disinfection liquid conductivity toplimit error</source>
         <translation>消毒液电导上限错误</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="370"/>
+        <location filename="../../src/common/common_tr_string.h" line="445"/>
         <source>Disinfection liquid conductivity toplimit error !</source>
         <translation>消毒液电导上限错误！</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="372"/>
+        <location filename="../../src/common/common_tr_string.h" line="447"/>
         <source>Disinfection liquid conductivity lower limit error</source>
         <translation>消毒液电导下限错误</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="373"/>
+        <location filename="../../src/common/common_tr_string.h" line="448"/>
         <source>Disinfection liquid conductivity lower limit error !</source>
         <translation>消毒液电导下限错误！</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="375"/>
+        <location filename="../../src/common/common_tr_string.h" line="450"/>
         <source>Fluid degassing error</source>
         <translation>补液除气错误</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="376"/>
+        <location filename="../../src/common/common_tr_string.h" line="451"/>
         <source>Fluid degassing error !</source>
         <translation>补液除气错误！</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="378"/>
+        <location filename="../../src/common/common_tr_string.h" line="453"/>
         <source>Balance cavity film breaking alarm</source>
         <translation>平衡腔破膜报警</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="379"/>
+        <location filename="../../src/common/common_tr_string.h" line="454"/>
         <source>Balance cavity film breaking alarm !</source>
         <translation>平衡腔破膜报警！</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="383"/>
+        <location filename="../../src/common/common_tr_string.h" line="458"/>
         <source>Connect tube A to pot A</source>
         <translation>将A液吸管放到A液桶</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="384"/>
+        <location filename="../../src/common/common_tr_string.h" line="459"/>
         <source>Connect tube A to pot A !</source>
         <translation>将A液吸管放到A液桶！</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="386"/>
+        <location filename="../../src/common/common_tr_string.h" line="461"/>
         <source>Connect tube A to machine</source>
         <translation>将A液吸管插回机器</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="387"/>
+        <location filename="../../src/common/common_tr_string.h" line="462"/>
         <source>Connect tube A to machine !</source>
         <translation>将A液吸管插回机器！</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="389"/>
+        <location filename="../../src/common/common_tr_string.h" line="464"/>
         <source>Connect tube B to pot B</source>
         <translation>将B液管放到B液桶</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="390"/>
+        <location filename="../../src/common/common_tr_string.h" line="465"/>
         <source>Connect tube B to pot B !</source>
         <translation>将B液管放到B液桶！</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="392"/>
+        <location filename="../../src/common/common_tr_string.h" line="467"/>
         <source>Connect tube B to machine</source>
         <translation>将B液管插回机器</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="393"/>
+        <location filename="../../src/common/common_tr_string.h" line="468"/>
         <source>Connect tube B to machine !</source>
         <translation>将B液管插回机器！</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="395"/>
+        <location filename="../../src/common/common_tr_string.h" line="470"/>
         <source>Connect supply tube to dialyzer</source>
         <translation>将供液管接到透析器</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="396"/>
+        <location filename="../../src/common/common_tr_string.h" line="471"/>
         <source>Connect supply tube to dialyzer !</source>
         <translation>将供液管接到透析器！</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="398"/>
+        <location filename="../../src/common/common_tr_string.h" line="473"/>
         <source>Connect supply tube to machine</source>
         <translation>将供液管接回机器</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="399"/>
+        <location filename="../../src/common/common_tr_string.h" line="474"/>
         <source>Connect supply tube to machine !</source>
         <translation>将供液管接回机器！</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="401"/>
+        <location filename="../../src/common/common_tr_string.h" line="476"/>
         <source>Connect return tubes of dialyzer to the  port of dialyzer</source>
         <translation>将回液管接到透析器</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="402"/>
+        <location filename="../../src/common/common_tr_string.h" line="477"/>
         <source>Connect return tubes of dialyzer to the  port of dialyzer !</source>
         <translation>将回液管接到透析器！</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="404"/>
+        <location filename="../../src/common/common_tr_string.h" line="479"/>
         <source>Connect return tubes of dialyzer to the  port of machine</source>
         <translation>将回液管接回机器</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="405"/>
+        <location filename="../../src/common/common_tr_string.h" line="480"/>
         <source>Connect return tubes of dialyzer to the  port of machine!</source>
         <translation>将回液管接回机器！</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="407"/>
+        <location filename="../../src/common/common_tr_string.h" line="482"/>
         <source>Dry frame open</source>
         <translation>将干粉架打开</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="408"/>
+        <location filename="../../src/common/common_tr_string.h" line="483"/>
         <source>Dry frame open !</source>
         <translation>将干粉架打开！</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="410"/>
+        <location filename="../../src/common/common_tr_string.h" line="485"/>
         <source>Dry frame close</source>
         <translation>将干粉架关闭</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="411"/>
+        <location filename="../../src/common/common_tr_string.h" line="486"/>
         <source>Dry frame close !</source>
         <translation>将干粉架关闭！</translation>
     </message>
@@ -4835,7 +4911,7 @@ period value
         <translation type="obsolete">漏血监测器故障</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="457"/>
+        <location filename="../../src/common/common_tr_string.h" line="532"/>
         <source>Blood leak monitor fault!</source>
         <translation>漏血监测器故障!</translation>
     </message>
@@ -4860,7 +4936,7 @@ period value
         <translation type="obsolete">血泵1失控</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="466"/>
+        <location filename="../../src/common/common_tr_string.h" line="541"/>
         <source>NO1 blood pump is out of control!</source>
         <translation>血泵1失控!</translation>
     </message>
@@ -4869,7 +4945,7 @@ period value
         <translation type="obsolete">血泵1无反馈信号</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="469"/>
+        <location filename="../../src/common/common_tr_string.h" line="544"/>
         <source>NO1 blood pump no feedback!</source>
         <translation>血泵1无反馈信号!</translation>
     </message>
@@ -4878,7 +4954,7 @@ period value
         <translation type="obsolete">血泵1自检失败</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="472"/>
+        <location filename="../../src/common/common_tr_string.h" line="547"/>
         <source>NO1 blood pump selfcheck fail!</source>
         <translation>血泵1自检失败!</translation>
     </message>
@@ -4887,7 +4963,7 @@ period value
         <translation type="obsolete">肝素泵自检失败</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="484"/>
+        <location filename="../../src/common/common_tr_string.h" line="559"/>
         <source>Heparin pump selfcheck fail!</source>
         <translation>肝素泵自检失败!</translation>
     </message>
@@ -4896,7 +4972,7 @@ period value
         <translation type="obsolete">血路自检失败</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="505"/>
+        <location filename="../../src/common/common_tr_string.h" line="580"/>
         <source>Part of the blood selfcheck fail!</source>
         <translation>血路自检失败!</translation>
     </message>
@@ -4905,52 +4981,52 @@ period value
         <translation type="obsolete">水路自检失败</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="508"/>
+        <location filename="../../src/common/common_tr_string.h" line="583"/>
         <source>Part of the water selfcheck fail!</source>
         <translation>水路自检失败!</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="516"/>
+        <location filename="../../src/common/common_tr_string.h" line="591"/>
         <source>prompt</source>
         <translation>提示</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="518"/>
+        <location filename="../../src/common/common_tr_string.h" line="593"/>
         <source>Blood or water</source>
         <translation>血路或水路</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="520"/>
+        <location filename="../../src/common/common_tr_string.h" line="595"/>
         <source>Program prompts</source>
         <translation>程序提示</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="522"/>
+        <location filename="../../src/common/common_tr_string.h" line="597"/>
         <source>The power</source>
         <translation>电源</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="524"/>
+        <location filename="../../src/common/common_tr_string.h" line="599"/>
         <source>Blood pump</source>
         <translation>血泵</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="526"/>
+        <location filename="../../src/common/common_tr_string.h" line="601"/>
         <source>Backup pump</source>
         <translation>备用泵</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="528"/>
+        <location filename="../../src/common/common_tr_string.h" line="603"/>
         <source>Heparin pump</source>
         <translation>肝素泵</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="530"/>
+        <location filename="../../src/common/common_tr_string.h" line="605"/>
         <source>Self check</source>
         <translation>自检</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="532"/>
+        <location filename="../../src/common/common_tr_string.h" line="607"/>
         <source>The unknown</source>
         <translation>未知</translation>
     </message>
@@ -4959,7 +5035,7 @@ period value
         <translation type="obsolete">N3通信失败!</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="537"/>
+        <location filename="../../src/common/common_tr_string.h" line="612"/>
         <source>N3 canopen error!</source>
         <translation>N3 canopen通信失败!</translation>
     </message>
@@ -4968,137 +5044,137 @@ period value
         <translation type="obsolete">N5通信失败</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="540"/>
+        <location filename="../../src/common/common_tr_string.h" line="615"/>
         <source>N5 canopen error!</source>
         <translation>N5 canopen通信失败!</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="543"/>
+        <location filename="../../src/common/common_tr_string.h" line="618"/>
         <source>N9 canopen error!</source>
         <translation>N9 canopen通信失败!</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="546"/>
+        <location filename="../../src/common/common_tr_string.h" line="621"/>
         <source>N10 canopen error!</source>
         <translation>N10 canopen通信失败!</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="549"/>
+        <location filename="../../src/common/common_tr_string.h" line="624"/>
         <source>N15 canopen error!</source>
         <translation>N15 canopen通信失败!</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="552"/>
+        <location filename="../../src/common/common_tr_string.h" line="627"/>
         <source>N7 canopen error!</source>
         <translation>N7 canopen通信失败!</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="589"/>
+        <location filename="../../src/common/common_tr_string.h" line="664"/>
         <source>Systolic upper limit alarm</source>
         <translation>收缩压上限报警</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="590"/>
+        <location filename="../../src/common/common_tr_string.h" line="665"/>
         <source>Systolic beyond the upper limit!</source>
         <translation>收缩压超过设置上限!</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="592"/>
+        <location filename="../../src/common/common_tr_string.h" line="667"/>
         <source>Systolic lower limit alarm</source>
         <translation>收缩压下限报警</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="593"/>
+        <location filename="../../src/common/common_tr_string.h" line="668"/>
         <source>Systolic beyond the lower limit!</source>
         <translation>收缩压超过设置下限!</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="596"/>
+        <location filename="../../src/common/common_tr_string.h" line="671"/>
         <source>Diastolic upper limit alarm</source>
         <translation>舒张压上限报警</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="597"/>
+        <location filename="../../src/common/common_tr_string.h" line="672"/>
         <source>Diastolic beyond the upper limit!</source>
         <translation>舒张压超过设置上限！</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="599"/>
+        <location filename="../../src/common/common_tr_string.h" line="674"/>
         <source>Diastolic lower limit alarm</source>
         <translation>舒张压下限报警</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="600"/>
+        <location filename="../../src/common/common_tr_string.h" line="675"/>
         <source>Diastolic beyond the lower limit!</source>
         <translation>舒张压超过设置下限!</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="603"/>
+        <location filename="../../src/common/common_tr_string.h" line="678"/>
         <source>Pulse upper limit alarm</source>
         <translation>脉搏上限报警</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="604"/>
+        <location filename="../../src/common/common_tr_string.h" line="679"/>
         <source>Pulse beyond the upper limit!</source>
         <translation>脉搏超过设置上限!</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="606"/>
+        <location filename="../../src/common/common_tr_string.h" line="681"/>
         <source>Pulse lower limit alarm</source>
         <translation>脉搏下限报警</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="607"/>
+        <location filename="../../src/common/common_tr_string.h" line="682"/>
         <source>Pulse beyond the lower limit!</source>
         <translation>脉搏超过设置下限!</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="610"/>
+        <location filename="../../src/common/common_tr_string.h" line="685"/>
         <source>Time to stop heparin pump</source>
         <translation>肝素泵停止时间到</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="611"/>
+        <location filename="../../src/common/common_tr_string.h" line="686"/>
         <source>Has reached the stop time!</source>
         <translation>设置的预停止时间到！</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="614"/>
+        <location filename="../../src/common/common_tr_string.h" line="689"/>
         <source>Please open the heparin pump</source>
         <translation>请打开肝素泵</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="615"/>
+        <location filename="../../src/common/common_tr_string.h" line="690"/>
         <source>Didn&apos;t open the heparin pump!</source>
         <translation>肝素泵没有打开!</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="618"/>
+        <location filename="../../src/common/common_tr_string.h" line="693"/>
         <source>Please open the blood pump</source>
         <translation>请打开血泵</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="619"/>
+        <location filename="../../src/common/common_tr_string.h" line="694"/>
         <source>The alarm already processed,please open the blood pump!</source>
         <translation>影响血泵的报警已处理完，可以打开血泵!</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="626"/>
+        <location filename="../../src/common/common_tr_string.h" line="701"/>
         <source>Electric supply stop</source>
         <translation>市电停止</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="627"/>
+        <location filename="../../src/common/common_tr_string.h" line="702"/>
         <source>Electric supply stop!</source>
         <translation>市电停止!</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="630"/>
+        <location filename="../../src/common/common_tr_string.h" line="705"/>
         <source>Please select a row !</source>
         <translation>请选择一行！</translation>
     </message>
     <message>
-        <location filename="../../src/common/common_tr_string.h" line="631"/>
+        <location filename="../../src/common/common_tr_string.h" line="706"/>
         <source>Are you sure to delete ?</source>
         <translation>是否确定删除？</translation>
     </message>
@@ -5110,21 +5186,21 @@ period value
         <translation type="obsolete">动脉压</translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_main/scene_main.cpp" line="45"/>
-        <location filename="../../src/scenes/scene_main/scene_main.cpp" line="83"/>
+        <location filename="../../src/scenes/scene_main/scene_main.cpp" line="47"/>
+        <location filename="../../src/scenes/scene_main/scene_main.cpp" line="85"/>
         <source>A.P.</source>
         <translation>动脉压</translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_main/scene_main.cpp" line="49"/>
-        <location filename="../../src/scenes/scene_main/scene_main.cpp" line="84"/>
+        <location filename="../../src/scenes/scene_main/scene_main.cpp" line="51"/>
+        <location filename="../../src/scenes/scene_main/scene_main.cpp" line="86"/>
         <source>V.P.</source>
         <oldsource>Vein</oldsource>
         <translation>静脉压</translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_main/scene_main.cpp" line="53"/>
-        <location filename="../../src/scenes/scene_main/scene_main.cpp" line="85"/>
+        <location filename="../../src/scenes/scene_main/scene_main.cpp" line="55"/>
+        <location filename="../../src/scenes/scene_main/scene_main.cpp" line="87"/>
         <source>TMP</source>
         <translation>跨膜压</translation>
     </message>
@@ -5133,8 +5209,8 @@ period value
         <translation type="obsolete">跨膜压</translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_main/scene_main.cpp" line="57"/>
-        <location filename="../../src/scenes/scene_main/scene_main.cpp" line="86"/>
+        <location filename="../../src/scenes/scene_main/scene_main.cpp" line="59"/>
+        <location filename="../../src/scenes/scene_main/scene_main.cpp" line="88"/>
         <source>Cond.</source>
         <oldsource>Conductance</oldsource>
         <translation>电导度</translation>
@@ -5444,7 +5520,7 @@ period value
         <translation>确认跨膜压</translation>
     </message>
     <message>
-        <location filename="../../src/setup/setup_other/widget_setup_other.cpp" line="164"/>
+        <location filename="../../src/setup/setup_other/widget_setup_other.cpp" line="165"/>
         <source>Please Input Passwd</source>
         <translation>请输入密码</translation>
     </message>
@@ -5888,17 +5964,17 @@ period value
 <context>
     <name>SceneKTV</name>
     <message>
-        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="375"/>
+        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="373"/>
         <source>Pre-dislysis:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="376"/>
+        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="374"/>
         <source>Post-dislysis:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="377"/>
+        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="375"/>
         <source>Height:</source>
         <translation>身高：</translation>
     </message>
@@ -5907,92 +5983,92 @@ period value
         <translation type="obsolete">体重：</translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="379"/>
+        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="377"/>
         <source>Age:</source>
         <translation>年龄：</translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="380"/>
+        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="378"/>
         <source>Gender:</source>
         <translation>性别：</translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="382"/>
+        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="379"/>
         <source>  Calibration should be done when Kt/V tests inaccurately.In calibration,machine should be in prime status.Precondition on successful calibration: Pre-dialysis conductivity and post-dialysis conductivity should be in the range of 13.0-15.0 mS/cm,the error between them should be less than 1.0 mS/cm.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="388"/>
+        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="385"/>
         <source>Male</source>
         <translation>男</translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="389"/>
+        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="386"/>
         <source>Female</source>
         <translation>女</translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="390"/>
+        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="387"/>
         <source>OK</source>
         <translation type="unfinished">完成</translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="391"/>
+        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="388"/>
         <source>Ban</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="393"/>
+        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="390"/>
         <source>Kt/V function</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="395"/>
+        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="391"/>
         <source>  Dialysis urea reduction rate just reflects reduction percentage of soluteinstead of actual solute-removing index. &gt;70% indicates dialysis adequacy.Only for reference! Please refer to actual clinical for analysis.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="398"/>
-        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="408"/>
-        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="441"/>
+        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="394"/>
+        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="403"/>
+        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="434"/>
         <source>First pre-dialysis BUN:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="399"/>
-        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="409"/>
-        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="425"/>
-        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="442"/>
+        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="395"/>
+        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="404"/>
+        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="419"/>
+        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="435"/>
         <source>First post-dialysis BUN:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="400"/>
-        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="401"/>
-        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="412"/>
-        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="413"/>
-        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="430"/>
-        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="431"/>
-        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="432"/>
-        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="447"/>
-        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="448"/>
-        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="449"/>
+        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="396"/>
+        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="397"/>
+        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="407"/>
+        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="408"/>
+        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="424"/>
+        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="425"/>
+        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="426"/>
+        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="440"/>
+        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="441"/>
+        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="442"/>
         <source>mmol/l</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="402"/>
+        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="398"/>
         <source>Dialysis urea reduction rate(URR):</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="403"/>
-        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="415"/>
+        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="399"/>
+        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="410"/>
         <source>0 %</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="405"/>
+        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="400"/>
         <source>  Pool II solute clearance index, a parameter calculated by urea kinetic model, indicates solute removing index in dialysis. SRI&gt;70% indicates dialysis adequacy. Only for reference! Please refer to actual clinical for analysis</source>
         <translation type="unfinished"></translation>
     </message>
@@ -6001,106 +6077,106 @@ period value
         <translation type="obsolete">超滤量:</translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="411"/>
+        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="406"/>
         <source>Pool II solute clearance index(SRI2pool):</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="414"/>
-        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="428"/>
+        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="409"/>
+        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="422"/>
         <source>ml</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="417"/>
+        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="411"/>
         <source>  Normal protein catabolism rate.The protein intakes for dialysis patients should be more than 1.1(g/kg.d),then nPCR will be more than 1.1(g/kg.d) too.When nPCR is less than 0.8(g/kg.d),it means malnutrition and inadequate dialysisrate will be high. Only for reference! Please refer to actual clinical for analysis</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="422"/>
+        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="416"/>
         <source>Urine volume in dialysis interphase:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="423"/>
+        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="417"/>
         <source>Interval time of dialysis:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="424"/>
+        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="418"/>
         <source>Urine BUN in dialysis interphase:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="426"/>
-        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="443"/>
+        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="420"/>
+        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="436"/>
         <source>Second pre-dialysis BUN:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="427"/>
+        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="421"/>
         <source>Normal protein catabolism rate(nPCR):</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="429"/>
-        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="450"/>
-        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="451"/>
+        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="423"/>
+        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="443"/>
+        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="444"/>
         <source>min</source>
         <translation type="unfinished">分钟</translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="433"/>
+        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="427"/>
         <source>1000</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="434"/>
+        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="428"/>
         <source>g/kg.d</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="436"/>
+        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="429"/>
         <source>  Time Average Concentrations of Urea reflects synthesis situation of       dialysis urea remov index and patient&apos;s protein metabolism.TACurea&gt;50(mg/dl)       means reference index for dialysis adequacy.It indicates cardiovascular,      nervous system of alimentary canal and other long-term complications increase.      Only for reference! Please refer to actual clinical for analysis.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="454"/>
+        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="447"/>
         <source>  If the result after dialysis is &gt;1.2,it measn dialysis adequacy.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="444"/>
+        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="437"/>
         <source>Dialysis time:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="378"/>
+        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="376"/>
         <source>Dry weight:</source>
         <translation type="unfinished">体重:</translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="410"/>
+        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="405"/>
         <source>Acc UF Volume:</source>
         <translation>已超滤量:</translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="445"/>
+        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="438"/>
         <source>Dialysis interval time:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="446"/>
+        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="439"/>
         <source>Time Average Concentrations of Urea(TACurea):</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="452"/>
+        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="445"/>
         <source>mg/dl</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="453"/>
+        <location filename="../../src/scenes/scene_ext/scene_ktv.cpp" line="446"/>
         <source>0</source>
         <translation type="unfinished"></translation>
     </message>
@@ -6108,67 +6184,17 @@ period value
 <context>
     <name>SceneKTV2</name>
     <message>
-        <location filename="../../src/scenes/scene_ext/scene_ktv2.cpp" line="286"/>
+        <location filename="../../src/scenes/scene_ext/scene_ktv2.cpp" line="283"/>
         <source>PerInfo</source>
         <translation>病人信息</translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_ext/scene_ktv2.cpp" line="289"/>
+        <location filename="../../src/scenes/scene_ext/scene_ktv2.cpp" line="284"/>
         <source>D.P.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_ext/scene_ktv2.cpp" line="388"/>
-        <source>CarbamideClearAmount</source>
-        <translation type="unfinished">尿素清除量</translation>
-    </message>
-    <message>
-        <location filename="../../src/scenes/scene_ext/scene_ktv2.cpp" line="392"/>
-        <source>é»è®¤:180ml/min</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/scenes/scene_ext/scene_ktv2.cpp" line="393"/>
-        <source>é»è®¤:230ml/min</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/scenes/scene_ext/scene_ktv2.cpp" line="395"/>
-        <source>KTV</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/scenes/scene_ext/scene_ktv2.cpp" line="396"/>
-        <source>1.8</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/scenes/scene_ext/scene_ktv2.cpp" line="398"/>
-        <source>Treattime</source>
-        <translation type="unfinished">治疗时间</translation>
-    </message>
-    <message>
-        <location filename="../../src/scenes/scene_ext/scene_ktv2.cpp" line="399"/>
-        <source>min</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/scenes/scene_ext/scene_ktv2.cpp" line="401"/>
-        <source>AdaptiveProportion</source>
-        <translation type="unfinished">调整比例</translation>
-    </message>
-    <message>
-        <location filename="../../src/scenes/scene_ext/scene_ktv2.cpp" line="402"/>
-        <source>Default</source>
-        <translation type="unfinished">默认</translation>
-    </message>
-    <message>
-        <location filename="../../src/scenes/scene_ext/scene_ktv2.cpp" line="403"/>
-        <source>1.0</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/scenes/scene_ext/scene_ktv2.cpp" line="407"/>
+        <location filename="../../src/scenes/scene_ext/scene_ktv2.cpp" line="397"/>
         <source>Height:</source>
         <translation>身高</translation>
     </message>
@@ -6181,78 +6207,134 @@ period value
         <translation type="obsolete">体重:</translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_ext/scene_ktv2.cpp" line="408"/>
+        <location filename="../../src/scenes/scene_ext/scene_ktv2.cpp" line="390"/>
+        <source>      Calibration should be done when Kt/V tests inaccurately.In calibration,machine should be in prime status.Precondition on successful calibration: Pre-dialysis conductivity and post-dialysis conductivityshould be in the range of 13.0-15.0 mS/cm,the error between them should be less than1.0 mS/cm.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/scenes/scene_ext/scene_ktv2.cpp" line="391"/>
+        <source>      Attention: It is not easy to change the flow rate of the blood pump as the reference value, and the change of the flow rate of KT/V is not a reference standard</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/scenes/scene_ext/scene_ktv2.cpp" line="398"/>
         <source>Dry Weight:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_ext/scene_ktv2.cpp" line="409"/>
+        <location filename="../../src/scenes/scene_ext/scene_ktv2.cpp" line="399"/>
         <source>Age:</source>
         <translation>年龄:</translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_ext/scene_ktv2.cpp" line="410"/>
+        <location filename="../../src/scenes/scene_ext/scene_ktv2.cpp" line="400"/>
         <source>Gender:</source>
         <translation>性别:</translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_ext/scene_ktv2.cpp" line="412"/>
+        <location filename="../../src/scenes/scene_ext/scene_ktv2.cpp" line="401"/>
         <source>Male</source>
         <translation>男</translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_ext/scene_ktv2.cpp" line="413"/>
+        <location filename="../../src/scenes/scene_ext/scene_ktv2.cpp" line="402"/>
         <source>Female</source>
         <translation>女</translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_ext/scene_ktv2.cpp" line="414"/>
+        <location filename="../../src/scenes/scene_ext/scene_ktv2.cpp" line="403"/>
         <source>Confirm</source>
         <translation>确认</translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_ext/scene_ktv2.cpp" line="417"/>
+        <location filename="../../src/scenes/scene_ext/scene_ktv2.cpp" line="414"/>
+        <source>Default:180ml/min</source>
+        <translation type="unfinished">默认:180ml/min</translation>
+    </message>
+    <message>
+        <location filename="../../src/scenes/scene_ext/scene_ktv2.cpp" line="415"/>
+        <source>Default:230ml/min</source>
+        <translation type="unfinished">默认:230ml/min</translation>
+    </message>
+    <message>
+        <location filename="../../src/scenes/scene_ext/scene_ktv2.cpp" line="379"/>
         <source>Dialyzer Type</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_ext/scene_ktv2.cpp" line="419"/>
+        <location filename="../../src/scenes/scene_ext/scene_ktv2.cpp" line="381"/>
         <source>Blood Flow</source>
         <translation>血泵流速</translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_ext/scene_ktv2.cpp" line="422"/>
-        <source>Treatment Time</source>
-        <translation type="unfinished"></translation>
+        <location filename="../../src/scenes/scene_ext/scene_ktv2.cpp" line="384"/>
+        <source>Cure time</source>
+        <translation type="unfinished">治疗时间</translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_ext/scene_ktv2.cpp" line="424"/>
+        <location filename="../../src/scenes/scene_ext/scene_ktv2.cpp" line="386"/>
         <source>UF Goal</source>
         <translation type="unfinished">超滤目标</translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_ext/scene_ktv2.cpp" line="428"/>
+        <location filename="../../src/scenes/scene_ext/scene_ktv2.cpp" line="405"/>
         <source>Kt/V Goal</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">KTV目标值</translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_ext/scene_ktv2.cpp" line="429"/>
+        <location filename="../../src/scenes/scene_ext/scene_ktv2.cpp" line="406"/>
         <source>Kt/V Upto</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">方案可达</translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_ext/scene_ktv2.cpp" line="430"/>
+        <location filename="../../src/scenes/scene_ext/scene_ktv2.cpp" line="407"/>
         <source>Kt/V Actual</source>
+        <translation type="unfinished">实际值</translation>
+    </message>
+    <message>
+        <location filename="../../src/scenes/scene_ext/scene_ktv2.cpp" line="410"/>
+        <source>CarbamideClearAmount</source>
+        <translation type="unfinished">尿素清除量</translation>
+    </message>
+    <message>
+        <location filename="../../src/scenes/scene_ext/scene_ktv2.cpp" line="416"/>
+        <source>KTV</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_ext/scene_ktv2.cpp" line="433"/>
+        <location filename="../../src/scenes/scene_ext/scene_ktv2.cpp" line="417"/>
+        <source>1.8</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/scenes/scene_ext/scene_ktv2.cpp" line="419"/>
+        <source>min</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/scenes/scene_ext/scene_ktv2.cpp" line="421"/>
+        <source>AdaptiveProportion</source>
+        <translation type="unfinished">调整比例</translation>
+    </message>
+    <message>
+        <location filename="../../src/scenes/scene_ext/scene_ktv2.cpp" line="422"/>
+        <source>Default</source>
+        <translation type="unfinished">默认</translation>
+    </message>
+    <message>
+        <location filename="../../src/scenes/scene_ext/scene_ktv2.cpp" line="423"/>
+        <source>1.0</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/scenes/scene_ext/scene_ktv2.cpp" line="428"/>
         <source>P.t Info</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../src/scenes/scene_ext/scene_ktv2.cpp" line="418"/>
         <source>Treatment time</source>
-        <translation type="obsolete">治疗时间</translation>
+        <translation type="unfinished">治疗时间</translation>
     </message>
     <message>
         <source>UF goal</source>
@@ -6275,7 +6357,7 @@ period value
         <translation type="obsolete">保存</translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_ext/scene_ktv2.cpp" line="415"/>
+        <location filename="../../src/scenes/scene_ext/scene_ktv2.cpp" line="404"/>
         <source>Cancel</source>
         <translation>取消</translation>
     </message>
@@ -6288,22 +6370,21 @@ period value
         <translation type="obsolete">血流速率</translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_ext/scene_ktv2.cpp" line="420"/>
-        <location filename="../../src/scenes/scene_ext/scene_ktv2.cpp" line="427"/>
+        <location filename="../../src/scenes/scene_ext/scene_ktv2.cpp" line="382"/>
+        <location filename="../../src/scenes/scene_ext/scene_ktv2.cpp" line="389"/>
         <source>[ml/min]</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_ext/scene_ktv2.cpp" line="421"/>
         <source>Patient Information</source>
-        <translation>病人信息</translation>
+        <translation type="obsolete">病人信息</translation>
     </message>
     <message>
         <source>Cure Time</source>
         <translation type="obsolete">治疗时间</translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_ext/scene_ktv2.cpp" line="423"/>
+        <location filename="../../src/scenes/scene_ext/scene_ktv2.cpp" line="385"/>
         <source>[h:min]</source>
         <translation></translation>
     </message>
@@ -6312,12 +6393,12 @@ period value
         <translation type="obsolete">超滤目标</translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_ext/scene_ktv2.cpp" line="425"/>
+        <location filename="../../src/scenes/scene_ext/scene_ktv2.cpp" line="387"/>
         <source>[ml]</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_ext/scene_ktv2.cpp" line="426"/>
+        <location filename="../../src/scenes/scene_ext/scene_ktv2.cpp" line="388"/>
         <source>Dialysate Flowrate</source>
         <translation>透析液流速</translation>
     </message>
@@ -6334,7 +6415,7 @@ period value
         <translation type="obsolete">Kt/V当前值</translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_ext/scene_ktv2.cpp" line="432"/>
+        <location filename="../../src/scenes/scene_ext/scene_ktv2.cpp" line="426"/>
         <source>  If the result after dialysis is &gt;1.2,it measn dialysis adequacy.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -6551,17 +6632,17 @@ period value
 <context>
     <name>SceneMaintain</name>
     <message>
-        <location filename="../../src/maintain/scene_maintain.cpp" line="195"/>
+        <location filename="../../src/maintain/scene_maintain.cpp" line="181"/>
         <source>Project Mode</source>
         <translation>工厂模式</translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain.cpp" line="196"/>
+        <location filename="../../src/maintain/scene_maintain.cpp" line="182"/>
         <source>Config Language</source>
         <translation>语言设置</translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain.cpp" line="197"/>
+        <location filename="../../src/maintain/scene_maintain.cpp" line="183"/>
         <source>Return</source>
         <translation>返回</translation>
     </message>
@@ -6925,22 +7006,22 @@ period value
 <context>
     <name>SceneProjectModeParamsCommon</name>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4664"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4666"/>
         <source>type</source>
         <translation>类型</translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4664"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4666"/>
         <source>name</source>
         <translation>参数</translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4664"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4666"/>
         <source>default</source>
         <translation>默认值</translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4664"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4666"/>
         <source>max</source>
         <translation>最大值</translation>
     </message>
@@ -6955,332 +7036,332 @@ period value
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="1626"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="1627"/>
         <source>/Config/Params_Dialyser/onlineRate</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="1887"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="1888"/>
         <source>/Config/Params_BP/Rate_GetBlood</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="2761"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="2763"/>
         <source>/Config/Params_PreFlush/BpRate_Conect</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="2807"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="2809"/>
         <source>/Config/Params_PreFlush/BpRate_phase1</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="2853"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="2855"/>
         <source>/Config/Params_PreFlush/BpRate_phase2</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="2899"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="2901"/>
         <source>/Config/Params_PreFlush/BpRate_phase3</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="2945"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="2947"/>
         <source>/Config/Params_PreFlush/TMPUp_PF</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="2998"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3000"/>
         <source>/Config/Params_ColdFlush/Loop_Time</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3053"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3055"/>
         <source>/Config/Params_ColdFlush/Flush_Flux</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3148"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3150"/>
         <source>/Config/Params_HotFlush/Flush_Flux</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3412"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3414"/>
         <source>/Config/Params_Chymistry_Citric/Flush_Flux</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3451"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3453"/>
         <source>/Config/Params_Chymistry_Citric/Loop_Flux</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3588"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3590"/>
         <source>/Config/Params_Chymistry_Citric/Suck_Flux</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3642"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3644"/>
         <source>/Config/Params_Chymistry_Peracetic/Flush_Flux</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3652"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3654"/>
         <source>/Config/Params_Chymistry_Peracetic/Loop_Flux</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3701"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3703"/>
         <source>/Config/Params_Chymistry_Peracetic/Suck_Flux</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3756"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3758"/>
         <source>/Config/Params_Chymistry_Reserve3/Flush_Flux</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3766"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3768"/>
         <source>/Config/Params_Chymistry_Reserve3/Loop_Flux</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3816"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3818"/>
         <source>/Config/Params_Chymistry_Reserve3/Suck_Flux</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3872"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3874"/>
         <source>/Config/Params_Hot_Citric/Flush_Flux</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3882"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3884"/>
         <source>/Config/Params_Hot_Citric/Loop_Flux</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3932"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3934"/>
         <source>/Config/Params_Hot_Citric/Suck_Flux</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3977"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3979"/>
         <source>/Config/Params_Hot/Flush_Flux</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3987"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3989"/>
         <source>/Config/Params_Hot/Loop_Flux</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4063"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4065"/>
         <source>/Config/Params_Center_Chymistry_Input/Flush_Flux</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4073"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4075"/>
         <source>/Config/Params_Center_Chymistry_Input/Loop_Flux</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4083"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4085"/>
         <source>/Config/Params_Center_Chymistry_Input/Suck_Flux</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4137"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4139"/>
         <source>/Config/Params_Center_Chymistry_Flush/Flush_Flux</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4147"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4149"/>
         <source>/Config/Params_Center_Chymistry_Flush/Loop_Flux</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4157"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4159"/>
         <source>/Config/Params_Center_Chymistry_Flush/Suck_Flux</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4211"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4213"/>
         <source>/Config/Params_Center_Hot/Flush_Flux</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4221"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4223"/>
         <source>/Config/Params_Center_Hot/Loop_Flux</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4241"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4243"/>
         <source>/Config/Params_Center_Hot/Suck_Flux</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4295"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4297"/>
         <source>/Config/Params_Center_Flush_Entry/Suck_Flux</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4344"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4346"/>
         <source>/Config/Auto_scale/AP_ReadySafeScaleUp</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4354"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4356"/>
         <source>/Config/Auto_scale/AP_ReadySafeScaleLow</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4364"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4366"/>
         <source>/Config/Auto_scale/AP_RunSafeScaleUp</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4374"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4376"/>
         <source>/Config/Auto_scale/AP_RunSafeScaleLow</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4404"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4406"/>
         <source>/Config/Auto_scale/AP_RunAutoScaleUp</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4414"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4416"/>
         <source>/Config/Auto_scale/AP_RunAutoScaleLow</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4384"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4386"/>
         <source>/Config/Auto_scale/AP_StopSafeScaleUp</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4394"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4396"/>
         <source>/Config/Auto_scale/AP_StopSafeScaleLow</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4427"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4429"/>
         <source>/Config/Auto_scale/VP_ReadySafeScaleUp</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4437"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4439"/>
         <source>/Config/Auto_scale/VP_ReadySafeScaleLow</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4447"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4449"/>
         <source>/Config/Auto_scale/VP_RunSafeScaleUp</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4457"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4459"/>
         <source>/Config/Auto_scale/VP_RunSafeScaleLow</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4487"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4489"/>
         <source>/Config/Auto_scale/VP_RunAutoScaleUp</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4497"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4499"/>
         <source>/Config/Auto_scale/VP_RunAutoScaleLow</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4467"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4469"/>
         <source>/Config/Auto_scale/VP_StopSafeScaleUp</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4477"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4479"/>
         <source>/Config/Auto_scale/VP_StopSafeScaleLow</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4511"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4513"/>
         <source>/Config/Auto_scale/TMP_ReadySafeScaleUp</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4521"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4523"/>
         <source>/Config/Auto_scale/TMP_ReadySafeScaleLow</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4531"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4533"/>
         <source>/Config/Auto_scale/TMP_RunSafeScaleUp</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4541"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4543"/>
         <source>/Config/Auto_scale/TMP_RunSafeScaleLow</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4571"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4573"/>
         <source>/Config/Auto_scale/TMP_RunAutoScaleUp</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4581"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4583"/>
         <source>/Config/Auto_scale/TMP_RunAutoScaleLow</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4551"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4553"/>
         <source>/Config/Auto_scale/TMP_StopSafeScaleUp</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4561"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4563"/>
         <source>/Config/Auto_scale/TMP_StopSafeScaleLow</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4593"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4595"/>
         <source>/Config/Auto_scale/AP_SPAN</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4604"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4606"/>
         <source>/Config/Auto_scale/VP_SPAN</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4614"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4616"/>
         <source>/Config/Auto_scale/TEMP_SPAN</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4624"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4626"/>
         <source>/Config/Auto_scale/Hold_Time</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4634"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4636"/>
         <source>/Config/Auto_scale/Alarm_Time</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4309"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4311"/>
         <source>/Config/Clean_cond/B_cond</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4319"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4321"/>
         <source>/Config/Clean_cond/Mix_cond</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4329"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4331"/>
         <source>/Config/Clean_cond/Out_cond</source>
         <translation></translation>
     </message>
@@ -7289,7 +7370,7 @@ period value
         <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="1383"/>
         <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="1418"/>
         <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="1457"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="1496"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="1497"/>
         <source>UF</source>
         <translation>超滤</translation>
     </message>
@@ -7310,169 +7391,169 @@ period value
         <translation type="obsolete">血泵引血速度</translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4312"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4322"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4332"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4314"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4324"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4334"/>
         <source>Clean_cond</source>
         <translation>冲洗电导</translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4312"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4314"/>
         <source>B_cond</source>
         <translation>B液电导</translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4322"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4324"/>
         <source>Mix_cond</source>
         <translation>混合电导</translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4332"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4334"/>
         <source>Out_cond</source>
         <translation>出水口电导</translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4347"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4349"/>
         <source>AP_ReadySafeScaleUp</source>
         <translation>动脉压安全卡标上限(准备状态)</translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4357"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4359"/>
         <source>AP_ReadySafeScaleLow</source>
         <translation>动脉压安全卡标下限(准备状态)</translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4367"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4369"/>
         <source>AP_RunSafeScaleUp</source>
         <translation>动脉压安全卡标上限(治疗状态)</translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4377"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4379"/>
         <source>AP_RunSafeScaleLow</source>
         <translation>动脉压安全卡标下限(治疗状态)</translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4387"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4389"/>
         <source>AP_StopSafeScaleUp</source>
         <translation>动脉压安全卡标上限(结束状态)</translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4397"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4399"/>
         <source>AP_StopSafeScaleLow</source>
         <translation>动脉压安全卡标下限(结束状态)</translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4407"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4409"/>
         <source>AP_RunAutoScaleUp</source>
         <translation>动脉压自动卡标上限(治疗状态)</translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4417"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4419"/>
         <source>AP_RunAutoScaleLow</source>
         <translation>动脉压自动卡标下限(治疗状态)</translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4430"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4432"/>
         <source>VP_ReadySafeScaleUp</source>
         <translation>静脉压安全卡标上限(准备状态)</translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4440"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4442"/>
         <source>VP_ReadySafeScaleLow</source>
         <translation>静脉压安全卡标下限(准备状态)</translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4450"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4452"/>
         <source>VP_RunSafeScaleUp</source>
         <translation>静脉压安全卡标上限(治疗状态)</translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4460"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4462"/>
         <source>VP_RunSafeScaleLow</source>
         <translation>静脉压安全卡标下限(治疗状态)</translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4470"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4472"/>
         <source>VP_StopSafeScaleUp</source>
         <translation>静脉压安全卡标上限(结束状态)</translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4480"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4482"/>
         <source>VP_StopSafeScaleLow</source>
         <translation>静脉压安全卡标下限(结束状态)</translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4490"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4492"/>
         <source>VP_RunAutoScaleUp</source>
         <translation>静脉压自动卡标上限(治疗状态)</translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4500"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4502"/>
         <source>VP_RunAutoScaleLow</source>
         <translation>静脉压自动卡标下限(治疗状态)</translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4514"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4516"/>
         <source>TMP_ReadySafeScaleUp</source>
         <translation>跨膜压安全卡标上限(准备状态)</translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4524"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4526"/>
         <source>TMP_ReadySafeScaleLow</source>
         <translation>跨膜压安全卡标下限(准备状态)</translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4534"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4536"/>
         <source>TMP_RunSafeScaleUp</source>
         <translation>跨膜压安全卡标上限(治疗状态)</translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4544"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4546"/>
         <source>TMP_RunSafeScaleLow</source>
         <translation>跨膜压安全卡标下限(治疗状态)</translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4554"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4556"/>
         <source>TMP_StopSafeScaleUp</source>
         <translation>跨膜压安全卡标上限(结束状态)</translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4564"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4566"/>
         <source>TMP_StopSafeScaleLow</source>
         <translation>跨膜压安全卡标下限(结束状态)</translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4574"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4576"/>
         <source>TMP_RunAutoScaleUp</source>
         <translation>跨膜压自动卡标上限(治疗状态)</translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4584"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4586"/>
         <source>TMP_RunAutoScaleLow</source>
         <translation>跨膜压自动卡标下限(治疗状态)</translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4664"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4666"/>
         <source>min</source>
         <translation>最小值</translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4664"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4666"/>
         <source>step</source>
         <translation>步进值</translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4664"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4666"/>
         <source>unit</source>
         <translation>单位</translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4697"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4699"/>
         <source>Confirm</source>
         <translation>确认保存</translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4698"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4700"/>
         <source>Factory Reset</source>
         <translation>出厂设置</translation>
     </message>
@@ -7496,15 +7577,15 @@ period value
         <translation type="obsolete">超滤时间</translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="1509"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="1510"/>
         <source>/Config/Params_Dialyser/Temp</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="1541"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="1580"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="1619"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="1658"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="1542"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="1581"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="1620"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="1659"/>
         <source>Dialyser</source>
         <translation>透析液</translation>
     </message>
@@ -7513,7 +7594,7 @@ period value
         <translation type="obsolete">透析液设定温度</translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="1548"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="1549"/>
         <source>/Config/Params_Dialyser/Cond</source>
         <translation></translation>
     </message>
@@ -7522,7 +7603,7 @@ period value
         <translation type="obsolete">透后液电导</translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="1587"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="1588"/>
         <source>/Config/Params_Dialyser/Rate</source>
         <translation></translation>
     </message>
@@ -7531,17 +7612,17 @@ period value
         <translation type="obsolete">透析液设定流速</translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="1670"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="1671"/>
         <source>/Config/Params_BP/BP_Width</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="1701"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="1763"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="1802"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="1841"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="1880"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="1919"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="1702"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="1764"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="1803"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="1842"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="1881"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="1920"/>
         <source>BP</source>
         <translation>血泵</translation>
     </message>
@@ -7550,7 +7631,7 @@ period value
         <translation type="obsolete">血泵管径</translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="1731"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="1732"/>
         <source>/Config/Params_BP/Rate_CheckSelf</source>
         <translation></translation>
     </message>
@@ -7559,7 +7640,7 @@ period value
         <translation type="obsolete">自检血泵速度</translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="1770"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="1771"/>
         <source>/Config/Params_BP/Rate_ThreatMent</source>
         <translation></translation>
     </message>
@@ -7568,7 +7649,7 @@ period value
         <translation type="obsolete">治疗血泵速度</translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="1809"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="1810"/>
         <source>/Config/Params_BP/Rate_ReturnBlood</source>
         <translation></translation>
     </message>
@@ -7577,7 +7658,7 @@ period value
         <translation type="obsolete">血泵回血速度</translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="1848"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="1849"/>
         <source>/Config/Params_BP/Rate_Preflush</source>
         <translation></translation>
     </message>
@@ -7586,15 +7667,15 @@ period value
         <translation type="obsolete">预冲血泵速度</translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="2043"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="2044"/>
         <source>/Config/Params_Heparin/First_Volume</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="2075"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="2114"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="2153"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="2192"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="2076"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="2115"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="2154"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="2193"/>
         <source>Heparin</source>
         <translation>肝素</translation>
     </message>
@@ -7603,12 +7684,12 @@ period value
         <translation type="obsolete">首剂量</translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="2082"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="2083"/>
         <source>/Config/Params_Heparin/Rate</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="2121"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="2122"/>
         <source>/Config/Params_Heparin/Pre_StopTime</source>
         <translation></translation>
     </message>
@@ -7617,7 +7698,7 @@ period value
         <translation type="obsolete">预先停止时间</translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="2160"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="2161"/>
         <source>/Config/Params_Heparin/add_Volume</source>
         <translation></translation>
     </message>
@@ -7626,15 +7707,15 @@ period value
         <translation type="obsolete">肝素追加量</translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="2228"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="2229"/>
         <source>/Config/Params_SubP/Flux</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="2260"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="2299"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="2338"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="2377"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="2261"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="2300"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="2339"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="2379"/>
         <source>Sub Pump</source>
         <translation>置换泵（第二血泵）</translation>
     </message>
@@ -7643,7 +7724,7 @@ period value
         <translation type="obsolete">置换泵流速</translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="2267"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="2268"/>
         <source>/Config/Params_SubP/Goal</source>
         <translation></translation>
     </message>
@@ -7652,7 +7733,7 @@ period value
         <translation type="obsolete">目标值</translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="2306"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="2307"/>
         <source>/Config/Params_SubP/Rapid_Rate</source>
         <translation></translation>
     </message>
@@ -7661,13 +7742,13 @@ period value
         <translation type="obsolete">快速补液速度</translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="2389"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="2391"/>
         <source>/Config/Params_TreatTime/Hour</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="2421"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="2460"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="2423"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="2462"/>
         <source>Threat Time</source>
         <translation>治疗时间</translation>
     </message>
@@ -7676,7 +7757,7 @@ period value
         <translation type="obsolete">小时</translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="2428"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="2430"/>
         <source>/Config/Params_TreatTime/min</source>
         <translation></translation>
     </message>
@@ -7685,23 +7766,23 @@ period value
         <translation type="obsolete">分钟</translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="2513"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="2559"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="2598"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="2637"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="2676"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="2715"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="2754"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="2801"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="2847"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="2893"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="2939"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="2977"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="2515"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="2561"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="2600"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="2639"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="2678"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="2717"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="2756"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="2803"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="2849"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="2895"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="2941"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="2979"/>
         <source>PreFlush</source>
         <translation>预冲</translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="2566"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="2568"/>
         <source>/Config/Params_PreFlush/Dialyser_Rate</source>
         <translation></translation>
     </message>
@@ -7710,7 +7791,7 @@ period value
         <translation type="obsolete">透析液流量</translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="2605"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="2607"/>
         <source>/Config/Params_PreFlush/Time</source>
         <translation></translation>
     </message>
@@ -7719,7 +7800,7 @@ period value
         <translation type="obsolete">预冲时间</translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="2644"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="2646"/>
         <source>/Config/Params_PreFlush/PF_UF_Rate</source>
         <translation></translation>
     </message>
@@ -7728,7 +7809,7 @@ period value
         <translation type="obsolete">预冲超滤率</translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="2683"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="2685"/>
         <source>/Config/Params_PreFlush/PF_UF_Volume</source>
         <translation></translation>
     </message>
@@ -7737,17 +7818,17 @@ period value
         <translation type="obsolete">预冲超滤量</translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="2722"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="2724"/>
         <source>/Config/Params_PreFlush/PF_Volume</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="2472"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="2474"/>
         <source>/Config/Params_PreFlush/BpRate_First_FiveMin</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="2519"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="2521"/>
         <source>/Config/Params_PreFlush/BpRate</source>
         <translation></translation>
     </message>
@@ -7764,282 +7845,282 @@ period value
         <translation type="obsolete">预冲总量</translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3030"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3056"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3032"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3058"/>
         <source>ColdFlush</source>
         <translation>冷冲洗</translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3605"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3718"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3834"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3950"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4026"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4100"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4174"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4258"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3607"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3720"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3836"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3952"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4028"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4102"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4176"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4260"/>
         <source>PreFlush_Time</source>
         <translation>前冲时间</translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3615"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3729"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3845"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3960"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4046"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4120"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4194"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4278"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3617"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3731"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3847"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3962"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4048"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4122"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4196"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4280"/>
         <source>Loop_Time</source>
         <translation>循环时间</translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3625"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3739"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3855"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4036"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4110"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4184"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4268"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4627"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3627"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3741"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3857"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4038"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4112"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4186"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4270"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4629"/>
         <source>Hold_Time</source>
         <translation>滞留时间</translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3635"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3749"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3865"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3970"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4056"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4130"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4204"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4288"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3637"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3751"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3867"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3972"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4058"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4132"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4206"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4290"/>
         <source>BackFlush_Time</source>
         <translation>后冲时间</translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3125"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3151"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3198"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3237"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3127"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3153"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3200"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3239"/>
         <source>HotFlush</source>
         <translation>热冲洗</translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3093"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3095"/>
         <source>/Config/Params_HotFlush/Loop_Time</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3166"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3168"/>
         <source>/Config/Params_HotFlush/TargetTemp</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3665"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3779"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3895"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4001"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4234"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3667"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3781"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3897"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4003"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4236"/>
         <source>TargetTemp</source>
         <translation>目标温度</translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3205"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3207"/>
         <source>/Config/Params_HotFlush/RealTmep</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3675"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3789"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3905"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4011"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3677"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3791"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3907"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4013"/>
         <source>RealTmep</source>
         <translation>走时温度</translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3256"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3258"/>
         <source>/Config/Params_Chymistry_Citric/PreFlush_Time</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3288"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3327"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3366"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3405"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3444"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3483"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3522"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3561"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3571"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3581"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3591"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3290"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3329"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3368"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3407"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3446"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3485"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3524"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3563"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3573"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3583"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3593"/>
         <source>Chymistry_Citric</source>
         <translation>柠檬酸消毒</translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3295"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3297"/>
         <source>/Config/Params_Chymistry_Citric/Loop_Time</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3334"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3336"/>
         <source>/Config/Params_Chymistry_Citric/Hold_Time</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3373"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3375"/>
         <source>/Config/Params_Chymistry_Citric/BackFlush_Time</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3490"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3492"/>
         <source>/Config/Params_Chymistry_Citric/TargetTemp</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3529"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3531"/>
         <source>/Config/Params_Chymistry_Citric/RealTmep</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3568"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3570"/>
         <source>/Config/Params_Chymistry_Citric/Conduction_MAX</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3571"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3686"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3799"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3915"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3573"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3688"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3801"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3917"/>
         <source>Conduction_MAX</source>
         <translation>电导上限</translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3578"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3580"/>
         <source>/Config/Params_Chymistry_Citric/Conduction_MIN</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3581"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3694"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3809"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3925"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3583"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3696"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3811"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3927"/>
         <source>Conduction_MIN</source>
         <translation>电导下限</translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3602"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3604"/>
         <source>/Config/Params_Chymistry_Peracetic/PreFlush_Time</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3605"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3615"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3625"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3635"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3645"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3655"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3665"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3675"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3686"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3694"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3704"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3607"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3617"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3627"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3637"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3647"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3657"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3667"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3677"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3688"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3696"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3706"/>
         <source>Chymistry_Peracetic</source>
         <translation>过氧乙酸消毒</translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3612"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3614"/>
         <source>/Config/Params_Chymistry_Peracetic/Loop_Time</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3622"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3624"/>
         <source>/Config/Params_Chymistry_Peracetic/Hold_Time</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3632"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3634"/>
         <source>/Config/Params_Chymistry_Peracetic/BackFlush_Time</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3662"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3664"/>
         <source>/Config/Params_Chymistry_Peracetic/TargetTemp</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3672"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3674"/>
         <source>/Config/Params_Chymistry_Peracetic/RealTmep</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3683"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3685"/>
         <source>/Config/Params_Chymistry_Peracetic/Conduction_MAX</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3691"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3693"/>
         <source>/Config/Params_Chymistry_Peracetic/Conduction_MIN</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3715"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3717"/>
         <source>/Config/Params_Chymistry_Reserve3/PreFlush_Time</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3718"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3729"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3739"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3749"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3759"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3769"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3779"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3789"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3799"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3809"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3819"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3720"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3731"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3741"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3751"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3761"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3771"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3781"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3791"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3801"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3811"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3821"/>
         <source>Chymistry_Reserve3</source>
         <translation>次氯酸钠消毒</translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3726"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3728"/>
         <source>/Config/Params_Chymistry_Reserve3/Loop_Time</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3736"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3738"/>
         <source>/Config/Params_Chymistry_Reserve3/Hold_Time</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3746"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3748"/>
         <source>/Config/Params_Chymistry_Reserve3/BackFlush_Time</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3776"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3778"/>
         <source>/Config/Params_Chymistry_Reserve3/TargetTemp</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3786"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3788"/>
         <source>/Config/Params_Chymistry_Reserve3/RealTmep</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3796"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3798"/>
         <source>/Config/Params_Chymistry_Reserve3/Conduction_MAX</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3806"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3808"/>
         <source>/Config/Params_Chymistry_Reserve3/Conduction_MIN</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3831"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3833"/>
         <source>/Config/Params_Hot_Citric/PreFlush_Time</source>
         <translation></translation>
     </message>
@@ -8064,38 +8145,38 @@ period value
         <translation type="obsolete">跨膜压上限</translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3056"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3151"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3645"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3759"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3875"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3980"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4066"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4140"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4214"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3058"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3153"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3647"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3761"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3877"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3982"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4068"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4142"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4216"/>
         <source>Flush_Flux</source>
         <translation>冲洗速度</translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3655"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3769"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3885"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3990"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4076"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4150"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4224"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3657"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3771"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3887"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3992"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4078"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4152"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4226"/>
         <source>Loop_Flux</source>
         <translation>循环速度</translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3591"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3704"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3819"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3935"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4086"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4160"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4244"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4298"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3593"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3706"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3821"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3937"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4088"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4162"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4246"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4300"/>
         <source>Suck_Flux</source>
         <translation>吸液量</translation>
     </message>
@@ -8105,288 +8186,288 @@ period value
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="2345"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="2346"/>
         <source>/Config/Params_SubP/AutoChange_Limit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3834"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3845"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3855"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3865"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3875"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3885"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3895"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3905"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3915"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3925"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3935"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3836"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3847"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3857"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3867"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3877"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3887"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3897"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3907"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3917"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3927"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3937"/>
         <source>Hot_Citric</source>
         <translation>热柠檬酸消毒</translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3842"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3844"/>
         <source>/Config/Params_Hot_Citric/Loop_Time</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3852"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3854"/>
         <source>/Config/Params_Hot_Citric/Hold_Time</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3862"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3864"/>
         <source>/Config/Params_Hot_Citric/BackFlush_Time</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3892"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3894"/>
         <source>/Config/Params_Hot_Citric/TargetTemp</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3902"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3904"/>
         <source>/Config/Params_Hot_Citric/RealTmep</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3912"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3914"/>
         <source>/Config/Params_Hot_Citric/Conduction_MAX</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3922"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3924"/>
         <source>/Config/Params_Hot_Citric/Conduction_MIN</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3947"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3949"/>
         <source>/Config/Params_Hot/PreFlush_Time</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3950"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3960"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3970"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3980"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3990"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4001"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4011"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3952"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3962"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3972"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3982"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3992"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4003"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4013"/>
         <source>Hot</source>
         <translation>热消毒</translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3957"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3959"/>
         <source>/Config/Params_Hot/Loop_Time</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3967"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3969"/>
         <source>/Config/Params_Hot/BackFlush_Time</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="3998"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4000"/>
         <source>/Config/Params_Hot/TargetTemp</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4008"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4010"/>
         <source>/Config/Params_Hot/RealTmep</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4023"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4025"/>
         <source>/Config/Params_Center_Chymistry_Input/PreFlush_Time</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4026"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4036"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4046"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4056"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4076"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4086"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4028"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4038"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4048"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4058"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4078"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4088"/>
         <source>Center_Chymistry_Input</source>
         <translation>中央化学消毒</translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4033"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4035"/>
         <source>/Config/Params_Center_Chymistry_Input/Hold_Time</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4043"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4045"/>
         <source>/Config/Params_Center_Chymistry_Input/Loop_Time</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4053"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4055"/>
         <source>/Config/Params_Center_Chymistry_Input/BackFlush_Time</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4066"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4068"/>
         <source>Center_Chymistry_Inpult</source>
         <translation>中央热冲洗</translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4097"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4099"/>
         <source>/Config/Params_Center_Chymistry_Flush/PreFlush_Time</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4100"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4110"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4120"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4130"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4140"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4150"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4160"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4102"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4112"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4122"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4132"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4142"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4152"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4162"/>
         <source>Center_Chymistry_Flush</source>
         <translation>中央化学冲洗消毒</translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4107"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4109"/>
         <source>/Config/Params_Center_Chymistry_Flush/Hold_Time</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4117"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4119"/>
         <source>/Config/Params_Center_Chymistry_Flush/Loop_Time</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4127"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4129"/>
         <source>/Config/Params_Center_Chymistry_Flush/BackFlush_Time</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4171"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4173"/>
         <source>/Config/Params_Center_Hot/PreFlush_Time</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4174"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4184"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4194"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4204"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4214"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4224"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4234"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4244"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4176"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4186"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4196"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4206"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4216"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4226"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4236"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4246"/>
         <source>Center_Hot</source>
         <translation>中央热冲洗</translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4181"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4183"/>
         <source>/Config/Params_Center_Hot/Hold_Time</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4191"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4193"/>
         <source>/Config/Params_Center_Hot/Loop_Time</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4201"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4203"/>
         <source>/Config/Params_Center_Hot/BackFlush_Time</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4231"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4233"/>
         <source>/Config/Params_Center_Hot/TargetTemp</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4255"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4257"/>
         <source>/Config/Params_Center_Flush_Entry/PreFlush_Time</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4258"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4268"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4278"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4288"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4298"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4260"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4270"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4280"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4290"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4300"/>
         <source>Center_Flush_Entry</source>
         <translation>中央冷冲洗</translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4265"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4267"/>
         <source>/Config/Params_Center_Flush_Entry/Hold_Time</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4275"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4277"/>
         <source>/Config/Params_Center_Flush_Entry/Loop_Time</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4285"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4287"/>
         <source>/Config/Params_Center_Flush_Entry/BackFlush_Time</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4347"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4357"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4367"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4377"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4387"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4397"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4407"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4417"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4430"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4440"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4450"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4460"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4470"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4480"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4490"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4500"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4514"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4524"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4534"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4544"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4554"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4564"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4574"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4584"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4596"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4607"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4617"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4627"/>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4637"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4349"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4359"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4369"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4379"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4389"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4399"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4409"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4419"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4432"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4442"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4452"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4462"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4472"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4482"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4492"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4502"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4516"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4526"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4536"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4546"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4556"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4566"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4576"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4586"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4598"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4609"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4619"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4629"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4639"/>
         <source>Auto_scale</source>
         <translation>自动卡标</translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4596"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4598"/>
         <source>AP_SPAN</source>
         <translation>动脉压范围</translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4607"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4609"/>
         <source>VP_SPAN</source>
         <translation>静脉压范围</translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4617"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4619"/>
         <source>TEMP_SPAN</source>
         <translation>跨膜压范围</translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4637"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4639"/>
         <source>Alarm_Time</source>
         <translation>报警时间</translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4695"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4697"/>
         <source>last</source>
         <translation>上页</translation>
     </message>
     <message>
-        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4696"/>
+        <location filename="../../src/maintain/scene_maintain_project_params_common.cpp" line="4698"/>
         <source>next</source>
         <translation>下页</translation>
     </message>
@@ -8413,113 +8494,113 @@ period value
         <translation type="obsolete">温度曲线</translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_ims/scene_record_curve.cpp" line="180"/>
+        <location filename="../../src/scenes/scene_ims/scene_record_curve.cpp" line="214"/>
         <source>Treatment start time:</source>
         <translation>治疗开始时间:</translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_ims/scene_record_curve.cpp" line="182"/>
+        <location filename="../../src/scenes/scene_ims/scene_record_curve.cpp" line="216"/>
         <source>Treatment end time:</source>
         <translation>治疗结束时间:</translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_ims/scene_record_curve.cpp" line="184"/>
+        <location filename="../../src/scenes/scene_ims/scene_record_curve.cpp" line="218"/>
         <source>Cond Profile</source>
         <translation>电导曲线</translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_ims/scene_record_curve.cpp" line="185"/>
+        <location filename="../../src/scenes/scene_ims/scene_record_curve.cpp" line="219"/>
         <source>Temp Profile</source>
         <translation>温度曲线</translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_ims/scene_record_curve.cpp" line="191"/>
+        <location filename="../../src/scenes/scene_ims/scene_record_curve.cpp" line="233"/>
         <source>Cond date</source>
         <translation>电导数据</translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_ims/scene_record_curve.cpp" line="192"/>
+        <location filename="../../src/scenes/scene_ims/scene_record_curve.cpp" line="234"/>
         <source>Temp date</source>
         <translation>温度数据</translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_ims/scene_record_curve.cpp" line="193"/>
+        <location filename="../../src/scenes/scene_ims/scene_record_curve.cpp" line="235"/>
         <source>Pre Cure</source>
         <translation>前次治疗</translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_ims/scene_record_curve.cpp" line="194"/>
+        <location filename="../../src/scenes/scene_ims/scene_record_curve.cpp" line="236"/>
         <source>Nxt Cure</source>
         <translation>后次治疗</translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_ims/scene_record_curve.cpp" line="195"/>
+        <location filename="../../src/scenes/scene_ims/scene_record_curve.cpp" line="237"/>
         <source>Pre Page</source>
         <translation>上一页</translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_ims/scene_record_curve.cpp" line="196"/>
+        <location filename="../../src/scenes/scene_ims/scene_record_curve.cpp" line="238"/>
         <source>Nxt Page</source>
         <translation>下一页</translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_ims/scene_record_curve.cpp" line="540"/>
+        <location filename="../../src/scenes/scene_ims/scene_record_curve.cpp" line="612"/>
         <source>The current treatment</source>
         <translation>当前治疗</translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_ims/scene_record_curve.cpp" line="544"/>
+        <location filename="../../src/scenes/scene_ims/scene_record_curve.cpp" line="616"/>
         <source>before</source>
         <translation>前</translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_ims/scene_record_curve.cpp" line="546"/>
+        <location filename="../../src/scenes/scene_ims/scene_record_curve.cpp" line="618"/>
         <source>times treatment</source>
         <translation>次治疗</translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_ims/scene_record_curve.cpp" line="589"/>
-        <location filename="../../src/scenes/scene_ims/scene_record_curve.cpp" line="594"/>
+        <location filename="../../src/scenes/scene_ims/scene_record_curve.cpp" line="694"/>
+        <location filename="../../src/scenes/scene_ims/scene_record_curve.cpp" line="699"/>
         <source>time</source>
         <translation>时间</translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_ims/scene_record_curve.cpp" line="589"/>
+        <location filename="../../src/scenes/scene_ims/scene_record_curve.cpp" line="694"/>
         <source>C701</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_ims/scene_record_curve.cpp" line="589"/>
+        <location filename="../../src/scenes/scene_ims/scene_record_curve.cpp" line="694"/>
         <source>C702</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_ims/scene_record_curve.cpp" line="589"/>
+        <location filename="../../src/scenes/scene_ims/scene_record_curve.cpp" line="694"/>
         <source>C704</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_ims/scene_record_curve.cpp" line="589"/>
+        <location filename="../../src/scenes/scene_ims/scene_record_curve.cpp" line="694"/>
         <source>C709</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_ims/scene_record_curve.cpp" line="594"/>
+        <location filename="../../src/scenes/scene_ims/scene_record_curve.cpp" line="699"/>
         <source>T201</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_ims/scene_record_curve.cpp" line="594"/>
+        <location filename="../../src/scenes/scene_ims/scene_record_curve.cpp" line="699"/>
         <source>T203</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_ims/scene_record_curve.cpp" line="594"/>
+        <location filename="../../src/scenes/scene_ims/scene_record_curve.cpp" line="699"/>
         <source>T204</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_ims/scene_record_curve.cpp" line="594"/>
+        <location filename="../../src/scenes/scene_ims/scene_record_curve.cpp" line="699"/>
         <source>T205</source>
         <translation type="unfinished"></translation>
     </message>
@@ -11273,17 +11354,17 @@ curve</source>
 <context>
     <name>UserDataRequest</name>
     <message>
-        <location filename="../../src/wlan/userdatarequest.cpp" line="86"/>
+        <location filename="../../src/wlan/userdatarequest.cpp" line="73"/>
         <source>Authentication credentials required</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/wlan/userdatarequest.cpp" line="89"/>
+        <location filename="../../src/wlan/userdatarequest.cpp" line="76"/>
         <source>&amp;OK</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/wlan/userdatarequest.cpp" line="91"/>
+        <location filename="../../src/wlan/userdatarequest.cpp" line="78"/>
         <source>&amp;Cancel</source>
         <translation type="unfinished"></translation>
     </message>
@@ -11535,8 +11616,8 @@ curve</source>
 <context>
     <name>WidgetIms</name>
     <message>
-        <location filename="../../src/scenes/scene_ims/widget_ims.cpp" line="11"/>
-        <location filename="../../src/scenes/scene_ims/widget_ims.cpp" line="151"/>
+        <location filename="../../src/scenes/scene_ims/widget_ims.cpp" line="12"/>
+        <location filename="../../src/scenes/scene_ims/widget_ims.cpp" line="168"/>
         <source>IMS</source>
         <translation>信息管理</translation>
     </message>
@@ -11545,12 +11626,12 @@ curve</source>
         <translation type="obsolete">治疗日志</translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_ims/widget_ims.cpp" line="153"/>
+        <location filename="../../src/scenes/scene_ims/widget_ims.cpp" line="170"/>
         <source>Log Warn</source>
         <translation>报警日志</translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_ims/widget_ims.cpp" line="154"/>
+        <location filename="../../src/scenes/scene_ims/widget_ims.cpp" line="171"/>
         <source>Log Run</source>
         <translation>运行日志</translation>
     </message>
@@ -11559,7 +11640,7 @@ curve</source>
         <translation type="obsolete">病历库</translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_ims/widget_ims.cpp" line="156"/>
+        <location filename="../../src/scenes/scene_ims/widget_ims.cpp" line="173"/>
         <source>Record Profile</source>
         <translation>记录曲线</translation>
     </message>
@@ -11678,45 +11759,45 @@ curve</source>
     </message>
     <message>
         <location filename="../../src/scenes/scene_main/widget_notice.cpp" line="177"/>
-        <location filename="../../src/scenes/scene_main/widget_notice.cpp" line="646"/>
+        <location filename="../../src/scenes/scene_main/widget_notice.cpp" line="667"/>
         <source>HDFonline</source>
         <translation>HDF在线</translation>
     </message>
     <message>
         <location filename="../../src/scenes/scene_main/widget_notice.cpp" line="180"/>
-        <location filename="../../src/scenes/scene_main/widget_notice.cpp" line="649"/>
+        <location filename="../../src/scenes/scene_main/widget_notice.cpp" line="670"/>
         <source>HFonline</source>
         <translation>HF在线</translation>
     </message>
     <message>
         <location filename="../../src/scenes/scene_main/widget_notice.cpp" line="183"/>
         <location filename="../../src/scenes/scene_main/widget_notice.cpp" line="186"/>
-        <location filename="../../src/scenes/scene_main/widget_notice.cpp" line="652"/>
-        <location filename="../../src/scenes/scene_main/widget_notice.cpp" line="655"/>
+        <location filename="../../src/scenes/scene_main/widget_notice.cpp" line="673"/>
+        <location filename="../../src/scenes/scene_main/widget_notice.cpp" line="676"/>
         <source>PE/PH</source>
         <translation></translation>
     </message>
     <message>
         <location filename="../../src/scenes/scene_main/widget_notice.cpp" line="189"/>
-        <location filename="../../src/scenes/scene_main/widget_notice.cpp" line="658"/>
+        <location filename="../../src/scenes/scene_main/widget_notice.cpp" line="679"/>
         <source>HD SNSP</source>
         <translation>HD单针单泵</translation>
     </message>
     <message>
         <location filename="../../src/scenes/scene_main/widget_notice.cpp" line="192"/>
-        <location filename="../../src/scenes/scene_main/widget_notice.cpp" line="661"/>
+        <location filename="../../src/scenes/scene_main/widget_notice.cpp" line="682"/>
         <source>HD SNDP</source>
         <translation>HD单针双泵</translation>
     </message>
     <message>
         <location filename="../../src/scenes/scene_main/widget_notice.cpp" line="195"/>
-        <location filename="../../src/scenes/scene_main/widget_notice.cpp" line="664"/>
+        <location filename="../../src/scenes/scene_main/widget_notice.cpp" line="685"/>
         <source>ISO SNSP</source>
         <translation>ISO单针单泵</translation>
     </message>
     <message>
         <location filename="../../src/scenes/scene_main/widget_notice.cpp" line="198"/>
-        <location filename="../../src/scenes/scene_main/widget_notice.cpp" line="667"/>
+        <location filename="../../src/scenes/scene_main/widget_notice.cpp" line="688"/>
         <source>ISO SNDP</source>
         <translation>ISO单针双泵</translation>
     </message>
@@ -11736,37 +11817,37 @@ curve</source>
         <translation>运行</translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_main/widget_notice.cpp" line="637"/>
+        <location filename="../../src/scenes/scene_main/widget_notice.cpp" line="658"/>
         <source>Self testing</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_main/widget_notice.cpp" line="640"/>
+        <location filename="../../src/scenes/scene_main/widget_notice.cpp" line="661"/>
         <source>HD</source>
         <translation type="unfinished">透析</translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_main/widget_notice.cpp" line="643"/>
+        <location filename="../../src/scenes/scene_main/widget_notice.cpp" line="664"/>
         <source>ISO</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_main/widget_notice.cpp" line="673"/>
+        <location filename="../../src/scenes/scene_main/widget_notice.cpp" line="694"/>
         <source>Priming</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_main/widget_notice.cpp" line="677"/>
+        <location filename="../../src/scenes/scene_main/widget_notice.cpp" line="698"/>
         <source>   </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_main/widget_notice.cpp" line="687"/>
+        <location filename="../../src/scenes/scene_main/widget_notice.cpp" line="708"/>
         <source>Stop</source>
         <translation type="unfinished">停止</translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_main/widget_notice.cpp" line="693"/>
+        <location filename="../../src/scenes/scene_main/widget_notice.cpp" line="714"/>
         <source>  </source>
         <translation type="unfinished"></translation>
     </message>
@@ -11775,7 +11856,7 @@ curve</source>
         <translation type="obsolete">停止</translation>
     </message>
     <message>
-        <location filename="../../src/scenes/scene_main/widget_notice.cpp" line="690"/>
+        <location filename="../../src/scenes/scene_main/widget_notice.cpp" line="711"/>
         <source>Bypass</source>
         <translation type="unfinished">旁路</translation>
     </message>
@@ -11883,7 +11964,7 @@ curve</source>
         <translation type="obsolete">Na+,超滤曲线</translation>
     </message>
     <message>
-        <location filename="../../src/setup/setup_advanced/widget_setup_advanced.cpp" line="455"/>
+        <location filename="../../src/setup/setup_advanced/widget_setup_advanced.cpp" line="457"/>
         <source>Sequential</source>
         <oldsource>Sequential Dialysis</oldsource>
         <translation>序贯透析</translation>
@@ -11901,27 +11982,27 @@ curve</source>
         <translation type="obsolete">钠曲线</translation>
     </message>
     <message>
-        <location filename="../../src/setup/setup_advanced/widget_setup_advanced.cpp" line="339"/>
+        <location filename="../../src/setup/setup_advanced/widget_setup_advanced.cpp" line="341"/>
         <source>Setup NaProfile</source>
         <translation>钠曲线</translation>
     </message>
     <message>
-        <location filename="../../src/setup/setup_advanced/widget_setup_advanced.cpp" line="342"/>
+        <location filename="../../src/setup/setup_advanced/widget_setup_advanced.cpp" line="344"/>
         <source>Setup Sequential</source>
         <translation>序贯透析</translation>
     </message>
     <message>
-        <location filename="../../src/setup/setup_advanced/widget_setup_advanced.cpp" line="345"/>
+        <location filename="../../src/setup/setup_advanced/widget_setup_advanced.cpp" line="347"/>
         <source>Setup Cond</source>
         <translation>电导度</translation>
     </message>
     <message>
-        <location filename="../../src/setup/setup_advanced/widget_setup_advanced.cpp" line="348"/>
+        <location filename="../../src/setup/setup_advanced/widget_setup_advanced.cpp" line="350"/>
         <source>Setup XmlConfig</source>
         <translation>配置文件</translation>
     </message>
     <message>
-        <location filename="../../src/setup/setup_advanced/widget_setup_advanced.cpp" line="454"/>
+        <location filename="../../src/setup/setup_advanced/widget_setup_advanced.cpp" line="456"/>
         <source>Na Profile</source>
         <translation>钠曲线</translation>
     </message>
@@ -11934,7 +12015,7 @@ curve</source>
         <translation type="obsolete">单位</translation>
     </message>
     <message>
-        <location filename="../../src/setup/setup_advanced/widget_setup_advanced.cpp" line="354"/>
+        <location filename="../../src/setup/setup_advanced/widget_setup_advanced.cpp" line="356"/>
         <source>Setup Preflush</source>
         <translation>预冲</translation>
     </message>
@@ -11947,12 +12028,13 @@ curve</source>
         <translation type="obsolete">碳酸氢根</translation>
     </message>
     <message>
+        <location filename="../../src/setup/setup_advanced/widget_setup_advanced.cpp" line="458"/>
         <source>Cond</source>
         <oldsource>Conduction</oldsource>
-        <translation type="obsolete">电导度</translation>
+        <translation type="unfinished">电导度</translation>
     </message>
     <message>
-        <location filename="../../src/setup/setup_advanced/widget_setup_advanced.cpp" line="452"/>
+        <location filename="../../src/setup/setup_advanced/widget_setup_advanced.cpp" line="454"/>
         <source> </source>
         <translation type="unfinished"></translation>
     </message>
@@ -11961,7 +12043,7 @@ curve</source>
         <translation type="obsolete">配置文件</translation>
     </message>
     <message>
-        <location filename="../../src/setup/setup_advanced/widget_setup_advanced.cpp" line="458"/>
+        <location filename="../../src/setup/setup_advanced/widget_setup_advanced.cpp" line="460"/>
         <source>Preflush</source>
         <translation>预冲</translation>
     </message>
@@ -12189,58 +12271,58 @@ curve</source>
         <translation type="obsolete">时间</translation>
     </message>
     <message>
-        <location filename="../../src/setup/setup_other/widget_setup_other.cpp" line="276"/>
+        <location filename="../../src/setup/setup_other/widget_setup_other.cpp" line="277"/>
         <source>Other</source>
         <translation>其它设置</translation>
     </message>
     <message>
-        <location filename="../../src/setup/setup_other/widget_setup_other.cpp" line="277"/>
+        <location filename="../../src/setup/setup_other/widget_setup_other.cpp" line="278"/>
         <source>System Time</source>
         <translation>系统时间</translation>
     </message>
     <message>
-        <location filename="../../src/setup/setup_other/widget_setup_other.cpp" line="278"/>
+        <location filename="../../src/setup/setup_other/widget_setup_other.cpp" line="279"/>
         <source>Network</source>
         <translation>网络</translation>
     </message>
     <message>
-        <location filename="../../src/setup/setup_other/widget_setup_other.cpp" line="279"/>
+        <location filename="../../src/setup/setup_other/widget_setup_other.cpp" line="280"/>
         <source>Language</source>
         <translation>语言</translation>
     </message>
     <message>
-        <location filename="../../src/setup/setup_other/widget_setup_other.cpp" line="280"/>
+        <location filename="../../src/setup/setup_other/widget_setup_other.cpp" line="281"/>
         <source>System Info</source>
         <translation>系统信息</translation>
     </message>
     <message>
-        <location filename="../../src/setup/setup_other/widget_setup_other.cpp" line="251"/>
-        <location filename="../../src/setup/setup_other/widget_setup_other.cpp" line="281"/>
+        <location filename="../../src/setup/setup_other/widget_setup_other.cpp" line="252"/>
+        <location filename="../../src/setup/setup_other/widget_setup_other.cpp" line="282"/>
         <source>Maintain</source>
         <translation>维护</translation>
     </message>
     <message>
-        <location filename="../../src/setup/setup_other/widget_setup_other.cpp" line="243"/>
+        <location filename="../../src/setup/setup_other/widget_setup_other.cpp" line="244"/>
         <source>Setup System Time</source>
         <translation>系统时间</translation>
     </message>
     <message>
-        <location filename="../../src/setup/setup_other/widget_setup_other.cpp" line="245"/>
+        <location filename="../../src/setup/setup_other/widget_setup_other.cpp" line="246"/>
         <source>Setup Network</source>
         <translation>网络</translation>
     </message>
     <message>
-        <location filename="../../src/setup/setup_other/widget_setup_other.cpp" line="247"/>
+        <location filename="../../src/setup/setup_other/widget_setup_other.cpp" line="248"/>
         <source>Setup Lang</source>
         <translation>语言</translation>
     </message>
     <message>
-        <location filename="../../src/setup/setup_other/widget_setup_other.cpp" line="249"/>
+        <location filename="../../src/setup/setup_other/widget_setup_other.cpp" line="250"/>
         <source>Setup System Info</source>
         <translation>系统信息</translation>
     </message>
     <message>
-        <location filename="../../src/setup/setup_other/widget_setup_other.cpp" line="253"/>
+        <location filename="../../src/setup/setup_other/widget_setup_other.cpp" line="254"/>
         <source>Status Graph</source>
         <translation>维护</translation>
     </message>
@@ -12249,22 +12331,21 @@ curve</source>
         <translation type="obsolete">病人信息</translation>
     </message>
     <message>
-        <location filename="../../src/setup/setup_other/widget_setup_other.cpp" line="255"/>
         <source>RFCard</source>
-        <translation type="unfinished">病人IC卡</translation>
+        <translation type="obsolete">病人IC卡</translation>
     </message>
     <message>
-        <location filename="../../src/setup/setup_other/widget_setup_other.cpp" line="257"/>
+        <location filename="../../src/setup/setup_other/widget_setup_other.cpp" line="258"/>
         <source>Setup Unit</source>
         <translation>单位</translation>
     </message>
     <message>
-        <location filename="../../src/setup/setup_other/widget_setup_other.cpp" line="259"/>
+        <location filename="../../src/setup/setup_other/widget_setup_other.cpp" line="260"/>
         <source>Setup Auto-wake-up</source>
         <translation>自动开机</translation>
     </message>
     <message>
-        <location filename="../../src/setup/setup_other/widget_setup_other.cpp" line="286"/>
+        <location filename="../../src/setup/setup_other/widget_setup_other.cpp" line="287"/>
         <source>Auto-wake-up</source>
         <translation>自动开机</translation>
     </message>
@@ -12273,17 +12354,17 @@ curve</source>
         <translation type="obsolete">自动开机</translation>
     </message>
     <message>
-        <location filename="../../src/setup/setup_other/widget_setup_other.cpp" line="261"/>
+        <location filename="../../src/setup/setup_other/widget_setup_other.cpp" line="262"/>
         <source>Setup Password</source>
         <translation>密码设置</translation>
     </message>
     <message>
-        <location filename="../../src/setup/setup_other/widget_setup_other.cpp" line="284"/>
+        <location filename="../../src/setup/setup_other/widget_setup_other.cpp" line="285"/>
         <source>Engineer</source>
         <translation>工程</translation>
     </message>
     <message>
-        <location filename="../../src/setup/setup_other/widget_setup_other.cpp" line="285"/>
+        <location filename="../../src/setup/setup_other/widget_setup_other.cpp" line="286"/>
         <source>Unit</source>
         <translation>单位</translation>
     </message>
@@ -12296,14 +12377,13 @@ curve</source>
         <translation type="obsolete">系统维护</translation>
     </message>
     <message>
-        <location filename="../../src/setup/setup_other/widget_setup_other.cpp" line="282"/>
+        <location filename="../../src/setup/setup_other/widget_setup_other.cpp" line="283"/>
         <source>Status Map</source>
         <translation>状态图</translation>
     </message>
     <message>
-        <location filename="../../src/setup/setup_other/widget_setup_other.cpp" line="283"/>
         <source>RFID</source>
-        <translation type="unfinished">病人IC卡</translation>
+        <translation type="obsolete">病人IC卡</translation>
     </message>
     <message>
         <source>EngineeringMode</source>
@@ -12360,7 +12440,7 @@ curve</source>
         <location filename="../../src/scenes/scene_main/widget_switch.cpp" line="325"/>
         <location filename="../../src/scenes/scene_main/widget_switch.cpp" line="1170"/>
         <location filename="../../src/scenes/scene_main/widget_switch.cpp" line="1975"/>
-        <location filename="../../src/scenes/scene_main/widget_switch.cpp" line="3626"/>
+        <location filename="../../src/scenes/scene_main/widget_switch.cpp" line="3656"/>
         <source>Treatment</source>
         <translation>治疗</translation>
     </message>
@@ -12467,17 +12547,17 @@ curve</source>
         <translation type="obsolete">跳过</translation>
     </message>
     <message>
-        <location filename="../../src/windows/window_boot.cpp" line="320"/>
+        <location filename="../../src/windows/window_boot.cpp" line="291"/>
         <source>Enter Self-test menu...</source>
         <translation>进入自检...</translation>
     </message>
     <message>
-        <location filename="../../src/windows/window_boot.cpp" line="321"/>
+        <location filename="../../src/windows/window_boot.cpp" line="292"/>
         <source>Skip</source>
         <translation>跳过</translation>
     </message>
     <message>
-        <location filename="../../src/windows/window_boot.cpp" line="322"/>
+        <location filename="../../src/windows/window_boot.cpp" line="293"/>
         <source>Debug mode</source>
         <translation type="unfinished"></translation>
     </message>
@@ -12901,18 +12981,6 @@ curve</source>
         <location filename="../../src/wlan/wlan.cpp" line="86"/>
         <source>SSID</source>
         <translation></translation>
-    </message>
-    <message>
-        <source>AdaptiveProportion</source>
-        <translation type="obsolete">调整比例</translation>
-    </message>
-    <message>
-        <source>Treattime</source>
-        <translation type="obsolete">治疗时间</translation>
-    </message>
-    <message>
-        <source>CarbamideClearAmount</source>
-        <translation type="obsolete">尿素清除量</translation>
     </message>
 </context>
 </TS>
