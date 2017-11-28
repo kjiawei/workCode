@@ -1,0 +1,72 @@
+1,pthread_cancel(线程的取消)
+	特点：
+		发送取消信号到线程，默认是延时的，一直等到取消点函数才会退出
+
+
+	功能：往指定线程发送一个取消信号，退出指定的线程
+	int pthread_cancel(pthread_t thread);
+		thread：线程的TID
+
+
+
+	功能：使能cancel信号的开关
+	int pthread_setcancelstate(int state, int *oldstate);
+		state：
+			PTHREAD_CANCEL_ENABLE：使能cancel信号（默认设置）
+			PTHREAD_CANCEL_DISABLE：关闭cancel信号的响应（他并不是将接受到的cancel信号给直接忽略，而只是挂起这个信号，之后你使能这个开关它还是会去响应的）
+		oldstate：将旧的设置存放到此指针
+
+
+	功能：设置cancel信号的响应类型
+        int pthread_setcanceltype(int type, int *oldtype);
+		type：
+			PTHREAD_CANCEL_DEFERRED：延时响应，等到有取消点函数才会退出（系统默认设置）
+			PTHREAD_CANCEL_ASYNCHRONOUS：立即响应，不用等，直接退出
+
+		oldtype：将旧的设置存放到此指针
+
+
+
+
+
+
+2，注意cancel的安全机制：
+		为了防止cancel信号接收后没有来得及处理一些必要的操作，我们可以调用以下函数去实现结束机制
+
+		这两个函数，必须配套使用，他们两个结合其实就是个do{}while（0）
+
+		功能：注册cancel信号后来了之后退出的动作
+		void pthread_cleanup_push(void (*routine)(void *),
+                                 void *arg);
+			routine：你要运行的函数
+			arg：你想要传给routine函数的参数
+
+		功能：取消退出动作
+       		void pthread_cleanup_pop(int execute);
+			execute：
+				0：注销掉，不执行
+				非0都会执行：
+				1：当线程是取消线程的方式退出的时候，则清除栈内的注册函数，并运行
+				2：当线程调用了pthread_exit退出时运行注册的函数
+				3，调用本身函数的时候去执行注册函数
+
+
+
+
+
+
+项目：
+	利用线程池做一个目录拷贝
+		1，文件IO
+			stat，opendir
+		2，用线程池
+			
+
+	1，获取你要复制的目录的信息(拷贝普通文件和目录就够了)
+
+	2，首先你要复制的各级目录
+
+	3，指定路径去复制文件
+
+
+

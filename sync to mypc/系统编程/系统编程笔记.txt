@@ -1,0 +1,298 @@
+学习方法:
+消息队列-理解并记住重要函数
+态度:主动学习-找sigset_t源码（Linux源码
+关联前后知识点：子进程通过进程间通信讲pid传给父进程
+大胆去评论（站在中间）别人  抽时间去翻嵌入式相关专业大学课程
+
+二 阶段内容笔记
+进程:创建fork 退出exit 回收wait(pid)
+-----------------------------------
+pid_t myid = vfork();//无法用sleep干预 共享老爸资源  
+_pid_t结构体原型位置： usr/include或i386-gnu-linux/bits/types.h          
+exec,system
+[system还会执行后面代码，exec函数族不执行；system相当于export  $PATH(PATH=/mnt/hgfs/share/xtbc/123$PATH)]
+ 
+进程间通信方式(选用:效率 优缺点 坑 双向 结合使用):
+有mkfifo/无名pipo管道
+优点:能被动得到通知(socket也一样)
+（SYSTEM-V  IPC通信方式）
+——————————————————————
+①消息队列--创建msgget msg结构体 发送接收信息msgsnd/msgrcv 
+控制msgctl-删除宏(IPC_RMID)
+结构体顺序 与循环的关系  多队列的比较
+
+②共享内存(最快的可用IPC形式,与内存映射联系与区别):申请shmget-ftok生成key值 shmid_ds结构体  映射shmat 解除shmdt 删除shmctl-函数可通过不同的宏实现不同功能 缺点:不能被动得到通知
+
+③信号量(有编号) 申请semget   sembuf结构体 pv操作semop(结构体初始化决定)
+设初值semctl;
+坑:多进程同时处理同个信号量
+POSIX有名 新建sem_open  p阻塞  v不阻塞  sem_post(sem_t结构体变量) 结构体不用初始化
+无名
+④信号 signal第二个参数设置捕捉函数 信号阻塞集 sigset_t结构体 清空sigemptyset 添加阻塞信号sigaddset 生效集合sigprocmask  解除阻塞
+信号量：多个进程同一时间只能操作一个资源,信号量的同步是指什么,编号从0开始，类似数组
+1.可用sleep调节IPC:信号量    
+2.信号量与共享内存结合优势    
+3.sigaction是signal的升级版（sa_flags=0情况下）,同时可以配合sigqueue去
+接收来自sigqueue携带的额外数据（sa_flags=SA_SIGINFO情况下）
+4.定义一次性使用的结构体:struct不用带名字，也不用带typedef 例:_rt
+5.临界区：进程都想去使用的那部分资源,数据的践踏
+-----------------------------------
+线程(池)   unix域套接字      
+       创建     退出     回收    属性
+       取消pthread_cancel    设置优先级nice动态（小 高）和静态(大 高)
+	获取id:(int)pthread_self()   
+            线程间同步互斥：
+                互斥锁
+                条件变量             
+                信号量
+            
+
+线程使用注意事项
+1.干单一事情，不要指派复杂任务；（作业不值得参考）
+2.一发一收（线程）
+3.线程目的：帮助实现小任务
+sched_param结构体
+
+————————三 进程线程区别——————————
+进程三部分组成：进程控制块 数据段 代码段
+1.进程是系统分配资源（CPU 内存）最小单位
+2.线程-拿了进程的部分资源来用（轻量级进程）
+3.线程是系统调度（分配资源）的最小单位
+
+线程创建 退出和回收：创建线程称为主线程，被创的为子进程
+函数指针做参数：把另外一个函数传进来给这个函数使用
+线程运行轮流来，但次数不一定相等
+时间片轮转
+————————————————————————
+
+四 线程后续
+pthread_join类似waitpid:保证子线程退出被主线程回收
+      
+
+===============课程概览=================
+1.进程和线程(进程包含线程) 系统编程作用http://www.cnblogs.com/yjbjingcha/p/6917328.html
+      进程：基本概念，进程的创建，进程的退出(父进程什么时候退出)，进程的回收
+            exec函数族，system（） 
+            进程间的通信方式：
+                管道：有名管道，无名管道
+                消息队列，共享内存，信号量
+                信号
+                unix域套接字（网络编程）
+                套接字（网络编程）
+      线程：基本概念，线程的创建，线程的退出，线程的回收
+            线程的取消，设置优先级，线程的属性
+            线程间同步互斥：
+                互斥锁
+                条件变量             
+                信号量
+            线程池
+
+==============进程=============
+1.进程：一个正在运行的程序就称作一个进程，进程是一个动态的概念
+        进程在内存中
+  可执行程序(ELF格式)：静态的概念
+        保存在你电脑的磁盘中
+  进程：在linux中用一个结构体struct task_struct
+                            { }   
+引申：
+          struct abc
+           {
+               基本数据；---》属性     成员变量
+               函数指针；---》指向某种类型的函数   成员方法
+           }；
+        来表征某个进程在运行的过程中所有的状态信息（进程id，进程的父id，）
+  孤儿进程：如果父进程没有主动去回收子进程，那么子进程会变成孤儿进程，孤儿进程最终会被系统中一个叫做INIT的进程回收，init进程号是1，它是所有进程的祖先（祖进程）
+  引入了进程的概念之后：意味着可以实现多任务的并发处理（同时处理多个任务，以前的技术没有办法实现）
+
+/*fork详细过程  http://www.cnblogs.com/esxingzhe/p/4420406.html(返回两次解析)
+系统中，除了0号进程以外（0号进程是由系统创建的），任何一个进程都是由其他进程创建的。所以说 Linux中，1号进程是所有用户态进程的祖先，0号进程是所有内核线程的祖先。
+fork、vfork和clone三个系统调用都可以创建一个新进程，而且都是通过调用do_fork来实现进程的创建；
+　　Linux是通过复制父进程来创建一个新进程，进程创建的大致框架就是：复制PCB，对复制的PCB进行修改、分配新的内核堆栈...
+*/
+
+
+2.进程相关的API（接口函数）
+     ps -ef 查看系统中当前正在运行的进程信息
+   （1）进程的创建（创建子进程）
+        fork()
+        fork创建子进程的时候，子进程会复制它老爸的所有的资源
+     #include <unistd.h>
+      pid_t fork(void);
+        返回值：等于0   表示处于子进程中
+                大于0   表示处于父进程中
+                小于0   表示创建子进程失败
+        此函数一次调用，两次返回
+    （2）获取进程和父进程的ID号
+     #include <unistd.h>
+       pid_t getpid(void);  获取当前进程的ID
+       pid_t getppid(void); 获取当前进程的父ID
+    （3）进程的退出
+         exit()  退出的时候会刷新IO缓冲区
+         _exit() 退出的时候不刷新IO缓冲区
+         跟return之间的区别
+               return 返回到调用它的函数
+               exit   退出整个进程
+    （4）回收子进程
+         wait()
+         waitpid()
+     
+       pid_t wait(int *stat_loc);   阻塞父进程直到子进程退出然后回收子进程
+            返回值：成功返回子进程的id
+                    失败-1
+              参数：stat_loc 保存子进程退出时的状态信息
+                    不要将stat_loc理解成就是exit()圆括号里面的数字，那个数字只是退出值，无法反映子进程所有的状态信息，你只能使用我给的资料截图中linux定义好的宏函数去获取状态信息
+       pid_t waitpid(pid_t pid, int *stat_loc, int options);
+            它比wait要高级一点，因为它可以指定回收某个进程组里面的进程，也可以指定回收某个进程
+            返回值：成功返回子进程的id
+                    失败-1
+              形参：pid   小于-1   比如-15  表示回收进程组id是15的那个进程组中的任意一个进程
+                          -1       等待任意一个子进程
+                          0        等待同进程组中任意一个子进程
+                          >0       比如1245   指定回收id是1245的那个子进程
+                    stat_loc
+                    options        WNOHANG   
+                                   
+1.练习：
+     创建4个子进程，每个子进程完成不同的事情，最后父进程要将4个孩子全部回收并获取每个孩子的状态信息（waitpid）
+        
+
+
+
+=====================消息队列============
+1.特点：
+        （1）消息队列中如果有多个进程要接收同一种类型的信息----》必须排队(依照运行的前后顺序依次轮流获取信息)
+        （2）注意一下结构体的封装顺序(类型放在前面)
+
+
+====================信号量============
+1.信号量----》表示某个进程拥有的资源的数量
+  信号量是用于协调进程间的同步与互斥
+  临界区---》进程都想去使用的那部分资源称作临界区资源
+             信号量是用来保护临界区资源
+  ipcs -s  查看信号量
+  ipcrm  -s  信号量的id   删除信号量
+2.信号量相关的接口函数(API)
+    （1）信号量的创建
+           semget()
+       #include <sys/sem.h>
+       int semget(key_t key, int nsems, int semflg);   
+            返回值：成功  返回信号量的id     失败  -1
+              形参：nsems ---》你打算创建多少个信号量
+                   semflg ---》IPC_CREAT
+    (2）信号量的pv操作
+           p操作  减法 ---》申请资源
+           v操作  加法 ---》释放资源
+       semop()
+        #include <sys/sem.h>
+
+       int semop(int semid, struct sembuf *sops, size_t nsops);
+            返回值：成功   0   失败  -1
+              形参：semid
+                    sops ---》此结构体包含了三个成员
+                      short        sem_num      Semaphore number.  
+                                                    信号量的编号，当你申请了多个信号量的时候，编号是从0开始
+                      short        sem_op       Semaphore operation.
+                                                    决定你究竟是想进行p操作还是v操作
+                      short        sem_flg      Operation flags.
+                                                    SEM_UNDO  当进程退出的时候信号量的值恢复到初始值
+                    nsops   设置成1  struct sembuf结构体的数量
+   （3）设置信号量的初值(获取信号量的值，获取/设置信号量的状态信息，删除信号量)
+        semctl()
+     #include <sys/sem.h>
+       int semctl(int semid, int semnum, int cmd, ...);
+             形参：semnum ---》信号量的编号(0开始)
+                   cmd  ---》GETVAL  获取信号量的值
+                                   semctl(semid,0,GETVAL);获取编号是0的信号量的值
+                             SETVAL  设置信号量的值
+                                   semctl(semid,0,SETVAL,1);将编号是0的信号量设置为1
+                             IPC_STAT 获取信号量的状态信息
+                             IPC_SET  设置信号量的状态信息
+                             IPC_RMID 删除信号量
+3.linux中有三种常用的信号量
+      system-v信号量（进程间同步互斥） ---》semop() semget()  semctl()
+      POSIX有名信号量（进程间同步互斥）---》sem_open()  sem_wait()  sem_post()  sem_close()  sem_unlink()
+               sem_t *sem_open(const char *name, int oflag);
+                       形参：name  ---》合法的路径
+                             oflag ---》O_CREAT   O_EXCL 如果你不是新建一个有名信号量，而是直接打开一个已经存在的，该形参设置为0
+                       
+               sem_t *sem_open(const char *name, int oflag,
+                       mode_t mode, unsigned int value);
+                       形参：mode ---》权限  0777
+                            value ---》设置有名信号量的初值
+               #include <semaphore.h>
+                         int sem_post(sem_t *sem);  相当于v操作，不阻塞的
+                         int sem_wait(sem_t *sem)   相当于p操作，阻塞的
+               使用有名信号量编译的时候需要加上 -pthread
+
+      POSIX无名信号量（线程间同步互斥）---》sem_init()  sem_wait()  sem_post()  sem_destroy() 
+
+
+
+===========================进程间的信号========================
+1.linux有哪些信号 kill -l查看
+ 1) SIGHUP	 2) SIGINT	 3) SIGQUIT	 4) SIGILL	 5) SIGTRAP
+ 6) SIGABRT	 7) SIGBUS	 8) SIGFPE	 9) SIGKILL	10) SIGUSR1
+11) SIGSEGV	12) SIGUSR2	13) SIGPIPE	14) SIGALRM	15) SIGTERM
+16) SIGSTKFLT	17) SIGCHLD	18) SIGCONT	19) SIGSTOP	20) SIGTSTP
+21) SIGTTIN	22) SIGTTOU	23) SIGURG	24) SIGXCPU	25) SIGXFSZ
+26) SIGVTALRM	27) SIGPROF	28) SIGWINCH	29) SIGIO	30) SIGPWR
+31) SIGSYS	34) SIGRTMIN	35) SIGRTMIN+1	36) SIGRTMIN+2	37) SIGRTMIN+3
+38) SIGRTMIN+4	39) SIGRTMIN+5	40) SIGRTMIN+6	41) SIGRTMIN+7	42) SIGRTMIN+8
+43) SIGRTMIN+9	44) SIGRTMIN+10	45) SIGRTMIN+11	46) SIGRTMIN+12	47) SIGRTMIN+13
+48) SIGRTMIN+14	49) SIGRTMIN+15	50) SIGRTMAX-14	51) SIGRTMAX-13	52) SIGRTMAX-12
+53) SIGRTMAX-11	54) SIGRTMAX-10	55) SIGRTMAX-9	56) SIGRTMAX-8	57) SIGRTMAX-7
+58) SIGRTMAX-6	59) SIGRTMAX-5	60) SIGRTMAX-4	61) SIGRTMAX-3	62) SIGRTMAX-2
+63) SIGRTMAX-1	64) SIGRTMAX	
+ 
+  以上信号大部分的默认动作都是终止进程，从34开始的信号称为实时信号（排队，按照发送信号的先后顺序依次响应）
+                                        1---31 非实时信号不排队
+2.通过linux命令发送信号
+    kill  -3 进程的id
+    kill  -SIGINT  进程的id
+    kill  -INT  进程的id
+    killall  -9  进程的名字  
+  相关的接口函数
+       （1）发送信号和接收信号
+            kill()
+       #include <signal.h>
+       int kill(pid_t pid, int sig);
+           返回值：成功  0   失败  -1
+             形参：pid ---》进程的ID号
+                   sig ---》信号的编号
+           signal() 接收信号并指定信号的行为
+       #include <signal.h>
+      原本是这样的：void (*signal(int sig, void (*func)(int)))(int);
+      分解成： void (*)(int);
+               signal(int sig, void (*func)(int))
+                  形参：第一个参数：sig ---》你收到的那个信号的编号
+                        第二个参数：void (*func)(int) ---》当进程收到sig那个信号之后，要做的事情
+                                    SIG_DFL   ---》 使用信号的默认动作
+                                    SIG_IGN   ---》 忽略信号（舍弃掉这个信号，当它不存在）
+       （2）pause()   挂起进程，等待信号的到来
+            raise()   
+           #include <signal.h>
+              int raise(int sig);  进程自己给自己发送信号
+           #include <unistd.h>
+              unsigned alarm(unsigned seconds);  alarm(5);   每隔5秒给自己发送 SIGALRM  定时
+       （3）进程阻塞信号集
+              信号的阻塞---》暂时挂起这个信号，等到阻塞解除了才能响应
+              信号的忽略---》彻底舍弃信号
+          思路：先要定义一个进程的阻塞信号集（sigset_t  类型的变量） ----》清空这个集合---》往该集合中添加你想要阻塞的哪些信号
+         一： 初始化信号阻塞集合的函数
+       #include <signal.h>
+
+       int sigemptyset(sigset_t *set);  //清空信号集
+       int sigfillset(sigset_t *set);   //将所有的信号全部添加到集合中
+       int sigaddset(sigset_t *set, int signum);// 将指定的信号添加到集合中
+       int sigdelset(sigset_t *set, int signum);// 将指定的信号从集合中删除
+       int sigismember(const sigset_t *set, int signum); // 判断指定的信号在不在这个集合中
+       
+         二：让设置好的阻塞集合生效
+        int sigprocmask(int how, const sigset_t *restrict set, sigset_t *restrict oset);
+                返回值：成功  0   失败 -1
+                  形参：how ---》 SIG_BLOCK  将set里面的信号添加到旧的信号阻塞集合中去
+                                 SIG_SETMASK 将set里面的信号覆盖旧的信号阻塞集合
+                                 SIG_UNBLOCK 将set里面的信号从信号阻塞集合中删除
+         有两个信号很特殊：SIGKILL和SIGSTOP不能阻塞也不能忽略
+                        
+       编程实现:ls -l |grep "file" 

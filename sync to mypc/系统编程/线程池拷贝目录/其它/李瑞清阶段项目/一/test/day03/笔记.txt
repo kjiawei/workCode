@@ -1,0 +1,149 @@
+=====================消息队列============
+1.特点：
+        （1）消息队列中如果有多个进程要接收同一种类型的信息----》必须排队(依照运行的前后顺序依次轮流获取信息)
+        （2）注意一下结构体的封装顺序(类型放在前面)
+
+
+
+
+====================信号量============
+1.信号量----》表示某个进程拥有的资源的数量
+  信号量是用于协调进程间的同步与互斥
+  临界区---》进程都想去使用的那部分资源称作临界区资源
+             信号量是用来保护临界区资源
+  ipcs -s  查看信号量
+  ipcrm  -s  信号量的id   删除信号量
+2.信号量相关的接口函数(API)
+    （1）信号量的创建
+           semget()
+       #include <sys/sem.h>
+       int semget(key_t key, int nsems, int semflg);   
+            返回值：成功  返回信号量的id     失败  -1
+              形参：nsems ---》你打算创建多少个信号量
+                   semflg ---》IPC_CREAT
+    (2）信号量的pv操作
+           p操作  减法 ---》申请资源
+           v操作  加法 ---》释放资源
+       semop()
+        #include <sys/sem.h>
+
+       int semop(int semid, struct sembuf *sops, size_t nsops);
+            返回值：成功   0   失败  -1
+              形参：semid
+                    sops ---》此结构体包含了三个成员
+                      short        sem_num      Semaphore number.  
+                                                    信号量的编号，当你申请了多个信号量的时候，编号是从0开始
+                      short        sem_op       Semaphore operation.
+                                                    决定你究竟是想进行p操作还是v操作
+                      short        sem_flg      Operation flags.
+                                                    SEM_UNDO  当进程退出的时候信号量的值恢复到初始值
+                    nsops   设置成1  struct sembuf结构体的数量
+   （3）设置信号量的初值(获取信号量的值，获取/设置信号量的状态信息，删除信号量)
+        semctl()
+     #include <sys/sem.h>
+       int semctl(int semid, int semnum, int cmd, ...);
+             形参：semnum ---》信号量的编号(0开始)
+                   cmd  ---》GETVAL  获取信号量的值
+                                   semctl(semid,0,GETVAL);获取编号是0的信号量的值
+                             SETVAL  设置信号量的值
+                                   semctl(semid,0,SETVAL,1);将编号是0的信号量设置为1
+                             IPC_STAT 获取信号量的状态信息
+                             IPC_SET  设置信号量的状态信息
+                             IPC_RMID 删除信号量
+3.linux中有三种常用的信号量
+      system-v信号量（进程间同步互斥） ---》semop() semget()  semctl()
+      POSIX有名信号量（进程间同步互斥）---》sem_open()  sem_wait()  sem_post()  sem_close()  sem_unlink()
+               sem_t *sem_open(const char *name, int oflag);
+                       形参：name  ---》合法的路径
+                             oflag ---》O_CREAT   O_EXCL 如果你不是新建一个有名信号量，而是直接打开一个已经存在的，该形参设置为0
+                       
+               sem_t *sem_open(const char *name, int oflag,
+                       mode_t mode, unsigned int value);
+                       形参：mode ---》权限  0777
+                            value ---》设置有名信号量的初值
+               #include <semaphore.h>
+                         int sem_post(sem_t *sem);  相当于v操作，不阻塞的
+                         int sem_wait(sem_t *sem)   相当于p操作，阻塞的
+               使用有名信号量编译的时候需要加上 -pthread
+
+      POSIX无名信号量（线程间同步互斥）---》sem_init()  sem_wait()  sem_post()  sem_destroy() 
+
+
+
+===========================进程间的信号========================
+1.linux有哪些信号 kill -l查看
+ 1) SIGHUP	 2) SIGINT	 3) SIGQUIT	 4) SIGILL	 5) SIGTRAP
+ 6) SIGABRT	 7) SIGBUS	 8) SIGFPE	 9) SIGKILL	10) SIGUSR1
+11) SIGSEGV	12) SIGUSR2	13) SIGPIPE	14) SIGALRM	15) SIGTERM
+16) SIGSTKFLT	17) SIGCHLD	18) SIGCONT	19) SIGSTOP	20) SIGTSTP
+21) SIGTTIN	22) SIGTTOU	23) SIGURG	24) SIGXCPU	25) SIGXFSZ
+26) SIGVTALRM	27) SIGPROF	28) SIGWINCH	29) SIGIO	30) SIGPWR
+31) SIGSYS	34) SIGRTMIN	35) SIGRTMIN+1	36) SIGRTMIN+2	37) SIGRTMIN+3
+38) SIGRTMIN+4	39) SIGRTMIN+5	40) SIGRTMIN+6	41) SIGRTMIN+7	42) SIGRTMIN+8
+43) SIGRTMIN+9	44) SIGRTMIN+10	45) SIGRTMIN+11	46) SIGRTMIN+12	47) SIGRTMIN+13
+48) SIGRTMIN+14	49) SIGRTMIN+15	50) SIGRTMAX-14	51) SIGRTMAX-13	52) SIGRTMAX-12
+53) SIGRTMAX-11	54) SIGRTMAX-10	55) SIGRTMAX-9	56) SIGRTMAX-8	57) SIGRTMAX-7
+58) SIGRTMAX-6	59) SIGRTMAX-5	60) SIGRTMAX-4	61) SIGRTMAX-3	62) SIGRTMAX-2
+63) SIGRTMAX-1	64) SIGRTMAX	
+ 
+  以上信号大部分的默认动作都是终止进程，从34开始的信号称为实时信号（排队，按照发送信号的先后顺序依次响应）
+                                        1---31 非实时信号不排队
+2.通过linux命令发送信号
+    kill  -3 进程的id
+    kill  -SIGINT  进程的id
+    kill  -INT  进程的id
+    killall  -9  进程的名字  
+  相关的接口函数
+       （1）发送信号和接收信号
+            kill()
+       #include <signal.h>
+       int kill(pid_t pid, int sig);
+           返回值：成功  0   失败  -1
+             形参：pid ---》进程的ID号
+                   sig ---》信号的编号
+           signal() 接收信号并指定信号的行为
+       #include <signal.h>
+      原本是这样的：void (*signal(int sig, void (*func)(int)))(int);
+      分解成： void (*)(int);
+               signal(int sig, void (*func)(int))
+                  形参：第一个参数：sig ---》你收到的那个信号的编号
+                        第二个参数：void (*func)(int) ---》当进程收到sig那个信号之后，要做的事情
+                                    SIG_DFL   ---》 使用信号的默认动作
+                                    SIG_IGN   ---》 忽略信号（舍弃掉这个信号，当它不存在）
+       （2）pause()   挂起进程，等待信号的到来
+            raise()   
+           #include <signal.h>
+              int raise(int sig);  进程自己给自己发送信号
+           #include <unistd.h>
+              unsigned alarm(unsigned seconds);  alarm(5);   每隔5秒给自己发送 SIGALRM  定时
+       （3）进程阻塞信号集
+              信号的阻塞---》暂时挂起这个信号，等到阻塞解除了才能响应
+              信号的忽略---》彻底舍弃信号
+          思路：先要定义一个进程的阻塞信号集（sigset_t  类型的变量） ----》清空这个集合---》往该集合中添加你想要阻塞的哪些信号
+         一： 初始化信号阻塞集合的函数
+       #include <signal.h>
+
+       int sigemptyset(sigset_t *set);  //清空信号集
+       int sigfillset(sigset_t *set);   //将所有的信号全部添加到集合中
+       int sigaddset(sigset_t *set, int signum);// 将指定的信号添加到集合中
+       int sigdelset(sigset_t *set, int signum);// 将指定的信号从集合中删除
+       int sigismember(const sigset_t *set, int signum); // 判断指定的信号在不在这个集合中
+       
+         二：让设置好的阻塞集合生效
+        int sigprocmask(int how, const sigset_t *restrict set, sigset_t *restrict oset);
+                返回值：成功  0   失败 -1
+                  形参：how ---》 SIG_BLOCK  将set里面的信号添加到旧的信号阻塞集合中去
+                                 SIG_SETMASK 将set里面的信号覆盖旧的信号阻塞集合
+                                 SIG_UNBLOCK 将set里面的信号从信号阻塞集合中删除
+         有两个信号很特殊：SIGKILL和SIGSTOP不能阻塞也不能忽略
+                        
+       
+
+
+
+
+
+
+
+
+                    

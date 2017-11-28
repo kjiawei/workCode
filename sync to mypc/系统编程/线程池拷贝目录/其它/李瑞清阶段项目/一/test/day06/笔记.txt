@@ -1,0 +1,112 @@
+==================互斥锁的特点小结==============
+1.谁上锁谁解锁
+2.先上锁不会阻塞，后上锁的都会阻塞
+3.使用的过程中人为地做点延时(帮助线程实现锁的切换)
+4.不可以重复上锁(上完锁，如果不解锁就不能够再次去上锁了)
+
+
+
+
+================线程间的同步与互斥---》条件变量=========
+1.特点：不可以单独使用，配合互斥锁来使用
+2.相关的API
+     （1）条件变量的初始化
+           pthread_cond_init()
+       int pthread_cond_destroy(pthread_cond_t *cond);
+       int pthread_cond_init(pthread_cond_t *restrict cond,const ,pthread_condattr_t *restrict attr);
+              形参： pthread_cond_t ---》条件变量       
+                     attr           ---》条件变量的属性，一般设置为NULL，，使用默认属性
+             
+     （2）条件变量的操作（唤醒条件变量，阻塞条件变量）
+       int pthread_cond_wait(pthread_cond_t *restrict cond,pthread_mutex_t *restrict mutex); //阻塞
+                解开互斥锁并让当前线程阻塞在条件变量上
+       int pthread_cond_broadcast(pthread_cond_t *cond);  // 唤醒阻塞在cond条件变量上的所有线程
+
+       int pthread_cond_signal(pthread_cond_t *cond);  //唤醒阻塞在cond条件变量上的某个线程   
+               解除对线程的阻塞，然后立马上锁
+
+练习：模拟生产和消费的过程，生产10件产品之后才可以消费
+
+
+
+
+        
+
+
+
+==========================线程间POSIX无名信号量===========
+1.实现原理跟进程间的信号是一样的   通过pv操作实现
+2.相关的接口函数
+    （1）无名信号量的初始化sem_init()
+         #include <semaphore.h>
+            int sem_init(sem_t *sem, int pshared, unsigned int value);
+               参数：sem  ---》无名信号量
+                     pshared ---》 设置为0 表示该信号量可以在多个线程之间共享
+                     value ---》信号量的初值
+    （2）pv操作
+            int sem_wait(sem_t *sem);  p操作
+            int sem_post(sem_t *sem);  v操作
+    （3）删除
+            int int sem_destroy(sem_t *sem);
+
+不要将无名信号量的操作函数跟有名信号量的操作函数混淆
+
+
+
+
+
+====================线程池===================
+
+
+int add(int a,int b)
+{
+
+
+}
+
+
+
+1.任务链表
+struct abc
+{
+    int a;
+    int b;
+};
+改造上面的add
+void *add(void *arg) // 
+{
+     
+
+
+}
+     （1）任务链表的封装
+           struct task
+            {
+                 void *(*handler)(void *);  // 函数指针，指向的是要处理的某个任务（通用性挺好的）
+                 void *arg;                 // 传递给函数指针的参数
+                 struct task *next;     
+            };
+          添加任务从尾部添加，线程池处理任务从第一个有效节点开始处理
+
+     （2）分析线程池
+            多个线程的id
+            统计任务链表中究竟有多少个有效任务的变量
+            互斥锁
+            条件变量
+            活跃线程的数量
+    ---->归根结底就是用一个结构体来表示线程池
+             struct thread_pool
+             {
+                  
+
+             }
+            
+  
+
+作业：
+     （1）继续完成使用条件变量实现生产和消费
+                每生产10个，然后才能去消费，消费一口气消费到只剩下1个产品的时候，转回到生产（循环往复）
+      （2）完成线程池的初始化，以及任务添加
+
+
+

@@ -1,0 +1,59 @@
+
+ps -Af
+
+短格式        	                  长格式                            说 明
+c		cmd		可执行的简单名称
+C		cmdline		完整命令行
+f		flags		长模式标志
+g		pgrp		进程的组ID
+G		tpgid		控制tty进程组ID
+j		cutime		累计用户时间
+J		cstime		累计系统时间
+k		utime		用户时间
+K		stime		系统时间
+m		min_flt		次要页错误的数量
+M		maj_flt		主要页错误的数量
+n		cmin_flt	  	累计次要页错误
+N		cmaj_flt		累计主要页错误
+o		session		对话ID
+p		pid		进程ID
+P		ppid		父进程ID
+r		rss		驻留大小
+R		resident		驻留页
+s		size		内存大小（千字节）
+S		share		共享页的数量
+t		tty		tty次要设备号
+T		start_time		进程启动的时间
+U		uid		UID
+u		user		用户名
+v		vsize		总的虚拟内存数量（字节）
+y		priority		内核调度优先级
+
+
+输入ps -ef命令
+init PPID 为0的进程是系统磁盘的
+kthreadd:为守护进程
+
+
+输入top命令：
+
+PID 每个进程的ID。
+PPID每个进程的父进程ID。
+UID 每个进程所有者的UID 。
+USER 每个进程所有者的用户名。
+PRI 每个进程的优先级别。
+NI 该进程的优先级值。
+SIZE 该进程的代码大小加上数据大小再加上堆栈空间大小的总数。单位是KB。
+TSIZE 该进程的代码大小。对于内核进程这是一个很奇怪的值。
+DSIZE 数据和堆栈的大小。
+TRS 文本驻留大小。
+D 被标记为“不干净”的页项目。
+LIB 使用的库页的大小。对于ELF进程没有作用。
+RSS 该进程占用的物理内存的总数量，单位是KB。
+SHARE 该进程使用共享内存的数量。
+STAT 该进程的状态。
+其中S代表休眠状态；
+D代表不可中断的休眠状态；
+R代表运行状态；
+Z代表僵死状态；
+T代表停止或跟踪状态。

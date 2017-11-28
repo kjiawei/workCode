@@ -1,0 +1,109 @@
+===================线程池=================
+线程池当中：
+1、条件变量
+2、互斥锁
+3、任务链表
+4、线程ID（线程）
+5、线程数量
+6、等待的任务数量
+7、线程池开关状态
+8、。。。。。。。。。。
+9、。。。。。。。。。。
+
+typedef struct pool
+{
+	pthread_cond_t cond;//条件变量
+	pthread_mutex_t mutex; //互斥锁
+
+	pthread_t *pid;	//存放线程ID
+
+	struct task *task_list;//任务结构体	
+	
+	int waiting_task;//等等的任务
+	int my_pthread;  //线程数量
+
+	int shutdown;  //线程池开关的标志
+}pthread_pool;
+
+
+任务：
+链表：（单向链表）
+执行函数：
+。。。。。
+
+struct task
+{
+	//回调函数
+	void *(*task)(void *arg);
+	void *arg;//回调函数的参数
+	。。。
+	。。。
+	
+	struct task *next;
+}
+
+
+
+线程初始化：
+传入参数：传入一个线程池指针，传入线程个数
+
+初始化
+int pool_init(pthread_pool *pool,int pthread_number)
+｛
+	pthread_cond_t cond;//条件变量初始化
+	pthread_mutex_t mutex; //互斥锁初始化
+
+	pthread_create;//线程创建，结合pthread_t *pidpthread_number，参数为线程池的结构体
+
+	struct task *task_list;//任务结构体初始化	，它是链表节点，在这里可以去定义为头节点
+	
+	int waiting_task;//等等的任务初始化
+	int my_pthread;  //线程数量初始化
+
+	int shutdown;  //线程池开关的标志初始化
+	return 1;
+｝
+
+添加任务：
+pthread_pool *pool:线程池
+*(*task)(void *arg)：执行函数
+void *arg：执行函数的参数
+
+int add_task(pthread_pool *pool,*(*task)(void *arg),void *arg)
+{
+	1、创建节点
+	可以用一些方法来保证节点有序插入到节点
+	2、将节点初始化并添加到链表节点中
+	（任务来时，相当等待的任务+1）
+	3、通知线程池里的线程，告之有任务来临
+}
+
+void *task_fun(void *arg)
+{
+    while(1)
+    {
+	1、线程加锁判断是否等待（判断条件任务是否为0）
+
+	2、取得任务
+	
+	3、解锁去执行函数
+
+	5、释放节点
+    }
+
+}
+
+线程池销毁
+｛
+
+｝
+线程的添加
+线程的删除
+
+1、main.c里面添加一个任务，让线程池去执行这个对应的函数
+
+
+2、项目实现，采用线程池，对家目录下面的文件进行复制  ./phtread_pool /home/gec /cpdir  (要切换为root权限)
+
+
+

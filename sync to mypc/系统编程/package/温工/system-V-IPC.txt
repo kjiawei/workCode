@@ -1,0 +1,58 @@
+1,IPC通信机制（对象）
+	1，共享内存
+	2，消息队列
+	3，信号量
+
+	命令：
+		ipcs -a：查看所有IPC状态
+			-m：查看共享内存状态
+			-q：查看消息队列
+			-s：查看信号量
+
+
+	共享内存的特点：
+		1，速度快
+		2，操作数据量大
+		3，一般不会单独使用，需要配置信号量，信号
+		4，写入数据会覆盖，读取数据不会清空
+
+2，共享内存：
+	将同一物理内存直接映射成为多个进程的虚拟内存
+	功能：获取IPC对象的key值（ID）
+	key_t ftok(const char *pathname, int proj_id);
+		pathname：进程工作路径
+		proj_id：8位值，用来区别同一路径下面的多个IPC对象，大于0的数
+		返回值：成功返回key值
+			失败返回-1
+
+	功能：获取共享内存的ID
+	int shmget(key_t key, size_t size, int shmflg);
+	key：这是一个IPC对象的标志值（秘钥）
+	size：申请的内存的大小（它要以PAGE_SIZE为倍数）
+	shmflg：对这块内存的操作， 或上一个权限（文件的权限）
+		IPC_CREAT：创建该内存，如果存在直接返回
+		IPC_EXCL：和IPC_CREAT配合使用，用来判断内存是否存在，如果存在，直接返回错误：EEXIST
+	
+	
+	功能：映射内存到进程
+	void *shmat(int shmid, const void *shmaddr, int shmflg);
+		shmid：获取到的共享内存的ID值
+		shmaddr：映射起始地址，一般我们设置为NULL，由系统帮我们决定起始地址
+		shmflg：内存操作权限，一般我们用0，代表可读可写
+			
+		返回值：成功返回一个映射成功的虚拟地址
+			失败返回-1
+
+	功能：取消内存映射
+	int shmdt(const void *shmaddr);
+		shmaddr：内存映射虚拟地址
+		返回值：成功返回0，失败返回-1
+
+	功能：共享内存设置
+	int shmctl(int shmid, int cmd, struct shmid_ds *buf);
+		shmid：共享内存的ID
+		cmd：操作命令
+			IPC_STAT：获取状态
+			IPC_SET：设置属性
+			IPC_RMID：删除这片共享内存的ID
+

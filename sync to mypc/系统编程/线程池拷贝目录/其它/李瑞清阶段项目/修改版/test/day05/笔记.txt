@@ -1,0 +1,137 @@
+=========================做项目的经验体会========================
+1.看别人写的复杂代码:
+    （1）有耐心，简化别人的代码(比如if屏蔽掉，因为if是特殊情况)
+                取特殊值，把自己想像成cpu严格按照C语言的语法规则跟逻辑顺序去执行一遍
+                打印关键性的变量值
+                在关键性的语句前后加一些简单的打印
+    （2）做项目之前想画好流程图（先从最简单的版本去做，不要贪心）
+         流程图中分解出来的每个步骤你是否在学习的时候真的掌握？？？？
+         将各个模块按照你设计的逻辑串起来(通过多做几次项目去感悟别人是用什么方法将代码串起来的，仔细体会，反复推敲)
+
+
+
+========================线程的取消=======
+1.默认情况，新建的线程是可以被取消(适当的时候取消)
+  适当的时候取消（延时取消）----》线程会继续运行到下一个取消点的位置才退出
+         所谓的线程取消点指的是POSIX标准规定一系列函数(printf就是代表之一)，区别立即取消
+2.线程不能随便乱取消
+     （1）特别是线程当中使用了互斥锁，不可以随便取消该线程，会导致死锁
+        由于互斥锁的特点是： 谁上的锁谁解锁，别的线程无法解锁(解铃还需系铃人)
+                            先拿到锁的线程，可以使用该锁，但是后面的线程要使用锁就会阻塞
+
+        #include <pthread.h>
+       void pthread_cleanup_push(void (*routine)(void *),
+                                 void *arg);
+                   
+       void pthread_cleanup_pop(int execute);
+
+
+=================线程的属性============
+1.线程的分离属性
+      线程的分离：指线程在退出的时候，自己回收，不需要主线程主动去回收它(自己动手丰衣足食)
+      默认情况下线程是不可分离（主线程需要主动调用pthread_join()去回收线程）
+    （1）设置/获取线程的分离属性
+            方法一：
+       int pthread_attr_setdetachstate(pthread_attr_t *attr, int detachstate);
+                  形参：attr  ---》线程的属性
+                        detachstate ---》PTHREAD_CREATE_DETACHED    可分离
+                                         PTHREAD_CREATE_JOINABLE    不可分离 （默认是不可分离的）
+            方法二：
+       int pthread_detach(pthread_t thread);
+
+       int pthread_attr_getdetachstate(pthread_attr_t *attr, int *detachstate);
+    （2）设置线程属性的一般方法(线程的属性有很多，其他属性的设置思路基本类似)
+           步骤一：先定义一个pthread_attr_t类型的变量，并使用pthread_attr_init()对这个变量初始化
+                     int pthread_attr_init(pthread_attr_t *attr);  //初始化线程的属性
+                     int pthread_attr_destroy(pthread_attr_t *attr); // 销毁线程的属性变量
+           步骤二：针对你想设置的属性调用对应设置函数(一定要先将属性变量初始化)
+           步骤三：设置完毕，在代码结束之前调用pthread_attr_destroy销毁属性
+
+2.线程的优先级和调度策略（实时系统，非实时系统）
+        实时---》时间要求很苛刻
+   线程的静态优先级和动态优先级
+     静态优先级：0----99，其中0表示非实时线程，数字越大，优先级越高
+                             1--99是实时线程的优先级
+     动态优先级：跟静态优先级是0的非实时线程有关，-20---19  数字越大，优先级越低
+   调度策略：
+           （1）先进先出   针对实时线程(1--99),可以去抢占非实时线程的资源
+           （2）轮询 ---》时间片轮转 cpu给每个线程分配一个固定的时间片
+           （3）针对非实时线程进行调度 ---》所以静态优先级必须设置为0
+   设置动态优先级、静态优先级（切换成超级用户）
+           //设置静态优先级
+           int pthread_attr_setschedparam(pthread_attr_t *attr,
+                                      const struct sched_param *param);
+                 struct sched_param
+                  {
+                     int sched_priority;   优先级   0--99
+                  }
+           int pthread_attr_getschedparam(pthread_attr_t *attr,
+                                      struct sched_param *param);
+           //设置动态优先级
+                int nice(int incr);
+
+3.线程还有一些其他属性，日常开发很少去设置，如果你想要设置，套路是类似
+
+
+
+
+==============================线程间的同步与互斥============
+1.线程间的同步互斥：互斥锁，条件变量，信号量(POSIX无名信号量)
+    （1）互斥锁
+         一：相关的API 互斥锁的初始化
+     int pthread_mutex_destroy(pthread_mutex_t *mutex);
+     int pthread_mutex_init(pthread_mutex_t *restrict mutex,const pthread_mutexattr_t *restrict attr);
+              形参：pthread_mutex_t 锁类型变量  表示一把锁
+                    pthread_mutexattr_t 互斥锁的属性  一般设置为NULL 表示使用锁的默认属性
+         二：互斥锁的操作
+             上锁跟解锁
+         int pthread_mutex_lock(pthread_mutex_t *mutex);
+                   如果某个线程已经上了锁，那么其他的线程想要上锁就会阻塞
+         int pthread_mutex_trylock(pthread_mutex_t *mutex);
+                   如果某个线程已经上了锁，那么其他的线程想要上锁不会阻塞，会退出
+         int pthread_mutex_unlock(pthread_mutex_t *mutex);
+                   解锁
+         三：互斥锁的特点
+             特点一：谁上锁谁解锁，不能交叉
+             特点二：如果某个线程已经上锁，其他线程还想上锁就会阻塞
+
+练习：
+      创建两个线程，必须线程一先操作全局变量i，让i加一，然后才是线程2操作全局变量i，让i减一 ，必须严格轮流来
+
+
+作业：1.通过消息队列及线程，实现聊天功能(在两个进程中分别创建两个线程收发信息)
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+                   
+
+           
+          
+
+
+
+
+
+
+
+
+
+              
+
+           
+
+
+
+     

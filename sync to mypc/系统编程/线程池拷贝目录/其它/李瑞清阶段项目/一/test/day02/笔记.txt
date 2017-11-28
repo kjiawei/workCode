@@ -1,0 +1,149 @@
+============system和exec函数族=====
+区别：两者虽然都能实现调用shell命令或者可执行程序，但是
+          system---》你按照正常的父子进程之间的关系去理解
+          exec函数族---》一旦执行了exec函数代码，后面的就不执行
+
+
+
+===========进程运行时候的状态切换（纯理论）======
+1.就跟人的生老病死一样，进程也有不同的"生命阶段"
+      僵死(僵尸态)
+      就绪态    进程已经有了，但是还没有真正的运行起来（还没有获取到CPU的使用权）
+      睡眠态(挂起态)
+      暂停态
+      执行态    CPU通过调度算法，将使用权给了进程，那么进程就自动进入到了执行态
+      死亡态  
+   以上几种状态反映了进程运行的过程，每个状态都有机会发生，只不过需要满足特定的条件(截图上箭头标识的条件)  
+
+=============进程间的通信（本地通信，不能联网的）=========
+1.管道（有名管道和无名管道）
+     （1）无名管道
+            特点：读端和写端是固定死的，说白了进程就是通过这个"管道"来发送接收数据的(数据临时存放的地方)
+                  只能用于具有血缘关系的进程之间通信  父子  兄弟之间
+                  无名管道没有名字 
+            相关的API:
+                一：管道的创建
+                    #include <unistd.h>
+                       int pipe(int fildes[2]);
+                             返回值：成功返回0   失败  -1
+                               形参：fildes[0]   读端
+                                     fildes[1]   写端
+     
+
+练习：
+      使用无名管道实现父子进程之间的双向聊天
+
+     （2）有名管道
+            特点：会自动生成一个管道文件用于进程间的通信
+                  有名管道没有血缘要求
+                  有名管道只能在纯粹的linux环境下创建
+                  有名管道不能重复创建（你创建之前要判断一下有名管道是否存在）
+                  有名管道用只写的方式打开，那么一定要有一个进程以只读的方式去读出数据，那么只写的那个进程才会解除阻塞退出
+              一：有名管道的创建
+               #include <sys/types.h>
+               #include <sys/stat.h>
+
+                int mkfifo(const char *pathname, mode_t mode);
+                          返回值：成功返回0   失败  -1
+                            形参：pathname ---》你指定的管道文件的路径
+                                  mode     ---》用八进制数字去设置管道的权限
+       access()
+
+
+========================SYSTEM-V  IPC通信方式==========
+1.SYSTEM-V  IPC通信方式：共享内存，消息队列，信号量
+                   ipcs -q: 查看消息队列
+                   ipcs -a：查看所有IPC状态
+			-m：查看共享内存状态
+			-s：查看信号量
+                   删除共享内存  ipcrm -m  共享内存的id号
+          （1）共享内存---》是所有进程间通信方式中效率最高
+              一：申请共享内存
+                  shmget()
+                #include <sys/shm.h>
+                  int shmget(key_t key, size_t size, int shmflg);
+                    返回值：成功会返回共享内存的id号
+                            失败  -1
+                      形参：key  ---》
+                                 获取key值的方法有两种
+                                     方法一：shmget((key_t)2000, size_t size, int shmflg)
+                                     方法二：使用ftok()生成key值
+                                          #include <sys/types.h>
+                                          #include <sys/ipc.h>
+                                              key_t ftok(const char *pathname, int proj_id);
+                                                     形参：pathname ---》任意一个合法的路径
+                                                           proj_id  ---》任意一个整数
+                           size ---》你打算申请多大的共享内存空间 （页的整数倍）1024整数倍
+                           shmflg ---》IPC_CREAT  IPC_EXCL
+              二：映射---》让进程能够正常使用共享内存
+                  shmat()
+                 #include <sys/shm.h>
+
+                 void *shmat(int shmid, const void *shmaddr, int shmflg);
+                         返回值：映射得到的内存空间的首地址
+                                 失败  NULL
+                           形参：shmid ---》shmget的返回值，表示ID
+                                 shmaddr ---》NULL
+                                 shmflg ---》0
+              三：解除映射
+                  shmdt()
+                #include <sys/shm.h>
+                 int shmdt(const void *shmaddr);
+              四：删除共享内存（shmctl功能很多可以删除，可以设置/获取共享内存的属性）
+                #include <sys/shm.h>
+                int shmctl(int shmid, int cmd, struct shmid_ds *buf);
+                      形参：cmd  ---》IPC_RMID  删除（常用的是此功能）
+                                      IPC_STAT  获取共享内存的状态信息
+                                      IPC_SET   设置共享内存
+                            buf  ---》此参数如果你想设置/获取共享内存的状态信息才有用，否则设置NULL
+                      struct shmid_ds结构体的定义在/usr/include/i386-linux-gnu/bits/shm.h里面
+ 小结：
+       1.共享内存中的key值多个进程必须保持一致，不然没有办法使用同一块共享内存
+ 
+            
+
+             （2）消息队列
+                  一：创建消息队列
+                      msgget()
+                #include <sys/msg.h>
+
+                  int msgget(key_t key, int msgflg);
+                       返回值：成功返回消息队列的ID
+                               失败 -1
+                         形参：key
+                               msgflg ---》IPC_CREAT  IPC_EXCL
+                 二：通过消息队列收发数据
+                  #include <sys/msg.h>
+                 int msgsnd(int msqid, const void *msgp, size_t msgsz, int msgflg);
+                        返回值：成功   0
+                                失败  -1
+                          形参： msgflg ---》默认是0 
+                 ssize_t msgrcv(int msqid, void *msgp, size_t msgsz, long msgtyp,int msgflg);
+                        返回值：成功  接收的字节数
+                          形参：msgtyp ---》消息的类型
+                 三：消息队列的删除
+                  #include <sys/msg.h>
+
+                   int msgctl(int msqid, int cmd, struct msqid_ds *buf);
+         
+            
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            

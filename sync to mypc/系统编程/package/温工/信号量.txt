@@ -1,0 +1,84 @@
+1,system V IPC信号量
+	功能：获取一个信号量集合的ID
+	int semget(key_t key, int nsems, int semflg);
+		key：ipc的key值
+		nsems：你的集合里面有几个信号量元素
+		semflg：操作信号的权限
+			IPC_CREAT：创建一个新的信号量id，如果存在则打开
+			IPC_EXCL：跟上面的相或可以做出错判断
+
+		返回值：信号量的ID（包含着多个元素）
+
+
+	功能：用来控制指定的信号量集合
+	int semctl(int semid, int semnum, int cmd, ...);
+		semid：信号量的id
+		semnum：你要操作这个集合里的第几个元素
+		cmd：
+			SETVAL：设置初值，这个设置初值需要配合第四个参数来使用
+			第四个参数的val存放你的初值
+
+			IPC_RMID：删除IPC对象，第二个参数不用填
+			
+		第四个参数要求我们定义一个这样的结构体：
+			union semun {
+               int              val;    /* Value for SETVAL */
+               struct semid_ds *buf;    /* Buffer for IPC_STAT, IPC_SET */
+               unsigned short  *array;  /* Array for GETALL, SETALL */
+               struct seminfo  *__buf;  /* Buffer for IPC_INFO
+                                           (Linux-specific) */
+           };
+	
+	功能：用来操作信号量（PV操作）（P就是减操作，V就是加操作）
+		特点：当信号量的值为0的时候，P操作时会阻塞的
+	int semop(int semid, struct sembuf *sops, unsigned nsops);
+		semid：信号量集合的ID
+		sops：信号操作结构体（你要如何操作信号）
+			这个结构体可以是个数组，支持多个元素同时操作
+		nsops：这个sops里面有几个元素
+
+			struct sembuf：
+				unsigned short sem_num;  /* semaphore number */
+           			short          sem_op;   /* semaphore operation */  //1代表v操作，-1代表p操作
+           			short          sem_flg;  /* operation flags */		//默认设置0
+
+
+2，POSIX有名信号量
+		功能：打开一个信号量
+		sem_t *sem_open(const char *name, int oflag,
+                       mode_t mode, unsigned int value);
+		name：信号量的路径
+			/dev/shm
+
+		oflag：操作标志：
+				O_CREAT：创建
+
+		mode：创建权限
+		value：信号量初始值
+
+
+		功能：信号量P操作
+			int sem_wait(sem_t *sem);
+
+       			int sem_trywait(sem_t *sem);
+
+       			int sem_timedwait(sem_t *sem, const struct timespec *abs_timeout);
+
+		功能：信号量V操作
+			int sem_post(sem_t *sem);
+
+
+		功能：关闭信号量
+			int sem_close(sem_t *sem);
+
+
+		功能：删除信号量
+			int sem_unlink(const char *name);
+
+		
+	
+
+
+
+
+

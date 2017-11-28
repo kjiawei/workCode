@@ -1,0 +1,63 @@
+1,sigaction:
+		类似于signal函数，他也是注册一个信号处理函数，去捕捉信号
+	int sigaction(int signum, const struct sigaction *act,
+                     struct sigaction *oldact);
+		signum：你想要注册的信号
+		act：信号处理集合，里面记载着你对信号的详细处理
+		oldact：可以保存旧的信号设置
+
+
+	struct sigaction {
+               void     (*sa_handler)(int);	//简单信号处理函数的登记
+               void     (*sa_sigaction)(int, siginfo_t *, void *);//复杂的信号处理函数，他可以获取发送信号的进程的详细信息
+               sigset_t   sa_mask;		//处理函数的阻塞设置，跟sigprocmask一样的原理，一样的用法
+               int        sa_flags;		//操作标志位
+           };
+
+	siginfo_t：代表发送信号的具体信息
+	siginfo_t {
+               int      si_signo;    /* Signal number */
+               int      si_errno;    /* An errno value */
+               int      si_code;     /* Signal code */
+               int      si_trapno;   /* Trap number that caused
+                                        hardware-generated signal
+                                        (unused on most architectures) */
+               pid_t    si_pid;      /* Sending process ID */
+               uid_t    si_uid;      /* Real user ID of sending process */
+               int      si_status;   /* Exit value or signal */
+               clock_t  si_utime;    /* User time consumed */
+               clock_t  si_stime;    /* System time consumed */
+               sigval_t si_value;    /* Signal value */
+               int      si_int;      /* POSIX.1b signal */
+               void    *si_ptr;      /* POSIX.1b signal */
+               int      si_overrun;  /* Timer overrun count; POSIX.1b timers */
+               int      si_timerid;  /* Timer ID; POSIX.1b timers */
+               void    *si_addr;     /* Memory location which caused fault */
+               long     si_band;     /* Band event (was int in
+                                        glibc 2.3.2 and earlier) */
+               int      si_fd;       /* File descriptor */
+               short    si_addr_lsb; /* Least significant bit of address
+                                        (since kernel 2.6.32) */
+		}
+
+2，sigqueue：
+		类似于kill，用来发送信号，但是它是带上进程的信息发送
+		
+	int sigqueue(pid_t pid, int sig, const union sigval value);
+		pid：发送信号给哪个进程的pid
+		sig：发送什么信号
+		value：这是一个共用体/联合体
+			union sigval {		//你要发送的额外的参数
+            		   int   sival_int;	
+          		   void *sival_ptr;
+       		    };
+
+3，信号安全机制：
+		阻塞，信号安全函数，实时信号
+
+
+
+
+
+
+

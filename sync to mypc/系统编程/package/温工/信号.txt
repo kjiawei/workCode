@@ -1,0 +1,90 @@
+1，信号
+      非实时信号：不可靠
+                1，它可能会丢失
+		2，可嵌套的（可中断的）
+		3，乱序执行
+		4，没有优先级
+		
+      实时信号：可靠
+		1， 不会丢失
+		2，不可嵌套（不可中断）
+		3，顺序执行
+		4，优先级
+		5，优先级要非实时信号的高
+
+在多进程当中的特点：
+		1，信号的设置是可以被继承的
+		2，被挂起的信号不会被复制，只会父进程响应，子进程不会响应
+	
+
+2，信号的动作：
+		1，按照默认的设置去处理
+		2，忽略
+		3，捕捉（收到信号收自行处理）（不带参数，带参数）（signal，sigaction）
+		4，阻塞（卡住信号，让它挂起，之后不阻塞了才来相应它）（sigprocmask）
+
+3，信号中唯有SIGKILL，SIGSTOP，他们是不可忽略,捕捉，不可阻塞的
+		收到信号之后按照默认的行为操作
+
+
+4，命令kill，函数kill（）；
+	kill -s 信号值  PID
+	killall -s 信号值  应用名
+
+
+5，signal：注册动作
+
+	void (*signal(int sig, void (*sig_hand)(int)))(int);
+	signal(SIGINT, func)
+		这句话的意思是：
+			从现在开始，收到SIGINT这个信号不再按照系统的定义去动作了，而是去做func这个函数的内容
+
+	sig：你要注册的信号
+	sig_hand:收到信号之后执行的函数
+	返回值：成功则返回你注册的函数指针，失败则返回SIG_ERR
+
+
+
+6，sigprocmask：阻塞动作
+		他可以阻塞信号，让信号挂起
+		
+
+
+练习：
+	1，程序运行，让你按下ctrl+c一点反应都没有
+
+	2，利用阻塞信号，进程A往进程B发送一个信号SIGINT，进程B等到运行完10次hello后打印accept，如果收到SIGHUP信号马上打印world
+
+
+
+作业：
+
+1:编写一段程序，创建两个子进程，
+		用signal让父进程捕捉SIGINT，
+		当捕获到SIGINT后，父进程用kill向两个子进程分别发信号，
+ 		发送SIGUSR1给子进程1， 发送SIGUSR2给子进程2
+		子进程捕捉到父进程发来的信号后，分别输入下列信息后终止
+		Child process 1 is killed by parent!
+		Child process 2 is killed by parent!
+		父进程等待两个子进程终止后，输出以下信息后终止 waitpid()
+		Parent process exit!
+
+		
+2:售票员司机（可以持续报站）
+	用信号模拟司机售票员：
+	创建子进程代表售票员，父进程代表司机，
+		1：售票员捕捉SIGINT(代表开车)，
+			发SIGUSR1 给司机，
+			司机捕捉到SIGUSR1 信号后打印“move to next station”
+		2: 售票员捕捉SIGQUIT(代表靠站)，
+			发SIGUSR2 给司机，
+			司机捕捉到SIGUSR2 信号后打印“stop the bus”
+		3: 以上过程可以循环
+		4: 司机捕获到SIGTSTP(ctrl+z）（车到总站），
+		   发SIGUSR1给售票员，
+		   售票员捕捉到SIGUSR1信号后打印“all get off the bus”，
+		   全部进程结束
+
+
+
+

@@ -1,0 +1,125 @@
+=================进程的阻塞掩码========
+1.实际写代码的时候：当一个进程正在执行一个重要的函数（不希望被信号干扰），---》将你想要阻塞的信号添加到阻塞集合---》防止被干扰（如果后面又想去响应那些信号，可以解除对它们的阻塞）
+ 
+
+===============signal()跟kill（）======  两组常用的信号发送跟捕获的函数
+               sigaction()跟sigqueue()  
+  #include <signal.h>
+
+       int sigqueue(pid_t pid, int sig, const union sigval value);
+               也是用于发送信号，不过多了第三个参数(携带额外的数据)
+           union sigval {
+               int   sival_int;
+               void *sival_ptr;  // 由于是void *根据前面学习的经验，该数据可以是任何C语言的基本数据类型
+           };
+
+        #include <signal.h>  
+
+       int sigaction(int sig, const struct sigaction *restrict act,
+              struct sigaction *restrict oact);
+               返回值：成功  0   失败-1
+                 形参: struct sigaction
+          struct sigaction
+	{
+
+              void(*) (int)     sa_handler     Pointer to a signal-catching
+                                            function or one of the macros
+                                            SIG_IGN or SIG_DFL.
+                                     跟signal()差不多
+             sigset_t          sa_mask        Additional set of signals to
+                                            be blocked during execution of
+                                            signal-catching function.
+                                     设置阻塞信号  
+             int               sa_flags       Special flags to affect behav‐
+                                            ior of signal.
+                                     sa_flags=0 ---》表示该函数等会捕获到sig信号的时候会调用sa_handler指向的函数来响应该信号
+                                     sa_flags=SA_SIGINFO ---》表示该函数等会捕获到sig信号的时候会调用sa_sigaction指向的函数来响应该信号
+             void(*) (int,
+             siginfo_t *,    sa_sigaction   Pointer to a signal-catching
+           void *)                          function.
+	}
+  小结： sigaction()是signal()的升级版，它包含了signal的功能(sa_flags=0的情况下)，同时它也可以配合sigqueue()去接收来自sigqueue()携带的额外数据(sa_flags=SA_SIGINFO的情况下)
+         siginfo_t结构体的原型声明在/usr/include/i386-linux-gnu/bits/siginfo.h 
+         教材上介绍：收到的额外数据保存在siginfo_t结构体当中的si_int和si_ptr这个两个成员变量中了
+         看上去有矛盾了：实际上linux中POSIX标准只是规定了siginfo_t类型的结构体的一个模板，不同的linux系统版本只要去遵循这个标准定义(并不是要完全跟标准一模一样)
+
+练习：
+      进程1使用sigqueue发送信号的同时，发送一个字符串
+      进程2使用sigaction捕获信号，然后打印收到的字符串和信号的编号 
+
+原子性
+
+=========================线程（类比进程，思想有些类似）=================
+系统中用于描述进程运行状态信息的结构体叫做struct task_struct
+/usr/src/linux-headers-3.5.0-23-generic/include/linux/sched.h里面的1229行开始
+
+   多任务的并发操作---》核心就是进程和线程
+1. 进程是系统分配资源的最小单位（cpu资源，内存）
+   线程是轻量级的进程
+   线程是系统调度的最小单位
+线程：线程是把系统分配给进程的资源拿了一部分用于支持自己的运行
+   线程是在进程中创建的---》创建线程的那个进程称作主线程
+                           被创建的线程称作子线程
+2.线程相关的API
+     （1）线程的创建    pthread_create()
+          线程的退出    pthread_exit()
+          线程的回收    pthread_join()
+      #include <pthread.h>
+
+       int pthread_create(pthread_t *thread, const pthread_attr_t *attr,
+                          void *(*start_routine) (void *), void *arg);
+              返回值:  成功返回0
+                形参： thread  ---》线程的id （系统分配）
+                       attr ---》线程的属性
+                       start_routine ---》函数指针，指向的是线程的功能函数,你创建线程需要完成的任务就靠它来帮助你实现
+                       arg ---》传递给线程功能函数的参数
+
+       Compile and link with -pthread.  编译的时候需要链接线程库
+                             -lpthread
+           
+       void pthread_exit(void *retval);  ---》retval 用于存放线程退出时的信息（程序员写的）
+       int pthread_join(pthread_t thread, void **retval); 用于存放线程退出时返回的信息
+
+练习：
+      创建一个线程，传递一个整数给该线程，该线程将整数的值加一之后退出线程，退出线程的线程必须告诉主线程"I have complete project" ,主线程回收子线程的时候打印出这句话
+ 
+      （2）获取线程自己的ID号
+              pthread_t pthread_self(void);
+      （3）线程的取消
+             int pthread_cancel(pthread_t thread);
+      （4）设置/获取线程的取消类型和取消状态
+              int pthread_setcancelstate(int state, int *oldstate);
+                       参数：state  PTHREAD_CANCEL_ENABLE   可以取消
+                                    PTHREAD_CANCEL_DISABLE  不能取消
+                             oldstate 线程原本的取消状态  一般设置为NULL
+              int pthread_setcanceltype(int type, int *oldtype);
+                       参数：type   PTHREAD_CANCEL_DEFERRED       适当时候
+                                           
+                                    PTHREAD_CANCEL_ASYNCHRONOUS   立即取消
+              
+                    
+
+
+             
+
+
+   
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+  
+    
+         

@@ -1,0 +1,69 @@
+1，信号量
+		sem_init：信号量初始化，第一个参数是sem_t的信号量变量的地址， 第二个我们设置为0，指的是在线程中操作，第三个是你想要给这个信号量设置的初值
+		sem_wait:P操作
+		sem_post：V操作
+
+
+2，互斥锁：
+		更类似于信号量，它是一种资源，用到时需要申请，申请不到它会阻塞
+
+		注意：他并不是将代码给锁起来，而是类似于PV操作一样，去申请锁资源和释放锁资源
+
+
+		什么情况下使用呢，怎么使用：
+			1，操作全局变量，不希望被别人中断时候，往这个全局变量的操作上加上锁
+			2，一旦你给一个变量和操作加锁，那另外的线程去操作这个变量，也一定要加锁，不然就程序逻辑异常了
+			3：锁一开始初始化的时候，锁只有一把，加锁和解锁是配套使用的，不然就会产生死锁
+
+
+		pthread_mutex_init：锁初始化函数
+			int pthread_mutex_init(pthread_mutex_t *restrict mutex,
+              const pthread_mutexattr_t *restrict attr);
+				mutext：初始化的锁的变量
+				attr：锁的属性,这里面设置为NULL就行，默认利用系统的配置去初始化锁
+
+			pthread_mutext_lock():可以理解为一个P操作，去申请一把锁，申请不到会阻塞
+
+			pthread_mutext_unlock():可以理解为一个V操作，去还一把锁
+
+
+3，读写锁：
+		基于互斥锁的拓展
+
+		特点：
+			1，如果只是加读锁，可以支持多条线程同时进入该锁内
+			2，如果是加写锁，他就相当于互斥锁
+			3，读的时候不能写，写的时候不能读
+				在加了读锁的时候，你去加写锁是会阻塞的
+				在加了写锁的时候，你去加读锁也是会阻塞的
+
+		总结：
+			只要有人写，他就是互斥锁，如果没人写，就是只有读，那他就是相当于没有锁
+
+		功能：初始化读写锁
+		int pthread_rwlock_init(pthread_rwlock_t *restrict rwlock,
+              const pthread_rwlockattr_t *restrict attr);
+			rwlock：读写锁变量的地址
+			attr：设置为NULL
+
+		功能：加读锁
+		int pthread_rwlock_rdlock(pthread_rwlock_t *rwlock);
+			rwlock：锁变量的地址
+
+		功能：加写锁	
+		int pthread_rwlock_wrlock(pthread_rwlock_t *rwlock);
+			rwlock：锁变量的地址
+
+
+		功能：解锁，读写一样的解锁方式
+		int pthread_rwlock_unlock(pthread_rwlock_t *rwlock);
+			rwlock：锁变量的地址
+		
+
+
+4，条件变量：
+	结合互斥锁来用
+	判断条件
+
+
+
