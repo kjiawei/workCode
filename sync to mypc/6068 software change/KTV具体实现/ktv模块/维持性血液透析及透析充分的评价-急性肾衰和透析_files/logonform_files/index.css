@@ -1,0 +1,228 @@
+BODY {
+	COLOR: #000; FONT-SIZE: 12px
+}
+TD {
+	COLOR: #000; FONT-SIZE: 12px
+}
+SELECT {
+	FONT-SIZE: 12px
+}
+INPUT {
+	FONT-SIZE: 12px
+}
+A:link {
+	COLOR: #3d362b
+}
+A:visited {
+	COLOR: #3d362b
+}
+A:hover {
+	COLOR: #f60
+}
+.a3 {
+	COLOR: #000000; FONT-SIZE: 12px; TEXT-DECORATION: none
+}
+.a3:link {
+	COLOR: #000000; FONT-SIZE: 12px; TEXT-DECORATION: none
+}
+.a3:visited {
+	COLOR: #000000; FONT-SIZE: 12px; TEXT-DECORATION: none
+}
+.a3:hover {
+	COLOR: #f60; FONT-SIZE: 12px
+}
+.a1 {
+	COLOR: #003399; FONT-SIZE: 12px; TEXT-DECORATION: underline
+}
+.a1:link {
+	COLOR: #003399; FONT-SIZE: 12px; TEXT-DECORATION: underline
+}
+.a1:visited {
+	COLOR: #003399; FONT-SIZE: 12px; TEXT-DECORATION: underline
+}
+.a1:hover {
+	COLOR: #f60; FONT-SIZE: 12px
+}
+.a2 {
+	COLOR: #003399; FONT-SIZE: 13px; FONT-WEIGHT: bold
+}
+.a2:link {
+	COLOR: #003399; FONT-SIZE: 13px; FONT-WEIGHT: bold
+}
+.a2:visited {
+	COLOR: #003399; FONT-SIZE: 13px; FONT-WEIGHT: bold
+}
+.a2:hover {
+	COLOR: #f60; FONT-SIZE: 13px; FONT-WEIGHT: bold
+}
+.AW:link {
+	COLOR: #fff
+}
+.AW:visited {
+	COLOR: #fff
+}
+.AW:hover {
+	COLOR: #f60
+}
+.C {
+	FONT-SIZE: 14px
+}
+.M {
+	FONT-SIZE: 14px; FONT-WEIGHT: bold
+}
+.boldtitle16 {
+	FONT-FAMILY: "??"; COLOR: #ff0000; FONT-SIZE: 20px
+}
+.white {
+	LINE-HEIGHT: normal; FONT-VARIANT: normal; FONT-STYLE: normal; COLOR: #fff; FONT-SIZE: 12px; FONT-WEIGHT: normal
+}
+.white14 {
+	LINE-HEIGHT: normal; FONT-VARIANT: normal; FONT-STYLE: normal; COLOR: #fff; FONT-SIZE: 14px; FONT-WEIGHT: normal; TEXT-DECORATION: underline
+}
+.gray {
+	COLOR: #ccc
+}
+.nopic {
+	LINE-HEIGHT: normal; FONT-VARIANT: normal; FONT-STYLE: normal; COLOR: #333; FONT-SIZE: 14px; FONT-WEIGHT: normal
+}
+.listtopwd {
+	LINE-HEIGHT: normal; FONT-VARIANT: normal; FONT-STYLE: normal; COLOR: #666; FONT-SIZE: 12px; FONT-WEIGHT: normal
+}
+.red {
+	COLOR: #cc3300; FONT-WEIGHT: bold
+}
+.red:link {
+	COLOR: #cc3300
+}
+.red:visited {
+	COLOR: #cc3300
+}
+.red:hover {
+	COLOR: #f60
+}
+.orange {
+	LINE-HEIGHT: normal; FONT-VARIANT: normal; FONT-STYLE: normal; COLOR: #ff7300; FONT-SIZE: 12px; FONT-WEIGHT: bold; TEXT-DECORATION: underline
+}
+.HEAD {
+	FILTER: progid:DXImageTransform.Microsoft.Glow(color=000000,strength=2); LINE-HEIGHT: normal; FONT-VARIANT: normal; FONT-STYLE: normal; WIDTH: 70%; COLOR: #fff; FONT-SIZE: 14px; FONT-WEIGHT: bold
+}
+.clubwd {
+	TEXT-ALIGN: center; FILTER: progid:DXImageTransform.Microsoft.Glow(color=FFFFFF,strength=2); WIDTH: 90%; VERTICAL-ALIGN: middle; FONT-WEIGHT: bold
+}
+.cate {
+	LINE-HEIGHT: 150%; PADDING-LEFT: 14px; FONT-SIZE: 12px
+}
+.numb:link {
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; COLOR: #3d362b; FONT-SIZE: 12px; FONT-WEIGHT: bold
+}
+.numb:visited {
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; COLOR: #3d362b; FONT-SIZE: 12px; FONT-WEIGHT: bold
+}
+.numb:hover {
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; COLOR: #f60; FONT-SIZE: 12px; FONT-WEIGHT: bold
+}
+.graylistbar {
+	BACKGROUND: #efefef; COLOR: #666; FONT-SIZE: 12px
+}
+.lh13 {
+	LINE-HEIGHT: 130%
+}
+.lh15 {
+	LINE-HEIGHT: 150%
+}
+.textindex {
+	TEXT-INDENT: 24px
+}
+.porductborder {
+	BORDER-BOTTOM: #333333 1px solid; BORDER-LEFT: #333333 1px solid; BORDER-TOP: #333333 1px solid; BORDER-RIGHT: #333333 1px solid
+}
+.outborder {
+	BORDER-BOTTOM: #999999 1px solid; BORDER-LEFT: #999999 1px solid; BORDER-TOP: #999999 1px solid; BORDER-RIGHT: #999999 1px solid
+}
+.headborder {
+	BORDER-BOTTOM: #0d4d7e 3px solid; TEXT-ALIGN: center; BORDER-LEFT: #0d4d7e 1px solid; HEIGHT: 28px; BORDER-TOP: #0d4d7e 1px solid; FONT-WEIGHT: bold; BORDER-RIGHT: #0d4d7e 1px solid; PADDING-TOP: 2px
+}
+.headonborder {
+	BORDER-BOTTOM: #ff7300 3px solid; TEXT-ALIGN: center; BORDER-LEFT: #ff7300 1px solid; BACKGROUND: #ff7300; HEIGHT: 31px; BORDER-TOP: #ff7300 1px solid; FONT-WEIGHT: bold; BORDER-RIGHT: #ff7300 1px solid; PADDING-TOP: 2px
+}
+.buttonbar {
+	PADDING-LEFT: 12px; BACKGROUND: #666666; HEIGHT: 29px; BORDER-TOP: #767676 4px solid
+}
+.downborder {
+	BORDER-BOTTOM: #333333 3px solid
+}
+.blackborder {
+	BORDER-BOTTOM: #b0b0b0 1px solid; BORDER-LEFT: #b0b0b0 1px solid; BORDER-RIGHT: #b0b0b0 1px solid
+}
+.blackbordernobottom {
+	BORDER-LEFT: #b0b0b0 1px solid; BORDER-RIGHT: #b0b0b0 1px solid
+}
+.companybar {
+	BORDER-BOTTOM: #666666 3px solid; TEXT-ALIGN: center; BORDER-LEFT: #999999 1px solid; LINE-HEIGHT: normal; FONT-VARIANT: normal; FONT-STYLE: normal; BACKGROUND: url(http://img.china.alibaba.com/images/cn/common/others/search_bg.gif); HEIGHT: 29px; FONT-SIZE: 14px; BORDER-TOP: #999999 1px solid; FONT-WEIGHT: bold; BORDER-RIGHT: #999999 1px solid; PADDING-TOP: 4px
+}
+.midbar {
+	BORDER-BOTTOM: #666666 3px solid
+}
+.paddleft0 {
+	PADDING-BOTTOM: 8px; LINE-HEIGHT: 130%; PADDING-LEFT: 20px; FONT-SIZE: 14px
+}
+.padd {
+	PADDING-BOTTOM: 15px; LINE-HEIGHT: 130%; PADDING-LEFT: 25px; PADDING-RIGHT: 5px; FONT-SIZE: 12px
+}
+.prmbg {
+	BACKGROUND: #f1f1f1
+}
+.leimubar {
+	BORDER-BOTTOM: #cccccc 4px solid; PADDING-LEFT: 15px; FONT: 14px bold; BACKGROUND: #0d4d7e; HEIGHT: 28px
+}
+.leimubar1 {
+	BORDER-BOTTOM: #6688aa 4px solid; PADDING-LEFT: 10px; FONT: 14px bold; BACKGROUND: #efefef; PADDING-TOP: 5px
+}
+.searchbar {
+	PADDING-LEFT: 10px; BACKGROUND: #e7e7e7; BORDER-TOP: #f1f1f1 4px solid
+}
+.smalltoppad {
+	PADDING-TOP: 10px
+}
+.smallbottompad {
+	PADDING-BOTTOM: 10px
+}
+.smallleftpad {
+	PADDING-LEFT: 6px
+}
+.middleleftpad {
+	PADDING-LEFT: 10px
+}
+.largeleftpad {
+	PADDING-LEFT: 18px
+}
+.smallrightpad {
+	PADDING-RIGHT: 6px
+}
+.middlerightpad {
+	PADDING-RIGHT: 10px
+}
+.largerightpad {
+	PADDING-RIGHT: 18px
+}
+.prmleftpad {
+	PADDING-BOTTOM: 5px; PADDING-LEFT: 10px
+}
+.paddlefthome {
+	PADDING-BOTTOM: 3px; LINE-HEIGHT: 130%; PADDING-LEFT: 25px; FONT-SIZE: 14px
+}
+.paddhome {
+	PADDING-BOTTOM: 8px; LINE-HEIGHT: 130%; PADDING-LEFT: 25px; PADDING-RIGHT: 5px; FONT-SIZE: 12px
+}
+.border {
+	BORDER-BOTTOM: #cccccc 1px solid; BORDER-LEFT: #cccccc 1px solid; BORDER-TOP: #cccccc 1px solid; BORDER-RIGHT: #cccccc 1px solid
+}
+.paddingtop {
+	PADDING-LEFT: 5px; PADDING-TOP: 7px
+}
+.border1 {
+	BORDER-BOTTOM: #cccccc 1px solid; BORDER-LEFT: #cccccc 1px solid; BORDER-RIGHT: #cccccc 1px solid
+}
+.leftrightborder {
+	BORDER-LEFT: #cccccc 1px solid; BORDER-RIGHT: #cccccc 1px solid
+}

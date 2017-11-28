@@ -1,0 +1,37 @@
+﻿需求(功能) 
+1.显示KTV历史值 实际值 标准参考值
+
+KTV/使用步骤
+1.校正电导值  2.输入:病人身高 体重 年龄
+
+设计步骤
+输入:病人身高 体重 年龄 血泵流速/电导 温度
+输出:参考值 曲线
+UI 
+①KTV:血泵流速 电导/温度参数 校正按钮 进度条 注意:仅作为参考值  设定血泵流速后不能轻易更改,更改流速后的KT/V不作为参考标准(历史 实际 标准     Attention: It is not easy to change the flow rate of the blood pump as the reference value, and the change of the flow rate of KT/V is not a reference standard) 原来的calibration说明放上面,使用注意放下面
+②病人信息:身高 体重 年龄 历史/目标/参考(KTV)
+③透析器参数:share/jihua  原ktv界面上的dialysis type   
+④数据曲线:曲线控件 多种颜色显示
+
+名词解析
+KT/V:K即是透析器(人工肾脏)的尿素氮清除系数；t即是每周透析的时间；V即是尿素氮所分布的体积，为体重x 0.6
+注意:序贯超滤阶段不计算，例：形成曲线轮廓期间;血液滤过
+URR:尿素氮移除率urea removal rate   (透析前尿素氮- 透析后尿素氮)/透析前尿素氮
+
+尿素氮清除率(URR)最少要65%，最好要70%以上。如此发生心脏病、感染等并发症会减少。透析后取样要正确：
+（1）慢流速法--> Bypass, Stop UFR, BF<100 ml/min->20 sec, Arterial site抽血。 
+（2）帮浦暂停法--> Bypass, Stop UFR ->20sec, Stop pump, Arterial site抽血
+血尿素氮---BUN 為Blood urine nitrogen
+----------------------------------------------------------
+计算公式及演变
+1.
+2.Kt/V=-In(R-0.008 x t) + (4-3.5xR) x UF/W    常用
+此处In是自然对数,R即是(透析后BUN) /(透析前BUN)的值
+t即是每次透析治疗多少小时
+UF为此次透析治疗中移除多少公升水分-超滤量
+W即是病人在透析治疗后的体重。这里的Kt/V代表是 single pool=spKt/V。
+
+拓展
+爬虫获取外文疾病医学资料
+肝胆外科院士论坛
+乙肝在外国没有在国内渲染的那么严重 http://bbs.tianya.cn/post-worldlook-227399-1.shtml
