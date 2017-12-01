@@ -1,0 +1,409 @@
+版本: 1943
+作者: 黄俊贤
+日期: 2015年1月24日 13:10:16
+信息:
+实现了报警日志页面
+----
+已修改 : /software/app-software/trunk/include/version.h
+已修改 : /software/app-software/trunk/main.cpp
+已修改 : /software/app-software/trunk/src/scenes/scene_ims/scene_log_warn.cpp
+已修改 : /software/app-software/trunk/src/scenes/scene_ims/scene_log_warn.h
+已修改 : /software/app-software/trunk/src/setup/setup_advanced/scene_setup_EC.cpp
+
+
+版本: 1944
+作者: 陈桂芳
+日期: 2015年1月26日 17:20:37
+信息:
+处理因为出现超滤量大于目标量带出的BUG
+
+----
+已修改 : /software/app-software/trunk/src/scenes/scene_main/widget_switch.cpp
+已修改 : /software/app-software/trunk/src/scenes/scene_main/scene_main.cpp
+已修改 : /software/app-software/trunk/src/windows/window_boot.cpp
+已修改 : /software/app-software/trunk/src/scenes/scene_main/widget_time.cpp
+已修改 : /software/app-software/trunk/src/setup/setup_cure/scene_setup_ultrafiltration.cpp
+已修改 : /software/app-software/trunk/src/setup/setup_cure/scene_setup_cure_time.cpp
+已修改 : /software/app-software/trunk/src/setup/setup_cure/scene_setup_isouf.cpp
+已修改 : /software/app-software/trunk/src/scenes/scene_main/widget_turntable.cpp
+已修改 : /software/app-software/trunk/src/scenes/scene_main/widget_turntable.h
+
+版本: 1946
+作者: 黄俊贤
+日期: 2015年1月28日 10:40:36
+信息:
+修复了数据曲线导致界面运行错误的BUG
+----
+已修改 : /software/app-software/trunk/include/version.h
+已修改 : /software/app-software/trunk/main.cpp
+已修改 : /software/app-software/trunk/src/setup/setup_advanced/scene_setup_curve_na.cpp
+已修改 : /software/app-software/trunk/src/setup/setup_advanced/scene_setup_curve_na.h
+已修改 : /software/app-software/trunk/src/setup/setup_advanced/scene_setup_curve_uf.cpp
+已修改 : /software/app-software/trunk/src/setup/setup_advanced/scene_setup_nauf.cpp
+已修改 : /software/app-software/trunk/src/setup/setup_advanced/scene_setup_sequential.cpp
+已修改 : /software/app-software/trunk/src/setup/setup_advanced/widget_setup_advanced.cpp
+已修改 : /software/app-software/trunk/src/scenes/scene_warn/scene_history.cpp
+已修改 : /software/app-software/trunk/src/windows/window_main.cpp
+已修改 : /software/app-software/trunk/resource/languages/chinese.qm
+已修改 : /software/app-software/trunk/resource/languages/chinese.ts
+已修改 : /software/app-software/trunk/resource/languages/english.ts
+已修改 : /software/app-software/trunk/src/common_widget/widget_data_curve.cpp
+已修改 : /software/app-software/trunk/src/common_widget/widget_data_curve.h
+已修改 : /software/app-software/trunk/src/setup/setup_advanced/scene_setup_EC.cpp
+
+版本: 1947
+作者: 黄俊贤
+日期: 2015年1月28日 16:43:13
+信息:
+完善了按键消音和报警复位等功能
+----
+已修改 : /software/app-software/trunk/include/version.h
+已修改 : /software/app-software/trunk/src/data_manage/data_manage_can.cpp
+已修改 : /software/app-software/trunk/src/scenes/scene_main/widget_switch.cpp
+已修改 : /software/app-software/trunk/src/lamp/lamp_task.cpp
+已修改 : /software/app-software/trunk/src/scenes/scene_warn/Alarm_module.cpp
+已修改 : /software/app-software/trunk/src/scenes/scene_warn/Alarm_module.h
+
+
+版本: 1951
+作者: 李喜进
+日期: 2015年1月29日 15:17:12
+信息:
+修改消毒界面超净滤器
+
+----
+已修改 : /software/app-software/trunk/src/setup/setup_advanced/scene_setup_bpm.cpp
+已修改 : /software/app-software/trunk/src/setup/setup_advanced/scene_setup_bpm.h
+已修改 : /software/app-software/trunk/src/engineering_mode/engineering_mode.cpp
+已修改 : /software/app-software/trunk/src/windows/window_main.cpp
+已修改 : /software/app-software/trunk/resource/languages/chinese.qm
+已修改 : /software/app-software/trunk/resource/languages/chinese.ts
+已修改 : /software/app-software/trunk/resource/languages/english.qm
+已修改 : /software/app-software/trunk/resource/languages/english.ts
+已修改 : /software/app-software/trunk/src/scenes/scene_disinfect/scene_disinfect.cpp
+已修改 : /software/app-software/trunk/src/scenes/scene_disinfect/scene_disinfect.h
+已修改 : /software/app-software/trunk/src/scenes/scene_main/widget_heartbeat.cpp
+已修改 : /software/app-software/trunk/src/scenes/scene_main/widget_heartbeat.h
+
+
+版本: 1953
+作者: 陈桂芳
+日期: 2015年1月29日 17:07:55
+信息:
+更新下发状态机制
+
+----
+已修改 : /software/app-software/trunk/src/data_manage/data_manage_can.cpp
+已修改 : /software/app-software/trunk/src/scenes/scene_main/widget_switch.cpp
+已修改 : /software/app-software/trunk/src/common/global_var.cpp
+已修改 : /software/app-software/trunk/src/common/global_var.h
+已修改 : /software/app-software/trunk/src/scenes/scene_main/widget_switch.h
+已修改 : /software/app-software/trunk/src/windows/window_boot.cpp
+已修改 : /software/app-software/trunk/src/scenes/scene_main/widget_time.cpp
+已修改 : /software/app-software/trunk/src/packet/packet_ui.h
+已修改 : /software/app-software/trunk/src/setup/setup_cure/scene_setup_ultrafiltration.cpp
+已修改 : /software/app-software/trunk/src/scenes/scene_disinfect/scene_disinfect.cpp
+已修改 : /software/app-software/trunk/src/scenes/scene_main/widget_notice.cpp
+已修改 : /software/app-software/trunk/src/business/state.cpp
+已修改 : /software/app-software/trunk/src/setup/setup_cure/scene_setup_cure_time.cpp
+已修改 : /software/app-software/trunk/src/business/state.h
+已修改 : /software/app-software/trunk/src/business/state_dialysis.cpp
+已修改 : /software/app-software/trunk/src/business/state_dialysis.h
+已修改 : /software/app-software/trunk/src/scenes/scene_main/widget_cross.cpp
+
+
+版本: 1972
+作者: 陈桂芳
+日期: 2015年2月5日 8:58:47
+信息:
+上电启动判断消毒是否完成，进入消毒界面
+
+----
+已修改 : /software/app-software/trunk/main.cpp
+已修改 : /software/app-software/trunk/src/scenes/scene_main/widget_switch.cpp
+已修改 : /software/app-software/trunk/src/windows/window_boot.cpp
+
+版本: 1974
+作者: 李喜进
+日期: 2015年2月5日 14:17:03
+信息:
+修改消毒程序
+
+----
+已修改 : /software/app-software/trunk/db/hemodialysis.db
+已修改 : /software/app-software/trunk/include/version.h
+已修改 : /software/app-software/trunk/main.cpp
+已修改 : /software/app-software/trunk/src/scenes/scene_disinfect/scene_disinfect.cpp
+已修改 : /software/app-software/trunk/src/business/state.cpp
+已修改 : /software/app-software/trunk/src/business/state_disinfect.cpp
+已修改 : /software/app-software/trunk/src/business/state_disinfect.h
+已修改 : /software/app-software/trunk/src/scenes/scene_disinfect/scene_disinfect.h
+已修改 : /software/app-software/trunk/src/business/state.h
+已修改 : /software/app-software/trunk/src/business/state_dialysis.h
+
+版本: 1992
+作者: 李喜进
+日期: 2015年3月5日 9:13:07
+信息:
+消毒温度全部放大10倍
+
+----
+已修改 : /software/app-software/trunk/conf/config.xml
+已修改 : /software/app-software/trunk/include/version.h
+
+
+版本: 2066
+作者: 李喜进
+日期: 2015年3月21日 14:06:03
+信息:
+回复u盘插入标识
+
+----
+已修改 : /software/app-software/trunk/src/engineering_mode/engineering_mode.cpp
+已修改 : /software/app-software/trunk/src/maintain/scene_maintain.cpp
+已修改 : /software/app-software/trunk/src/scenes/scene_main/widget_notice.cpp
+
+
+版本: 2124
+作者: 黄俊贤
+日期: 2015年4月15日 16:59:45
+信息:
+引血版本1.0
+----
+已修改 : /software/app-software/trunk/db/hemodialysis.db
+已修改 : /software/app-software/trunk/include/version.h
+已修改 : /software/app-software/trunk/resource/languages/chinese.qm
+已修改 : /software/app-software/trunk/resource/languages/chinese.ts
+已修改 : /software/app-software/trunk/resource/languages/english.qm
+已修改 : /software/app-software/trunk/resource/languages/english.ts
+已修改 : /software/app-software/trunk/src/business/state.h
+已修改 : /software/app-software/trunk/src/common/common_func.cpp
+已修改 : /software/app-software/trunk/src/packet/packet_ui.h
+已修改 : /software/app-software/trunk/src/scenes/scene_main/widget_switch.cpp
+已修改 : /software/app-software/trunk/src/scenes/scene_main/widget_switch.h
+已修改 : /software/app-software/trunk/src/scenes/scene_warn/scene_message.cpp
+已修改 : /software/app-software/trunk/src/windows/window_main.h
+
+
+版本: 2192
+作者: 黄俊贤
+日期: 2015年5月22日 9:34:12
+信息:
+完善运行日记功能
+
+----
+已修改 : /software/app-software/trunk/main.cpp
+已修改 : /software/app-software/trunk/src/common/global_var.cpp
+已修改 : /software/app-software/trunk/src/common/global_var.h
+已修改 : /software/app-software/trunk/src/data_manage/data_sqllite.cpp
+已修改 : /software/app-software/trunk/src/data_manage/data_sqllite.h
+已修改 : /software/app-software/trunk/src/scenes/scene_ims/scene_log_run.cpp
+已修改 : /software/app-software/trunk/src/scenes/scene_ims/scene_log_run.h
+已修改 : /software/app-software/trunk/src/scenes/scene_main/widget_switch.cpp
+已修改 : /software/app-software/trunk/src/setup/setup_workmode/scene_setup_workmode.cpp
+
+
+
+
+版本: 2195
+作者: 黄俊贤
+日期: 2015年5月25日 11:34:12
+信息:
+实现独立线程处理通信
+
+----
+已修改 : /software/app-software/trunk/src/canopen/canopen_shell.c
+已修改 : /software/app-software/trunk/src/data_manage/data_can_send.cpp
+已修改 : /software/app-software/trunk/src/data_manage/data_can_send.h
+已修改 : /software/app-software/trunk/src/data_manage/data_custom.cpp
+已修改 : /software/app-software/trunk/src/data_manage/data_custom.h
+
+
+
+版本: 2198
+作者: 黄俊贤
+日期: 2015年5月27日 13:24:12
+信息:
+实现引血较稳定版本
+
+----
+已修改 : /software/app-software/trunk/src/scenes/scene_main/widget_switch.cpp
+已修改 : /software/app-software/trunk/src/scenes/scene_main/widget_switch.h
+
+
+
+版本: 2203
+作者: 黄俊贤
+日期: 2015年6月05日 10:28:12
+信息:
+实现治疗曲线+数据曲线初版
+
+----
+已修改 : /software/app-software/trunk/include/version.h
+已修改 : /software/app-software/trunk/main.cpp
+已修改 : /software/app-software/trunk/src/engineering_mode/engineering_mode.cpp
+已修改 : /software/app-software/trunk/src/scenes/scene_note/scene_note.cpp
+已修改 : /software/app-software/trunk/src/data_manage/data_set.cpp
+已修改 : /software/app-software/trunk/resource/languages/chinese.qm
+已修改 : /software/app-software/trunk/resource/languages/chinese.ts
+已修改 : /software/app-software/trunk/resource/languages/english.qm
+已修改 : /software/app-software/trunk/resource/languages/english.ts
+已修改 : /software/app-software/trunk/src/scenes/scene_disinfect/scene_disinfect.cpp
+已修改 : /software/app-software/trunk/src/scenes/scene_disinfect/widget_radio_button.cpp
+已修改 : /software/app-software/trunk/src/scenes/scene_main/widget_notice.cpp
+已修改 : /software/app-software/trunk/src/business/state_disinfect.cpp
+已修改 : /software/app-software/trunk/src/scenes/scene_disinfect/scene_disinfect.h
+已修改 : /software/app-software/trunk/src/common/common_tr_string.h
+
+
+
+
+
+版本: 2208
+作者: 黄俊贤
+日期: 2015年6月19日 13:00:12
+信息:
+超滤同步功能+肝素页面实现
+
+----
+已修改 : /software/app-software/trunk/src/data_manage/data_manage_can.cpp
+已修改 : /software/app-software/trunk/src/scenes/scene_main/widget_switch.cpp
+已修改 : /software/app-software/trunk/src/packet/packet_ui.h
+已修改 : /software/app-software/trunk/src/data_manage/data_can_send.cpp
+
+
+
+
+
+版本: 2211
+作者: 黄俊贤
+日期: 2015年7月16日 17:00:12
+信息:
+实习治疗日志记录功能
+
+----
+已修改 : /software/app-software/trunk/include/version.h
+已修改 : /software/app-software/trunk/main.cpp
+已修改 : /software/app-software/trunk/src/scenes/scene_ims/scene_log_warn.cpp
+已修改 : /software/app-software/trunk/src/scenes/scene_ims/scene_log_warn.h
+已修改 : /software/app-software/trunk/src/setup/setup_advanced/scene_setup_EC.cpp
+
+
+版本: 2228
+作者: 黄俊贤
+日期: 2015年11月02日 18:00:12
+信息:
+临床版本实现死机后自恢复功能
+
+----
+已修改 : /software/app-software/trunk/db/hemodialysis.db
+已修改 : /software/app-software/trunk/main.cpp
+已修改 : /software/app-software/trunk/src/data_manage/data_manage_can.cpp
+已修改 : /software/app-software/trunk/src/data_manage/data_manage.cpp
+已修改 : /software/app-software/trunk/src/packet/packet.h
+已修改 : /software/app-software/trunk/src/scenes/scene_main/widget_switch.cpp
+已修改 : /software/app-software/trunk/src/scenes/scene_note/scene_note.cpp
+已修改 : /software/app-software/trunk/src/common/global_var.cpp
+已修改 : /software/app-software/trunk/src/common/global_var.h
+已修改 : /software/app-software/trunk/src/canopen/deal.c
+已修改 : /software/app-software/trunk/src/canopen/deal.h
+已修改 : /software/app-software/trunk/src/scenes/scene_main/scene_main.cpp
+已修改 : /software/app-software/trunk/src/scenes/scene_main/widget_switch.h
+已修改 : /software/app-software/trunk/src/windows/window_boot.cpp
+已修改 : /software/app-software/trunk/src/packet/packet_can.h
+已修改 : /software/app-software/trunk/src/scenes/scene_main/widget_time.cpp
+已修改 : /software/app-software/trunk/src/scenes/scene_warn/scene_history.cpp
+已修改 : /software/app-software/trunk/src/setup/setup_cure/scene_setup_heparin.cpp
+已修改 : /software/app-software/trunk/src/packet/packet_ui.h
+已修改 : /software/app-software/trunk/src/scenes/scene_main/widget_notice.cpp
+已修改 : /software/app-software/trunk/src/setup/setup_advanced/scene_setup_preflush.cpp
+已修改 : /software/app-software/trunk/src/scenes/scene_main/widget_turntable.cpp
+已修改 : /software/app-software/trunk/src/business/state.h
+已修改 : /software/app-software/trunk/src/common_widget/widget_button.cpp
+已修改 : /software/app-software/trunk/src/common_widget/widget_button.h
+已修改 : /software/app-software/trunk/src/scenes/scene_main/scene_main.h
+已修改 : /software/app-software/trunk/src/windows/window_boot.h
+已修改 : /software/app-software/trunk/src/lamp/lamp_task.cpp
+已修改 : /software/app-software/trunk/src/scenes/scene_main/widget_check_self.cpp
+已修改 : /software/app-software/trunk/src/scenes/scene_main/widget_check_self.h
+已修改 : /software/app-software/trunk/src/scenes/scene_main/widget_notice.h
+已修改 : /software/app-software/trunk/src/scenes/scene_warn/scene_history.h
+已修改 : /software/app-software/trunk/src/common/common_tr_string.h
+已修改 : /software/app-software/trunk/src/scenes/scene_warn/Alarm_module.cpp
+已修改 : /software/app-software/trunk/src/scenes/scene_warn/Alarm_module.h
+已修改 : /software/app-software/trunk/include/version.h
+已修改 : /software/app-software/trunk/main.cpp
+已修改 : /software/app-software/trunk/src/scenes/scene_ims/scene_log_warn.cpp
+已修改 : /software/app-software/trunk/src/scenes/scene_ims/scene_log_warn.h
+已修改 : /software/app-software/trunk/src/setup/setup_advanced/scene_setup_EC.cpp
+已修改 : /software/app-software/trunk/main.cpp
+已修改 : /software/app-software/trunk/src/common/global_var.cpp
+已修改 : /software/app-software/trunk/src/common/global_var.h
+已修改 : /software/app-software/trunk/src/data_manage/data_sqllite.cpp
+已修改 : /software/app-software/trunk/src/data_manage/data_sqllite.h
+已修改 : /software/app-software/trunk/src/scenes/scene_ims/scene_log_run.cpp
+已修改 : /software/app-software/trunk/src/scenes/scene_ims/scene_log_run.h
+已修改 : /software/app-software/trunk/src/scenes/scene_main/widget_switch.cpp
+已修改 : /software/app-software/trunk/src/setup/setup_workmode/scene_setup_workmode.cpp
+
+
+
+版本: 2232
+作者: 黄俊贤
+日期: 2016年01月02日 14:00:12
+信息:
+去掉canfestival，重新修改通信方式
+
+----
+已修改 : /software/app-software/trunk/src/data_manage/data_manage_can.cpp
+已修改 : /software/app-software/trunk/src/scenes/scene_main/widget_switch.cpp
+已修改 : /software/app-software/trunk/src/packet/packet_ui.h
+已修改 : /software/app-software/trunk/src/data_manage/data_can_send.cpp
+
+
+版本: 2256
+作者: 黄俊贤
+日期: 2016年11月06日 15:00:12
+信息:
+初步添加调试模块，实现调试功能相应页面和菜单
+
+----
+已修改 : /software/app-software/trunk/src/scenes/scene_main/widget_switch.cpp
+已修改 : /software/app-software/trunk/src/scenes/scene_note/scene_note.cpp
+已修改 : /software/app-software/trunk/src/common/global_var.cpp
+已修改 : /software/app-software/trunk/src/common/global_var.h
+已修改 : /software/app-software/trunk/src/canopen/deal.c
+已修改 : /software/app-software/trunk/src/canopen/deal.h
+已修改 : /software/app-software/trunk/src/scenes/scene_main/scene_main.cpp
+已修改 : /software/app-software/trunk/src/scenes/scene_main/widget_switch.h
+已修改 : /software/app-software/trunk/src/windows/window_boot.cpp
+已修改 : /software/app-software/trunk/src/packet/packet_can.h
+已修改 : /software/app-software/trunk/src/scenes/scene_main/widget_time.cpp
+已修改 : /software/app-software/trunk/src/scenes/scene_warn/scene_history.cpp
+已修改 : /software/app-software/trunk/src/setup/setup_cure/scene_setup_heparin.cpp
+已修改 : /software/app-software/trunk/src/packet/packet_ui.h
+已修改 : /software/app-software/trunk/src/scenes/scene_main/widget_notice.cpp
+已修改 : /software/app-software/trunk/src/setup/setup_advanced/scene_setup_preflush.cpp
+已修改 : /software/app-software/trunk/src/scenes/scene_main/widget_turntable.cpp
+
+
+版本: 2263
+作者: 黄俊贤
+日期: 2016年12月26日 14:20:12
+信息:
+实现了可控水路功能模块
+
+----
+已修改 : /software/app-software/trunk/src/scenes/scene_main/widget_switch.cpp
+已修改 : /software/app-software/trunk/src/scenes/scene_note/scene_note.cpp
+已修改 : /software/app-software/trunk/src/common/global_var.cpp
+已修改 : /software/app-software/trunk/src/common/global_var.h
+已修改 : /software/app-software/trunk/src/canopen/deal.c
+已修改 : /software/app-software/trunk/src/canopen/deal.h
+已修改 : /software/app-software/trunk/src/scenes/scene_main/scene_main.cpp
+已修改 : /software/app-software/trunk/src/scenes/scene_main/widget_switch.h
+已修改 : /software/app-software/trunk/src/windows/window_boot.cpp
+已修改 : /software/app-software/trunk/src/packet/packet_can.h
+
+
+
