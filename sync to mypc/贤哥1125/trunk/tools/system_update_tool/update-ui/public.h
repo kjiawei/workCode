@@ -1,0 +1,44 @@
+#ifndef PUBLIC_H
+#define PUBLIC_H
+
+
+//UPDATE CODE
+#define UPDATE_BOOTSTRAP	1
+#define UPDATE_UBOOT		2
+#define UPDATE_PARA1	 	3
+#define UPDATE_PARA2     	4
+#define UPDATE_LOGO	 	5
+#define UPDATE_KERNEL    	6
+#define UPDATE_ROOTFS	 	7
+#define UPDATE_APPFS	 	8
+#define UPDATE_DATA	 	9
+#define UPDATEFINISH		10
+
+//ERROR_CODE
+#define ERROR_OK			20
+#define FILENOTFIND		21
+#define FILEISNOTPKG		22
+#define MTDISBUSY			23
+#define READWRITEERROR	24
+#define INPUTPARAMERROR	25
+#define UNPACK_ERROR		26
+#define FILEPTAGNOTFIT	27
+#define UNPACKFILENOTFIND 28
+#define CREATETMPFILEERROR 29
+#define UPDATEERROR		  30
+#define INPARMERROR          31
+
+//UNPACK_CODE
+#define UNPACK_BOOTSTRAP	40
+#define UNPACK_UBOOT	    41
+#define UNPACK_LOGO      	42
+#define UNPACK_KERNEL    	43
+#define UNPACK_ROOTFS		44
+#define UNPACK_APPFS		45
+#define UNPACK_DATA		46
+#define UNPACK_FILEUNKNOW	47
+#define UNPACKFILE			48
+#define UNPACKFINISH     	49
+#define UNPACKCHECKPKG	50
+
+#endif // PUBLIC_H

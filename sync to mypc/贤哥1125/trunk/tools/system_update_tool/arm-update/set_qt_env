@@ -1,0 +1,21 @@
+QTDIR="/mnt/usbStorage/tmpqt/Trolltech/QtEmbedded-4.8.0-arm"
+LD_LIBRARY_PATH="/lib:/usr/lib:/mnt/usbStorage/tmpqt/lib"
+LD_LIBRARY_PATH=$QTDIR/lib:$LD_LIBRARY_PATH
+QT_QWS_FONTDIR=$QTDIR/lib/fonts
+
+
+TSLIB_ROOT=/mnt/usbStorage/tmpqt                                                
+TSLIB_TSDEVICE=/dev/input/event0   
+TSLIB_CONFFILE=$TSLIB_ROOT/etc/ts.conf
+TSLIB_PLUGINDIR=$TSLIB_ROOT/lib/ts    
+TSLIB_CALIBFILE=$TSLIB_ROOT/etc/pointercal
+QWS_MOUSE_PROTO="Tslib:/dev/input/event0 intelliMouse:/dev/input/mouse1"
+POINTERCAL_FILE=$TSLIB_CALIBFILE                                        
+                                                                        
+export TSLIB_ROOT TSLIB_TSDEVICE TSLIB_CONFFILE TSLIB_PLUGINDIR TSLIB_CALIBFILE
+export QWS_MOUSE_PROTO                                                         
+export POINTERCAL_FILE  
+export LD_LIBRARY_PATH
+export set QT_QWS_FONTDIR=$QTDIR/lib/fonts/
+
+
