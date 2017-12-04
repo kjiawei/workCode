@@ -1,0 +1,9 @@
+https://www.kancloud.cn/manual/thinkphp5/118006   tp5.0看云教程
+
+http://www.thinkphp.cn/code/240.html
+
+http://www.thinkphp.cn/extend/456.html  tp微信开发
+
+https://docs.open.alipay.com/203/105910/   支付宝
+
+https://pay.weixin.qq.com/wiki/doc/api/native.php?chapter=11_1   微信支付
