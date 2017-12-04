@@ -1,0 +1,249 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Config>
+    <Language current="Chinese" file="resource/languages/chinese.qm"/>
+    <WorkMode>
+        <Default needle="single" treatMode="HDF" fluidMode="A+B" dilute="pre-dilute"/>
+    </WorkMode>
+    <Dialysate>
+        <Default temp="36.5" flux="500" lower="38" upper="35"/>
+    </Dialysate>
+    <Heparin>
+        <Default preStop="30" syringType="6" bolus="0" firstDose="5" inFlux="200"/>
+    </Heparin>
+    <Pressure>
+        <Default vpLower="0" vpUpper="1700" tmpUpper="1700" tmpLower="0" apLower="0" apUpper="1700"/>
+    </Pressure>
+    <Formula>
+        <Default use="1"/>
+        <Default1 HCO3="35" DHCO3="33" Na="139" DNa="138" NaAC="0" K="2.0" BNaCl="0" Stand_B="1.225" Stand_Na="137.8" RadioWater="32.775" CL="104" Mg="0.5" RadioB="1.225" CA="1.5" Stand_Water="32.775" ACE="6.8" Stand_HCO3="33"/>
+        <Default2 HCO3="33" DHCO3="35" Na="138" DNa="139" NaAC="0" K="2.0" BNaCl="23.53" Stand_B="1.225" Stand_Na="139.0" RadioWater="34.000" Mg="1.0" CL="109" RadioB="1.830" Stand_Water="32.775" CA="2.50" Stand_HCO3="35.0" ACE="4.0"/>
+        <Default3 HCO3="36" DHCO3="34" Na="137" DNa="140" NaAC="0" K="2.0" BNaCl="30.60" Stand_B="1.830" Stand_Na="140.0" RadioWater="34.000" Mg="0.5" CL="107.5" RadioB="1.830" CA="1.75" Stand_Water="34.000" Stand_HCO3="34.0" ACE="5.0"/>
+        <Default4 HCO3="36" DHCO3="33" Na="137" DNa="137" NaAC="2.56" K="2.0" BNaCl="0" Stand_B="1.225" Stand_Na="137.8" RadioWater="32.775" Mg="0.50" CL="104.0" RadioB="1.225" Stand_Water="32.775" CA="1.50" Stand_HCO3="33.0" ACE="6.8"/>
+    </Formula>
+    <Params_UF>
+        <UF_Goal unit="ml" Default="400" Step="100" Min="0" Max="10000"/>
+        <UF_Rate unit="ml/h" Default="100" Step="10" Min="0" Max="6000"/>
+        <UF_Time unit="h" Default="4" Step="1" Min="0" Max="99"/>
+        <Earlier_Time unit="s" Default="0" Step="0" Min="0" Max="1000"/>
+        <AutoChange_Limit unit="%" Default="10" Step="1" Min="0" Max="200"/>
+    </Params_UF>
+    <Params_Dialyser>
+        <Temp unit="℃" Default="36.5" Step="0.5" Min="30" Max="40"/>
+        <Cond unit="mS/cm" Default="14" Step="0.5" Min="11" Max="18"/>
+        <Rate unit="ml/min" Default="500" Step="100" Min="300" Max="800"/>
+        <onlineRate unit="ml/min" Default="500" Step="100" Min="300" Max="800"/>
+    </Params_Dialyser>
+    <Params_BP>
+        <Rate_CheckSelf unit="ml/min" Default="100" Step="10" Min="20" Max="620"/>
+        <Rate_ThreatMent unit="ml/min" Default="100" Step="10" Min="20" Max="620"/>
+        <Rate_ReturnBlood unit="ml/min" Default="100" Step="10" Min="20" Max="150"/>
+        <Rate_Preflush unit="ml/min" Default="100" Step="10" Min="20" Max="620"/>
+        <Rate_GetBlood unit="ml/min" Default="100" Step="10" Min="20" Max="150"/>
+        <BP_Width unit="mm" Default="8" Step="1" Min="1" Max="10"/>
+    </Params_BP>
+    <Params_Heparin>
+        <First_Volume unit="ml" Default="0" Step="0.1" Min="0" Max="9.9"/>
+        <add_Volume unit="ml" Default="2" Step="1" Min="0" Max="30"/>
+        <Fast_Volume unit="ml/h" Default="800" Step="-4.12246e+34" Min="600" Max="700"/>
+        <Injector_Length unit="mm" Default="1.69701e-21" Step="7.46354e-09" Min="4.23925e+37" Max="0.000122406"/>
+        <Injector_Volume unit="ml" Default="0.000122894" Step="0.000122435" Min="131300" Max="5.88602e+20"/>
+        <Rate unit="ml/h" Default="5" Step="0.1" Min="0" Max="9.9"/>
+        <Pre_StopTime unit="min" Default="30" Step="5" Min="1" Max="99"/>
+    </Params_Heparin>
+    <Params_SubP>
+        <Flux unit="ml" Default="100" Step="10" Min="20" Max="620"/>
+        <Goal unit="ml" Default="5000" Step="1" Min="0" Max="10000"/>
+        <Rapid_Rate unit="ml" Default="80" Step="80" Min="80" Max="560"/>
+        <AutoChange_Limit unit="%" Default="10" Step="1" Min="0" Max="200"/>
+    </Params_SubP>
+    <Params_TreatTime>
+        <Hour unit="h" Default="4" Step="1" Min="0" Max="99"/>
+        <min unit="min" Default="0" Step="1" Min="0" Max="59"/>
+    </Params_TreatTime>
+    <Params_PreFlush>
+        <Rate_First_FiveMin unit="ml/min" Default="100" Step="10" Min="0" Max="620"/>
+        <Dialyser_Rate unit="ml/min" Default="500" Step="100" Min="300" Max="800"/>
+        <Time unit="min" Default="20" Step="5" Min="0" Max="99"/>
+        <PF_UF_Rate unit="ml/h" Default="600" Step="10" Min="0" Max="4200"/>
+        <PF_UF_Volume unit="ml" Default="100" Step="10" Min="20" Max="620"/>
+        <Blood_Return_Volume unit="ml/min" Default="100" Step="10" Min="0" Max="620"/>
+        <PF_Volume unit="ml" Default="1500" Step="100" Min="10" Max="8000"/>
+        <Rate unit="ml/min" Default="200" Step="10" Min="0" Max="620"/>
+        <BpRate_First_FiveMin Default="100" Step="10" Min="20" Max="620"/>
+        <BpRate Default="100" Step="10" Min="20" Max="620"/>
+        <BpRate_Conect Default="100" Step="10" Min="20" Max="620"/>
+        <BpRate_phase1 Default="100" Step="10" Min="20" Max="620"/>
+        <BpRate_phase2 Default="100" Step="10" Min="20" Max="620"/>
+        <BpRate_phase3 Default="100" Step="10" Min="20" Max="620"/>
+        <TMPUp_PF Default="300" Step="10" Min="100" Max="600"/>
+    </Params_PreFlush>
+    <Params_ColdFlush>
+        <PreFlush_Time Default="0.000490323" Step="0.000490323" Min="1.37682e+11" Max="-2.19298e+12"/>
+        <Loop_Time Default="1" Step="1" Min="0" Max="99"/>
+        <Hold_Time Default="2.48026e+27" Step="-9.4206e-38" Min="-5.75308e+17" Max="0.000490442"/>
+        <BackFlush_Time Default="0.000490442" Step="0.000490442" Min="-1.5073e-36" Max="-1.00782e-28"/>
+        <Loop_flux Default="450" Step="0" Min="0" Max="0"/>
+        <Flush_Flux Default="800" Step="50" Min="300" Max="1000"/>
+        <Suck_Flux Default="0.000490159" Step="0.000490159" Min="-1.7795e-15" Max="4.24769e+37"/>
+    </Params_ColdFlush>
+    <Params_HotFlush>
+        <PreFlush_Time Default="-1.53872e-33" Step="-1.53877e-33" Min="0.000490323" Max="-4.55552e-13"/>
+        <Loop_Time Default="1" Step="1" Min="0" Max="99"/>
+        <Hold_Time Default="0.000490323" Step="0.000490323" Min="-7.6429e-06" Max="-1.539e-33"/>
+        <BackFlush_Time Default="-1.53905e-33" Step="-3.04859e-05" Min="0.000491023" Max="-0.00195658"/>
+        <Loop_Flux Default="600" Step="0" Min="0" Max="0"/>
+        <TargetTemp Default="600" Step="1" Min="0" Max="999"/>
+        <RealTmep Default="600" Step="1" Min="0" Max="999"/>
+        <Flush_Flux Default="800" Step="50" Min="30" Max="1000"/>
+        <Suck_Flux Default="0.00196236" Step="0.00196063" Min="7.464e-09" Max="6.16911e+26"/>
+    </Params_HotFlush>
+    <Params_Chymistry_Citric>
+        <PreFlush_Time Default="2" Step="1" Min="1" Max="99"/>
+        <Loop_Time Default="20" Step="5" Min="0" Max="99"/>
+        <Hold_Time Default="0" Step="5" Min="0" Max="99"/>
+        <BackFlush_Time Default="15" Step="5" Min="1" Max="99"/>
+        <TargetTemp Default="900" Step="5" Min="0" Max="999"/>
+        <RealTmep Default="0" Step="5" Min="0" Max="999"/>
+        <Conduction_MAX Default="500" Step="50" Min="0" Max="1500"/>
+        <Conduction_MIN Default="80" Step="50" Min="0" Max="1500"/>
+        <Suck_volume Default="30" Step="7.98264" Min="2.03748" Max="0"/>
+        <Flush_Flux Default="800" Step="50" Min="300" Max="1000"/>
+        <Loop_Flux Default="800" Step="50" Min="300" Max="1000"/>
+        <Suck_Flux Default="100" Step="10" Min="0" Max="1000"/>
+    </Params_Chymistry_Citric>
+    <Params_Chymistry_Peracetic>
+        <PreFlush_Time Default="2" Step="1" Min="1" Max="99"/>
+        <Loop_Time Default="1" Step="1" Min="0" Max="99"/>
+        <Hold_Time Default="1" Step="1" Min="0" Max="99"/>
+        <BackFlush_Time Default="2" Step="1" Min="1" Max="99"/>
+        <TargetTemp Default="600" Step="1" Min="0" Max="999"/>
+        <RealTmep Default="600" Step="1" Min="0" Max="999"/>
+        <Conduction_MAX Default="600" Step="1" Min="0" Max="2000"/>
+        <Conduction_MIN Default="50" Step="1" Min="0" Max="2000"/>
+        <Suck_volume Default="10" Step="1" Min="0" Max="100"/>
+        <Flush_Flux Default="800" Step="50" Min="300" Max="1000"/>
+        <Loop_Flux Default="800" Step="50" Min="300" Max="1000"/>
+        <Suck_Flux Default="50" Step="50" Min="300" Max="1000"/>
+    </Params_Chymistry_Peracetic>
+    <Params_Chymistry_Reserve3>
+        <PreFlush_Time Default="2" Step="1" Min="0" Max="99"/>
+        <Loop_Time Default="1" Step="1" Min="0" Max="99"/>
+        <Hold_Time Default="1" Step="1" Min="0" Max="99"/>
+        <BackFlush_Time Default="2" Step="1" Min="1" Max="99"/>
+        <Flush_flux Default="380" Step="10" Min="300" Max="800"/>
+        <Loop_flux Default="330" Step="10" Min="300" Max="800"/>
+        <TargetTemp Default="600" Step="1" Min="0" Max="999"/>
+        <RealTmep Default="600" Step="1" Min="0" Max="999"/>
+        <Conduction_MAX Default="600" Step="1" Min="0" Max="2000"/>
+        <Conduction_MIN Default="60" Step="1" Min="0" Max="2000"/>
+        <Suck_volume Default="36" Step="1" Min="10" Max="100"/>
+        <Flush_Flux Default="800" Step="50" Min="300" Max="1000"/>
+        <Loop_Flux Default="800" Step="50" Min="300" Max="1000"/>
+        <Suck_Flux Default="100" Step="10" Min="0" Max="1000"/>
+    </Params_Chymistry_Reserve3>
+    <Params_Hot_Citric>
+        <PreFlush_Time Default="2" Step="1" Min="1" Max="99"/>
+        <Loop_Time Default="1" Step="1" Min="0" Max="99"/>
+        <Hold_Time Default="1" Step="1" Min="0" Max="99"/>
+        <BackFlush_Time Default="2" Step="1" Min="1" Max="99"/>
+        <Flush_Flux Default="800" Step="50" Min="300" Max="1000"/>
+        <Loop_Flux Default="800" Step="50" Min="300" Max="1000"/>
+        <TargetTemp Default="600" Step="1" Min="0" Max="999"/>
+        <RealTmep Default="600" Step="1" Min="0" Max="999"/>
+        <Conduction_MAX Default="600" Step="1" Min="0" Max="2000"/>
+        <Conduction_MIN Default="60" Step="1" Min="0" Max="2000"/>
+        <Suck_Flux Default="100" Step="10" Min="0" Max="1000"/>
+    </Params_Hot_Citric>
+    <Params_Hot>
+        <PreFlush_Time Default="1" Step="1" Min="0" Max="99"/>
+        <Loop_Time Default="1" Step="1" Min="0" Max="99"/>
+        <BackFlush_Time Default="2" Step="1" Min="0" Max="99"/>
+        <Flush_Flux Default="800" Step="50" Min="300" Max="1000"/>
+        <Loop_Flux Default="800" Step="50" Min="300" Max="1000"/>
+        <TargetTemp Default="600" Step="1" Min="0" Max="999"/>
+        <RealTmep Default="600" Step="1" Min="0" Max="999"/>
+    </Params_Hot>
+    <Params_Center_Chymistry_Input>
+        <PreFlush_Time Default="2" Step="1" Min="1" Max="99"/>
+        <Loop_Time Default="1" Step="1" Min="0" Max="99"/>
+        <Hold_Time Default="1" Step="1" Min="0" Max="99"/>
+        <BackFlush_Time Default="2" Step="1" Min="1" Max="99"/>
+        <Flush_Flux Default="800" Step="50" Min="300" Max="1000"/>
+        <Loop_Flux Default="800" Step="50" Min="300" Max="1000"/>
+        <Suck_Flux Default="100" Step="10" Min="0" Max="1000"/>
+    </Params_Center_Chymistry_Input>
+    <Params_Center_Chymistry_Flush>
+        <PreFlush_Time Default="2" Step="1" Min="1" Max="99"/>
+        <Loop_Time Default="1" Step="1" Min="0" Max="99"/>
+        <Hold_Time Default="1" Step="1" Min="0" Max="99"/>
+        <BackFlush_Time Default="2" Step="1" Min="1" Max="99"/>
+        <Flush_Flux Default="800" Step="50" Min="300" Max="1000"/>
+        <Loop_Flux Default="800" Step="50" Min="0" Max="1000"/>
+        <Suck_Flux Default="100" Step="10" Min="300" Max="1000"/>
+    </Params_Center_Chymistry_Flush>
+    <Params_Center_Hot>
+        <PreFlush_Time Default="2" Step="1" Min="1" Max="99"/>
+        <Loop_Time Default="1" Step="1" Min="0" Max="99"/>
+        <Hold_Time Default="1" Step="1" Min="0" Max="99"/>
+        <BackFlush_Time Default="2" Step="1" Min="1" Max="99"/>
+        <Flush_Flux Default="800" Step="50" Min="300" Max="1000"/>
+        <Loop_Flux Default="800" Step="50" Min="300" Max="1000"/>
+        <TargetTemp Default="600" Step="1" Min="0" Max="999"/>
+        <Suck_Flux Default="100" Step="10" Min="0" Max="1000"/>
+    </Params_Center_Hot>
+    <Params_Center_Flush_Entry>
+        <PreFlush_Time Default="2" Step="1" Min="1" Max="99"/>
+        <Loop_Time Default="1" Step="1" Min="0" Max="99"/>
+        <Hold_Time Default="1" Step="1" Min="0" Max="99"/>
+        <BackFlush_Time Default="2" Step="1" Min="1" Max="99"/>
+        <Suck_Flux Default="100" Step="10" Min="0" Max="1000"/>
+    </Params_Center_Flush_Entry>
+    <Auto_scale>
+        <AP_SPAN Default="500" Step="1" Min="0" Max="1700"/>
+        <VP_SPAN Default="500" Step="1" Min="0" Max="1700"/>
+        <TEMP_SPAN Default="500" Step="1" Min="0" Max="1700"/>
+        <Hold_Time Default="2" Step="1" Min="1" Max="10"/>
+        <Alarm_Time Default="1" Step="1" Min="1" Max="10"/>
+        <AP_ReadySafeScaleUp Default="1000" Step="0" Min="0" Max="0"/>
+        <AP_ReadySafeScaleLow Default="300" Step="0" Min="0" Max="0"/>
+        <AP_RunSafeScaleUp Default="900" Step="0" Min="0" Max="0"/>
+        <AP_RunSafeScaleLow Default="400" Step="0" Min="0" Max="0"/>
+        <AP_RunAutoScaleUp Default="800" Step="0" Min="0" Max="0"/>
+        <AP_RunAutoScaleLow Default="550" Step="0" Min="0" Max="0"/>
+        <AP_StopSafeScaleUp Default="900" Step="0" Min="0" Max="0"/>
+        <AP_StopSafeScaleLow Default="400" Step="0" Min="0" Max="0"/>
+        <VP_ReadySafeScaleUp Default="1200" Step="0" Min="0" Max="0"/>
+        <VP_ReadySafeScaleLow Default="500" Step="0" Min="0" Max="0"/>
+        <VP_RunSafeScaleUp Default="1100" Step="0" Min="0" Max="0"/>
+        <VP_RunSafeScaleLow Default="600" Step="0" Min="0" Max="0"/>
+        <VP_RunAutoScaleUp Default="800" Step="0" Min="0" Max="0"/>
+        <VP_RunAutoScaleLow Default="600" Step="0" Min="0" Max="0"/>
+        <VP_StopSafeScaleUp Default="1100" Step="0" Min="0" Max="0"/>
+        <VP_StopSafeScaleLow Default="600" Step="0" Min="0" Max="0"/>
+        <TMP_ReadySafeScaleUp Default="1300" Step="0" Min="0" Max="0"/>
+        <TMP_ReadySafeScaleLow Default="400" Step="0" Min="0" Max="0"/>
+        <TMP_RunSafeScaleUp Default="1200" Step="0" Min="0" Max="0"/>
+        <TMP_RunSafeScaleLow Default="500" Step="0" Min="0" Max="0"/>
+        <TMP_RunAutoScaleUp Default="900" Step="0" Min="0" Max="0"/>
+        <TMP_RunAutoScaleLow Default="600" Step="0" Min="0" Max="0"/>
+        <TMP_StopSafeScaleUp Default="1200" Step="0" Min="0" Max="0"/>
+        <TMP_StopSafeScaleLow Default="500" Step="0" Min="0" Max="0"/>
+    </Auto_scale>
+    <Engineer_Factoryset>
+        <PrimeMode Model="0"/>
+        <HeparinMode Model="1"/>
+        <GetBloodMode Model="0"/>
+        <ReturnBloodMode Model="0"/>
+        <CureMode Model="3"/>
+        <fluidMode Model="1"/>
+        <ChemicalDisinfect Model="2"/>
+        <DisVolume Model="11"/>
+        <Rebirth Bir="44" Die="93"/>
+        <ProfileMode HCO3="1" UF="1" COND="1" NA="1" TEMP="1" DIA="1" HEP="1"/>
+    </Engineer_Factoryset>
+    <Clean_cond>
+        <B_cond Default="50" Step="0" Min="0" Max="800"/>
+        <Mix_cond Default="50" Step="0" Min="0" Max="800"/>
+        <Out_cond Default="50" Step="0" Min="0" Max="800"/>
+    </Clean_cond>
+</Config>

@@ -1,0 +1,4 @@
+<conf>
+    <language_conf language="English" file="resource/languages/english.qm" operate="true"/>
+    <language_conf language="Chinese" file="resource/languages/chinese.qm" operate="true"/>
+</conf>
