@@ -20,6 +20,7 @@ PDO:
 SDO:
 
 可复用的接口设计
+C++强大背后 http://www.cnblogs.com/miloyip/archive/2010/09/17/behind_cplusplus.html
 
 精确稳定治疗过程的输入条件
 
