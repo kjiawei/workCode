@@ -10,3 +10,5 @@ https://pay.weixin.qq.com/wiki/doc/api/native.php?chapter=11_1   微信支付
 
 微信商城
 登录模块:微信登录(扫描登录 网页判断是否微信浏览器提示登录  获取微信用户信息  接口) 注册登录
+
+球鞋商城小程序 http://www.wxapp-union.com/forum.php?mod=viewthread&tid=14010
