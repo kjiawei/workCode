@@ -1,0 +1,19 @@
+Please consummate patient information or use part of default information! 
+请完善病人信息或未更改部分使用默认值
+
+Input Notice
+输入提醒   
+
+Kt/V Goal      KTV目标
+Kt/V Upto      KTV方案可达
+Kt/V Actual    实际KTV
+
+Dry Weight:    干体重
+CCA 有效清除率
+Cure Time 治疗时间
+AdpPro  调整比例
+Default 默认
+
+代码合并  2.05.11 完善人为旁路停泵 KTV刷新时限
+调试可行放SVN(包括我的部分)
+
