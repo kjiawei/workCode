@@ -1,3 +1,6 @@
+全局变量的替换方案
+1.
+
 inline提高效率 函数需要短小精悍 看编译器优化处理  编译时替换
 inline int add(int x,int y,int z){
 	return x + y + z;
