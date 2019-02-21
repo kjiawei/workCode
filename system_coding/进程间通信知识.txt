@@ -1,0 +1,400 @@
+1、进程、线程、进程间通信(ipc):(共享资源、通知事件、数据传输、进程控制)
+进程是资源分配的最小单位,线程是是系统运行的最小单位;
+多线程可以实现多任务(并发机制),线程和进程使用同一块内存,所有非局部变量的都可以共享(fd,全局，堆)
+线程共享同一个进程的地址空间，通信很方便，需要处理数据的交互时候的干扰;多线程的同步互斥机制:信号量(posix)、互斥锁、条件变量、读写锁
+进程是由进程控制块PCB、程序段、数据段三部分组成
+		进程控制块PCB
+		$vi /usr/src/linux-headers-3.5.0-23-generic/include/linux/sched.h   （1229行）
+		tast_struct{
+
+			}
+PCB相关结构内容
+程序计数器：接着要运行的指令地址。
+进程状态：可以是new、ready、running、waiting或 blocked等。
+CPU暂存器：如累加器、索引暂存器（Index register）、堆栈指针以及一般用途暂存器、状况代码等，主要用途在于中断时暂时存储数据，以便稍后继续利用；其数量及类因电脑架构有所差异。
+CPU排班法：优先级、排班队列等指针以及其他参数。
+存储器管理：如标签页表等。
+会计信息：如CPU与实际时间之使用数量、时限、账号、工作或进程号码。
+输入输出状态：配置进程使用I/O设备，如磁带机
+
+pstree --查看进程树
+ps -Af查看进程树的详细信息(附录A)
+init 是linux里面所有的进程的祖进程 ，1号进程
+top(查看动态进程)
+
+创建进程
+fork
+       #include <unistd.h>
+       pid_t fork(void);
+返回值： 0  	表示成功创建子进程
+	>0	表示返回值给父进程
+	=-1     表示创建进程失败
+
+获取进程的ID
+       #include <sys/types.h>
+       #include <unistd.h>
+       pid_t getpid(void);//获取自己的ID
+       pid_t getppid(void);//获取父进程的ID
+
+进程的执行：父子进程的执行顺序是随机，不一定是父进程先于子进程
+孤儿进程：父进程已经结束后的子进程，会由init 1号进程接管，所以该进程ppid是1
+	init接管后，在该进程结束时候，负责“收尸”，回收系统资源和进程信息
+僵尸进程：进程已经退出了，但是没有进程可以回收资源
+	父进程没有结束，子进程已经结束
+
+避免僵尸进程(回收)：
+	让父进程回收子进程资源
+       #include <sys/wait.h>
+       pid_t wait(int *stat_loc);
+	返回值：成功：返回被成功回收资源的子进程的PID;
+		失败：-1
+	int *stat_loc：存放子进程退出的状态。
+	---等待任意一个子进程结束，
+	   会令本进程进入阻塞，
+	   wait得到回收资源完成的信号后，才结束阻塞
+	waitpid()
+	#include <sys/wait.h>
+	pid_t waitpid(pid_t pid, int *stat_loc, int options);
+	pid_t pid: <-1 等待的是pid对应的进程组中的任意一个子进程
+		   =-1 等待任意一个子进程
+		   =0 等待的是本进程组中的任意一个子进程
+		   >0 等待进程ID为pid的子进程
+
+	int *stat_loc：存放子进程退出的状态。
+	int options：
+		WCONTINUED：当没有已退的子进程时立即返回(阻塞)
+		WNOHANG：   当有子进程被暂时时立即返回
+		WUNTRACED： 当子进程收到继续信号即立即返回
+exit() _exit();
+进程退出/销毁函数
+exit()
+       #include <stdlib.h>
+       void exit(int status);
+
+_exit();
+	#include <unistd.h>
+        void _exit(int status);
+
+
+exit与_exit
+	1、调用exit()函数（负责任的返回）
+	会执行一些清理处理，包括调用执行处理终止程序，关闭所有的标准I/O流等，然后返回内核
+	_exit函数：
+	直接进入内核，去关闭进程。
+	vfork与fork用法一致
+
+system()//启动shell相关运行的命令或者程序
+       #include <stdlib.h>
+       int system(const char *command);
+
+exec
+       int execl(const char *path, const char *arg, ...);
+	const char *path：执行文件的路径
+	const char *arg：参数
+       int execlp(const char *file, const char *arg, ...);
+       使用系统默认的路径$PATH的
+       int execle(const char *path, const char *arg,..., char * const envp[]);
+       int execv(const char *path, char *const argv[]);
+       int execvp(const char *file, char *const argv[]);
+       int execvpe(const char *file, char *const argv[],char *const envp[]);
+
+2.线程
+为什么使用多线程？
+（1）、使用多线程可以减少程序的响应时间。单线程如果遇到等待或阻塞，将会导致程序不响应鼠标键盘等操作，使用多线程可以解决此问题，增强程序的交互性。
+（2）、与进程相比，线程的创建和切换开销更小，因为线程共享代码段、数据段等内存空间。
+（3）、多核CPU，多核计算机本身就具有执行多线程的能力，如果使用单个线程，将无法重复利用计算资源，造成资源的巨大浪费。
+（4）、多线程可以简化程序的结构，使程序便于维护，一个非常复杂的进程可以分为多个线程执行。
+
+用法:
+
+int pthread_create(pthread_t *thread, const pthread_attr_t *attr,void *(*start_routine) (void *), void *arg);//创建线程,返回 成功0 失败-1
+/*pthread_t *thread：线程识别变量
+const pthread_attr_t *attr：指定线程的属性，NULL表示使用缺省属性
+void *(*start_routine) (void *)：线程执行的函数arg: 传递给线程执行的函数的参数
+*/
+
+如果进程中含有线程，必须加上线程库 gcc pthread_create.c -o pthread_create -lpthread
+
+       #include <pthread.h>
+       void pthread_exit(void *retval);//线程退出 无返回值
+void *retval:线程退出时返回的值
+
+       #include <pthread.h>
+       int pthread_join(pthread_t thread, void **retval);//线程等待退出  返回值： 成功：0 失败：错误码
+pthread_t thread：线程识别变量
+void **retval：等待的线程的返回值
+
+int pthread_cancel(pthread_t thread);//线程销毁 返回值： 成功：0 失败：-1
+
+线程属性 线程的分离和非分离
+	分离线程是主线程不需要回收子线程的资源，资源自行回收
+		（自己收拾残局）
+	非分离线程是主线程必须回收子线程的资源。
+		pthread_join()
+	设置：
+		初始化：	pthread_attr_init(pthread_attr_t *attr);
+		设置分离状态：pthread_attr_setdetachstate(pthread_attr_t *attr, int detachstate);
+
+#include <pthread.h>
+	int pthread_attr_init(pthread_attr_t *attr);//返回值： 成功：0 失败：非0
+pthread_attr_t *attr：属性变量
+
+1、设置分离状态
+#include <pthread.h>
+       int pthread_attr_setdetachstate(pthread_attr_t *attr, int detachstate);
+返回值： 成功：0 失败：非0
+pthread_attr_t *attr：属性变量
+int detachstate：
+PTHREAD_CREATE_DETACHED：分离
+PTHREAD_CREATE_JOINABLE：非分离（接合）
+
+3.多线程的同步互斥
+信号量
+int sem_init(sem_t *sem, int pshared, unsigned int value)//初始化信号量
+/*
+sem_t *sem ：为指向信号量结构的一个指针；
+int pshared：pshared不为０时此信号量在进程间共享，否则只能为当前进程的所有线程共享；
+int value：给出了信号量的初始值,实际上就是PV的值
+返回值： 成功：0
+	失败：-1
+*/
+
+#include <semaphore.h>
+int sem_wait(sem_t *sem);//阻塞当前线程直到信号量sem的值大于0,用来减一操作
+/*
+sem_t *sem：为指向信号量结构的一个指针
+返回值： 成功：0
+	失败：-1
+*/
+
+#include <semaphore.h>
+int sem_post( sem_t *sem )用来增加信号量的值
+/*
+sem_t *sem：为指向信号量结构的一个指针
+返回值： 成功：0
+	失败：-1
+*/
+
+#include <semaphore.h>
+int sem_destroy(sem_t *sem)//用来释放信号量sem
+/*
+sem_t *sem：为指向信号量结构的一个指针
+返回值： 成功：0
+	失败：-1
+*/
+
+互斥锁:资源共享时如果要进行同时操作
+#include <pthread.h>
+int pthread_mutex_init(pthread_mutex_t *restrict mutex,
+              const pthread_mutexattr_t *restrict attr);//互斥锁初始化
+pthread_mutex_t *restrict mutex：互斥锁名
+const pthread_mutexattr_t *restrict attr：互斥锁属性  //NULL表示缺省属性返回值 成功:0 失败:非0
+int pthread_mutex_destroy(pthread_mutex_t *mutex);//互斥锁销毁
+pthread_mutex_t *restrict mutex：互斥锁名 返回值： 成功：0 失败：非0
+int pthread_mutex_lock(pthread_mutex_t *mutex);  //加锁
+int pthread_mutex_unlock(pthread_mutex_t *mutex);//解锁
+
+
+读写锁:读锁可以多个,写锁只能一个用完要解(互斥)
+#include <pthread.h>
+int pthread_rwlock_init(pthread_rwlock_t *restrict rwlock,
+              const pthread_rwlockattr_t *restrict attr);//读写锁初始化
+返回值： 成功：0 失败：非0
+pthread_rwlock_t *restrict rwlock：读写锁名
+const pthread_rwlockattr_t *restrict attr：锁的属性，NULL
+
+#include <pthread.h>
+int pthread_rwlock_rdlock(pthread_rwlock_t *rwlock);//读锁
+返回值 ： 成功：0 失败：非0
+pthread_rwlock_t *rwlock：读写锁名
+
+#include <pthread.h>
+int pthread_rwlock_wrlock(pthread_rwlock_t *rwlock);//写锁
+返回值 成功:0  失败:非0
+pthread_rwlock_t *rwlock：读写锁名
+
+#include <pthread.h>
+int pthread_rwlock_unlock(pthread_rwlock_t *rwlock);//解锁
+返回值 ： 成功：0 失败：非0
+pthread_rwlock_t *rwlock：读写锁名
+
+#include <pthread.h>
+int pthread_rwlock_destroy(pthread_rwlock_t *rwlock);//销毁读写锁
+返回值： 成功：0 失败：非0
+pthread_rwlock_t *rwlock：读写锁名
+
+
+条件变量:和互斥锁一起作用,适用场景:在临界资源中需要较长时间去等待某些条件
+	用pthread_cond_wait(来暂时释放互斥锁),以便让别的线程得到锁以执行
+	pthread_cond_broadcast(广播所有)pthread_cond_signal(单个)
+int pthread_cond_init(pthread_cond_t *restrict cond,const pthread_condattr_t *restrict attr);
+返回值： 成功：0 失败：非0
+pthread_cond_t *restrict cond：条件变量
+const pthread_condattr_t *restrict attr：条件变量属性 ,设NULL
+int pthread_cond_destroy(pthread_cond_t *cond);
+返回值： 成功：0 失败：非0
+pthread_cond_t *restrict cond：条件变量
+#include <pthread.h>
+int pthread_cond_broadcast(pthread_cond_t *cond);//通知
+int pthread_cond_signal(pthread_cond_t *cond);
+int pthread_cond_wait(pthread_cond_t *restrict cond,
+              pthread_mutex_t *restrict mutex);//等待
+返回值： 成功：0 失败：非0
+pthread_cond_t *restrict cond：条件变量名
+pthread_mutex_t *restrict mutex：互斥锁名
+
+4.信号与信号量
+区别
+信号：类似硬件上的中断,（signal）是一种处理异步事件的方式,直接进行用户空间进程和内核进程间的交互。信号时比较复杂的通信方式，用于通知接受进程有某种事件发生，除了用于进程外，还可以发送信号给进程本身(段错误SIGSEGV	 SIGPIPE SIGCHLD);
+信号量：只用一个函数就能原子化地测试和设置的能力,（Semaphore）进程间通信处理同步互斥的机制。是在多线程环境下使用的一种设施, 它负责协调各个线程, 以保证它们能够正确、合理的使用公共资源
+
+相看当前系统的信号：kill -l
+kill跟signal
+信号：
+       #include <signal.h>
+       void (*signal(int sig, void (*func)(int)))(int);
+	int sig：信号
+       void (*func)(int)))(int)：回调函数
+
+       #include <unistd.h>
+       int pause(void);//信号等待
+
+#include <signal.h>
+int sigemptyset(sigset_t *set);//清空信号集
+sigset_t set；
+
+#include <signal.h>
+int sigaddset(sigset_t *set, int signum);//添加信号集
+
+#include <signal.h>
+int sigdelset(sigset_t *set, int signum);//删除信号集
+
+int sigprocmask(int how, const sigset_t *restrict set,
+              sigset_t *restrict oset);//信号动作
+1．SIG_BLOCK:　 阻塞动作  该值代表的功能是将newset所指向的信号集中所包含的信号加到当前的信号掩码中，作为新的信号屏蔽字。
+2．SIG_UNBLOCK: 非阻塞动作  将参数newset所指向的信号集中的信号从当前的信号掩码中移除。
+3．SIG_SETMASK:设置当前信号掩码为参数newset所指向的信号集中所包含的信号。
+
+sigqueue-->跟kill一样，它可以额外带参数
+       #include <signal.h>
+       int sigqueue(pid_t pid, int sig, const union sigval value);
+pid_t pid：进程PID
+int sig  ：信号
+const union sigval value：额外值
+           union sigval {
+               int   sival_int;
+               void *sival_ptr;
+           };
+返回值:成功：0 失败：-1
+
+sigaction()功能强的信号处理函数
+#include <signal.h>
+       int sigaction(int sig, const struct sigaction *restrict act,
+              struct sigaction *restrict oact);
+int sig：信号
+const struct sigaction *restrict act:新设置的动作
+struct sigaction *restrict oact：目前的动作
+返回值:成功：0  失败:-1
+
+ #include <signal.h>
+ int sigaction(int signum, const struct sigaction *act, struct sigaction *oldact);
+ struct sigaction 类型用来描述对信号的处理，定义如下：
+ struct sigaction
+ {
+  void     (*sa_handler)(int);
+  void     (*sa_sigaction)(int, siginfo_t *, void *);
+  sigset_t  sa_mask;
+  int       sa_flags;
+  void     (*sa_restorer)(void);
+ };
+ 
+在这个结构体中，成员 sa_handler 是一个函数指针，其含义与 signal 函数中的信号处理函数类似。成员
+sa_sigaction 则是另一个信号处理函数，它有三个参数，可以获得关于信号的更详细的信息。当 sa_flags 成员的值
+包含了 SA_SIGINFO 标志时，系统将使用 sa_sigaction 函数作为信号处理函数，否则使用 sa_handler 作为信号处理
+函数。在某些系统中，成员 sa_handler 与 sa_sigaction 被放在联合体中，因此使用时不要同时设置。
+ sa_mask 成员用来指定在信号处理函数执行期间需要被屏蔽的信号，特别是当某个信号被处理时，它自身会被
+自动放入进程的信号掩码，因此在信号处理函数执行期间这个信号不会再度发生。
+ sa_flags 成员用于指定信号处理的行为，它可以是一下值的“按位或”组合。
+ ◆ SA_RESTART：使被信号打断的系统调用自动重新发起。
+ ◆ SA_NOCLDSTOP：使父进程在它的子进程暂停或继续运行时不会收到 SIGCHLD 信号。
+ ◆ SA_NOCLDWAIT：使父进程在它的子进程退出时不会收到 SIGCHLD 信号，这时子进程如果退出也不会成为僵尸进程。
+ ◆ SA_NODEFER：使对信号的屏蔽无效，即在信号处理函数执行期间仍能发出这个信号。
+ ◆ SA_RESETHAND：信号处理之后重新设置为默认的处理方式。
+ ◆ SA_SIGINFO：使用 sa_sigaction 成员而不是 sa_handler 作为信号处理函数。
+           siginfo_t {
+               int      si_signo;    /* Signal number */
+               int      si_errno;    /* An errno value */
+               int      si_code;     /* Signal code */
+               int      si_trapno;   /* Trap number that caused
+                                        hardware-generated signal
+                                        (unused on most architectures) */
+               pid_t    si_pid;      /* Sending process ID */
+               uid_t    si_uid;      /* Real user ID of sending process */
+               int      si_status;   /* Exit value or signal */
+               clock_t  si_utime;    /* User time consumed */
+               clock_t  si_stime;    /* System time consumed */
+               sigval_t si_value;    /* Signal value */
+               int      si_int;      /* POSIX.1b signal  信号传过来的参数*/
+               void    *si_ptr;      /* POSIX.1b signal  信号传过来的参数*/
+
+
+附录A 进程参数
+
+ps -Af
+
+短格式        	长格式             说 明
+c		cmd			可执行的简单名称
+C		cmdline		完整命令行
+f		flags		长模式标志
+g		pgrp		进程的组ID
+G		tpgid		控制tty进程组ID
+j		cutime		累计用户时间
+J		cstime		累计系统时间
+k		utime		用户时间
+K		stime		系统时间
+m		min_flt		次要页错误的数量
+M		maj_flt		主要页错误的数量
+n		cmin_flt	累计次要页错误
+N		cmaj_flt	累计主要页错误
+o		session		对话ID
+p		pid			进程ID
+P		ppid		父进程ID
+r		rss		驻留大小
+R		resident	驻留页
+s		size		内存大小（千字节）
+S		share		共享页的数量
+t		tty			tty次要设备号
+T		start_time	进程启动的时间
+U		uid			UID
+u		user		用户名
+v		vsize		总的虚拟内存数量（字节）
+y		priority	内核调度优先级
+
+
+ps -ef出来后
+init PPID 为0的进程为系统磁盘的就已经存在生成
+kthreadd:为守护进程
+
+
+top
+
+PID 每个进程的ID。
+PPID每个进程的父进程ID。
+UID 每个进程所有者的UID 。
+USER 每个进程所有者的用户名。
+PRI 每个进程的优先级别。
+NI 该进程的优先级值。
+SIZE 该进程的代码大小加上数据大小再加上堆栈空间大小的总数。单位是KB。
+TSIZE 该进程的代码大小。对于内核进程这是一个很奇怪的值。
+DSIZE 数据和堆栈的大小。
+TRS 文本驻留大小。
+D 被标记为“不干净”的页项目。
+LIB 使用的库页的大小。对于ELF进程没有作用。
+RSS 该进程占用的物理内存的总数量，单位是KB。
+SHARE 该进程使用共享内存的数量。
+STAT 该进程的状态。
+其中S代表休眠状态；
+D代表不可中断的休眠状态；
+R代表运行状态；
+Z代表僵死状态；
+T代表停止或跟踪状态。
