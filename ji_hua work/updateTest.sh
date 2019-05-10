@@ -8,7 +8,7 @@ else
 			ps=`pgrep hemodialysis` #是否在运行中
 			[[ -z ${ps} ]]||killall -9 hemodialysis
 			echo "finish kill hemodialysis"
-			if [[ ! -d "/mnt/nfs/" ]];then #是否已挂载
+			if [[ ! -d "/mnt/nfs/hemodialysis/" ]];then #是否已挂载
 				echo "mounting directory..."
 				mount -o nolock -t nfs 192.168.123.245:/work/nfs /mnt/nfs
 				echo "finish mounting directory" 
