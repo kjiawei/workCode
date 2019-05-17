@@ -1,0 +1,444 @@
+     1  000000             chip	sn8p2501D
+     2  000000             //{{SONIX_CODE_OPTION
+     3  000000             	.Code_Option	LVD		LVD_M		; 2.0V Reset Enable LVD24 bit of PFLAG for 2.4V Low Voltage Indicator
+     4  000000             	.Code_Option	Reset_Pin	P11
+     5  000000             	.Code_Option	Watch_Dog	Enable		; Normal mode: Enable Watchdog Green and Sleep mode: Stop Watchdog
+     6  000000             	.Code_Option	High_Clk	IHRC_16M	; Internal 16M RC Oscillator
+     7  000000             	.Code_Option	Fcpu		#1     ; Fcpu = Fosc/2
+     8  000000             	.Code_Option	Security	Enable
+     9  000000             	.Code_Option	Noise_Filter	Disable
+    10  000000             //}}SONIX_CODE_OPTION
+    11  000000             
+    12  000000             .data
+    13  0000 D             	r_flage		ds	1
+    14  E 00000000         	r_100us		equ	r_flage.0
+    15  E 00010000         	dp_mode_f	equ	r_flage.1
+    16  000001             
+    17  0001 D             	reg0		ds	1
+    18  0002 D             	reg1		ds	1
+    19  0003 D             	reg2		ds	1
+    20  0004 D             	num_main	ds	1
+    21  0005 D             	num_main1	ds	1
+    22  0006 D             	num_main2	ds	1
+    23  0007 D             	mode		ds	1
+    24  0008 D             	mode1		ds	1
+    25  000009             
+    26  0009 D             	pwm_num0	ds	1
+    27  00000A             
+    28  000A D             	pwm_num1	ds	1
+    29  000B D             	pwm_num2	ds	1
+    30  000C D             	pwm_num3	ds	1
+    31  000D D             	pwm_num4	ds	1
+    32  00000E             
+    33  000E D             	count		ds	1
+    34  000F D             	count3		ds	1
+    35  0010 D             	count31		ds	1
+    36  000011             
+    37  000011             /*I/O口定义*/
+    38  E 000200D2         	d1		equ	p2.2	;O
+    39  E 000100D2         	d2		equ	p2.1	;O	
+    40  E 000000D2         	d3		equ	p2.0	;O
+    41  E 000300D1         	d4		equ	p1.3	;O
+    42  E 000200D1         	d5		equ	p1.2	;O
+    43  E 000400D5         	d6		equ	p5.4	;O
+    44  E 000000D1         	d7		equ	p1.0	;O
+    45  E 000000D0         	d8		equ	p0.0	;O
+    46  E 000500D2         	d9		equ	p2.5	;O
+    47  E 000400D2         	d10		equ	p2.4	;O
+    48  E 000300D2         	d11		equ	p2.3	;O
+    49  E 000100D1         	select		equ	p1.1	;I
+    50  000011             
+    51  E 000300D1         	out1		equ	p1.3
+    52  E 000200D1         	out2		equ	p1.2
+    53  E 000400D5         	out3		equ	p5.4
+    54  E 000000D1         	out4		equ	p1.0
+    55  0011 D             	r_flage1	ds	1
+    56  E 00010011         	turn		equ	r_flage1.1
+    57  000000             .code 
+    58  000000             	org	00h
+    59  000000   801B(2)  	jmp	reset
+    60  000008             	ORG	08H
+    61  000008   8010(2)  	JMP	int_service
+    62  000009             
+    63  000010             	org	10h
+    64  000010             	
+    65  000010             //===============================================================================================
+    66  000010             //    T0 set 10ms interval time for T0 interrupt.   X'tal:4M  Fcpu=Fosc/4  T0RATE=010 (Fcpu/64) 
+    67  000010             //===============================================================================================
+    68  000010             //
+    69  000010             //	T0 initial value = 256-(T0 interrupt interval time*clocl)
+    70  000010             //			 = 256-(10ms*4MHz /4 /64)
+    71  000010             //			 = 256-(0.01*4*1000000/4/64)
+    72  000010             //			 = 100
+    73  000010             //			 = 64H
+    74  000010             //
+    75  000010             int_service:
+    76  000010   0400(1)  	push
+    77  000011             isr_adc:
+    78  000011   7CC9(1+S)  	b0bts1	ft0ien				// Check t0ien
+    79  000012   8019(2)  	jmp	isr90				
+    80  000013   7CC8(1+S)  	b0bts1	ft0irq				// Check t0irp
+    81  000014   8019(2)  	jmp	isr90			
+    82  000015   64C8(1)  	b0bclr	ft0irq
+    83  000016   6800(1)  	b0bset	r_100us
+    84  000017   2DFA(1)  	mov	a,#0fah				//96us	interrupt Once 	0fah				
+    85  000018   2FD9(1)  	b0mov	t0c,a
+    86  000019             
+    87  000019             isr90:
+    88  000019   0500(1)  	pop
+    89  00001A   0F00(2)  	reti
+    90  00001B             RESET:
+    91  00001B   2D7F(1)  	MOV	A,#7FH
+    92  00001C   1FDF(1)  	MOV	STKP,A
+    93  00001D   C0F9(2)  	CALL	SYS_INIT
+    94  00001E   C104(2)  	call	io_init
+    95  00001F   0000(1)  	nop
+    96  000020   0000(1)  	nop
+    97  000021   0000(1)  	nop
+    98  000022             
+    99  000022             main_loop:
+   100  000022   2D5A(1)  	mov	a,#5ah		//清看门口
+   101  000023   2FCC(1)  	b0mov	wdtr,a
+   102  000024   7800(1+S)  	b0bts1	r_100us
+   103  000025   8022(2)  	jmp	main_loop
+   104  000026   6000(1)  	b0bclr	r_100us
+   105  000027             
+   106  000027   1604(1+S)  	incms	num_main
+   107  000028   2D64(1)  	mov	a,#100
+   108  000029   2204(1)  	sub	a,num_main
+   109  00002A   7286(1+S)  	b0bts0	fc
+   110  00002B   8022(2)  	jmp	main_loop
+   111  00002C   2B04(1)  	clr	num_main
+   112  00002D             
+   113  00002D   1605(1+S)  	incms	num_main1
+   114  00002E   2D0A(1)  	mov	a,#10
+   115  00002F   2205(1)  	sub	a,num_main1
+   116  000030   7286(1+S)  	b0bts0	fc
+   117  000031   8022(2)  	jmp	main_loop
+   118  000032   2B05(1)  	clr	num_main1
+   119  000033             
+   120  000033   79D1(1+S)  	b0bts1	select
+   121  000034   803B(2)  	jmp	main_loop00
+   122  000035             
+   123  000035   C0DE(2)  	call	LED_C
+   124  000036   C0EA(2)  	call	dlay_10ms
+   125  000037   C072(2)  call	mode_0_1_1
+   126  000038   C064(2)  	call	display_mode0_1
+   127  000039   4100(1)  	bclr	dp_mode_f
+   128  00003A             	
+   129  00003A             	;incms   count31
+   130  00003A             	;mov     a,#3
+   131  00003A             	;sub     a,count31;	bobts0  fc
+   132  00003A             
+   133  00003A             	
+   134  00003A             
+   135  00003A             	;incms   count3
+   136  00003A             	;mov     a,#3
+   137  00003A             	;sub     a,count3
+   138  00003A             ;	bobts0  fc
+   139  00003A             
+   140  00003A             	;clr	count3
+   141  00003A             	;clr	count31
+   142  00003A   8022(2)  	jmp	main_loop
+   143  00003B             
+   144  00003B             main_loop00:
+   145  00003B   C090(2)  	call	display_mode1
+   146  00003C   2B07(1)  	clr	mode
+   147  00003D   8022(2)  	jmp	main_loop
+   148  00003E             
+   149  000051             	org	051h
+   150  000051             ;;;;;;;;;;;;;
+   151  000051             display_mode0:
+   152  000051   1E07(1)  	mov	a,mode
+   153  000052   03CE(1)  	b0add	pcl,a
+   154  000053   80AE(2)  	jmp	mode_0
+   155  000054   80B1(2)  	jmp	mode_1
+   156  000055   80B4(2)  	jmp	mode_2
+   157  000056   80B7(2)  	jmp	mode_3
+   158  000057   80BA(2)  	jmp	mode_4
+   159  000058   80BD(2)  	jmp	mode_5
+   160  000059   80C0(2)  	jmp	mode_6
+   161  00005A   80C3(2)  	jmp	mode_7
+   162  00005B   80C6(2)  	jmp	mode_8
+   163  00005C   80C9(2)  	jmp	mode_9
+   164  00005D   80CC(2)  	jmp	mode_10
+   165  00005E   80CF(2)  	jmp	mode_11
+   166  00005F   80D2(2)  	jmp	mode_12
+   167  000060   80D5(2)  	jmp	mode_13
+   168  000061   80D8(2)  	jmp	mode_14
+   169  000062   80DB(2)  	jmp	mode_15
+   170  000063   0E00(2)  	ret
+   171  000064             
+   172  000064             display_mode0_1:
+   173  000064   1E07(1)  	mov	a,mode
+   174  000065   03CE(1)  	b0add	pcl,a
+   175  000066   80AE(2)  	jmp	mode_0
+   176  000067   80B1(2)  	jmp	mode_1
+   177  000068   80B4(2)  	jmp	mode_2
+   178  000069   80B7(2)  	jmp	mode_3
+   179  00006A   80BA(2)  	jmp	mode_4
+   180  00006B   80BD(2)  	jmp	mode_5
+   181  00006C   80C0(2)  	jmp	mode_6
+   182  00006D   80C3(2)  	jmp	mode_7
+   183  00006E   80C6(2)  	jmp	mode_8
+   184  00006F   80C9(2)  	jmp	mode_9
+   185  000070   80DB(2)  	jmp	mode_15
+   186  000071   0E00(2)  	ret
+   187  000072             
+   188  000072             mode_0_1_1:
+   189  000072   7111(1+S)  	b0bts0	turn
+   190  000073   8080(2)  	jmp	mode_0_1_1_1
+   191  000074   4BD1(1)  	bset	out1
+   192  000075   4AD1(1)  	bset	out2
+   193  000076   4CD5(1)  	bset	out3
+   194  000077   48D1(1)  	bset	out4
+   195  000078   1609(1+S)  	incms	pwm_num0
+   196  000079   2DB4(1)  	mov	a,#180		;范围：0-255,调节亮灯的时间长度
+   197  00007A   2209(1)  	sub	a,pwm_num0
+   198  00007B   7286(1+S)  	b0bts0	fc
+   199  00007C   0E00(2)  	ret
+   200  00007D   2B09(1)  	clr	pwm_num0
+   201  00007E   4911(1)  	bset	turn
+   202  00007F   0E00(2)  	ret
+   203  000080             
+   204  000080             mode_0_1_1_1:
+   205  000080   43D1(1)  	bclr	out1
+   206  000081   42D1(1)  	bclr	out2
+   207  000082   44D5(1)  	bclr	out3
+   208  000083   40D1(1)  	bclr	out4
+   209  000084   1609(1+S)  	incms	pwm_num0
+   210  000085   2D5B(1)  	mov	a,#91		;范围：0-255,调节灭灯的时间长度
+   211  000086   2209(1)  	sub	a,pwm_num0
+   212  000087             
+   213  000087   7286(1+S)  	b0bts0	fc
+   214  000088             
+   215  000088   160F(1+S)  incms count3
+   216  000089   2D03(1)  mov a,#3
+   217  00008A   220F(1)  sub a,count3
+   218  00008B             ;bobts0 fc
+   219  00008B             
+   220  00008B             
+   221  00008B   0E00(2)  	ret
+   222  00008C             
+   223  00008C             
+   224  00008C   2B0F(1)  clr count3
+   225  00008D             
+   226  00008D   2B09(1)  	clr	pwm_num0
+   227  00008E   4111(1)  	bclr	turn
+   228  00008F   0E00(2)  	ret
+   229  000090             
+   230  000090             ;;;;;;;;;;;;;
+   231  000090             display_mode1:	
+   232  000090   7100(1+S)  	b0bts0	dp_mode_f            ;标志位
+   233  000091   80A5(2)  	jmp	display_mode10       ;函数
+   234  000092   4AD2(1)  	bset	d1                   ;拉高点亮 
+   235  000093   49D2(1)  	bset	d2
+   236  000094   48D2(1)  	bset	d3
+   237  000095   4BD1(1)  	bset	d4
+   238  000096   4AD1(1)  	bset	d5
+   239  000097   4CD5(1)  	bset	d6
+   240  000098   48D1(1)  	bset	d7
+   241  000099   48D0(1)  	bset	d8
+   242  00009A   4DD2(1)  	bset	d9			
+   243  00009B   4CD2(1)  	bset	d10
+   244  00009C   4BD2(1)  	bset	d11
+   245  00009D             
+   246  00009D   160E(1+S)  	incms	count   
+   247  00009E   2D01(1)  	mov	a,#1
+   248  00009F   220E(1)  	sub	a,count
+   249  0000A0   7286(1+S)  	b0bts0	fc
+   250  0000A1   0E00(2)  	ret
+   251  0000A2   2B0E(1)  	clr	count
+   252  0000A3             
+   253  0000A3   4900(1)  	bset	dp_mode_f
+   254  0000A4   0E00(2)  	ret                
+   255  0000A5             
+   256  0000A5             display_mode10:            ;函数
+   257  0000A5   C0DE(2)  	call	LED_C	   ;
+   258  0000A6   160E(1+S)  	incms	count      ;变量灭2次
+   259  0000A7   2D02(1)  	mov	a,#2
+   260  0000A8   220E(1)  	sub	a,count
+   261  0000A9   7286(1+S)  	b0bts0	fc         ;FC清0数据手册可查 
+   262  0000AA   0E00(2)  	ret
+   263  0000AB   2B0E(1)  	clr	count
+   264  0000AC   4100(1)  	bclr	dp_mode_f  ;清楚标志位
+   265  0000AD   0E00(2)  	ret                ;返回
+   266  0000AE             
+   267  0000AE             ;;;;;;;;;;;;;;;;;;;;;;;;;
+   268  0000AE             mode_0:
+   269  0000AE   49D2(1)  	bset	d2
+   270  0000AF   1607(1+S)  	incms	mode	
+   271  0000B0   0E00(2)  	ret
+   272  0000B1             
+   273  0000B1             mode_1:
+   274  0000B1   48D2(1)  	bset	d3
+   275  0000B2   1607(1+S)  	incms	mode	
+   276  0000B3   0E00(2)  	ret
+   277  0000B4             
+   278  0000B4             mode_2:
+   279  0000B4   4BD1(1)  	bset	d4
+   280  0000B5   1607(1+S)  	incms	mode	
+   281  0000B6   0E00(2)  	ret
+   282  0000B7             
+   283  0000B7             mode_3:
+   284  0000B7   4AD1(1)  	bset	d5
+   285  0000B8   1607(1+S)  	incms	mode	
+   286  0000B9   0E00(2)  	ret
+   287  0000BA             
+   288  0000BA             mode_4:
+   289  0000BA   4CD5(1)  	bset	d6
+   290  0000BB   1607(1+S)  	incms	mode	
+   291  0000BC   0E00(2)  	ret
+   292  0000BD             mode_5:
+   293  0000BD   48D1(1)  	bset	d7
+   294  0000BE   1607(1+S)  	incms	mode	
+   295  0000BF   0E00(2)  	ret
+   296  0000C0             
+   297  0000C0             mode_6:
+   298  0000C0   48D0(1)  	bset	d8
+   299  0000C1   1607(1+S)  	incms	mode	
+   300  0000C2   0E00(2)  	ret
+   301  0000C3             
+   302  0000C3             mode_7:
+   303  0000C3   4DD2(1)  	bset	d9
+   304  0000C4   1607(1+S)  	incms	mode	
+   305  0000C5   0E00(2)  	ret
+   306  0000C6             
+   307  0000C6             mode_8:
+   308  0000C6   4CD2(1)  	bset	d10
+   309  0000C7   1607(1+S)  	incms	mode	
+   310  0000C8   0E00(2)  	ret
+   311  0000C9             
+   312  0000C9             mode_9:
+   313  0000C9   4DD2(1)  	bset	d9
+   314  0000CA   1607(1+S)  	incms	mode	
+   315  0000CB   0E00(2)  	ret
+   316  0000CC             
+   317  0000CC             mode_10:
+   318  0000CC   48D0(1)  	bset	d8
+   319  0000CD   1607(1+S)  	incms	mode	
+   320  0000CE   0E00(2)  	ret
+   321  0000CF             
+   322  0000CF             mode_11:
+   323  0000CF   48D1(1)  	bset	d7
+   324  0000D0   1607(1+S)  	incms	mode	
+   325  0000D1   0E00(2)  	ret
+   326  0000D2             
+   327  0000D2             mode_12:
+   328  0000D2   4CD5(1)  	bset	d6
+   329  0000D3   1607(1+S)  	incms	mode	
+   330  0000D4   0E00(2)  	ret
+   331  0000D5             
+   332  0000D5             mode_13:
+   333  0000D5   4AD1(1)  	bset	d5
+   334  0000D6   1607(1+S)  	incms	mode	
+   335  0000D7   0E00(2)  	ret
+   336  0000D8             
+   337  0000D8             mode_14:
+   338  0000D8   4BD1(1)  	bset	d4
+   339  0000D9   1607(1+S)  	incms	mode	
+   340  0000DA   0E00(2)  	ret
+   341  0000DB             
+   342  0000DB             mode_15:
+   343  0000DB   48D2(1)  	bset	d3
+   344  0000DC   2B07(1)  	clr	mode	
+   345  0000DD   0E00(2)  	ret
+   346  0000DE             
+   347  0000DE             LED_C:                    ;灭灯拉低
+   348  0000DE   42D2(1)  	bclr	d1
+   349  0000DF   41D2(1)  	bclr	d2
+   350  0000E0   40D2(1)  	bclr	d3
+   351  0000E1   43D1(1)  	bclr	d4
+   352  0000E2   42D1(1)  	bclr	d5
+   353  0000E3   44D5(1)  	bclr	d6
+   354  0000E4   40D1(1)  	bclr	d7
+   355  0000E5   40D0(1)  	bclr	d8
+   356  0000E6   45D2(1)  	bclr	d9
+   357  0000E7   44D2(1)  	bclr	d10
+   358  0000E8   43D2(1)  	bclr	d11
+   359  0000E9   0E00(2)  	ret              ;返回语句到CALL LED-C
+   360  0000EA             
+   361  0000EA             dlay_10ms:
+   362  0000EA   2D01(1)  	mov	a,#1
+   363  0000EB   1F01(1)  	mov	reg0,a
+   364  0000EC             dlay_10ms_1:
+   365  0000EC   2D32(1)  	mov	a,#50
+   366  0000ED   1F02(1)  	mov	reg1,a
+   367  0000EE             dlay_10ms_2:
+   368  0000EE   2DFE(1)  	mov	a,#254
+   369  0000EF   1F03(1)  	mov	reg2,a
+   370  0000F0             dlay_10ms_3:
+   371  0000F0   2D5A(1)  	mov	a,#5ah		//清看门口
+   372  0000F1   2FCC(1)  	b0mov	wdtr,a
+   373  0000F2   2603(1+S)  	decms	reg2
+   374  0000F3   80F0(2)  	jmp	dlay_10ms_3
+   375  0000F4   2602(1+S)  	decms	reg1
+   376  0000F5   80EE(2)  	jmp	dlay_10ms_2
+   377  0000F6   2601(1+S)  	decms	reg0
+   378  0000F7   80EC(2)  	jmp	dlay_10ms_1
+   379  0000F8   0E00(2)          ret
+   380  0000F9             
+   381  0000F9             ;=========================================清内存	
+   382  0000F9             SYS_INIT:
+   383  0000F9   2BCA(1)  	CLR	OSCM
+   384  0000FA   2B86(1)  	CLR	PFLAG
+   385  0000FB   2BC9(1)  	CLR	INTEN
+   386  0000FC   2BC8(1)  	CLR	INTRQ	
+   387  0000FD             CLR_RAM:
+   388  0000FD   3400(1)  	B0MOV	Y,#00H			;clear	bank0
+   389  0000FE   335F(1)  	B0MOV	Z,#5FH	
+   390  0000FF             CLR_RAM10:
+   391  0000FF   2BE7(1)  	CLR	@YZ
+   392  000100   2683(1+S)  	DECMS	Z
+   393  000101   80FF(2)  	JMP	CLR_RAM10
+   394  000102   2BE7(1)  	CLR	@YZ
+   395  000103   0E00(2)  	ret
+   396  000104             
+   397  000104             //=========================================初始化IO口
+   398  000104             io_init:
+   399  000104   2DFF(1)  	mov	a,#11111111b		;r=0.5	g=0.7	b=0.6	w=0.4
+   400  000105   2FC2(1)  	b0mov	p2m,a
+   401  000106   2D00(1)  	mov	a,#00000000b		;上啦  1为上啦	0为禁止
+   402  000107   2FE2(1)  	b0mov	p2ur,a
+   403  000108             
+   404  000108   2DFD(1)  	mov	a,#11111101b		;r=0.5	g=0.7	b=0.6	w=0.4
+   405  000109   2FC1(1)  	b0mov	p1m,a
+   406  00010A   2D00(1)  	mov	a,#00000000b		;上啦  1为上啦	0为禁止
+   407  00010B   2FE1(1)  	b0mov	p1ur,a
+   408  00010C             
+   409  00010C   2DFF(1)  	mov	a,#11111111b		;0为输入 1为输出  
+   410  00010D   2FC5(1)  	b0mov	p5m,a
+   411  00010E   2DFF(1)  	mov	a,#11111111b		;0为输入 1为输出  
+   412  00010F   2FB8(1)  	b0mov	p0m,a
+   413  000110             
+   414  000110             sleep_init:
+   415  000110   2DFF(1)  	mov	a,#11111111b		;r=0.5	g=0.7	b=0.6	w=0.4
+   416  000111   2FC2(1)  	b0mov	p2m,a
+   417  000112   2D00(1)  	mov	a,#00000000b		;上啦  1为上啦	0为禁止
+   418  000113   2FE2(1)  	b0mov	p2ur,a
+   419  000114             
+   420  000114   2DFD(1)  	mov	a,#11111101b		;r=0.5	g=0.7	b=0.6	w=0.4
+   421  000115   2FC1(1)  	b0mov	p1m,a
+   422  000116   2D00(1)  	mov	a,#00000000b		;上啦  1为上啦	0为禁止
+   423  000117   2FE1(1)  	b0mov	p1ur,a
+   424  000118             
+   425  000118   2DFF(1)  	mov	a,#11111111b		;0为输入 1为输出  
+   426  000119   2FC5(1)  	b0mov	p5m,a
+   427  00011A   2DFF(1)  	mov	a,#11111111b		;0为输入 1为输出  
+   428  00011B   2FB8(1)  	b0mov	p0m,a
+   429  00011C   67D8(1)  	b0bclr	ft0enb
+   430  00011D             						
+   431  00011D   2D20(1)  	mov	a,#20h	//Fcpu/32	
+   432  00011E   2FD8(1)  	b0mov	t0m,a								
+   433  00011F   2D64(1)  	mov	a,#64h	//10ms	interrupt Once 					
+   434  000120   2FD9(1)  	b0mov	t0c,a					
+   435  000121             							
+   436  000121   6FD8(1)  	b0bset	ft0enb	// Enable T0 timer
+   437  000122             
+   438  000122   6CC9(1)  	b0bset	ft0ien  // Enable T0 interrupt
+   439  000123   64C8(1)  	b0bclr	ft0irq	// Clean T0 interrupt request flag
+   440  000124             
+   441  000124   6FDF(1)  	b0bset	fgie	// all interrupt operation
+   442  000125             
+   443  000125   0E00(2)  	ret
+   444  000126             endp

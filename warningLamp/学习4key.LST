@@ -1,0 +1,589 @@
+     1  000000             ;#include  "sn8p2501d.h";INCLUDE<SN8P2501D>   INCLUDE 'DOSMACS.ASM'
+     2  000000             chip	sn8p2501D
+     3  000000             //{{SONIX_CODE_OPTION   系统的硬件配置，包括振荡器类型，看门狗定时器的操作，LVD 选项，复位引脚
+     4  000000             //选项以及 OTP ROM 的安全控制
+     5  000000             	.Code_Option	LVD		LVD_M		; VDD 低于 2.0V 时，LVD 复位系统；PFLAG 寄存器的 LVD24 位作为 2.4V 低电压监测器 2.0V Reset Enable LVD24 bit of PFLAG for 2.4V Low Voltage Indicator
+     6  000000             	.Code_Option	Reset_Pin	P11		;P1.1 为单向输入引脚，无上拉电阻
+     7  000000             	.Code_Option	Watch_Dog	Enable		; Normal mode: Enable Watchdog Green and Sleep mode: Stop Watchdog
+     8  000000             	.Code_Option	High_Clk	IHRC_16M	; 高速时钟采用内部 16MHz RC 振荡电路，XIN/XOUT 为 GPIO 引脚。 Internal 16M RC Oscillator
+     9  000000             	.Code_Option	Fcpu		#1     ; Fcpu = Fosc/2 指令周期 = 2 个时钟周期
+    10  000000             	.Code_Option	Security	Enable ;ROM 代码加密
+    11  000000             	.Code_Option	Noise_Filter	Disable ;关闭杂讯滤波功能，Fcpu = Fosc/1~Fosc/16
+    12  000000             //}}SONIX_CODE_OPTION
+    13  000000             
+    14  000000             
+    15  000000             .data
+    16  0000 D             	r_flage		ds	1
+    17  E 00000000         	r_100us		equ	r_flage.0  ;等价 #define 
+    18  E 00010000         	r_syn		equ	r_flage.1
+    19  E 00020000         	r_on_off_ok	equ	r_flage.2
+    20  E 00030000         	r_17		equ	r_flage.3
+    21  E 00040000         	r_key_up	equ	r_flage.4
+    22  E 00050000         	r_sleep_ok	equ	r_flage.5
+    23  E 00060000         	clock_open	equ	r_flage.6
+    24  000001             
+    25  0001 D             	r_flage1	ds	1
+    26  E 00000001         	r_c2		equ	r_flage1.0
+    27  E 00010001         	r_pause		equ	r_flage1.1
+    28  E 00020001         	time_up		equ	r_flage1.2
+    29  E 00030001         	r_smooth	equ	r_flage1.3
+    30  E 00040001         	high_low	equ	r_flage1.4
+    31  000002             
+    32  000002             
+    33  0002 D             	r_flage2	ds	1
+    34  E 00000002         	turn		equ	r_flage2.0
+    35  E 00010002         	turn1		equ	r_flage2.1
+    36  E 00020002         	turn2		equ	r_flage2.2	
+    37  E 00030002         	turn3		equ	r_flage2.3
+    38  E 00040002         	turn4		equ	r_flage2.4
+    39  000003             
+    40  0003 D             	r_acc		ds	1
+    41  0004 D             	r_acc4		ds	1
+    42  0005 D             	r_acc5		ds	1
+    43  0006 D             	reg0		ds	1
+    44  0007 D             	reg1		ds	1
+    45  0008 D             	num_main	ds	1
+    46  0009 D             	mode		ds	1
+    47  000A D             	mode1		ds	1
+    48  000B D             	num_rgb		ds	1
+    49  000C D             	rgb_value	ds	1
+    50  000D D             	rx_mode		ds	1
+    51  000E D             	rx_time		ds	1
+    52  000F D             	rx_time1	ds	1
+    53  0010 D             	rx_bit		ds	1
+    54  0011 D             	rx_data1	ds	1
+    55  0012 D             	rx_data2	ds	1
+    56  0013 D             	rx_data3	ds	1
+    57  0014 D             	rx_data4	ds	1
+    58  000015             
+    59  0015 D             	pwm_num1	ds	1
+    60  0016 D             	pwm_num2	ds	1
+    61  0017 D             	pwm_num3	ds	1
+    62  0018 D             	pwm_num4	ds	1
+    63  000019             
+    64  0019 D             	on_num		ds	1
+    65  001A D             	on_num1		ds	1
+    66  00001B             
+    67  001B D             	r_cc		ds	1
+    68  00001C             
+    69  001C D             	count		ds	1
+    70  001D D             	count1		ds	1
+    71  001E D             	count2		ds	1
+    72  001F D             	count3		ds	1
+    73  000020             
+    74  000020             /*I/O口定义*/
+    75  E 000200D2         	d1		equ	p2.2	;O  对应原理图上的灯
+    76  E 000100D2         	d2		equ	p2.1	;O	
+    77  E 000000D2         	d3		equ	p2.0	;O
+    78  E 000200D1         	d4		equ	p1.2	;O
+    79  000020             
+    80  E 000400D5         	d5		equ	p5.4	;O
+    81  E 000000D1         	d6		equ	p1.0	;O
+    82  E 000000D0         	d7		equ	p0.0	;O
+    83  E 000500D2         	d8		equ	p2.5	;O
+    84  000020             
+    85  E 000400D2         	d9		equ	p2.4	;O
+    86  000020             	
+    87  000000             .code 
+    88  000000             	org	00h ;指定一个地址,后面的程序或数据从这个地址值开始分配
+    89  000000   801B(2)  	jmp	reset
+    90  000008             	ORG	08H
+    91  000008   8010(2)  	JMP	int_service ;无条件跳转指令
+    92  000009             
+    93  000010             	org	10h
+    94  000010             
+    95  000010             //===============================================================================================
+    96  000010             //    T0 set 10ms interval time for T0 interrupt.   X'tal:4M  Fcpu=Fosc/4  T0RATE=010 (Fcpu/64) 
+    97  000010             //===============================================================================================
+    98  000010             //
+    99  000010             //	T0 initial value = 256-(T0 interrupt interval time*clocl)
+   100  000010             //			 = 256-(10ms*4MHz /4 /64)
+   101  000010             //			 = 256-(0.01*4*1000000/4/64)
+   102  000010             //			 = 100
+   103  000010             //			 = 64H
+   104  000010             //
+   105  000010             int_service:
+   106  000010   0400(1)  	push					; 保存 ACC 和 PFLAG
+   107  000011             isr_adc:
+   108  000011   7CC9(1+S)  	b0bts1	ft0ien				// Check t0ien
+   109  000012   8019(2)  	jmp	isr90				
+   110  000013   7CC8(1+S)  	b0bts1	ft0irq				// Check t0irp
+   111  000014   8019(2)  	jmp	isr90			
+   112  000015   64C8(1)  	b0bclr	ft0irq
+   113  000016   6800(1)  	b0bset	r_100us
+   114  000017   2DFA(1)  	mov	a,#0fah				//96us	interrupt Once 	0fah				
+   115  000018   2FD9(1)  	b0mov	t0c,a
+   116  000019             
+   117  000019             isr90:
+   118  000019   0500(1)  	pop
+   119  00001A   0F00(2)  	reti					; 退出中断
+   120  00001B             RESET:
+   121  00001B   2D7F(1)  	MOV	A,#7FH				; A = 7FH，RAM 区的最后单元
+   122  00001C   1FDF(1)  	MOV	STKP,A				;STKP为堆栈指针
+   123  00001D   C167(2)  	CALL	SYS_INIT
+   124  00001E   C172(2)  	call	io_init
+   125  00001F   0000(1)  	nop
+   126  000020   0000(1)  	nop
+   127  000021   0000(1)  	nop
+   128  000022             
+   129  000022             ;14(P2.3)脚对应1,2对应8.9.10.12(P2.5)，3对应1(P2.2)236
+   130  000022             main_loop:
+   131  000022   2D5A(1)  	mov	a,#5ah		//清看门狗-初始化
+   132  000023   2FCC(1)  	b0mov	wdtr,a
+   133  000024   7800(1+S)  	b0bts1	r_100us //延时100微秒
+   134  000025   8022(2)  	jmp	main_loop
+   135  000026   6000(1)  	b0bclr	r_100us
+   136  000027             
+   137  000027   1608(1+S)  	incms	num_main	;跳转
+   138  000028   2D2E(1)  	mov	a,#46         ;主函数(移动的时间原51，用24比较理想)
+   139  000029   2208(1)  	sub	a,num_main	  ;a->acc
+   140  00002A   7286(1+S)  	b0bts0	fc			;跳转
+   141  00002B   8022(2)  	jmp	main_loop
+   142  00002C   2B08(1)  	clr	num_main
+   143  00002D             
+   144  00002D   C050(2)  	call	display_mode0	;显示模式0:左右闪
+   145  00002E   C056(2)  	call	display_mode1	;显示模式1:独立闪
+   146  00002F             
+   147  00002F   8022(2)  	jmp	main_loop
+   148  000030             
+   149  000050             	org	050h
+   150  000050             
+   151  000050             ;;;;;;;;;;;;;左右闪
+   152  000050             display_mode0:
+   153  000050   1E09(1)  	mov	a,mode
+   154  000051   03CE(1)  	b0add	pcl,a ;pcl跳转表里的一个值-常量
+   155  000052   8091(2)  	jmp	mode_0	;模式0
+   156  000053   80E7(2)  	jmp	mode_1
+   157  000054   811B(2)  	jmp	mode_2
+   158  000055   0E00(2)  	ret
+   159  000056             
+   160  000056             ;;;;;;;;;;;;;独立闪
+   161  000056             display_mode1:	
+   162  000056   1E0A(1)  	mov	a,mode1
+   163  000057   03CE(1)  	b0add	pcl,a
+   164  000058   805B(2)  	jmp	dp_mode_0
+   165  000059   8076(2)  	jmp	dp_mode_1
+   166  00005A   0E00(2)  	ret
+   167  00005B             
+   168  00005B             ;;;;;;;;;;;;;;;;;;;;;;;;;
+   169  00005B             dp_mode_0:
+   170  00005B   7302(1+S)  	b0bts0	turn3
+   171  00005C   8066(2)  	jmp	dp_mode_01
+   172  00005D             
+   173  00005D   1617(1+S)  	incms	pwm_num3 	;跳转指令
+   174  00005E   2D7A(1)  	mov	a,#122
+   175  00005F   2217(1)  	sub	a,pwm_num3
+   176  000060   7286(1+S)  	b0bts0	fc
+   177  000061   0E00(2)  	ret
+   178  000062   2B17(1)  	clr	pwm_num3
+   179  000063             
+   180  000063   4CD2(1)  	bset	d9       
+   181  000064   4B02(1)  	bset	turn3	
+   182  000065   0E00(2)  	ret
+   183  000066             
+   184  000066             dp_mode_01:
+   185  000066   1617(1+S)  	incms	pwm_num3
+   186  000067   2D7A(1)  	mov	a,#122
+   187  000068   2217(1)  	sub	a,pwm_num3
+   188  000069   7286(1+S)  	b0bts0	fc
+   189  00006A   0E00(2)  	ret
+   190  00006B   2B17(1)  	clr	pwm_num3
+   191  00006C             
+   192  00006C   44D2(1)  	bclr	d9
+   193  00006D   4302(1)  	bclr	turn3
+   194  00006E             
+   195  00006E   161E(1+S)  	incms	count2
+   196  00006F   2D03(1)  	mov	a,#3
+   197  000070   221E(1)  	sub	a,count2
+   198  000071   7286(1+S)  	b0bts0	fc
+   199  000072   0E00(2)  	ret
+   200  000073   2B1E(1)  	clr	count2
+   201  000074             
+   202  000074   160A(1+S)  	incms	mode1
+   203  000075   0E00(2)  	ret			
+   204  000076             
+   205  000076             dp_mode_1:
+   206  000076   7302(1+S)  	b0bts0	turn3
+   207  000077   8081(2)  	jmp	dp_mode_11
+   208  000078             
+   209  000078   1617(1+S)  	incms	pwm_num3
+   210  000079   2D12(1)  	mov	a,#18
+   211  00007A   2217(1)  	sub	a,pwm_num3
+   212  00007B   7286(1+S)  	b0bts0	fc
+   213  00007C   0E00(2)  	ret
+   214  00007D   2B17(1)  	clr	pwm_num3
+   215  00007E             
+   216  00007E   4CD2(1)  	bset	d9            ;亮灯时间（单闪）
+   217  00007F   4B02(1)  	bset	turn3	
+   218  000080   0E00(2)  	ret
+   219  000081             
+   220  000081             dp_mode_11:
+   221  000081   1617(1+S)  	incms	pwm_num3
+   222  000082   2D12(1)  	mov	a,#18
+   223  000083   2217(1)  	sub	a,pwm_num3
+   224  000084   7286(1+S)  	b0bts0	fc
+   225  000085   0E00(2)  	ret
+   226  000086   2B17(1)  	clr	pwm_num3
+   227  000087             
+   228  000087   44D2(1)  	bclr	d9           ;灭灯时间（单闪）
+   229  000088   4302(1)  	bclr	turn3
+   230  000089             
+   231  000089   161E(1+S)  	incms	count2
+   232  00008A   2D1F(1)  	mov	a,#31         
+   233  00008B   221E(1)  	sub	a,count2
+   234  00008C   7286(1+S)  	b0bts0	fc
+   235  00008D   0E00(2)  	ret
+   236  00008E   2B1E(1)  	clr	count2
+   237  00008F             
+   238  00008F   2B0A(1)  	clr	mode1
+   239  000090   0E00(2)  	ret
+   240  000091             
+   241  000091             ;;;;;;;;;;;;;;;;;;;;;;;;;
+   242  000091             mode_0:                          ;模式1左右闪  慢闪
+   243  000091   7102(1+S)  	b0bts0	turn1
+   244  000092   80B9(2)  	jmp	mode_0_2
+   245  000093   7002(1+S)  	b0bts0	turn
+   246  000094   80A1(2)  	jmp	mode_0_1
+   247  000095             
+   248  000095   4AD2(1)  	bset	d1 ;清0或1 根据EFLAGS寄存器中的状态标识设置目标操作数的值为0或1
+   249  000096   49D2(1)  	bset	d2
+   250  000097   48D2(1)  	bset	d3
+   251  000098   4AD1(1)  	bset	d4
+   252  000099             
+   253  000099   1615(1+S)  	incms	pwm_num1
+   254  00009A   2D31(1)  	mov	a,#49          ;左边亮灯时间长度(D1,D2,D3,D4)原49
+   255  00009B   2215(1)  	sub	a,pwm_num1
+   256  00009C   7286(1+S)  	b0bts0	fc
+   257  00009D   0E00(2)  	ret
+   258  00009E   2B15(1)  	clr	pwm_num1
+   259  00009F             
+   260  00009F   4802(1)  	bset	turn	
+   261  0000A0   0E00(2)  	ret
+   262  0000A1             
+   263  0000A1             mode_0_1:
+   264  0000A1   42D2(1)  	bclr	d1
+   265  0000A2   41D2(1)  	bclr	d2
+   266  0000A3   40D2(1)  	bclr	d3
+   267  0000A4   42D1(1)  	bclr	d4
+   268  0000A5             
+   269  0000A5   44D5(1)  	bclr	d5
+   270  0000A6   40D1(1)  	bclr	d6
+   271  0000A7   40D0(1)  	bclr	d7
+   272  0000A8   45D2(1)  	bclr	d8
+   273  0000A9             
+   274  0000A9   1616(1+S)  	incms	pwm_num2
+   275  0000AA   2D18(1)  	mov	a,#24       ;全灭灯时间长度(D1，D2，D3，D4，D5，D6，D7，D8)原24
+   276  0000AB             
+   277  0000AB   2216(1)  	sub	a,pwm_num2
+   278  0000AC   7286(1+S)  	b0bts0	fc
+   279  0000AD   0E00(2)  	ret
+   280  0000AE   2B16(1)  	clr	pwm_num2
+   281  0000AF             
+   282  0000AF   4002(1)  	bclr	turn
+   283  0000B0             
+   284  0000B0   161C(1+S)  	incms	count
+   285  0000B1   2D03(1)  	mov	a,#3       ;一闪一闪的次数原3
+   286  0000B2   221C(1)  	sub	a,count
+   287  0000B3   7286(1+S)  	b0bts0	fc
+   288  0000B4   0E00(2)  	ret
+   289  0000B5   2B1C(1)  	clr	count
+   290  0000B6             
+   291  0000B6   4002(1)  	bclr	turn
+   292  0000B7   4902(1)  	bset	turn1
+   293  0000B8             	
+   294  0000B8   0E00(2)  	ret
+   295  0000B9             
+   296  0000B9             mode_0_2:                        
+   297  0000B9                                            
+   298  0000B9   7002(1+S)  	b0bts0	turn
+   299  0000BA   80C7(2)  	jmp	mode_0_3
+   300  0000BB   4CD5(1)  	bset	d5
+   301  0000BC   48D1(1)  	bset	d6
+   302  0000BD   48D0(1)  	bset	d7
+   303  0000BE   4DD2(1)  	bset	d8
+   304  0000BF   1615(1+S)  	incms	pwm_num1
+   305  0000C0   2D31(1)  	mov	a,#49          ;右亮灯时间（D5，D6，D7,D8）原49
+   306  0000C1   2215(1)  	sub	a,pwm_num1
+   307  0000C2   7286(1+S)  	b0bts0	fc
+   308  0000C3   0E00(2)  	ret
+   309  0000C4   2B15(1)  	clr	pwm_num1
+   310  0000C5             
+   311  0000C5   4802(1)  	bset	turn	
+   312  0000C6   0E00(2)  	ret
+   313  0000C7             
+   314  0000C7             mode_0_3:
+   315  0000C7   42D2(1)  	bclr	d1
+   316  0000C8   41D2(1)  	bclr	d2
+   317  0000C9   40D2(1)  	bclr	d3
+   318  0000CA   42D1(1)  	bclr	d4
+   319  0000CB             
+   320  0000CB   44D5(1)  	bclr	d5
+   321  0000CC   40D1(1)  	bclr	d6
+   322  0000CD   40D0(1)  	bclr	d7
+   323  0000CE   45D2(1)  	bclr	d8
+   324  0000CF             
+   325  0000CF   1616(1+S)  	incms	pwm_num2
+   326  0000D0   2D18(1)  	mov	a,#24         ;全灭灯时间长度(D1，D2，D3，D4，D5，D6，D7，D8)原24   
+   327  0000D1   2216(1)  	sub	a,pwm_num2
+   328  0000D2   7286(1+S)  	b0bts0	fc
+   329  0000D3   0E00(2)  	ret
+   330  0000D4   2B16(1)  	clr	pwm_num2
+   331  0000D5             
+   332  0000D5   4002(1)  	bclr	turn
+   333  0000D6             
+   334  0000D6   161C(1+S)  	incms	count
+   335  0000D7   2D03(1)  	mov	a,#3         ;一闪一闪的次数3
+   336  0000D8   221C(1)  	sub	a,count
+   337  0000D9   7286(1+S)  	b0bts0	fc
+   338  0000DA   0E00(2)  	ret
+   339  0000DB   2B1C(1)  	clr	count
+   340  0000DC   4002(1)  	bclr	turn
+   341  0000DD   4102(1)  	bclr	turn1
+   342  0000DE             
+   343  0000DE   161D(1+S)  	incms	count1
+   344  0000DF   2D07(1)  	mov	a,#7        ;延长时间7
+   345  0000E0   221D(1)  	sub	a,count1
+   346  0000E1   7286(1+S)  	b0bts0	fc
+   347  0000E2   0E00(2)  	ret
+   348  0000E3   2B1D(1)  	clr	count1
+   349  0000E4             
+   350  0000E4   2D01(1)  	mov	a,#1      ;将#1放a 内存跳下一模式
+   351  0000E5   1F09(1)  	mov	mode,a
+   352  0000E6   0E00(2)  	ret
+   353  0000E7             
+   354  0000E7             mode_1:                        ;模式2同时闪
+   355  0000E7   7002(1+S)  	b0bts0	turn
+   356  0000E8   80F9(2)  	jmp	mode_1_1
+   357  0000E9             
+   358  0000E9   4AD2(1)  	bset	d1
+   359  0000EA   49D2(1)  	bset	d2
+   360  0000EB   48D2(1)  	bset	d3
+   361  0000EC   4AD1(1)  	bset	d4
+   362  0000ED             
+   363  0000ED   4CD5(1)  	bset	d5
+   364  0000EE   48D1(1)  	bset	d6
+   365  0000EF   48D0(1)  	bset	d7
+   366  0000F0   4DD2(1)  	bset	d8
+   367  0000F1             
+   368  0000F1   1615(1+S)  	incms	pwm_num1
+   369  0000F2   2D18(1)  	mov	a,#24      ;亮灯时间长度(D1，D2，D3，D4，D5，D6，D7，D8)原49
+   370  0000F3   2215(1)  	sub	a,pwm_num1
+   371  0000F4   7286(1+S)  	b0bts0	fc
+   372  0000F5   0E00(2)  	ret
+   373  0000F6   2B15(1)  	clr	pwm_num1
+   374  0000F7             
+   375  0000F7   4802(1)  	bset	turn	
+   376  0000F8   0E00(2)  	ret
+   377  0000F9             
+   378  0000F9             mode_1_1:
+   379  0000F9   42D2(1)  	bclr	d1
+   380  0000FA   41D2(1)  	bclr	d2
+   381  0000FB   40D2(1)  	bclr	d3
+   382  0000FC   42D1(1)  	bclr	d4
+   383  0000FD             
+   384  0000FD   44D5(1)  	bclr	d5
+   385  0000FE   40D1(1)  	bclr	d6
+   386  0000FF   40D0(1)  	bclr	d7
+   387  000100   45D2(1)  	bclr	d8
+   388  000101             
+   389  000101   1616(1+S)  	incms	pwm_num2
+   390  000102   2D0A(1)  	mov	a,#10       ;灭灯时间长度(D1，D2，D3，D4，D5，D6，D7，D8)原24
+   391  000103   2216(1)  	sub	a,pwm_num2
+   392  000104   7286(1+S)  	b0bts0	fc
+   393  000105   0E00(2)  	ret
+   394  000106   2B16(1)  	clr	pwm_num2
+   395  000107             
+   396  000107   4002(1)  	bclr	turn
+   397  000108             
+   398  000108   161C(1+S)  	incms	count
+   399  000109   2D12(1)     	mov	a,#18       ;一闪一说的次数原14
+   400  00010A   221C(1)  	sub	a,count
+   401  00010B   7286(1+S)  	b0bts0	fc
+   402  00010C   0E00(2)  	ret
+   403  00010D   2B1C(1)  	clr	count
+   404  00010E             
+   405  00010E   4002(1)  	bclr	turn
+   406  00010F   4102(1)  	bclr	turn1
+   407  000110             
+   408  000110   42D2(1)  	bclr	d1
+   409  000111   41D2(1)  	bclr	d2
+   410  000112   40D2(1)  	bclr	d3
+   411  000113   42D1(1)  	bclr	d4
+   412  000114             
+   413  000114   44D5(1)  	bclr	d5
+   414  000115   40D1(1)  	bclr	d6
+   415  000116   40D0(1)  	bclr	d7
+   416  000117   45D2(1)  	bclr	d8
+   417  000118             	
+   418  000118   2D02(1)  	mov	a,#2          ;跳下个模式
+   419  000119   1F09(1)  	mov	mode,a	
+   420  00011A   0E00(2)  	ret
+   421  00011B              
+   422  00011B             mode_2:                       ;模式3左右闪  快闪
+   423  00011B   7002(1+S)  	b0bts0	turn
+   424  00011C   8129(2)  	jmp	mode_2_1
+   425  00011D             
+   426  00011D   4AD2(1)  	bset	d1
+   427  00011E   49D2(1)  	bset	d2
+   428  00011F   48D2(1)  	bset	d3
+   429  000120   4AD1(1)  	bset	d4
+   430  000121             
+   431  000121   1615(1+S)  	incms	pwm_num1
+   432  000122   2D31(1)  	mov	a,#49            ;亮灯时间长度(D1,D2,D3,D4)原49         
+   433  000123   2215(1)  	sub	a,pwm_num1
+   434  000124   7286(1+S)  	b0bts0	fc
+   435  000125   0E00(2)  	ret
+   436  000126   2B15(1)  	clr	pwm_num1
+   437  000127             
+   438  000127   4802(1)  	bset	turn	
+   439  000128   0E00(2)  	ret
+   440  000129             
+   441  000129             mode_2_1:
+   442  000129   42D2(1)  	bclr	d1
+   443  00012A   41D2(1)  	bclr	d2
+   444  00012B   40D2(1)  	bclr	d3
+   445  00012C   42D1(1)  	bclr	d4
+   446  00012D             
+   447  00012D   1615(1+S)  	incms	pwm_num1
+   448  00012E   2D64(1)  	mov	a,#100             ;灭灯时间（D1，D2，D3,D4）      
+   449  00012F   2215(1)  	sub	a,pwm_num1
+   450  000130   7286(1+S)  	b0bts0	fc
+   451  000131   8141(2)  	jmp	mode_2_2
+   452  000132   2B15(1)  	clr	pwm_num1
+   453  000133             
+   454  000133   44D5(1)  	bclr	d5
+   455  000134   40D1(1)  	bclr	d6
+   456  000135   40D0(1)  	bclr	d7
+   457  000136   45D2(1)  	bclr	d8
+   458  000137             
+   459  000137   4002(1)  	bclr	turn
+   460  000138   4202(1)  	bclr	turn2
+   461  000139             
+   462  000139   161C(1+S)  	incms	count
+   463  00013A   2D0C(1)  	mov	a,#12              ;一闪一闪的次数原7
+   464  00013B   221C(1)  	sub	a,count
+   465  00013C   7286(1+S)  	b0bts0	fc
+   466  00013D   0E00(2)  	ret
+   467  00013E   2B1C(1)  	clr	count
+   468  00013F             
+   469  00013F   2B09(1)  	clr	mode
+   470  000140   0E00(2)  	ret
+   471  000141             
+   472  000141             mode_2_2:
+   473  000141   7202(1+S)  	b0bts0	turn2
+   474  000142   0E00(2)  	ret
+   475  000143   7102(1+S)  	b0bts0	turn1
+   476  000144   8151(2)  	jmp	mode_2_3
+   477  000145             
+   478  000145   1616(1+S)  	incms	pwm_num2      ;(自加1)
+   479  000146   2D18(1)  	mov	a,#24
+   480  000147   2216(1)  	sub	a,pwm_num2    ;(减数)
+   481  000148   7286(1+S)  	b0bts0	fc            ;FC=0跳下2句，若FC=1跳ret
+   482  000149   0E00(2)  	ret
+   483  00014A   2B16(1)  	clr	pwm_num2
+   484  00014B             
+   485  00014B   4CD5(1)  	bset	d5
+   486  00014C   48D1(1)  	bset	d6
+   487  00014D   48D0(1)  	bset	d7
+   488  00014E   4DD2(1)  	bset	d8
+   489  00014F   4902(1)  	bset	turn1
+   490  000150   0E00(2)  	ret
+   491  000151             
+   492  000151             mode_2_3:
+   493  000151   1616(1+S)  	incms	pwm_num2
+   494  000152   2D31(1)  	mov	a,#49
+   495  000153   2216(1)  	sub	a,pwm_num2
+   496  000154   7286(1+S)  	b0bts0	fc
+   497  000155   0E00(2)  	ret
+   498  000156   2B16(1)  	clr	pwm_num2
+   499  000157             
+   500  000157   44D5(1)  	bclr	d5 //亮/灭
+   501  000158   40D1(1)  	bclr	d6
+   502  000159   40D0(1)  	bclr	d7
+   503  00015A   45D2(1)  	bclr	d8
+   504  00015B             
+   505  00015B   4102(1)  	bclr	turn1
+   506  00015C   4A02(1)  	bset	turn2
+   507  00015D   0E00(2)  	ret
+   508  00015E             
+   509  00015E             dlay_50ms_2:
+   510  00015E   2D01(1)  	mov	a,#1
+   511  00015F   1F03(1)  	mov	r_acc,a
+   512  000160             
+   513  000160             dlay_50ms_3:
+   514  000160   2D5A(1)  	mov	a,#5ah		//清看门狗
+   515  000161   2FCC(1)  	b0mov	wdtr,a
+   516  000162   2603(1+S)  	decms	r_acc
+   517  000163   8160(2)  	jmp	dlay_50ms_3
+   518  000164   2607(1+S)  	decms	reg1
+   519  000165   815E(2)  	jmp	dlay_50ms_2
+   520  000166   0E00(2)  	ret
+   521  000167             
+   522  000167             ;=========================================清内存	
+   523  000167             SYS_INIT:
+   524  000167   2BCA(1)  	CLR	OSCM ;振荡器模式寄存器  系统时钟,寄存器 OSCM 控制振荡器的状态和系统的工作模式
+   525  000168   2B86(1)  	CLR	PFLAG ;ROM?页和特殊寄存器
+   526  000169   2BC9(1)  	CLR	INTEN ;中断使能寄存器
+   527  00016A   2BC8(1)  	CLR	INTRQ	;中断使能寄存器
+   528  00016B             
+   529  00016B             CLR_RAM:
+   530  00016B   3400(1)  	B0MOV	Y,#00H			;clear	bank0 ;Y 指向 RAM bank 0
+   531  00016C   335F(1)  	B0MOV	Z,#5FH			; Z 指向 55H
+   532  00016D             
+   533  00016D             CLR_RAM10:
+   534  00016D   2BE7(1)  	CLR	@YZ
+   535  00016E   2683(1+S)  	DECMS	Z
+   536  00016F   816D(2)  	JMP	CLR_RAM10
+   537  000170   2BE7(1)  	CLR	@YZ ;间接寻址寄存器
+   538  000171   0E00(2)  	ret
+   539  000172             
+   540  000172             //=========================================初始化IO口
+   541  000172             io_init:
+   542  000172   2DF7(1)  	mov	a,#11110111b		;r=0.5	g=0.7	b=0.6	w=0.4
+   543  000173   2FC2(1)  	b0mov	p2m,a
+   544  000174   2D00(1)  	mov	a,#00000000b		;上啦  1为上啦	0为禁止
+   545  000175   2FE2(1)  	b0mov	p2ur,a
+   546  000176             
+   547  000176   2DFD(1)  	mov	a,#11111101b		;r=0.5	g=0.7	b=0.6	w=0.4
+   548  000177   2FC1(1)  	b0mov	p1m,a
+   549  000178   2D00(1)  	mov	a,#00000000b		;上啦  1为上啦	0为禁止
+   550  000179   2FE1(1)  	b0mov	p1ur,a
+   551  00017A             
+   552  00017A   2DFF(1)  	mov	a,#11111111b		;0为输入 1为输出  
+   553  00017B   2FC5(1)  	b0mov	p5m,a
+   554  00017C   2DFF(1)  	mov	a,#11111111b		;0为输入 1为输出   所有端口设为输出模式
+   555  00017D   2FB8(1)  	b0mov	p0m,a
+   556  00017E             
+   557  00017E             sleep_init:
+   558  00017E   2DF7(1)  	mov	a,#11110111b		;r=0.5	g=0.7	b=0.6	w=0.4
+   559  00017F   2FC2(1)  	b0mov	p2m,a
+   560  000180   2D00(1)  	mov	a,#00000000b		;上啦  1为上啦	0为禁止
+   561  000181   2FE2(1)  	b0mov	p2ur,a
+   562  000182             
+   563  000182   2DFD(1)  	mov	a,#11111101b		;r=0.5	g=0.7	b=0.6	w=0.4
+   564  000183   2FC1(1)  	b0mov	p1m,a
+   565  000184   2D00(1)  	mov	a,#00000000b		;上啦  1为上啦	0为禁止
+   566  000185   2FE1(1)  	b0mov	p1ur,a
+   567  000186             
+   568  000186   2DFF(1)  	mov	a,#11111111b		;0为输入 1为输出  
+   569  000187   2FC5(1)  	b0mov	p5m,a
+   570  000188   2DFF(1)  	mov	a,#11111111b		;0为输入 1为输出  
+   571  000189   2FB8(1)  	b0mov	p0m,a
+   572  00018A             
+   573  00018A   67D8(1)  	b0bclr	ft0enb
+   574  00018B             						
+   575  00018B   2D30(1)  	mov	a,#30h	//Fcpu/32	#提示后面是立即数
+   576  00018C   2FD8(1)  	b0mov	t0m,a								
+   577  00018D   2D64(1)  	mov	a,#64h	//10ms	interrupt Once 					
+   578  00018E   2FD9(1)  	b0mov	t0c,a					
+   579  00018F             							
+   580  00018F   6FD8(1)  	b0bset	ft0enb	// Enable T0 timer
+   581  000190             
+   582  000190   6CC9(1)  	b0bset	ft0ien  // Enable T0 interrupt 使能T0中断
+   583  000191   64C8(1)  	b0bclr	ft0irq	// Clean T0 interrupt request flag
+   584  000192             
+   585  000192   6FDF(1)  	b0bset	fgie	// all interrupt operation  全局中断控制位 1使能
+   586  000193             
+   587  000193             
+   588  000193   0E00(2)  	ret
+   589  000194             endp
